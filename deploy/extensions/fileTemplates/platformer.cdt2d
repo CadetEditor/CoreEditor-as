@@ -1,0 +1,10 @@
+<cadet:CadetScene x:id="0" framerate="60" name="Component" timeScale="1" xmlns:cadet="www.unwrong.com/cadet/1.0.0" xmlns:x="flox.app.core.serialization.Serializer" xmlns:flox="www.unwrong.com/flox/1.0.0" xmlns:cadet2DStarling="www.unwrong.com/cadet2DStarling/1.0.0" xmlns:ns0="platformer.components.processes">
+  <Object x:name="userData" x:id="1" zoom="1" panX="485" panY="285.5" gridSize="32" snapEnabled="1" centrePointSnapEnabled="false" showGrid="1"/>
+  <flox:DependencyManager x:name="dependencyManager" x:id="2">
+    <flox:ArrayCollection x:name="dependencyNodes" x:id="3"/>
+  </flox:DependencyManager>
+  <flox:ArrayCollection x:name="children" x:id="4">
+    <cadet2DStarling:Renderer2D x:name="0" x:id="5" viewportWidth="970" viewportHeight="571" name="2D Renderer"/>
+    <ns0:GridProcess x:name="1" x:id="6" name="Grid Process" gridSize="32"/>
+  </flox:ArrayCollection>
+</cadet:CadetScene>

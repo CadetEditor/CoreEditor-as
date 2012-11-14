@@ -1,0 +1,51 @@
+<xml>
+  <!-- 2D -->
+  <!-- 2D: marbles -->
+	<file>concrete1.jpg</file>
+	<file>crate1_40x40.png</file>
+	<file>crate1_60x60.png</file>
+	<file>crate1_80x80.png</file>
+	<file>marble1_20x20.png</file>
+	<file>marble1_40x40.png</file>
+	<file>marble1_80x80.png</file>
+	<file>marble2_20x20.png</file>
+	<file>marble8_40x40.png</file>
+	<file>plank1_20x180.png</file>
+	<file>wood1.jpg</file>
+	<!-- 2D: motorbike -->
+	<file>bike_chassis_173x106.png</file>
+	<file>bike_wheel.png</file>
+	<!-- 2D: Race Track -->
+	<file>car.png</file>
+	<file>traffic_cone.png</file>
+	<file>tree1_116x116.png</file>
+	<file>tree2_124x124.png</file>
+	<file>tree3_130x130.png</file>
+	
+	<!-- 3D -->
+	<!-- 3D General -->
+	<file>EnvMapNegX.jpg</file>
+	<file>EnvMapNegY.jpg</file>
+	<file>EnvMapNegZ.jpg</file>
+	<file>EnvMapPosX.jpg</file>
+	<file>EnvMapPosY.jpg</file>
+	<file>EnvMapPosZ.jpg</file>
+	<file>DefaultDiffuse.png</file>
+	<file>DefaultNormal.png</file>
+	<!-- 3D Robot -->
+	<file>RobotDiffuse.png</file>
+	<!-- 3D Planets -->
+	<file>Earth.jpg</file>
+	<file>Jupiter.jpg</file>
+	<file>Mars.jpg</file>
+	<file>Moon.jpg</file>
+	<file>Saturn.jpg</file>
+	<file>Sun.jpg</file>
+	<!-- 3D .3DS -->
+	<file>Primitives.3DS</file>
+	<file>Robot.3DS</file>	
+	<!-- 3D: Contraption -->
+	<file>Contraption.3DS</file>
+	<file>ContraptionDiffuse.png</file>
+	<file>ContraptionNormal.jpg</file>
+</xml>

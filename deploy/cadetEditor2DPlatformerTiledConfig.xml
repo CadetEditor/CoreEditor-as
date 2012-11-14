@@ -1,0 +1,41 @@
+<xml>
+	<applicationID><![CDATA[cadetEditor2D]]></applicationID>
+	
+	<fileSystemProvider environment="air"		    type="local" 		    id="cadet.local" 		    	label="Cadet2D"     folderName="Cadet2D" />
+	<fileSystemProvider environment="browser" 	type="sharedObject" id="cadet.sharedObject" 	label="Cadet2D" />
+	<fileSystemProvider environment="browser" 	type="url" 			    id="cadet.url" 			      label="Cadet2D_URL" baseURL="files" visible="false" />
+	
+	<extension url="extensions/DefaultExtension.swf" />
+	<extension url="extensions/CadetEditorExtension.swf" />
+	<extension url="extensions/CadetEditor_Extension2D_PlatformerTiled.swf" />
+	
+	<manifest>
+		<url><![CDATA[extensions/manifests/Flox.xml]]></url>
+	</manifest>
+
+	<manifest>
+		<url><![CDATA[extensions/manifests/Cadet.xml]]></url>
+	</manifest>
+
+	<manifest>
+		<url><![CDATA[extensions/manifests/Cadet2D.xml]]></url>
+	</manifest>
+
+	<manifest>
+		<url><![CDATA[extensions/manifests/Cadet2DStarling.xml]]></url>
+	</manifest>
+
+	<manifest>
+		<url><![CDATA[extensions/manifests/CadetEditor.xml]]></url>
+	</manifest>
+	
+	<!--  File templates  -->
+
+	<template>
+		<label><![CDATA[Platformer]]></label>
+		<description><![CDATA[Creates a Cadet Editor scene with a Renderer2D and a GridProcess]]></description>
+		<url><![CDATA[extensions/fileTemplates/platformer.cdt2d]]></url>
+		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
+	</template>
+
+</xml>

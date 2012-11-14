@@ -1,0 +1,952 @@
+<cadet:CadetScene x:id="0" framerate="60" name="Component" timeScale="1" xmlns:cadet="www.unwrong.com/cadet/1.0.0" xmlns:x="flox.app.core.serialization.Serializer" xmlns:flox="www.unwrong.com/flox/1.0.0" xmlns:cadet2D="www.unwrong.com/cadet2D/1.0.0" xmlns:cadet2DFlash="www.unwrong.com/cadet2DFlash/1.0.0" xmlns:cadet2DBox2D="www.unwrong.com/cadet2DBox2D/1.0.0">
+  <flox:DependencyManager x:name="dependencyManager" x:id="1">
+    <flox:ArrayCollection x:name="dependencyNodes" x:id="2"/>
+  </flox:DependencyManager>
+  <Object x:name="userData" x:id="3" gridSize="10" zoom="0.75" showGrid="1" panY="262.8642857142858" snapEnabled="1" panX="773.9500000000003"/>
+  <flox:ArrayCollection x:name="children" x:id="4">
+    <cadet2DFlash:Renderer2D x:name="0" x:id="5" viewportHeight="571" viewportWidth="970" name="2D Renderer"/>
+    <cadet2DFlash:TrackCamera2DProcess x:name="1" x:id="6" maxZoom="1" maxSpeed="100" ease="0.2" minZoom="0.25" minSpeed="0" name="Track Camera">
+      <cadet2D:Entity x:name="target" x:id="7" name="Car">
+        <flox:ArrayCollection x:name="children" x:id="8">
+          <cadet2D:Transform2D x:name="0" x:id="9" name="Transform" matrix="1,0,0,1,440,220"/>
+          <cadet2DFlash:GeometrySkin x:name="1" x:id="10" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-15" fillBitmap="car" fillColor="16777215" fillXOffset="-30" fillAlpha="0.04" mouseEnabled="1">
+            <x:Ref x:name="transform2D" x:id="9"/>
+          </cadet2DFlash:GeometrySkin>
+          <cadet2DBox2D:SimpleVehicleBehaviour x:name="2" x:id="11" maxGrip="0.12" steeringStrength="50" grip="0.15" brakeForce="20" topSpeed="20" maxSteeringAngle="30" accelerationForce="6" name="Simple Vehicle" carLength="60"/>
+          <cadet:VehicleUserControlBehaviour x:name="3" x:id="12" accelerateMapping="ACCELERATE" steeringEaseDown="0.5" brakeMapping="BRAKE" steerLeftMapping="STEER LEFT" brakeEaseUp="0.5" steeringEaseUp="0.5" accelerationEaseUp="0.5" accelerationEaseDown="0.5" steerRightMapping="STEER RIGHT" breakEaseDown="0.5" name="Vehicle User Control"/>
+          <cadet2DBox2D:RigidBodyBehaviour x:name="4" x:id="13" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="10" friction="0.8" name="Rigid Body" linearDamping="0.1" angularDamping="0.1"/>
+          <cadet2D:PolygonGeometry x:name="5" x:id="14" name="Rectangle" vertices="-30,-15:30,-15:30,15:-30,15"/>
+        </flox:ArrayCollection>
+      </cadet2D:Entity>
+    </cadet2DFlash:TrackCamera2DProcess>
+    <cadet2DBox2D:PhysicsProcess x:name="2" x:id="15" numIterations="2" numVelocityIterations="2" numPositionIterations="2" gravity="0" name="Physics" scaleFactor="0.01"/>
+    <cadet:InputProcess x:name="3" x:id="16" name="Input Process">
+      <flox:ArrayCollection x:name="children" x:id="17">
+        <cadet:InputMapping x:name="0" x:id="18" symbol="UP" name="ACCELERATE"/>
+        <cadet:InputMapping x:name="1" x:id="19" symbol="RIGHT" name="STEER RIGHT"/>
+        <cadet:InputMapping x:name="2" x:id="20" symbol="LEFT" name="STEER LEFT"/>
+        <cadet:InputMapping x:name="3" x:id="21" symbol="DOWN" name="BRAKE"/>
+      </flox:ArrayCollection>
+    </cadet:InputProcess>
+    <cadet2D:Entity x:name="4" x:id="22" name="Start line">
+      <flox:ArrayCollection x:name="children" x:id="23">
+        <cadet2D:Transform2D x:name="0" x:id="24" name="Transform" matrix="1,0,0,1,503,183"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="25" name="RectangleGeometry" vertices="0,0:10,0:10,85:0,85" width="10" height="85"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="26" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="0" fillColor="16777215" fillXOffset="0" fillAlpha="1" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="24"/>
+        </cadet2DFlash:GeometrySkin>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <x:Ref x:name="5" x:id="7"/>
+    <cadet2D:Entity x:name="6" x:id="27" name="Tree1">
+      <flox:ArrayCollection x:name="children" x:id="28">
+        <cadet2D:Transform2D x:name="0" x:id="29" name="Transform" matrix="1,0,0,1,1320,160"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="30" y="0" x="0" name="Circle" radius="58"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="31" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-58" fillBitmap="tree2_124x124" fillColor="16777215" fillXOffset="-58" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="29"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="32" fixed="1" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="0.8" name="Rigid Body" linearDamping="0.1" angularDamping="0.1"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="7" x:id="33" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="34">
+        <cadet2D:Transform2D x:name="0" x:id="35" name="Transform" matrix="1,0,0,1,470,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="36" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="37" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="35"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="38" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="8" x:id="39" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="40">
+        <cadet2D:Transform2D x:name="0" x:id="41" name="Transform" matrix="1,0,0,1,410,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="42" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="43" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="41"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="44" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="9" x:id="45" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="46">
+        <cadet2D:Transform2D x:name="0" x:id="47" name="Transform" matrix="1,0,0,1,470,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="48" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="49" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="47"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="50" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="10" x:id="51" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="52">
+        <cadet2D:Transform2D x:name="0" x:id="53" name="Transform" matrix="1,0,0,1,710,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="54" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="55" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="53"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="56" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="11" x:id="57" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="58">
+        <cadet2D:Transform2D x:name="0" x:id="59" name="Transform" matrix="1,0,0,1,530,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="60" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="61" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="59"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="62" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="12" x:id="63" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="64">
+        <cadet2D:Transform2D x:name="0" x:id="65" name="Transform" matrix="1,0,0,1,530,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="66" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="67" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="65"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="68" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="13" x:id="69" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="70">
+        <cadet2D:Transform2D x:name="0" x:id="71" name="Transform" matrix="1,0,0,1,590,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="72" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="73" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="71"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="74" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="14" x:id="75" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="76">
+        <cadet2D:Transform2D x:name="0" x:id="77" name="Transform" matrix="1,0,0,1,590,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="78" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="79" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="77"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="80" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="15" x:id="81" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="82">
+        <cadet2D:Transform2D x:name="0" x:id="83" name="Transform" matrix="1,0,0,1,650,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="84" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="85" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="83"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="86" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="16" x:id="87" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="88">
+        <cadet2D:Transform2D x:name="0" x:id="89" name="Transform" matrix="1,0,0,1,650,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="90" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="91" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="89"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="92" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="17" x:id="93" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="94">
+        <cadet2D:Transform2D x:name="0" x:id="95" name="Transform" matrix="1,0,0,1,410,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="96" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="97" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="95"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="98" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="18" x:id="99" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="100">
+        <cadet2D:Transform2D x:name="0" x:id="101" name="Transform" matrix="1,0,0,1,770,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="102" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="103" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="101"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="104" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="19" x:id="105" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="106">
+        <cadet2D:Transform2D x:name="0" x:id="107" name="Transform" matrix="1,0,0,1,770,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="108" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="109" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="107"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="110" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="20" x:id="111" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="112">
+        <cadet2D:Transform2D x:name="0" x:id="113" name="Transform" matrix="1,0,0,1,1190,200"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="114" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="115" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="113"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="116" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="21" x:id="117" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="118">
+        <cadet2D:Transform2D x:name="0" x:id="119" name="Transform" matrix="1,0,0,1,1230,240"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="120" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="121" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="119"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="122" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="22" x:id="123" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="124">
+        <cadet2D:Transform2D x:name="0" x:id="125" name="Transform" matrix="1,0,0,1,1270,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="126" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="127" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="125"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="128" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="23" x:id="129" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="130">
+        <cadet2D:Transform2D x:name="0" x:id="131" name="Transform" matrix="1,0,0,1,1170,320"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="132" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="133" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="131"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="134" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="24" x:id="135" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="136">
+        <cadet2D:Transform2D x:name="0" x:id="137" name="Transform" matrix="1,0,0,1,1210,360"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="138" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="139" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="137"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="140" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="25" x:id="141" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="142">
+        <cadet2D:Transform2D x:name="0" x:id="143" name="Transform" matrix="1,0,0,1,1440,390"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="144" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="145" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="143"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="146" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="26" x:id="147" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="148">
+        <cadet2D:Transform2D x:name="0" x:id="149" name="Transform" matrix="1,0,0,1,1500,390"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="150" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="151" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="149"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="152" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="27" x:id="153" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="154">
+        <cadet2D:Transform2D x:name="0" x:id="155" name="Transform" matrix="1,0,0,1,1320,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="156" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="157" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="155"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="158" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="28" x:id="159" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="160">
+        <cadet2D:Transform2D x:name="0" x:id="161" name="Transform" matrix="1,0,0,1,1380,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="162" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="163" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="161"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="164" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="29" x:id="165" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="166">
+        <cadet2D:Transform2D x:name="0" x:id="167" name="Transform" matrix="1,0,0,1,710,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="168" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="169" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="167"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="170" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="30" x:id="171" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="172">
+        <cadet2D:Transform2D x:name="0" x:id="173" name="Transform" matrix="1,0,0,1,1560,390"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="174" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="175" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="173"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="176" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="31" x:id="177" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="178">
+        <cadet2D:Transform2D x:name="0" x:id="179" name="Transform" matrix="1,0,0,1,1260,390"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="180" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="181" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="179"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="182" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="32" x:id="183" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="184">
+        <cadet2D:Transform2D x:name="0" x:id="185" name="Transform" matrix="1,0,0,1,1320,390"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="186" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="187" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="185"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="188" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="33" x:id="189" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="190">
+        <cadet2D:Transform2D x:name="0" x:id="191" name="Transform" matrix="1,0,0,1,1380,390"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="192" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="193" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="191"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="194" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="34" x:id="195" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="196">
+        <cadet2D:Transform2D x:name="0" x:id="197" name="Transform" matrix="1,0,0,1,1560,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="198" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="199" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="197"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="200" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="35" x:id="201" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="202">
+        <cadet2D:Transform2D x:name="0" x:id="203" name="Transform" matrix="1,0,0,1,1500,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="204" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="205" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="203"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="206" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="36" x:id="207" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="208">
+        <cadet2D:Transform2D x:name="0" x:id="209" name="Transform" matrix="1,0,0,1,1440,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="210" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="211" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="209"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="212" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="37" x:id="213" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="214">
+        <cadet2D:Transform2D x:name="0" x:id="215" name="Transform" matrix="1,0,0,1,1740,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="216" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="217" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="215"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="218" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="38" x:id="219" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="220">
+        <cadet2D:Transform2D x:name="0" x:id="221" name="Transform" matrix="1,0,0,1,1680,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="222" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="223" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="221"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="224" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="39" x:id="225" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="226">
+        <cadet2D:Transform2D x:name="0" x:id="227" name="Transform" matrix="1,0,0,1,1620,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="228" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="229" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="227"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="230" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="40" x:id="231" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="232">
+        <cadet2D:Transform2D x:name="0" x:id="233" name="Transform" matrix="1,0,0,1,1740,390"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="234" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="235" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="233"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="236" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="41" x:id="237" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="238">
+        <cadet2D:Transform2D x:name="0" x:id="239" name="Transform" matrix="1,0,0,1,1680,390"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="240" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="241" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="239"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="242" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="42" x:id="243" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="244">
+        <cadet2D:Transform2D x:name="0" x:id="245" name="Transform" matrix="1,0,0,1,1620,390"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="246" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="247" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="245"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="248" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="43" x:id="249" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="250">
+        <cadet2D:Transform2D x:name="0" x:id="251" name="Transform" matrix="1,0,0,1,950,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="252" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="253" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="251"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="254" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="44" x:id="255" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="256">
+        <cadet2D:Transform2D x:name="0" x:id="257" name="Transform" matrix="1,0,0,1,890,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="258" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="259" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="257"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="260" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="45" x:id="261" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="262">
+        <cadet2D:Transform2D x:name="0" x:id="263" name="Transform" matrix="1,0,0,1,830,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="264" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="265" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="263"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="266" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="46" x:id="267" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="268">
+        <cadet2D:Transform2D x:name="0" x:id="269" name="Transform" matrix="1,0,0,1,950,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="270" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="271" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="269"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="272" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="47" x:id="273" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="274">
+        <cadet2D:Transform2D x:name="0" x:id="275" name="Transform" matrix="1,0,0,1,890,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="276" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="277" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="275"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="278" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="48" x:id="279" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="280">
+        <cadet2D:Transform2D x:name="0" x:id="281" name="Transform" matrix="1,0,0,1,830,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="282" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="283" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="281"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="284" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="49" x:id="285" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="286">
+        <cadet2D:Transform2D x:name="0" x:id="287" name="Transform" matrix="1,0,0,1,1130,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="288" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="289" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="287"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="290" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="50" x:id="291" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="292">
+        <cadet2D:Transform2D x:name="0" x:id="293" name="Transform" matrix="1,0,0,1,1070,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="294" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="295" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="293"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="296" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="51" x:id="297" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="298">
+        <cadet2D:Transform2D x:name="0" x:id="299" name="Transform" matrix="1,0,0,1,1010,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="300" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="301" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="299"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="302" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="52" x:id="303" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="304">
+        <cadet2D:Transform2D x:name="0" x:id="305" name="Transform" matrix="1,0,0,1,1130,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="306" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="307" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="305"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="308" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="53" x:id="309" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="310">
+        <cadet2D:Transform2D x:name="0" x:id="311" name="Transform" matrix="1,0,0,1,1070,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="312" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="313" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="311"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="314" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="54" x:id="315" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="316">
+        <cadet2D:Transform2D x:name="0" x:id="317" name="Transform" matrix="1,0,0,1,1010,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="318" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="319" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="317"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="320" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="55" x:id="321" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="322">
+        <cadet2D:Transform2D x:name="0" x:id="323" name="Transform" matrix="1,0,0,1,1860,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="324" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="325" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="323"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="326" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="56" x:id="327" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="328">
+        <cadet2D:Transform2D x:name="0" x:id="329" name="Transform" matrix="1,0,0,1,1800,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="330" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="331" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="329"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="332" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="57" x:id="333" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="334">
+        <cadet2D:Transform2D x:name="0" x:id="335" name="Transform" matrix="1,0,0,1,1920,390"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="336" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="337" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="335"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="338" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="58" x:id="339" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="340">
+        <cadet2D:Transform2D x:name="0" x:id="341" name="Transform" matrix="1,0,0,1,1860,390"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="342" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="343" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="341"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="344" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="59" x:id="345" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="346">
+        <cadet2D:Transform2D x:name="0" x:id="347" name="Transform" matrix="1,0,0,1,1800,390"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="348" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="349" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="347"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="350" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="60" x:id="351" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="352">
+        <cadet2D:Transform2D x:name="0" x:id="353" name="Transform" matrix="1,0,0,1,910,580"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="354" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="355" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="353"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="356" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="61" x:id="357" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="358">
+        <cadet2D:Transform2D x:name="0" x:id="359" name="Transform" matrix="1,0,0,1,850,580"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="360" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="361" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="359"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="362" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="62" x:id="363" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="364">
+        <cadet2D:Transform2D x:name="0" x:id="365" name="Transform" matrix="1,0,0,1,790,580"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="366" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="367" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="365"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="368" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="63" x:id="369" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="370">
+        <cadet2D:Transform2D x:name="0" x:id="371" name="Transform" matrix="1,0,0,1,730,580"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="372" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="373" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="371"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="374" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="64" x:id="375" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="376">
+        <cadet2D:Transform2D x:name="0" x:id="377" name="Transform" matrix="1,0,0,1,1970,240"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="378" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="379" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="377"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="380" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="65" x:id="381" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="382">
+        <cadet2D:Transform2D x:name="0" x:id="383" name="Transform" matrix="1,0,0,1,2010,200"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="384" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="385" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="383"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="386" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="66" x:id="387" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="388">
+        <cadet2D:Transform2D x:name="0" x:id="389" name="Transform" matrix="1,0,0,1,2070,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="390" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="391" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="389"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="392" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="67" x:id="393" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="394">
+        <cadet2D:Transform2D x:name="0" x:id="395" name="Transform" matrix="1,0,0,1,1980,380"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="396" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="397" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="395"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="398" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="68" x:id="399" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="400">
+        <cadet2D:Transform2D x:name="0" x:id="401" name="Transform" matrix="1,0,0,1,2020,340"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="402" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="403" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="401"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="404" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="69" x:id="405" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="406">
+        <cadet2D:Transform2D x:name="0" x:id="407" name="Transform" matrix="1,0,0,1,2060,300"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="408" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="409" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="407"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="410" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="70" x:id="411" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="412">
+        <cadet2D:Transform2D x:name="0" x:id="413" name="Transform" matrix="1,0,0,1,2080,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="414" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="415" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="413"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="416" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="71" x:id="417" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="418">
+        <cadet2D:Transform2D x:name="0" x:id="419" name="Transform" matrix="1,0,0,1,2110,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="420" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="421" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="419"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="422" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="72" x:id="423" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="424">
+        <cadet2D:Transform2D x:name="0" x:id="425" name="Transform" matrix="1,0,0,1,2130,170"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="426" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="427" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="425"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="428" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="73" x:id="429" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="430">
+        <cadet2D:Transform2D x:name="0" x:id="431" name="Transform" matrix="1,0,0,1,2190,200"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="432" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="433" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="431"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="434" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="74" x:id="435" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="436">
+        <cadet2D:Transform2D x:name="0" x:id="437" name="Transform" matrix="1,0,0,1,2220,230"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="438" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="439" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="437"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="440" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="75" x:id="441" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="442">
+        <cadet2D:Transform2D x:name="0" x:id="443" name="Transform" matrix="1,0,0,1,2240,260"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="444" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="445" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="443"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="446" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="76" x:id="447" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="448">
+        <cadet2D:Transform2D x:name="0" x:id="449" name="Transform" matrix="1,0,0,1,2140,290"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="450" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="451" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="449"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="452" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="77" x:id="453" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="454">
+        <cadet2D:Transform2D x:name="0" x:id="455" name="Transform" matrix="1,0,0,1,2150,320"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="456" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="457" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="455"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="458" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="78" x:id="459" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="460">
+        <cadet2D:Transform2D x:name="0" x:id="461" name="Transform" matrix="1,0,0,1,2150,350"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="462" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="463" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="461"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="464" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="79" x:id="465" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="466">
+        <cadet2D:Transform2D x:name="0" x:id="467" name="Transform" matrix="1,0,0,1,2130,370"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="468" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="469" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="467"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="470" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="80" x:id="471" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="472">
+        <cadet2D:Transform2D x:name="0" x:id="473" name="Transform" matrix="1,0,0,1,2090,410"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="474" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="475" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="473"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="476" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="81" x:id="477" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="478">
+        <cadet2D:Transform2D x:name="0" x:id="479" name="Transform" matrix="1,0,0,1,2050,450"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="480" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="481" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="479"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="482" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="82" x:id="483" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="484">
+        <cadet2D:Transform2D x:name="0" x:id="485" name="Transform" matrix="1,0,0,1,2260,300"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="486" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="487" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="485"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="488" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="83" x:id="489" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="490">
+        <cadet2D:Transform2D x:name="0" x:id="491" name="Transform" matrix="1,0,0,1,2260,340"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="492" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="493" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="491"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="494" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="84" x:id="495" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="496">
+        <cadet2D:Transform2D x:name="0" x:id="497" name="Transform" matrix="1,0,0,1,2250,380"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="498" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="499" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="497"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="500" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="85" x:id="501" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="502">
+        <cadet2D:Transform2D x:name="0" x:id="503" name="Transform" matrix="1,0,0,1,2230,410"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="504" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="505" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="503"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="506" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="86" x:id="507" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="508">
+        <cadet2D:Transform2D x:name="0" x:id="509" name="Transform" matrix="1,0,0,1,2190,450"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="510" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="511" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="509"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="512" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="87" x:id="513" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="514">
+        <cadet2D:Transform2D x:name="0" x:id="515" name="Transform" matrix="1,0,0,1,2150,490"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="516" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="517" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="515"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="518" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="88" x:id="519" name="Cone">
+      <flox:ArrayCollection x:name="children" x:id="520">
+        <cadet2D:Transform2D x:name="0" x:id="521" name="Transform" matrix="1,0,0,1,1920,280"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="522" y="0" x="0" name="Circle" radius="8"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="523" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-8" fillBitmap="traffic_cone" fillColor="16777215" fillXOffset="-8" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="521"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="524" fixed="0" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="10" name="RigidBodyBehaviour" linearDamping="3" angularDamping="3"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="89" x:id="525" name="Tree1">
+      <flox:ArrayCollection x:name="children" x:id="526">
+        <cadet2D:Transform2D x:name="0" x:id="527" name="Transform" matrix="0.7071075439453125,0.7071075439453125,-0.7071075439453125,0.7071075439453125,640,70"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="528" y="0" x="0" name="Circle" radius="58"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="529" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-58" fillBitmap="tree1_116x116" fillColor="16777215" fillXOffset="-58" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="527"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="530" fixed="1" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="0.8" name="Rigid Body" linearDamping="0.1" angularDamping="0.1"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="90" x:id="531" name="Tree1">
+      <flox:ArrayCollection x:name="children" x:id="532">
+        <cadet2D:Transform2D x:name="0" x:id="533" name="Transform" matrix="1,0,0,1,1090,410"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="534" y="0" x="0" name="Circle" radius="65"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="535" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-65" fillBitmap="tree3_130x130" fillColor="16777215" fillXOffset="-65" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="533"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="536" fixed="1" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="0.8" name="Rigid Body" linearDamping="0.1" angularDamping="0.1"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="91" x:id="537" name="Tree1">
+      <flox:ArrayCollection x:name="children" x:id="538">
+        <cadet2D:Transform2D x:name="0" x:id="539" name="Transform" matrix="0,1,-1,0,790,70"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="540" y="0" x="0" name="Circle" radius="58"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="541" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-58" fillBitmap="tree1_116x116" fillColor="16777215" fillXOffset="-58" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="539"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="542" fixed="1" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="0.8" name="Rigid Body" linearDamping="0.1" angularDamping="0.1"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="92" x:id="543" name="Tree1">
+      <flox:ArrayCollection x:name="children" x:id="544">
+        <cadet2D:Transform2D x:name="0" x:id="545" name="Transform" matrix="0,1,-1,0,1190,80"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="546" y="0" x="0" name="Circle" radius="58"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="547" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-58" fillBitmap="tree2_124x124" fillColor="16777215" fillXOffset="-58" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="545"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="548" fixed="1" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="0.8" name="Rigid Body" linearDamping="0.1" angularDamping="0.1"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="93" x:id="549" name="Tree1">
+      <flox:ArrayCollection x:name="children" x:id="550">
+        <cadet2D:Transform2D x:name="0" x:id="551" name="Transform" matrix="0,-1,1,0,490,380"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="552" y="0" x="0" name="Circle" radius="58"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="553" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-58" fillBitmap="tree1_116x116" fillColor="16777215" fillXOffset="-58" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="551"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="554" fixed="1" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="0.8" name="Rigid Body" linearDamping="0.1" angularDamping="0.1"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="94" x:id="555" name="Tree1">
+      <flox:ArrayCollection x:name="children" x:id="556">
+        <cadet2D:Transform2D x:name="0" x:id="557" name="Transform" matrix="-0.642791748046875,0.7660369873046875,-0.7660369873046875,-0.642791748046875,640,380"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="558" y="0" x="0" name="Circle" radius="58"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="559" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-58" fillBitmap="tree1_116x116" fillColor="16777215" fillXOffset="-58" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="557"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="560" fixed="1" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="0.8" name="Rigid Body" linearDamping="0.1" angularDamping="0.1"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="95" x:id="561" name="Tree1">
+      <flox:ArrayCollection x:name="children" x:id="562">
+        <cadet2D:Transform2D x:name="0" x:id="563" name="Transform" matrix="1,0,0,1,800,380"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="564" y="0" x="0" name="Circle" radius="58"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="565" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-58" fillBitmap="tree1_116x116" fillColor="16777215" fillXOffset="-58" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="563"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="566" fixed="1" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="0.8" name="Rigid Body" linearDamping="0.1" angularDamping="0.1"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="96" x:id="567" name="Tree1">
+      <flox:ArrayCollection x:name="children" x:id="568">
+        <cadet2D:Transform2D x:name="0" x:id="569" name="Transform" matrix="1,0,0,1,490,70"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="570" y="0" x="0" name="Circle" radius="58"/>
+        <cadet2DFlash:GeometrySkin x:name="2" x:id="571" mouseChildren="1" layerIndex="0" containerID="worldContainer" lineThickness="0" name="GeometrySkin" lineColor="16777215" lineAlpha="0.7" drawVertices="0" fillYOffset="-58" fillBitmap="tree1_116x116" fillColor="16777215" fillXOffset="-58" fillAlpha="0.04" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="569"/>
+        </cadet2DFlash:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="572" fixed="1" maskBits="4294967295" categoryBits="1" restitution="0.5" density="1" friction="0.8" name="Rigid Body" linearDamping="0.1" angularDamping="0.1"/>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+  </flox:ArrayCollection>
+</cadet:CadetScene>

@@ -1,0 +1,21 @@
+/* hide from ie on mac \*/
+html {
+	height: 100%;
+	overflow: hidden;
+	}
+
+#flashcontent {
+	height: 100%;
+	}
+/* end hide */
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #222222;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 75%;
+	line-height: 1.7em;
+	color: #fff;
+	}

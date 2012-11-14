@@ -1,0 +1,36 @@
+<cadet:CadetScene x:id="0" timeScale="1" framerate="30" name="Component" xmlns:cadet="www.unwrong.com/cadet/1.0.0" xmlns:x="org.bonesframework.core.serialization.Serializer" xmlns:bones="www.bonesframwork.org/bones/1.0.0" xmlns:cadetAway3D4="www.unwrong.com/cadetAway3D4/1.0.0" xmlns:ns0="cadetAway3D4.components.cameras" xmlns:ns1="cadetAway3D4.components.lights" xmlns:ns2="cadetAway3D4.components.geom" xmlns:ns3="cadetAway3D4.components.materials" xmlns:ns4="cadetAway3D4.components.textures">
+  <bones:DependencyManager x:name="dependencyManager" x:id="1">
+    <bones:ArrayCollection x:name="dependencyNodes" x:id="2"/>
+  </bones:DependencyManager>
+  <Object x:name="userData" x:id="3"/>
+  <bones:ArrayCollection x:name="children" x:id="4">
+    <cadetAway3D4:RendererAway3D x:name="0" x:id="5" name="Away3D 4 Renderer">
+      <ns0:CameraComponent x:name="cameraComponent" x:id="6" transform="0.8305948376655579,-1.862644971595273e-8,0.5568771958351135,0,-0.16810490190982819,0.9533488750457764,0.2507322430610657,0,-0.5308982729911804,-0.3018707036972046,0.7918466329574585,0,222.1861572265625,256.0602722167969,-353.57647705078125,1" name="Camera">
+        <bones:ArrayCollection x:name="children" x:id="7">
+          <ns1:DirectionalLightComponent x:name="0" x:id="8" transform="-0.35684552788734436,-0.6646782159805298,0.6564024686813354,0,-0.1733388602733612,0.7375739812850952,0.6526394486427307,0,-0.917940616607666,0.11911141872406006,-0.3784145712852478,0,165.65977478027344,0,0,1" specular="0.35" ambient="0" ambientColor="16777215" diffuse="0.25" name="BackLight" color="982729">
+            <bones:ArrayCollection x:name="children" x:id="9"/>
+          </ns1:DirectionalLightComponent>
+          <ns1:DirectionalLightComponent x:name="1" x:id="10" transform="0.5446938872337341,0.8380504846572876,-0.03130395710468292,0,-0.2446473240852356,0.19449150562286377,0.9499056935310364,0,0.8021572828292847,-0.5097494125366211,0.3109651505947113,0,-229.73817443847656,0,0,1" specular="1" ambient="0.1" ambientColor="16777215" diffuse="1" name="MainLight" color="16696962">
+            <bones:ArrayCollection x:name="children" x:id="11"/>
+          </ns1:DirectionalLightComponent>
+        </bones:ArrayCollection>
+      </ns0:CameraComponent>
+    </cadetAway3D4:RendererAway3D>
+    <x:Ref x:name="1" x:id="6"/>
+    <cadetAway3D4:MeshComponent x:name="2" x:id="12" transform="1.9469707012176514,0,0,0,0,1.9469707012176514,0,0,0,0,1.9469707012176514,0,0.0010000000474974513,0.0010000000474974513,0.0010000000474974513,1" name="Contraption">
+      <ns2:GeometryComponent x:name="geometryComponent" x:id="13" name="Contraptio_geom" geometry="Contraption.Contraptio_geom"/>
+      <ns3:TextureMaterialComponent x:name="materialComponent" x:id="14" specularStrength="2.41" envMapAlpha="0.23" name="ContraptionMaterial" gloss="100" depthCompareMode="less" alphaThreshold="0.5">
+        <ns4:BitmapCubeTextureComponent x:name="environmentTexture" x:id="15" name="EnvMap" positiveZ="EnvMapPosZ" negativeY="EnvMapNegY" negativeZ="EnvMapNegZ" positiveY="EnvMapPosY" negativeX="EnvMapNegX" positiveX="EnvMapPosX"/>
+        <ns4:BitmapTextureComponent x:name="diffuseTexture" x:id="16" bitmapData="ContraptionDiffuse" name="ContraptionDiffuse"/>
+        <ns4:BitmapTextureComponent x:name="normalTexture" x:id="17" bitmapData="ContraptionNormal" name="ContraptionNormal"/>
+      </ns3:TextureMaterialComponent>
+      <bones:ArrayCollection x:name="children" x:id="18">
+        <x:Ref x:name="0" x:id="13"/>
+        <x:Ref x:name="1" x:id="16"/>
+        <x:Ref x:name="2" x:id="14"/>
+        <x:Ref x:name="3" x:id="17"/>
+        <x:Ref x:name="4" x:id="15"/>
+      </bones:ArrayCollection>
+    </cadetAway3D4:MeshComponent>
+  </bones:ArrayCollection>
+</cadet:CadetScene>

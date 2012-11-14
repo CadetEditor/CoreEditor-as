@@ -1,0 +1,20 @@
+<xml>
+	<applicationID><![CDATA[FloxEditor]]></applicationID>
+	
+	<fileSystemProvider environment="air"		    type="local" 		    id="flox.local" 		    	label="Flox"     folderName="Flox" />
+	<fileSystemProvider environment="browser" 	type="sharedObject" id="flox.sharedObject" 	  label="Flox" />
+	<fileSystemProvider environment="browser" 	type="url" 			    id="flox.url" 			      label="Flox_URL" baseURL="files" visible="false" />
+	
+	<extension url="extensions/DefaultExtension.swf" />
+	<extension url="extensions/HelloWorldExtension.swf" />
+	
+	<!--  File templates  -->
+<!--
+	<template>
+		<label><![CDATA[String List]]></label>
+		<description><![CDATA[Creates a blank String list file.]]></description>
+		<url><![CDATA[extensions/fileTemplates/stringList.strlist]]></url>
+		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
+	</template>
+	-->
+</xml>

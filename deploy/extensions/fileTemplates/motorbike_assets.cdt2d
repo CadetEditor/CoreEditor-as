@@ -1,0 +1,416 @@
+<cadet:CadetScene x:id="0" framerate="60" name="Component" timeScale="1" xmlns:cadet="www.unwrong.com/cadet/1.0.0" xmlns:x="org.bonesframework.core.serialization.Serializer" xmlns:bones="www.bonesframwork.org/bones/1.0.0" xmlns:ns0="org.bonesframework.managers" xmlns:cadet2D="www.unwrong.com/cadet2D/1.0.0" xmlns:cadet2DBox2D="www.unwrong.com/cadet2DBox2D/1.0.0">
+  <Object x:name="userData" x:id="1" snapEnabled="0" panX="249.00571428571425" showGrid="1" zoom="0.5" panY="-483.25714285714287" gridSize="20"/>
+  <bones:DependencyManager x:name="dependencyManager" x:id="2">
+    <bones:ArrayCollection x:name="dependencyNodes" x:id="3">
+      <ns0:DependencyNode x:name="0" x:id="4">
+        <Array x:name="dependencies" x:id="5"/>
+        <Array x:name="dependants" x:id="6">
+          <ns0:DependencyNode x:name="0" x:id="7">
+            <Array x:name="dependencies" x:id="8">
+              <ns0:DependencyNode x:name="0" x:id="9">
+                <Array x:name="dependencies" x:id="10"/>
+                <Array x:name="dependants" x:id="11">
+                  <x:Ref x:name="0" x:id="7">
+                    <Array x:name="dependants" x:id="38"/>
+                    <cadet2D:Entity x:name="object" x:id="39" name="PrismaticFront">
+                      <bones:ArrayCollection x:name="children" x:id="40">
+                        <cadet2D:Connection x:name="0" x:id="41" name="Connection">
+                          <x:Ref x:name="transformA" x:id="22"/>
+                          <cadet2D:Vertex x:name="localPosA" x:id="42" x="10" y="10"/>
+                          <x:Ref x:name="transformB" x:id="34"/>
+                          <cadet2D:Vertex x:name="localPosB" x:id="43" x="37.947713801659646" y="-9.951876568806696"/>
+                        </cadet2D:Connection>
+                        <cadet2D:Transform2D x:name="1" x:id="44" name="Transform" matrix="1,0,0,1,0,0"/>
+                        <cadet2DBox2D:PrismaticJointBehaviour x:name="2" x:id="45" name="PrismaticJointBehaviour" lowerLimit="0" upperLimit="10" maxMotorForce="1" collideConnected="1" enableMotor="0" motorSpeed="1" enableLimit="1" autoCalculateLimits="1"/>
+                      </bones:ArrayCollection>
+                    </cadet2D:Entity>
+                  </x:Ref>
+                  <ns0:DependencyNode x:name="1" x:id="12">
+                    <Array x:name="dependencies" x:id="13">
+                      <x:Ref x:name="0" x:id="9"/>
+                      <ns0:DependencyNode x:name="1" x:id="14">
+                        <Array x:name="dependencies" x:id="15"/>
+                        <Array x:name="dependants" x:id="16">
+                          <x:Ref x:name="0" x:id="12">
+                            <Array x:name="dependants" x:id="18"/>
+                            <cadet2D:Entity x:name="object" x:id="19" name="PinFrontWheel">
+                              <bones:ArrayCollection x:name="children" x:id="20">
+                                <cadet2D:Pin x:name="0" x:id="21" name="Pin">
+                                  <cadet2D:Transform2D x:name="transformA" x:id="22" name="Transform" matrix="1,0,0,1,227,-529.3"/>
+                                  <x:Ref x:name="transformB" x:id="17"/>
+                                  <cadet2D:Vertex x:name="localPos" x:id="23" x="10" y="10"/>
+                                </cadet2D:Pin>
+                                <cadet2D:Transform2D x:name="1" x:id="24" name="Transform" matrix="1,0,0,1,0,0"/>
+                                <cadet2D:PinSkin x:name="2" x:id="25" containerID="worldContainer" layerIndex="0" mouseChildren="1" radius="5" fillAlpha="0.5" fillColor="16777215" name="PinSkin" mouseEnabled="1">
+                                  <x:Ref x:name="transform2D" x:id="24"/>
+                                </cadet2D:PinSkin>
+                                <cadet2DBox2D:RevoluteJointBehaviour x:name="3" x:id="26" collideConnected="0" motorSpeed="1" name="Revolute Joint" enableMotor="0" lowerAngle="0" upperAngle="0" enableLimit="0" maxMotorTorque="1"/>
+                              </bones:ArrayCollection>
+                            </cadet2D:Entity>
+                          </x:Ref>
+                        </Array>
+                        <cadet2D:Transform2D x:name="object" x:id="17" name="Transform" matrix="1,0,0,1,237,-519.3"/>
+                      </ns0:DependencyNode>
+                    </Array>
+                  </ns0:DependencyNode>
+                  <ns0:DependencyNode x:name="2" x:id="27">
+                    <Array x:name="dependencies" x:id="28">
+                      <x:Ref x:name="0" x:id="9">
+                        <x:Ref x:name="object" x:id="22"/>
+                      </x:Ref>
+                      <x:Ref x:name="1" x:id="4"/>
+                    </Array>
+                    <Array x:name="dependants" x:id="29"/>
+                    <cadet2D:Entity x:name="object" x:id="30" name="SuspensionFront">
+                      <bones:ArrayCollection x:name="children" x:id="31">
+                        <cadet2D:Connection x:name="0" x:id="32" name="Connection">
+                          <x:Ref x:name="transformA" x:id="22"/>
+                          <cadet2D:Vertex x:name="localPosA" x:id="33" x="10" y="10"/>
+                          <cadet2D:Transform2D x:name="transformB" x:id="34" name="Transform" matrix="1,0,0,1,167.55,-560.65"/>
+                          <cadet2D:Vertex x:name="localPosB" x:id="35" x="37.947713801659646" y="-9.401876568806694"/>
+                        </cadet2D:Connection>
+                        <cadet2D:Transform2D x:name="1" x:id="36" name="Transform" matrix="1,0,0,1,0,0"/>
+                        <cadet2DBox2D:DistanceJointBehaviour x:name="2" x:id="37" length="-1" damping="0.5" collideConnected="1" name="Distance Joint"/>
+                      </bones:ArrayCollection>
+                    </cadet2D:Entity>
+                  </ns0:DependencyNode>
+                </Array>
+              </ns0:DependencyNode>
+              <x:Ref x:name="1" x:id="4"/>
+            </Array>
+          </ns0:DependencyNode>
+          <x:Ref x:name="1" x:id="27"/>
+          <ns0:DependencyNode x:name="2" x:id="46">
+            <Array x:name="dependencies" x:id="47">
+              <x:Ref x:name="0" x:id="4"/>
+            </Array>
+            <Array x:name="dependants" x:id="48"/>
+            <cadet2D:Entity x:name="object" x:id="49" name="PinRearChassis">
+              <bones:ArrayCollection x:name="children" x:id="50">
+                <cadet2D:Pin x:name="0" x:id="51" name="Pin">
+                  <x:Ref x:name="transformA" x:id="34"/>
+                  <cadet2D:Transform2D x:name="transformB" x:id="52" name="Transform" matrix="0.6476248502731323,-0.34983208775520325,0.47526952624320984,0.8798402547836304,98,-520.6"/>
+                  <cadet2D:Vertex x:name="localPos" x:id="53" x="50.2" y="37.25"/>
+                </cadet2D:Pin>
+                <cadet2D:Transform2D x:name="1" x:id="54" name="Transform" matrix="1,0,0,1,0,0"/>
+                <cadet2D:PinSkin x:name="2" x:id="55" containerID="worldContainer" layerIndex="0" mouseChildren="1" radius="5" fillAlpha="0.5" fillColor="16777215" name="PinSkin" mouseEnabled="1">
+                  <x:Ref x:name="transform2D" x:id="54"/>
+                </cadet2D:PinSkin>
+                <cadet2DBox2D:RevoluteJointBehaviour x:name="3" x:id="56" collideConnected="0" motorSpeed="1" name="Revolute Joint" enableMotor="0" lowerAngle="0" upperAngle="0" enableLimit="0" maxMotorTorque="1"/>
+              </bones:ArrayCollection>
+            </cadet2D:Entity>
+          </ns0:DependencyNode>
+          <ns0:DependencyNode x:name="3" x:id="57">
+            <Array x:name="dependencies" x:id="58">
+              <x:Ref x:name="0" x:id="4">
+                <x:Ref x:name="object" x:id="34"/>
+              </x:Ref>
+            </Array>
+            <Array x:name="dependants" x:id="59"/>
+            <cadet2D:Entity x:name="object" x:id="60" name="SuspensionRear">
+              <bones:ArrayCollection x:name="children" x:id="61">
+                <cadet2D:Connection x:name="0" x:id="62" name="Connection">
+                  <x:Ref x:name="transformA" x:id="52"/>
+                  <cadet2D:Vertex x:name="localPosA" x:id="63" x="7.9" y="4.6"/>
+                  <x:Ref x:name="transformB" x:id="34"/>
+                  <cadet2D:Vertex x:name="localPosB" x:id="64" x="21.7" y="5.25"/>
+                </cadet2D:Connection>
+                <cadet2D:Transform2D x:name="1" x:id="65" name="Transform" matrix="1,0,0,1,0,0"/>
+                <cadet2DBox2D:DistanceJointBehaviour x:name="2" x:id="66" length="-1" damping="0.5" collideConnected="1" name="DistanceJointBehaviour"/>
+                <cadet2D:SpringSkin x:name="3" x:id="67" numZigZags="20" containerID="worldContainer" layerIndex="0" mouseChildren="1" width="10" lineAlpha="0.5" lineColor="16777215" lineThickness="1" name="SpringSkin" mouseEnabled="1">
+                  <x:Ref x:name="transform2D" x:id="65"/>
+                </cadet2D:SpringSkin>
+              </bones:ArrayCollection>
+            </cadet2D:Entity>
+          </ns0:DependencyNode>
+        </Array>
+      </ns0:DependencyNode>
+      <x:Ref x:name="1" x:id="7"/>
+      <x:Ref x:name="2" x:id="9"/>
+      <x:Ref x:name="3" x:id="12"/>
+      <x:Ref x:name="4" x:id="14"/>
+      <x:Ref x:name="5" x:id="27"/>
+      <x:Ref x:name="6" x:id="46"/>
+      <x:Ref x:name="7" x:id="57"/>
+      <ns0:DependencyNode x:name="8" x:id="68">
+        <Array x:name="dependencies" x:id="69">
+          <ns0:DependencyNode x:name="0" x:id="70">
+            <Array x:name="dependencies" x:id="71"/>
+            <Array x:name="dependants" x:id="72">
+              <x:Ref x:name="0" x:id="68"/>
+            </Array>
+            <cadet2D:Transform2D x:name="object" x:id="73" name="Transform" matrix="1,0,0,1,95.3,-529.3"/>
+          </ns0:DependencyNode>
+          <ns0:DependencyNode x:name="1" x:id="74">
+            <Array x:name="dependencies" x:id="75"/>
+            <Array x:name="dependants" x:id="76">
+              <x:Ref x:name="0" x:id="68">
+                <Array x:name="dependants" x:id="115"/>
+                <cadet2D:Entity x:name="object" x:id="116" name="PinRearWheel">
+                  <bones:ArrayCollection x:name="children" x:id="117">
+                    <cadet2D:Pin x:name="0" x:id="118" name="Pin">
+                      <x:Ref x:name="transformA" x:id="73"/>
+                      <x:Ref x:name="transformB" x:id="110"/>
+                      <cadet2D:Vertex x:name="localPos" x:id="119" x="10" y="10"/>
+                    </cadet2D:Pin>
+                    <cadet2D:Transform2D x:name="1" x:id="120" name="Transform" matrix="1,0,0,1,0,0"/>
+                    <cadet2DBox2D:RevoluteJointBehaviour x:name="2" x:id="121" collideConnected="0" motorSpeed="1" name="RevoluteJointBehaviour" enableMotor="0" lowerAngle="0" upperAngle="0" enableLimit="0" maxMotorTorque="1"/>
+                    <cadet2D:PinSkin x:name="3" x:id="122" containerID="worldContainer" layerIndex="0" mouseChildren="1" radius="5" fillAlpha="0.5" fillColor="16777215" name="PinSkin" mouseEnabled="1">
+                      <x:Ref x:name="transform2D" x:id="120"/>
+                    </cadet2D:PinSkin>
+                  </bones:ArrayCollection>
+                </cadet2D:Entity>
+              </x:Ref>
+              <ns0:DependencyNode x:name="1" x:id="77">
+                <Array x:name="dependencies" x:id="78">
+                  <x:Ref x:name="0" x:id="74">
+                    <x:Ref x:name="object" x:id="110"/>
+                  </x:Ref>
+                  <ns0:DependencyNode x:name="1" x:id="79">
+                    <Array x:name="dependencies" x:id="80"/>
+                    <Array x:name="dependants" x:id="81">
+                      <x:Ref x:name="0" x:id="77">
+                        <Array x:name="dependants" x:id="106"/>
+                        <cadet2D:Entity x:name="object" x:id="107" name="PinRear">
+                          <bones:ArrayCollection x:name="children" x:id="108">
+                            <cadet2D:Pin x:name="0" x:id="109" name="Pin">
+                              <cadet2D:Transform2D x:name="transformA" x:id="110" name="Transform" matrix="1,0,0,1,105.3,-519.3"/>
+                              <x:Ref x:name="transformB" x:id="93"/>
+                              <cadet2D:Vertex x:name="localPos" x:id="111" x="0" y="0"/>
+                            </cadet2D:Pin>
+                            <cadet2D:Transform2D x:name="1" x:id="112" name="Transform" matrix="1,0,0,1,0,0"/>
+                            <cadet2DBox2D:RevoluteJointBehaviour x:name="2" x:id="113" collideConnected="0" motorSpeed="1" name="RevoluteJointBehaviour" enableMotor="0" lowerAngle="0" upperAngle="0" enableLimit="0" maxMotorTorque="1"/>
+                            <cadet2D:PinSkin x:name="3" x:id="114" containerID="worldContainer" layerIndex="0" mouseChildren="1" radius="5" fillAlpha="0.5" fillColor="16777215" name="PinSkin" mouseEnabled="1">
+                              <x:Ref x:name="transform2D" x:id="112"/>
+                            </cadet2D:PinSkin>
+                          </bones:ArrayCollection>
+                        </cadet2D:Entity>
+                      </x:Ref>
+                      <ns0:DependencyNode x:name="1" x:id="82">
+                        <Array x:name="dependencies" x:id="83">
+                          <x:Ref x:name="0" x:id="79"/>
+                          <ns0:DependencyNode x:name="1" x:id="84">
+                            <Array x:name="dependencies" x:id="85"/>
+                            <Array x:name="dependants" x:id="86">
+                              <x:Ref x:name="0" x:id="82">
+                                <Array x:name="dependants" x:id="98"/>
+                                <cadet2D:Entity x:name="object" x:id="99" name="ShaftRear">
+                                  <bones:ArrayCollection x:name="children" x:id="100">
+                                    <cadet2D:Connection x:name="0" x:id="101" name="Connection">
+                                      <x:Ref x:name="transformA" x:id="93"/>
+                                      <cadet2D:Vertex x:name="localPosA" x:id="102" x="10" y="10"/>
+                                      <x:Ref x:name="transformB" x:id="34"/>
+                                      <cadet2D:Vertex x:name="localPosB" x:id="103" x="-49.802286198340354" y="-17.451876568806693"/>
+                                    </cadet2D:Connection>
+                                    <cadet2D:Transform2D x:name="1" x:id="104" name="Transform" matrix="1,0,0,1,0,0"/>
+                                    <cadet2DBox2D:PrismaticJointBehaviour x:name="2" x:id="105" name="PrismaticJointBehaviour" lowerLimit="0" upperLimit="10" maxMotorForce="1" collideConnected="1" enableMotor="0" motorSpeed="1" enableLimit="1" autoCalculateLimits="1"/>
+                                  </bones:ArrayCollection>
+                                </cadet2D:Entity>
+                              </x:Ref>
+                              <ns0:DependencyNode x:name="1" x:id="87">
+                                <Array x:name="dependencies" x:id="88">
+                                  <x:Ref x:name="0" x:id="79">
+                                    <x:Ref x:name="object" x:id="93"/>
+                                  </x:Ref>
+                                  <x:Ref x:name="1" x:id="84">
+                                    <x:Ref x:name="object" x:id="34"/>
+                                  </x:Ref>
+                                </Array>
+                                <Array x:name="dependants" x:id="89"/>
+                                <cadet2D:Entity x:name="object" x:id="90" name="SuspensionRear">
+                                  <bones:ArrayCollection x:name="children" x:id="91">
+                                    <cadet2D:Connection x:name="0" x:id="92" name="Connection">
+                                      <cadet2D:Transform2D x:name="transformA" x:id="93" name="Transform" matrix="1,0,0,1,95.3,-529.3"/>
+                                      <cadet2D:Vertex x:name="localPosA" x:id="94" x="10" y="10"/>
+                                      <x:Ref x:name="transformB" x:id="34"/>
+                                      <cadet2D:Vertex x:name="localPosB" x:id="95" x="-50.20228619834035" y="-18.251876568806697"/>
+                                    </cadet2D:Connection>
+                                    <cadet2D:Transform2D x:name="1" x:id="96" name="Transform" matrix="1,0,0,1,0,0"/>
+                                    <cadet2DBox2D:DistanceJointBehaviour x:name="2" x:id="97" length="-1" damping="0.5" collideConnected="1" name="Distance Joint"/>
+                                  </bones:ArrayCollection>
+                                </cadet2D:Entity>
+                              </ns0:DependencyNode>
+                            </Array>
+                          </ns0:DependencyNode>
+                        </Array>
+                      </ns0:DependencyNode>
+                      <x:Ref x:name="2" x:id="87"/>
+                    </Array>
+                  </ns0:DependencyNode>
+                </Array>
+              </ns0:DependencyNode>
+            </Array>
+          </ns0:DependencyNode>
+        </Array>
+      </ns0:DependencyNode>
+      <x:Ref x:name="9" x:id="70"/>
+      <x:Ref x:name="10" x:id="74"/>
+      <x:Ref x:name="11" x:id="77"/>
+      <x:Ref x:name="12" x:id="79"/>
+      <x:Ref x:name="13" x:id="82"/>
+      <x:Ref x:name="14" x:id="84"/>
+      <x:Ref x:name="15" x:id="87"/>
+      <ns0:DependencyNode x:name="16" x:id="123">
+        <Array x:name="dependencies" x:id="124">
+          <ns0:DependencyNode x:name="0" x:id="125">
+            <Array x:name="dependencies" x:id="126"/>
+            <Array x:name="dependants" x:id="127">
+              <x:Ref x:name="0" x:id="123"/>
+            </Array>
+            <cadet2D:Transform2D x:name="object" x:id="128" name="Transform" matrix="1,0,0,1,2260,-552"/>
+          </ns0:DependencyNode>
+          <ns0:DependencyNode x:name="1" x:id="129">
+            <Array x:name="dependencies" x:id="130"/>
+            <Array x:name="dependants" x:id="131">
+              <x:Ref x:name="0" x:id="123">
+                <Array x:name="dependants" x:id="133"/>
+                <cadet2D:Entity x:name="object" x:id="134" name="Connection_0">
+                  <bones:ArrayCollection x:name="children" x:id="135">
+                    <cadet2D:Connection x:name="0" x:id="136" name="Connection">
+                      <x:Ref x:name="transformA" x:id="128"/>
+                      <cadet2D:Vertex x:name="localPosA" x:id="137" x="0" y="0"/>
+                      <x:Ref x:name="transformB" x:id="132"/>
+                      <cadet2D:Vertex x:name="localPosB" x:id="138" x="7.105427357601002e-15" y="7.105427357601002e-15"/>
+                    </cadet2D:Connection>
+                    <cadet2D:Transform2D x:name="1" x:id="139" name="Transform" matrix="1,0,0,1,0,4"/>
+                    <cadet2DBox2D:DistanceJointBehaviour x:name="2" x:id="140" length="-1" damping="0.5" collideConnected="1" name="DistanceJointBehaviour"/>
+                    <cadet2D:ConnectionSkin x:name="3" x:id="141" containerID="worldContainer" layerIndex="0" mouseChildren="1" width="10" radius="10" lineAlpha="0.5" lineColor="16777215" lineThickness="1" name="ConnectionSkin" mouseEnabled="1">
+                      <x:Ref x:name="transform2D" x:id="139"/>
+                    </cadet2D:ConnectionSkin>
+                  </bones:ArrayCollection>
+                </cadet2D:Entity>
+              </x:Ref>
+            </Array>
+            <cadet2D:Transform2D x:name="object" x:id="132" name="Transform" matrix="1,0,0,1,2260,-838.65"/>
+          </ns0:DependencyNode>
+        </Array>
+      </ns0:DependencyNode>
+      <x:Ref x:name="17" x:id="125"/>
+      <x:Ref x:name="18" x:id="129"/>
+      <ns0:DependencyNode x:name="19" x:id="142">
+        <Array x:name="dependencies" x:id="143">
+          <ns0:DependencyNode x:name="0" x:id="144">
+            <Array x:name="dependencies" x:id="145"/>
+            <Array x:name="dependants" x:id="146">
+              <x:Ref x:name="0" x:id="142"/>
+            </Array>
+            <cadet2D:Transform2D x:name="object" x:id="147" name="Transform" matrix="1,0,0,1,1059.55,-801.25"/>
+          </ns0:DependencyNode>
+          <ns0:DependencyNode x:name="1" x:id="148">
+            <Array x:name="dependencies" x:id="149"/>
+            <Array x:name="dependants" x:id="150">
+              <x:Ref x:name="0" x:id="142">
+                <Array x:name="dependants" x:id="152"/>
+                <cadet2D:Entity x:name="object" x:id="153" name="Pin_0">
+                  <bones:ArrayCollection x:name="children" x:id="154">
+                    <cadet2D:Pin x:name="0" x:id="155" name="Pin">
+                      <x:Ref x:name="transformA" x:id="147"/>
+                      <x:Ref x:name="transformB" x:id="151"/>
+                      <cadet2D:Vertex x:name="localPos" x:id="156" x="-0.65" y="41.85"/>
+                    </cadet2D:Pin>
+                    <cadet2D:Transform2D x:name="1" x:id="157" name="Transform" matrix="1,0,0,1,0,0"/>
+                    <cadet2D:PinSkin x:name="2" x:id="158" containerID="worldContainer" layerIndex="0" mouseChildren="1" radius="5" fillAlpha="0.5" fillColor="16777215" name="PinSkin" mouseEnabled="1">
+                      <x:Ref x:name="transform2D" x:id="157"/>
+                    </cadet2D:PinSkin>
+                    <cadet2DBox2D:RevoluteJointBehaviour x:name="3" x:id="159" collideConnected="0" motorSpeed="1" name="Revolute Joint" enableMotor="0" lowerAngle="0" upperAngle="0" enableLimit="0" maxMotorTorque="1"/>
+                  </bones:ArrayCollection>
+                </cadet2D:Entity>
+              </x:Ref>
+            </Array>
+            <cadet2D:Transform2D x:name="object" x:id="151" name="Transform" matrix="1,0,0,0.54304438829422,1059,-643.2"/>
+          </ns0:DependencyNode>
+        </Array>
+      </ns0:DependencyNode>
+      <x:Ref x:name="20" x:id="144"/>
+      <x:Ref x:name="21" x:id="148"/>
+    </bones:ArrayCollection>
+  </bones:DependencyManager>
+  <bones:ArrayCollection x:name="children" x:id="160">
+    <cadet:InputProcess x:name="0" x:id="161" name="Input Manager">
+      <bones:ArrayCollection x:name="children" x:id="162">
+        <cadet:InputMapping x:name="0" x:id="163" name="ACCELERATE" symbol="UP"/>
+        <cadet:InputMapping x:name="1" x:id="164" name="BRAKE" symbol="SPACE"/>
+        <cadet:InputMapping x:name="2" x:id="165" name="STEER LEFT" symbol="LEFT"/>
+        <cadet:InputMapping x:name="3" x:id="166" name="STEER RIGHT" symbol="RIGHT"/>
+      </bones:ArrayCollection>
+    </cadet:InputProcess>
+    <cadet2D:TrackCamera2DProcess x:name="1" x:id="167" minSpeed="0" maxSpeed="100" maxZoom="1" minZoom="0.25" ease="0.2" name="Track Camera">
+      <cadet2D:Entity x:name="target" x:id="168" name="Chasis">
+        <bones:ArrayCollection x:name="children" x:id="169">
+          <x:Ref x:name="0" x:id="34"/>
+          <cadet2DBox2D:RigidBodyBehaviour x:name="1" x:id="170" fixed="0" maskBits="4294967295" categoryBits="1" angularDamping="2" linearDamping="0.1" name="Rigid Body" friction="0.8" restitution="0.5" density="1"/>
+          <cadet2D:BoundingSphere x:name="2" x:id="171" radius="40" name="Bounding Sphere"/>
+          <cadet2DBox2D:RigidBodyMouseDragBehaviour x:name="3" x:id="172" name="Mouse Drag"/>
+          <cadet2D:PolygonGeometry x:name="4" x:id="173" name="RectangleGeometry" vertices="-66.35228619834035,-18.25187656880674:49.24771380165964,-38.65187656880671:30.44771380165965,39.69812343119331:-11.552286198340354,39.748123431193264"/>
+          <cadet2D:AssetSkin x:name="5" x:id="174" containerID="worldContainer" name="Asset Skin" layerIndex="0" mouseChildren="1" fillYOffset="-54" fillBitmap="bike_chassis_173x106" fillXOffset="-92" mouseEnabled="1">
+            <x:Ref x:name="transform2D" x:id="34"/>
+          </cadet2D:AssetSkin>
+        </bones:ArrayCollection>
+      </cadet2D:Entity>
+    </cadet2D:TrackCamera2DProcess>
+    <cadet2DBox2D:PhysicsProcess x:name="2" x:id="175" numVelocityIterations="4" numIterations="1" numPositionIterations="1" name="Physics" gravity="6" scaleFactor="0.01"/>
+    <cadet2D:Renderer2D x:name="3" x:id="176" name="2D Renderer" viewportWidth="970" viewportHeight="571"/>
+    <cadet2D:Entity x:name="4" x:id="177" name="Motorcycle">
+      <bones:ArrayCollection x:name="children" x:id="178">
+        <cadet:VehicleUserControlBehaviour x:name="0" x:id="179" steeringEaseDown="1" steeringEaseUp="1" brakeMapping="BRAKE" steerRightMapping="STEER RIGHT" accelerateMapping="ACCELERATE" accelerationEaseDown="0.5" steerLeftMapping="STEER LEFT" breakEaseDown="0.5" brakeEaseUp="0.5" accelerationEaseUp="0.1" name="Vehicle User Control"/>
+        <cadet2DBox2D:MotorbikeBehaviour x:name="1" x:id="180" maxTorque="-1" maxChasisTorque="8" maxSpeed="30" brakeTorque="1" name="Motorbike">
+          <x:Ref x:name="frontWheel" x:id="19"/>
+          <x:Ref x:name="chasis" x:id="168"/>
+          <x:Ref x:name="driveWheel" x:id="107"/>
+        </cadet2DBox2D:MotorbikeBehaviour>
+        <x:Ref x:name="2" x:id="107"/>
+        <x:Ref x:name="3" x:id="99"/>
+        <x:Ref x:name="4" x:id="30"/>
+        <x:Ref x:name="5" x:id="90"/>
+        <x:Ref x:name="6" x:id="19"/>
+        <cadet2D:Entity x:name="7" x:id="181" name="WheelFront">
+          <bones:ArrayCollection x:name="children" x:id="182">
+            <x:Ref x:name="0" x:id="17"/>
+            <cadet2D:CircleGeometry x:name="1" x:id="183" x="0" y="0" name="Circle" radius="27.018928550184903"/>
+            <cadet2D:GeometrySkin x:name="2" x:id="184" containerID="worldContainer" mouseChildren="1" layerIndex="0" drawVertices="0" fillBitmap="bike_wheel" fillYOffset="-27" fillXOffset="-27" fillAlpha="0.04" fillColor="16777215" lineAlpha="0.7" lineColor="16777215" lineThickness="0" name="GeometrySkin" mouseEnabled="1">
+              <x:Ref x:name="transform2D" x:id="17"/>
+            </cadet2D:GeometrySkin>
+            <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="185" fixed="0" maskBits="4294967295" categoryBits="1" angularDamping="0.1" linearDamping="0.1" name="Rigid Body" friction="1" restitution="0.5" density="1"/>
+          </bones:ArrayCollection>
+        </cadet2D:Entity>
+        <cadet2D:Entity x:name="8" x:id="186" name="WheelRear">
+          <bones:ArrayCollection x:name="children" x:id="187">
+            <x:Ref x:name="0" x:id="110"/>
+            <cadet2D:CircleGeometry x:name="1" x:id="188" x="0" y="0" name="Circle" radius="27.018928550184903"/>
+            <cadet2D:GeometrySkin x:name="2" x:id="189" containerID="worldContainer" mouseChildren="1" layerIndex="0" drawVertices="0" fillBitmap="bike_wheel" fillYOffset="-27" fillXOffset="-27" fillAlpha="0.04" fillColor="16777215" lineAlpha="0.7" lineColor="16777215" lineThickness="0" name="GeometrySkin" mouseEnabled="1">
+              <x:Ref x:name="transform2D" x:id="110"/>
+            </cadet2D:GeometrySkin>
+            <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="190" fixed="0" maskBits="4294967295" categoryBits="1" angularDamping="0.1" linearDamping="0.1" name="Rigid Body" friction="1" restitution="0.5" density="1"/>
+          </bones:ArrayCollection>
+        </cadet2D:Entity>
+        <x:Ref x:name="9" x:id="168"/>
+        <x:Ref x:name="10" x:id="39"/>
+        <cadet2D:Entity x:name="11" x:id="191" name="AxleBlockFront">
+          <bones:ArrayCollection x:name="children" x:id="192">
+            <x:Ref x:name="0" x:id="22"/>
+            <cadet2D:RectangleGeometry x:name="1" x:id="193" name="RectangleGeometry" vertices="0,0:20,0:20,20:0,20" width="20" height="20"/>
+            <cadet2DBox2D:RigidBodyBehaviour x:name="2" x:id="194" fixed="0" maskBits="4294967295" categoryBits="1" angularDamping="0.1" linearDamping="0.1" name="Rigid Body" friction="0.8" restitution="0.5" density="2"/>
+          </bones:ArrayCollection>
+        </cadet2D:Entity>
+        <cadet2D:Entity x:name="12" x:id="195" name="AxleBlockRear">
+          <bones:ArrayCollection x:name="children" x:id="196">
+            <x:Ref x:name="0" x:id="93"/>
+            <cadet2D:RectangleGeometry x:name="1" x:id="197" name="RectangleGeometry" vertices="0,0:20,0:20,20:0,20" width="20" height="20"/>
+            <cadet2DBox2D:RigidBodyBehaviour x:name="2" x:id="198" fixed="0" maskBits="4294967295" categoryBits="1" angularDamping="0.1" linearDamping="0.1" name="Rigid Body" friction="0.8" restitution="0.5" density="1"/>
+          </bones:ArrayCollection>
+        </cadet2D:Entity>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:CollisionDetectionProcess x:name="5" x:id="199" name="Collision Detection"/>
+    <cadet2D:Entity x:name="6" x:id="200" name="Terrain">
+      <bones:ArrayCollection x:name="children" x:id="201">
+        <cadet2D:Transform2D x:name="0" x:id="202" name="Transform" matrix="1,0,0,1,12.2,1440"/>
+        <cadet2D:TerrainSkin x:name="1" x:id="203" containerID="worldContainer" layerIndex="0" mouseChildren="1" surfaceThickness="20" name="TerrainSkin" mouseEnabled="1">
+          <x:Ref x:name="transform2D" x:id="202"/>
+        </cadet2D:TerrainSkin>
+        <cadet2D:TerrainGeometry x:name="2" x:id="204" name="TerrainGeometry" samples="1895,1891,1891,1899,1895,1887,1883,1883,1891,1887,1875,1875,1875,1875,1879,1879,1887,1891,1899,1907,1911,1911,1919,1919,1923,1927,1927,1919,1919,1919,1927,1931,1935,1943,1951,1955,1963,1987,1995,2011,2039,2071,2099,2123,2175,2199,2247,2255,2283,2307,2319,2335,2343,2351,2363,2363,2363,2359,2336,2324,2312,2304,2296,2288,2288,2292,2308,2316,2340,2360,2420,2437,2454,2472,2504,2512,2560,2588,2636,2654,2672,2708,2720,2760,2780,2824,2848,2859,2871,2915,2929,2943,2959,2975,2981,2987,2999,3005,3011,3015,3011,3003,2995,2995,2995,2995,2999,2999,2991,3003,3019,3035,3051,3067,3086,3104,3123,3187,3239,3259,3331,3395,3427,3471,3497,3523,3583,3639,3679,3725,3771,3803,3835,3867,3881,3895,3907,3899,3883,3859,3835,3811,3767,3735,3707,3635,3595,3527,3503,3479,3451,3439,3435,3419,3411,3403,3395,3400,3405,3410,3415,3423,3431,3439,3447,3479" bucketSize="10" numSamples="166" sampleWidth="80"/>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="205" fixed="1" maskBits="4294967295" categoryBits="1" angularDamping="0.1" linearDamping="0.1" name="RigidBodyBehaviour" friction="0.8" restitution="0.5" density="1"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+  </bones:ArrayCollection>
+</cadet:CadetScene>
