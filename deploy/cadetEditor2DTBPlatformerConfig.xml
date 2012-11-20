@@ -7,7 +7,7 @@
 	
 	<extension url="extensions/DefaultExtension.swf" />
 	<extension url="extensions/CadetEditorExtension.swf" />
-	<extension url="extensions/CadetEditor_Extension2D_PlatformerTiled.swf" />
+	<extension url="extensions/CadetEditor_Extension2D_TileBasedPlatformer.swf" />
 	
 	<manifest>
 		<url><![CDATA[extensions/manifests/Flox.xml]]></url>

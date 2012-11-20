@@ -24,7 +24,7 @@
 		<link>
 			<name>bin-debug</name>
 			<type>2</type>
-			<locationURI>DOCUMENTS/FloxEditor/deploy</locationURI>
+			<locationURI>DOCUMENTS/Flox/floxEditor/deploy</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

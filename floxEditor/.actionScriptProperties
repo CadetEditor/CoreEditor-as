@@ -43,7 +43,7 @@
       </libraryPathEntry>
       <libraryPathEntry kind="3" linkType="1" path="/FloxUI/bin/FloxUI.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="3" linkType="1" path="/FloxApp/bin/FloxApp.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="${DOCUMENTS}/FloxEditor/floxSkins/CadetFluxSkins.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="1" path="${DOCUMENTS}/Flox/FloxEditor/floxSkins/CadetFluxSkins.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="3" linkType="1" path="/FloxAppEx/bin/FloxAppEx.swc" useDefaultLinkType="false"/>
     </libraryPath>
     <sourceAttachmentPath/>
