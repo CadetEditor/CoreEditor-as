@@ -5,15 +5,22 @@ package flox.app.util
 {
 	public class VectorUtil
 	{
-		public static function toArray( vec:Object ):Array
+		public static function toArray( vector:Object ):Array
 		{
-			var L:int = vec.length;
+			var L:int = vector.length;
 			var array:Array = [];
-			for ( var i:int = 0; i < L; ++i )
-			{
-				array[i] = vec[i];
+			for ( var i:int = 0; i < L; ++i ) {
+				array[i] = vector[i];
 			}
 			return array;
+		}
+		
+		public static function arrayToVector( array:Array, vector:Object ):Object
+		{
+			for ( var i:uint = 0; i < array.length; i ++ ) {
+				vector[i] = array[i];
+			}
+			return vector;
 		}
 	}
 }

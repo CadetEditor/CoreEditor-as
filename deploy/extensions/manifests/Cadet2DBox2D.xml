@@ -15,6 +15,6 @@
   <classMap name="PhysicsProcessDestructionListener" class="cadet2DBox2D.components.processes.PhysicsProcessDestructionListener"/>
   
   <!-- Flash2D Behaviours -->
-  <classMap name="RigidBodyMouseDragBehaviour" class="cadet2DBox2D.renderPipeline.flash.components.behaviours.RigidBodyMouseDragBehaviour"/>
+  <classMap name="RigidBodyMouseDragBehaviour" class="cadet2DFlash.components.behaviours.RigidBodyMouseDragBehaviour"/>
   
 </manifest>
