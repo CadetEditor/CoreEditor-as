@@ -40,9 +40,9 @@
 	<!--  File templates  -->
 
 	<template>
-		<label><![CDATA[Barebones 2D with Starling Renderer]]></label>
-		<description><![CDATA[Creates a Cadet Editor scene with a Renderer2D]]></description>
-		<url><![CDATA[extensions/fileTemplates/barebones2DS.cdt2d]]></url>
+		<label><![CDATA[Barebones 2D with Physics]]></label>
+		<description><![CDATA[Creates a Cadet Editor scene with a Physics Process.]]></description>
+		<url><![CDATA[extensions/fileTemplates/barebones2DSPhysics.cdt2d]]></url>
 		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
 	</template>
 
