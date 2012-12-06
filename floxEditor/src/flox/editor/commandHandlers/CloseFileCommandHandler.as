@@ -30,14 +30,6 @@ package flox.editor.commandHandlers
 			var editorContext:IEditorContext = FloxEditor.contextManager.getLatestContextOfType(IEditorContext);
 			var closeFileOperation:CloseEditorOperation = new CloseEditorOperation( editorContext, FloxApp.fileSystemProvider );
 			closeFileOperation.execute();
-			
-			// After closing the editor, switch focus to the most recently editor context
-			var mostRecentEditorContext:IVisualContext = FloxEditor.contextManager.getLatestContextOfType(IEditorContext);
-			if ( mostRecentEditorContext )
-			{
-				FloxEditor.contextManager.setCurrentContext(mostRecentEditorContext);
-				FloxEditor.viewManager.showVisualContext(mostRecentEditorContext);
-			}
 		}
 	}
 }

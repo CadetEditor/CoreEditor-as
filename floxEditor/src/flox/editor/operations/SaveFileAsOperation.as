@@ -25,19 +25,25 @@ package flox.editor.operations
 		private var fileToCreate		:URI;
 		private var editorContext		:IEditorContext;
 		
-		public function SaveFileAsOperation( editorContext:IEditorContext )
+		private var _saved				:Boolean;
+		private var _closeEditorAfter	:Boolean;
+		
+		public function SaveFileAsOperation( editorContext:IEditorContext, closeEditorAfter:Boolean = false )
 		{
 			this.editorContext = editorContext;
+			_closeEditorAfter = closeEditorAfter;
 		}
 		
 		public function execute():void
 		{
 			//TODO: recentURI may be "cadet..." rather than "flox...", causing a "Cannot map uri to provider" error.
-			var recentURI:URI = new URI(FloxEditor.settingsManager.getString("flox.app.core.managers.fileSystemProviders.MultiFileSystemProvider.recentFolder"));
+			var recentURL:String = FloxEditor.settingsManager.getString("flox.app.core.managers.fileSystemProviders.MultiFileSystemProvider.recentFolder");
+			var recentURI:URI;
+			if ( recentURL != null ) {
+				recentURI = new URI(recentURL);
+			}
 			panel = new SaveAsFileListPanel( recentURI );
 			FloxEditor.viewManager.addPopUp(panel);
-			
-			
 			
 			if ( editorContext.isNewFile )
 			{
@@ -57,6 +63,12 @@ package flox.editor.operations
 		protected function disposePanel():void
 		{			
 			FloxEditor.viewManager.removePopUp( panel );
+		
+			// Remove Editor
+			if ( _saved && _closeEditorAfter ) {
+				var removeContextOperation:RemoveContextOperation = new RemoveContextOperation( editorContext );
+				removeContextOperation.execute();
+			}			
 			
 			panel.nameInput.removeEventListener( Event.CHANGE, changeTextHandler );
 			panel.okBtn.removeEventListener( MouseEvent.CLICK, clickOkHandler );
@@ -106,6 +118,7 @@ package flox.editor.operations
 		
 		protected function saveFile( uri:URI ):void
 		{
+			_saved = true;
 			trace("RECENT FOLDER: SAVE AS "+panel.list.rootNode.uri.toString());
 			FloxEditor.settingsManager.setString("flox.app.core.managers.fileSystemProviders.MultiFileSystemProvider.recentFolder", panel.list.rootNode.uri.toString());
 			

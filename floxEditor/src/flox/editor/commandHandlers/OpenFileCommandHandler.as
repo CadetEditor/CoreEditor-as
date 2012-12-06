@@ -60,7 +60,12 @@ package flox.editor.commandHandlers
 		private function openPanel():void
 		{
 			//TODO: recentURI may be "cadet..." rather than "flox...", causing a "Cannot map uri to provider" error.
-			var recentURI:URI = new URI(FloxEditor.settingsManager.getString("flox.app.core.managers.fileSystemProviders.MultiFileSystemProvider.recentFolder"));
+			var recentURL:String = FloxEditor.settingsManager.getString("flox.app.core.managers.fileSystemProviders.MultiFileSystemProvider.recentFolder");
+			var recentURI:URI;
+			if ( recentURL != null ) {
+				recentURI = new URI(recentURL);
+			}
+			
 			panel = new FileSystemListBrowserPanel( recentURI );
 			panel.label = "Open File";
 			panel.validSelectionIsFolder = false;

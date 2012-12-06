@@ -6,14 +6,14 @@ package flox.editor.operations
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	
-	import flox.ui.components.Alert;
-	import flox.ui.events.AlertEvent;
-	
+	import flox.app.core.contexts.IVisualContext;
+	import flox.app.core.managers.fileSystemProviders.IFileSystemProvider;
+	import flox.app.core.operations.IAsynchronousOperation;
 	import flox.editor.FloxEditor;
 	import flox.editor.contexts.IEditorContext;
 	import flox.editor.entities.Commands;
-	import flox.app.core.managers.fileSystemProviders.IFileSystemProvider;
-	import flox.app.core.operations.IAsynchronousOperation;
+	import flox.ui.components.Alert;
+	import flox.ui.events.AlertEvent;
 
 	[Event(type="flox.app.events.OperationProgressEvent", name="progress")]
 	[Event(type="flash.events.Event", name="complete")]
@@ -49,7 +49,7 @@ package flox.editor.operations
 			{
 				if ( editorContext.isNewFile )
 				{
-					var operation:SaveFileAsOperation = new SaveFileAsOperation(editorContext);
+					var operation:SaveFileAsOperation = new SaveFileAsOperation(editorContext, true);
 					operation.addEventListener(Event.COMPLETE, saveFileAsCompleteHandler);
 					operation.addEventListener(Event.CANCEL, saveFileAsCancelHandler );
 					operation.execute();
@@ -85,6 +85,15 @@ package flox.editor.operations
 		{
 			var removeContextOperation:RemoveContextOperation = new RemoveContextOperation( editorContext );
 			removeContextOperation.execute();
+			
+			//TODO: Rob moved this as CloseFileCommandHandler wasn't taking the pause to interact into account.
+			// After closing the editor, switch focus to the most recently editor context
+			var latestEditorContext:IVisualContext = FloxEditor.contextManager.getLatestContextOfType(IEditorContext);
+			if ( latestEditorContext )
+			{
+				FloxEditor.contextManager.setCurrentContext(latestEditorContext);
+				FloxEditor.viewManager.showVisualContext(latestEditorContext);
+			}
 		}
 		
 		public function get label():String
