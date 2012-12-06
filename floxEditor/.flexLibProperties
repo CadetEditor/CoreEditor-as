@@ -44,15 +44,12 @@
     <classEntry path="flox.editor.operations.CloseEditorOperation"/>
     <classEntry path="flox.editor.operations.GetCompatibleFileTemplatesOperation"/>
     <classEntry path="flox.editor.operations.InitializeFloxOperation"/>
-    <classEntry path="flox.editor.operations.InitializeFloxOperationAIR"/>
     <classEntry path="flox.editor.operations.InitializeFloxOperationBrowser"/>
     <classEntry path="flox.editor.operations.LoadFileTemplatesOperation"/>
-    <classEntry path="flox.editor.operations.LoadSettingsOperationAIR"/>
     <classEntry path="flox.editor.operations.LoadSettingsOperationBrowser"/>
     <classEntry path="flox.editor.operations.NewFileFromFileTemplateOperation"/>
     <classEntry path="flox.editor.operations.OpenFileOperation"/>
     <classEntry path="flox.editor.operations.RemoveContextOperation"/>
-    <classEntry path="flox.editor.operations.SaveSettingsOperationAIR"/>
     <classEntry path="flox.editor.operations.SaveSettingsOperationBrowser"/>
     <classEntry path="flox.editor.operations.SelectResourceOperation"/>
     <classEntry path="flox.editor.utils.FloxEditorUtil"/>
@@ -68,6 +65,9 @@
     <classEntry path="flox.editor.core.FloxEditorEnvironment"/>
     <classEntry path="flox.editor.ui.panels.FileSystemListBrowserPanel"/>
     <classEntry path="flox.editor.ui.components.FileSystemList"/>
+    <classEntry path="flox.editor.operations.InitializeFloxOperationAIR"/>
+    <classEntry path="flox.editor.operations.SaveSettingsOperationAIR"/>
+    <classEntry path="flox.editor.operations.LoadSettingsOperationAIR"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

@@ -44,8 +44,8 @@
 	<!-- 3D .3DS -->
 	<file>Primitives.3DS</file>
 	<file>Robot.3DS</file>	
-	<!-- 3D: Contraption -->
+	<!-- 3D: Contraption
 	<file>Contraption.3DS</file>
 	<file>ContraptionDiffuse.png</file>
-	<file>ContraptionNormal.jpg</file>
+	<file>ContraptionNormal.jpg</file> -->
 </xml>

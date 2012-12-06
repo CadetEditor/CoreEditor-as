@@ -11,12 +11,14 @@
 	
 	<script type="text/javascript">
 		var flashvars = {};
-		flashvars.configURL = "cadetEditor2DConfig.xml";
+		flashvars.configURL = "cadetEditor2DSConfig.xml";
 		flashvars.as_swf_name = "flashcontent";
 		var params = {};
 		params.scale = "noscale";
 		params.allowFullScreen = true;
 		params.allowScriptAccess ="always";
+		params.wmode = "direct";
+		
 		var attributes = {};
 		attributes.id = "flashcontent";
 		swfobject.embedSWF("FloxEditor_Browser.swf", "flashcontent", "100%", "100%", "10.0.0", false, flashvars, params, attributes);

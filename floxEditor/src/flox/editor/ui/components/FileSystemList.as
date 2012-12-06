@@ -85,6 +85,12 @@ package flox.editor.ui.components
 			if ( value != null && value is FileSystemNode )
 			{
 				var item:FileSystemNode = FileSystemNode(value);
+				//TODO: Not sure this is the best way to solve the "initial node not populated" problem.
+				// Does it matter that the value is set below and this operation is asynchronous?
+				if (!item.isPopulated) {
+					var operation:IGetDirectoryContentsOperation = fileSystemProvider.getDirectoryContents(item.uri);
+					operation.execute();
+				}
 				_rootNode = item;
 				value = item.children;
 			}

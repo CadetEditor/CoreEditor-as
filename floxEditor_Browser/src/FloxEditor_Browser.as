@@ -8,6 +8,7 @@ package
 	import flash.display.StageScaleMode;
 	import flash.events.Event;
 	
+	import flox.app.FloxApp;
 	import flox.editor.operations.InitializeFloxOperationBrowser;
 	import flox.editor.ui.components.SplashScreen;
 	
@@ -31,6 +32,8 @@ package
 			{
 				configURL = loaderInfo.parameters.configURL;
 			}
+			
+			FloxApp.init();
 			
 			var initOperation:InitializeFloxOperationBrowser = new InitializeFloxOperationBrowser( stage, configURL );
 			initOperation.addEventListener(Event.COMPLETE, initCompleteHandler);

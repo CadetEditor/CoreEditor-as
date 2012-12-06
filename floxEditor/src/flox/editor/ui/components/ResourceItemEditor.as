@@ -15,7 +15,6 @@ package flox.editor.ui.components
 	import flox.app.core.contexts.IOperationManagerContext;
 	import flox.app.core.managers.fileSystemProviders.IFileSystemProvider;
 	import flox.app.entities.URI;
-	import flox.app.managers.fileSystemProviders.local.LocalFileSystemProvider;
 	import flox.app.managers.fileSystemProviders.memory.MemoryFileSystemProvider;
 	import flox.app.operations.BindResourceOperation;
 	import flox.app.operations.UndoableCompoundOperation;

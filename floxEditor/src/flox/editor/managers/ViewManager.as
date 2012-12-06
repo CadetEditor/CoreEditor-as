@@ -165,6 +165,7 @@ package flox.editor.managers
 		
 		public function removePopUp( popUp:DisplayObject ):void
 		{
+			if ( !_application.popUpContainer.contains( popUp ) ) return;
 			PopUpManager.removePopUp(popUp);
 		}
 		

@@ -9,6 +9,7 @@ package flox.editor
 	
 	import flox.app.FloxApp;
 	import flox.app.core.managers.fileSystemProviders.IFileSystemProvider;
+	import flox.app.core.managers.fileSystemProviders.ILocalFileSystemProvider;
 	import flox.app.core.managers.fileSystemProviders.IMultiFileSystemProvider;
 	import flox.app.core.managers.fileSystemProviders.MultiFileSystemProvider;
 	import flox.app.entities.URI;
@@ -19,7 +20,6 @@ package flox.editor
 	import flox.app.managers.OperationManager;
 	import flox.app.managers.ResourceManager;
 	import flox.app.managers.SettingsManager;
-	import flox.app.managers.fileSystemProviders.local.LocalFileSystemProvider;
 	import flox.app.managers.fileSystemProviders.memory.MemoryFileSystemProvider;
 	import flox.app.util.AsynchronousUtil;
 	import flox.core.data.ArrayCollection;
@@ -119,22 +119,22 @@ package flox.editor
 			if ( provider is MemoryFileSystemProvider ) {
 				if ( FloxEditor.environment == FloxEditorEnvironment.AIR ) {
 					provider = FloxApp.fileSystemProvider.getFileSystemProviderForURI(new URI("cadet.local/"));//+FloxApp.externalResourceFolderName));
-					var localFSP:LocalFileSystemProvider = LocalFileSystemProvider(provider); 
+					var localFSP:ILocalFileSystemProvider = ILocalFileSystemProvider(provider); 
 					var defaultDirPath:String = localFSP.defaultDirectoryURI.path;
 					if ( defaultDirPath.indexOf( localFSP.rootDirectoryURI.path ) != -1 ) {
 						defaultDirPath = defaultDirPath.replace( localFSP.rootDirectoryURI.path, "" );
 					}
-					projectURI = new URI("cadet.local"+defaultDirPath+"/");//+FloxApp.externalResourceFolderName);
+					projectURI = new URI("cadet.local"+defaultDirPath+"/");
 				}
 				else if ( FloxEditor.environment == FloxEditorEnvironment.BROWSER ) {
-					projectURI = new URI("cadet.url/");//+FloxApp.externalResourceFolderName);				
+					projectURI = new URI("cadet.url/");			
 				}
 			} else {
 				if ( FloxEditor.environment == FloxEditorEnvironment.AIR ) {
-					projectURI = contextURI.getParentURI();//+FloxApp.externalResourceFolderName);
+					projectURI = contextURI.getParentURI();
 				}
 				else if ( FloxEditor.environment == FloxEditorEnvironment.BROWSER ) {
-					projectURI = new URI("cadet.url/");//+FloxApp.externalResourceFolderName);				
+					projectURI = new URI("cadet.url/");				
 				}				
 			}
 			

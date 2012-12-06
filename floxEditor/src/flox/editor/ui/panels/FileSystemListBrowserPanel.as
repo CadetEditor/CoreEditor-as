@@ -2,7 +2,6 @@ package flox.editor.ui.panels
 {
 	import flash.events.Event;
 	import flash.events.MouseEvent;
-	import flash.filesystem.File;
 	
 	import flox.app.FloxApp;
 	import flox.app.core.managers.fileSystemProviders.operations.ITraverseToDirectoryOperation;
@@ -183,11 +182,11 @@ package flox.editor.ui.panels
 		}
 		protected function validateUpButton():void
 		{
-			if (list.selectedFolderURI && list.selectedFolderURI.path == rootURI.path) {
-				upBtn.enabled = false;
-			} else {
+//			if (list.selectedFolderURI && list.selectedFolderURI.path == rootURI.path) {
+//				upBtn.enabled = false;
+//			} else {
 				upBtn.enabled = true;
-			}
+//			}
 		}
 		protected function validateBackButton():void
 		{

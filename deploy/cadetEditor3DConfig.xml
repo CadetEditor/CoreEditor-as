@@ -1,9 +1,9 @@
 <xml>
 	<applicationID><![CDATA[cadet3D]]></applicationID>
 	
-	<fileSystemProvider environment="air" 		  type="local"    		id="cadet.local" 	    		label="Cadet3D"     folderName="Cadet3D" />
-	<fileSystemProvider environment="browser" 	type="sharedObject" id="cadet.sharedObject" 	label="Cadet3D" />
-	<fileSystemProvider environment="browser" 	type="url" 			    id="cadet.url" 		      	label="Cadet3D_URL" baseURL="files" visible="false" />
+	<fileSystemProvider environment="air" 		  type="local"    		id="cadet.local" 	    		label="Cadet3D.local"     folderName="Cadet3D" />
+	<fileSystemProvider environment="browser" 	type="sharedObject" id="cadet.sharedObject" 	label="Cadet3D.so" />
+	<fileSystemProvider environment="browser" 	type="url" 			    id="cadet.url" 		      	label="Cadet3D.url" baseURL="files" /><!-- visible="false" />-->
 	
 	<extension url="extensions/DefaultExtension.swf" />
 	<extension url="extensions/CadetEditorExtension.swf" />
