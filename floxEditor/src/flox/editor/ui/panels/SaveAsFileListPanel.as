@@ -28,9 +28,9 @@ package flox.editor.ui.panels
 	{
 		public var nameInput		:TextInput;
 		
-		public function SaveAsFileListPanel( uri:URI, uriIsRoot:Boolean = false )
+		public function SaveAsFileListPanel( uri:URI, uriIsRoot:Boolean = false, validExtensions:Array = null )
 		{
-			super( uri, uriIsRoot );
+			super( uri, uriIsRoot, validExtensions );
 		}
 		
 		override protected function init():void

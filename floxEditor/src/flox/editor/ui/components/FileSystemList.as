@@ -28,6 +28,10 @@ package flox.editor.ui.components
 		public static const DATA_PROVIDER_BEGIN_CHANGE:String = "dataProviderBeginChange";
 		public static const DATA_PROVIDER_CHANGED:String = "dataProviderChanged";
 		
+		private var _tempDP					:Object;
+		
+		public var validExtensions			:Array;
+		
 		public function FileSystemList()
 		{
 			
@@ -50,7 +54,6 @@ package flox.editor.ui.components
 		public function set resourceManager( value:ResourceManager ):void
 		{
 			_resourceManager = value;
-			var fileTypes:Vector.<IResource> = value.getResourcesOfType(FileType);
 			dataDescriptor = new FileSystemTreeDataDescriptor(value);
 		}
 		public function get resourceManager():ResourceManager { return _resourceManager; }
@@ -67,12 +70,12 @@ package flox.editor.ui.components
 			{
 				dataProvider = item;
 				
-				if ( item.isPopulated ) return;
+				//if ( item.isPopulated ) return;
 				
 				selectedFile = null;
 				
-				var operation:IGetDirectoryContentsOperation = fileSystemProvider.getDirectoryContents(item.uri);
-				operation.execute();
+//				var operation:IGetDirectoryContentsOperation = fileSystemProvider.getDirectoryContents(item.uri);
+//				operation.execute();
 			} else {
 				selectedFile = item.uri;
 			}
@@ -89,15 +92,49 @@ package flox.editor.ui.components
 				// Does it matter that the value is set below and this operation is asynchronous?
 				if (!item.isPopulated) {
 					var operation:IGetDirectoryContentsOperation = fileSystemProvider.getDirectoryContents(item.uri);
+					operation.addEventListener( Event.COMPLETE, directoryListingCompleteHandler );
 					operation.execute();
+					
+					_tempDP = value;
+					return;
 				}
 				_rootNode = item;
-				value = item.children;
+				//item.children.source = item.children.source.filter(filterFunc);
+				value = filteredChildren(item.children);
+				//value = item.children;
 			}
 			
 			super.dataProvider = value;
 			
 			dispatchEvent( new Event(DATA_PROVIDER_CHANGED) );
+		}
+		
+		private function directoryListingCompleteHandler( event:Event ):void
+		{
+			dataProvider = _tempDP;
+		}
+		
+		private function filteredChildren( aC:ArrayCollection ):ArrayCollection
+		{
+			var newAC:ArrayCollection = new ArrayCollection();
+			
+			for ( var i:uint = 0; i < aC.length; i ++ ) {
+				var node:FileSystemNode = aC[i];
+				
+				if ( node.uri.isDirectory() ) {
+					newAC.addItem(node);
+				} else {
+					for ( var j:uint = 0; j < validExtensions.length; j ++ ) {
+						var extension:String = validExtensions[j];
+						if ( node.extension == extension ) {
+							newAC.addItem(node);
+							continue;
+						}
+					}
+				}
+			}
+			
+			return newAC;
 		}
 		
 		public function set selectedFile( uri:URI ):void

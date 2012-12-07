@@ -58,9 +58,11 @@ package flox.editor.ui.components
 		
 		private var panel	:FileSystemListBrowserPanel;
 		
+		private var validExtensions				:Array;
+		
 		public function ResourceItemEditor()
 		{
-			
+			validExtensions = ["jpg", "png", "3DS"];
 		}
 		
 		override protected function init():void
@@ -123,7 +125,11 @@ package flox.editor.ui.components
 		private function openPanel():void
 		{
 			var assetsURI:URI = new URI(FloxEditor.getProjectDirectoryURI().path+FloxApp.externalResourceFolderName);
-			panel = new FileSystemListBrowserPanel(assetsURI, true);
+			
+//			var allowedType:Class = IntrospectionUtil.getPropertyType( itemsBeingEdited[0], propertyOnItemsBeingEdited );
+//			var dataProvider:ArrayCollection = new ArrayCollection( SelectResourceOperation.getFilteredResources( FloxApp.resourceManager.getResourcesByURI(assetsURI), [allowedType] ) );
+			
+			panel = new FileSystemListBrowserPanel(assetsURI, true, validExtensions);
 			panel.label = "Select Resource";
 			panel.validSelectionIsFolder = false;
 			panel.validSelectionIsFile = true;
@@ -159,7 +165,7 @@ package flox.editor.ui.components
 		{
 			disposePanel();
 		}
-		
+		/*
 		private function openList():void
 		{
 			//var factoryResource:IFactoryResource = FloxApp.resourceManager.getFactoryForInstance( _value );
@@ -172,30 +178,30 @@ package flox.editor.ui.components
 			var assetsURI:URI = new URI(FloxEditor.getProjectDirectoryURI().path+FloxApp.externalResourceFolderName);
 			
 			var dataProvider:ArrayCollection = new ArrayCollection( SelectResourceOperation.getFilteredResources( FloxApp.resourceManager.getResourcesByURI(assetsURI), [allowedType] ) );
-			/*
-			if ( !list )
-			{
-				list = new List();
-				list.dataDescriptor = new ResourceDataDescriptor();
-				list.addEventListener(ListEvent.ITEM_SELECT, onSelectListItem);
-			}
 			
-			dataProvider.addItemAt({label:"<None>"}, 0);
+//			if ( !list )
+//			{
+//				list = new List();
+//				list.dataDescriptor = new ResourceDataDescriptor();
+//				list.addEventListener(ListEvent.ITEM_SELECT, onSelectListItem);
+//			}
+//			
+//			dataProvider.addItemAt({label:"<None>"}, 0);
+//			
+//			var pt:Point = new Point();
+//			pt = localToGlobal(pt);
+//			list.dataProvider = dataProvider;
+//			list.width = _width;
+//			list.height = Math.min( list.itemRendererHeight * dataProvider.length + list.padding * 2, stage.stageHeight - pt.y+_height );
+//			list.x = pt.x;
+//			list.y = pt.y + _height;
+//			
+//			PopUpManager.addPopUp(list, false, false);
+//			
+//			stage.addEventListener(MouseEvent.MOUSE_DOWN, onMouseDownStage);
 			
-			var pt:Point = new Point();
-			pt = localToGlobal(pt);
-			list.dataProvider = dataProvider;
-			list.width = _width;
-			list.height = Math.min( list.itemRendererHeight * dataProvider.length + list.padding * 2, stage.stageHeight - pt.y+_height );
-			list.x = pt.x;
-			list.y = pt.y + _height;
-			
-			PopUpManager.addPopUp(list, false, false);
-			
-			stage.addEventListener(MouseEvent.MOUSE_DOWN, onMouseDownStage);
-			*/
 		}
-		
+		*/
 		/*
 		private function closeList():void
 		{

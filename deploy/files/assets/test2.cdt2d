@@ -1,0 +1,37 @@
+<cadet:CadetScene x:id="0" name="Component" timeScale="1" framerate="60" xmlns:cadet="www.unwrong.com/cadet/1.0.0" xmlns:x="flox.app.core.serialization.Serializer" xmlns:flox="www.unwrong.com/flox/1.0.0" xmlns:cadet2DStarling="www.unwrong.com/cadet2DStarling/1.0.0" xmlns:cadet2DBox2D="www.unwrong.com/cadet2DBox2D/1.0.0" xmlns:cadet2D="www.unwrong.com/cadet2D/1.0.0">
+  <Object x:name="userData" x:id="1" zoom="1" panX="485" showGrid="1" panY="285.5" gridSize="10" snapEnabled="1"/>
+  <flox:DependencyManager x:name="dependencyManager" x:id="2">
+    <flox:ArrayCollection x:name="dependencyNodes" x:id="3"/>
+  </flox:DependencyManager>
+  <flox:ArrayCollection x:name="children" x:id="4">
+    <cadet2DStarling:Renderer2D x:name="0" x:id="5" viewportWidth="970" name="2D Renderer" viewportHeight="571"/>
+    <cadet2DBox2D:PhysicsProcess x:name="1" x:id="6" numPositionIterations="2" numVelocityIterations="2" numIterations="2" scaleFactor="0.02" name="Physics" gravity="6"/>
+    <cadet2D:Entity x:name="2" x:id="7" name="Rectangle_0">
+      <flox:ArrayCollection x:name="children" x:id="8">
+        <cadet2D:Transform2D x:name="0" x:id="9" matrix="1,0,0,1,60,110" name="Transform"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="10" name="RectangleGeometry" width="160" height="180" vertices="0,0:160,0:160,180:0,180"/>
+        <cadet2DStarling:GeometrySkin x:name="2" x:id="11" fillColor="16777215" mouseEnabled="1" drawVertices="0" fillAlpha="0.04" name="GeometrySkin" containerID="worldContainer" layerIndex="0" fillYOffset="0" fillXOffset="0" lineAlpha="0.7" lineThickness="1" lineColor="16777215">
+          <x:Ref x:name="transform2D" x:id="9"/>
+        </cadet2DStarling:GeometrySkin>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="3" x:id="12" name="Rectangle_1">
+      <flox:ArrayCollection x:name="children" x:id="13">
+        <cadet2D:Transform2D x:name="0" x:id="14" matrix="1,0,0,1,480,220" name="Transform"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="15" name="RectangleGeometry" width="180" height="200" vertices="0,0:180,0:180,200:0,200"/>
+        <cadet2DStarling:GeometrySkin x:name="2" x:id="16" fillColor="16777215" mouseEnabled="1" drawVertices="0" fillAlpha="0.04" name="GeometrySkin" containerID="worldContainer" layerIndex="0" fillYOffset="0" fillXOffset="0" lineAlpha="0.7" lineThickness="1" lineColor="16777215">
+          <x:Ref x:name="transform2D" x:id="14"/>
+        </cadet2DStarling:GeometrySkin>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="4" x:id="17" name="Rectangle_2">
+      <flox:ArrayCollection x:name="children" x:id="18">
+        <cadet2D:Transform2D x:name="0" x:id="19" matrix="1,0,0,1,200,160" name="Transform"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="20" name="RectangleGeometry" width="110" height="220" vertices="0,0:110,0:110,220:0,220"/>
+        <cadet2DStarling:GeometrySkin x:name="2" x:id="21" fillColor="16777215" mouseEnabled="1" drawVertices="0" fillAlpha="0.04" name="GeometrySkin" containerID="worldContainer" layerIndex="0" fillYOffset="0" fillXOffset="0" lineAlpha="0.7" lineThickness="1" lineColor="16777215">
+          <x:Ref x:name="transform2D" x:id="19"/>
+        </cadet2DStarling:GeometrySkin>
+      </flox:ArrayCollection>
+    </cadet2D:Entity>
+  </flox:ArrayCollection>
+</cadet:CadetScene>

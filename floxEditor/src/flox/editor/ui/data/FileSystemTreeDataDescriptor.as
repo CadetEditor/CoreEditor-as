@@ -3,12 +3,14 @@
 
 package flox.editor.ui.data
 {
+	import flox.app.FloxApp;
 	import flox.app.entities.FileSystemNode;
-	import flox.app.resources.FileType;
-	import flox.app.resources.IResource;
 	import flox.app.entities.URI;
 	import flox.app.icons.FloxIcons;
 	import flox.app.managers.ResourceManager;
+	import flox.app.resources.ExternalBitmapDataResource;
+	import flox.app.resources.FileType;
+	import flox.app.resources.IResource;
 	import flox.core.data.ArrayCollection;
 	import flox.ui.data.IDataDescriptor;
 	
@@ -21,6 +23,7 @@ package flox.editor.ui.data
 			if ( resourceManager && !fileTypes )
 			{
 				fileTypes = resourceManager.getResourcesOfType(FileType);
+				var types:Vector.<IResource> = fileTypes;
 			}
 		}
 		
@@ -38,6 +41,17 @@ package flox.editor.ui.data
 		
 		public function getIcon( item:Object ):Object
 		{
+			//TODO: This is reaaaally unperformant...
+			var resources:Vector.<IResource> = FloxApp.resourceManager.getResourcesByURI(item.uri);
+			
+			for each ( var resource:IResource in resources ) {
+				if ( resource is ExternalBitmapDataResource ) {
+					if ( ExternalBitmapDataResource(resource).icon ) {
+						return ExternalBitmapDataResource(resource).icon;
+					}
+				}
+			}
+			
 			if ( item.uri.isDirectory() == false )
 			{
 				for each ( var fileType:FileType in fileTypes )
@@ -71,7 +85,7 @@ package flox.editor.ui.data
 				var split:Array = item.uri.path.split("/");
 				return split[split.length-2];
 			}
-			return item.uri.getFilename(true);
+			return item.uri.getFilename();//true);
 		}
 		
 		public function getEnabled( item:Object ):Boolean

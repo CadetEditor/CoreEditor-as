@@ -3,7 +3,7 @@
 	
 	<fileSystemProvider environment="air"		    type="local" 		    id="cadet.local" 		    	label="Cadet2D.local"     folderName="Cadet2D" />
 	<fileSystemProvider environment="browser" 	type="sharedObject" id="cadet.sharedObject" 	label="Cadet2D.so" />
-	<fileSystemProvider environment="browser" 	type="url" 			    id="cadet.url" 			      label="Cadet2D.url" baseURL="files" visible="false" />
+	<fileSystemProvider environment="browser" 	type="url" 			    id="cadet.url" 			      label="Cadet2D.url" baseURL="files" /><!--visible="false" />-->
 	
 	<extension url="extensions/DefaultExtension.swf" />
 	<extension url="extensions/CadetEditorExtension.swf" />

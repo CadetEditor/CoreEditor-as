@@ -9,6 +9,8 @@ package flox.editor.commandHandlers
 	import flox.app.core.commandHandlers.ICommandHandler;
 	import flox.app.entities.URI;
 	import flox.app.resources.CommandHandlerFactory;
+	import flox.app.resources.FileType;
+	import flox.app.resources.IResource;
 	import flox.editor.FloxEditor;
 	import flox.editor.entities.Commands;
 	import flox.editor.operations.OpenFileOperation;
@@ -35,7 +37,8 @@ package flox.editor.commandHandlers
 		
 		private function doubleClickHandler( event:MouseEvent ):void
 		{
-			if (!panel.list.selectedFile) return;
+			//if (!panel.list.selectedFile) return;
+			if (!panel.list.selectedFile || panel.list.selectedFile.isDirectory()) return;
 			
 			openFile();
 			disposePanel();	
@@ -66,7 +69,14 @@ package flox.editor.commandHandlers
 				recentURI = new URI(recentURL);
 			}
 			
-			panel = new FileSystemListBrowserPanel( recentURI );
+			var validExtensions:Array = [];
+			var fileTypes:Vector.<IResource> = FloxApp.resourceManager.getResourcesOfType(FileType);
+			for ( var i:uint = 0; i < fileTypes.length; i ++ ) {
+				var fileType:FileType = FileType(fileTypes[i]);
+				validExtensions.push(fileType.extension);
+			}
+			
+			panel = new FileSystemListBrowserPanel( recentURI, false, validExtensions );
 			panel.label = "Open File";
 			panel.validSelectionIsFolder = false;
 			panel.validSelectionIsFile = true;

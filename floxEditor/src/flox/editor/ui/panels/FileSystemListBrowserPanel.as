@@ -39,10 +39,14 @@ package flox.editor.ui.panels
 		
 		private var history:Array;
 		private var dontAdToHistory:Boolean;
+		private var validExtensions:Array;
 		
-		public function FileSystemListBrowserPanel( uri:URI = null, uriIsRoot:Boolean = false )
+		public function FileSystemListBrowserPanel( uri:URI = null, uriIsRoot:Boolean = false, validExtensions:Array = null )
 		{
-			var node:FileSystemNode = FloxApp.fileSystemProvider.fileSystem.children[0];
+			if (!validExtensions) validExtensions = [];
+			this.validExtensions = validExtensions;
+			
+			var node:FileSystemNode = FloxApp.fileSystemProvider.fileSystem;//.children[0];
 			rootURI = node.uri;
 			if (!uri) 	uri = new URI( rootURI.path );
 			else if (uriIsRoot)		rootURI = uri;
@@ -75,6 +79,8 @@ package flox.editor.ui.panels
 				</Panel>
 			
 			FloxDeserializer.deserialize( xml, this, ["flox.editor.ui.components"] );
+			
+			list.validExtensions = validExtensions;
 			
 			upBtn.icon = FloxEditorIcons.OpenFile;
 			upBtn.addEventListener(MouseEvent.CLICK, clickUpBtnHandler);
@@ -182,11 +188,11 @@ package flox.editor.ui.panels
 		}
 		protected function validateUpButton():void
 		{
-//			if (list.selectedFolderURI && list.selectedFolderURI.path == rootURI.path) {
-//				upBtn.enabled = false;
-//			} else {
+			if (list.selectedFolderURI && list.selectedFolderURI.path == rootURI.path) {
+				upBtn.enabled = false;
+			} else {
 				upBtn.enabled = true;
-//			}
+			}
 		}
 		protected function validateBackButton():void
 		{

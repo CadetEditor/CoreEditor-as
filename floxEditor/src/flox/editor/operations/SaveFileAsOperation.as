@@ -12,8 +12,11 @@ package flox.editor.operations
 	import flox.app.core.managers.fileSystemProviders.operations.IDoesFileExistOperation;
 	import flox.app.core.operations.IAsynchronousOperation;
 	import flox.app.entities.URI;
+	import flox.app.resources.FileType;
+	import flox.app.resources.IResource;
 	import flox.editor.FloxEditor;
 	import flox.editor.contexts.IEditorContext;
+	import flox.editor.core.FloxEditorEnvironment;
 	import flox.editor.ui.panels.SaveAsFileListPanel;
 	import flox.editor.ui.panels.SaveAsFilePanel;
 	import flox.ui.components.Alert;
@@ -36,13 +39,31 @@ package flox.editor.operations
 		
 		public function execute():void
 		{
-			//TODO: recentURI may be "cadet..." rather than "flox...", causing a "Cannot map uri to provider" error.
-			var recentURL:String = FloxEditor.settingsManager.getString("flox.app.core.managers.fileSystemProviders.MultiFileSystemProvider.recentFolder");
+			var recentURL:String;
 			var recentURI:URI;
+			var uriIsRoot:Boolean = false;
+			
+			// Limit to sharedObject fileSystem if in the browser.
+			if ( FloxEditor.environment == FloxEditorEnvironment.BROWSER ) {
+				recentURL = "cadet.sharedObject/";
+				uriIsRoot = true;
+			} else {
+				//TODO: recentURI may be "cadet..." rather than "flox...", causing a "Cannot map uri to provider" error.
+				recentURL = FloxEditor.settingsManager.getString("flox.app.core.managers.fileSystemProviders.MultiFileSystemProvider.recentFolder");				
+			}
+		
 			if ( recentURL != null ) {
 				recentURI = new URI(recentURL);
 			}
-			panel = new SaveAsFileListPanel( recentURI );
+			
+			var validExtensions:Array = [];
+			var fileTypes:Vector.<IResource> = FloxApp.resourceManager.getResourcesOfType(FileType);
+			for ( var i:uint = 0; i < fileTypes.length; i ++ ) {
+				var fileType:FileType = FileType(fileTypes[i]);
+				validExtensions.push(fileType.extension);
+			}
+			
+			panel = new SaveAsFileListPanel( recentURI, uriIsRoot, validExtensions );
 			FloxEditor.viewManager.addPopUp(panel);
 			
 			if ( editorContext.isNewFile )
