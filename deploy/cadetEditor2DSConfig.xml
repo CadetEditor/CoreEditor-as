@@ -21,9 +21,9 @@
 		<url><![CDATA[extensions/manifests/Cadet2D.xml]]></url>
 	</manifest>
 
-  <manifest>
+  <!--<manifest>
 		<url><![CDATA[extensions/manifests/Cadet2DStarling.xml]]></url>
-	</manifest>
+	</manifest>-->
 
 	<manifest>
 		<url><![CDATA[extensions/manifests/Cadet2DBox2D.xml]]></url>
@@ -46,6 +46,13 @@
 		<label><![CDATA[Motorbike Template]]></label>
 		<description><![CDATA[A simple motorbike physics example with editable terrain.]]></description>
 		<url><![CDATA[extensions/fileTemplates/motorbike_bridge_s.cdt2d]]></url>
+		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
+	</template>
+	
+	<template>
+		<label><![CDATA[Marble Run Template]]></label>
+		<description><![CDATA[A simple marble run template.]]></description>
+		<url><![CDATA[extensions/fileTemplates/marble_run.cdt2d]]></url>
 		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
 	</template>
 

@@ -19,7 +19,7 @@ package
 	import flox.editor.operations.InitializeFloxOperationAIR;
 	import flox.editor.ui.components.SplashScreen;
 	
-	[SWF(backgroundColor="#15181A", frameRate="120")]
+	[SWF(backgroundColor="#15181A", frameRate="60")]
 	public class FloxEditor_AIR extends Sprite
 	{
 		private var splashWindow		:NativeWindow;
