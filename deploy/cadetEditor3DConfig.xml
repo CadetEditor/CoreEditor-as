@@ -46,12 +46,12 @@
 		<url><![CDATA[extensions/fileTemplates/planets.cdt3d]]></url>
 		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
 	</template>	
-	<!--
+	
 	<template>
-		<label><![CDATA[Contraption]]></label>
-		<description><![CDATA[A scene with an imported mesh and textures.]]></description>
-		<url><![CDATA[extensions/fileTemplates/Contraption.cdt3d]]></url>
+		<label><![CDATA[Earth]]></label>
+		<description><![CDATA[A space scene with a SkyBox and Earth.]]></description>
+		<url><![CDATA[extensions/fileTemplates/earth.cdt3d]]></url>
 		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
 	</template>
-	-->
+
 </xml>
