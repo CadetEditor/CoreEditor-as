@@ -63,7 +63,12 @@ package flox.editor.operations
 				validExtensions.push(fileType.extension);
 			}
 			
-			panel = new SaveAsFileListPanel( recentURI, uriIsRoot, validExtensions );
+			var rootURI:URI;
+			if ( uriIsRoot ) {
+				rootURI = recentURI;
+			}
+			
+			panel = new SaveAsFileListPanel( recentURI, rootURI, validExtensions );
 			FloxEditor.viewManager.addPopUp(panel);
 			
 			if ( editorContext.isNewFile )

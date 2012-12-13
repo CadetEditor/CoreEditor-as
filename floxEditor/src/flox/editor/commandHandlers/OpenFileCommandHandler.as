@@ -76,7 +76,7 @@ package flox.editor.commandHandlers
 				validExtensions.push(fileType.extension);
 			}
 			
-			panel = new FileSystemListBrowserPanel( recentURI, false, validExtensions );
+			panel = new FileSystemListBrowserPanel( recentURI, null, validExtensions );
 			panel.label = "Open File";
 			panel.validSelectionIsFolder = false;
 			panel.validSelectionIsFile = true;

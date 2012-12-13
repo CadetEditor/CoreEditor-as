@@ -107,39 +107,6 @@ package flox.editor
 			trace("CONTEXT CHANGED "+uri);
 			_currentEditorContextURI = uri;
 		}
-		
-		public static function getProjectDirectoryURI(contextURI:URI = null):URI
-		{
-			if (!contextURI) {
-				contextURI = currentEditorContextURI;
-			}
-			var projectURI:URI = contextURI.getParentURI();//+ FloxApp.externalResourceFolderName);
-			// If reading from memory (i.e. we're editing an unsaved template file) default to "Documents/Cadet2D"
-			var provider:IFileSystemProvider = FloxApp.fileSystemProvider.getFileSystemProviderForURI(contextURI);
-			if ( provider is MemoryFileSystemProvider ) {
-				if ( FloxEditor.environment == FloxEditorEnvironment.AIR ) {
-					provider = FloxApp.fileSystemProvider.getFileSystemProviderForURI(new URI("cadet.local/"));//+FloxApp.externalResourceFolderName));
-					var localFSP:ILocalFileSystemProvider = ILocalFileSystemProvider(provider); 
-					var defaultDirPath:String = localFSP.defaultDirectoryURI.path;
-					if ( defaultDirPath.indexOf( localFSP.rootDirectoryURI.path ) != -1 ) {
-						defaultDirPath = defaultDirPath.replace( localFSP.rootDirectoryURI.path, "" );
-					}
-					projectURI = new URI("cadet.local"+defaultDirPath+"/");
-				}
-				else if ( FloxEditor.environment == FloxEditorEnvironment.BROWSER ) {
-					projectURI = new URI("cadet.url/");			
-				}
-			} else {
-				if ( FloxEditor.environment == FloxEditorEnvironment.AIR ) {
-					projectURI = contextURI.getParentURI();
-				}
-				else if ( FloxEditor.environment == FloxEditorEnvironment.BROWSER ) {
-					projectURI = new URI("cadet.url/");				
-				}				
-			}
-			
-			return projectURI;
-		}
 	}
 }
 

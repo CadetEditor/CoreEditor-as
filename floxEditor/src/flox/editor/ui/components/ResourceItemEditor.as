@@ -30,6 +30,7 @@ package flox.editor.ui.components
 	import flox.editor.operations.SelectResourceOperation;
 	import flox.editor.ui.data.ResourceDataDescriptor;
 	import flox.editor.ui.panels.FileSystemListBrowserPanel;
+	import flox.editor.utils.FileSystemProviderUtil;
 	import flox.ui.components.Button;
 	import flox.ui.components.Image;
 	import flox.ui.components.List;
@@ -124,12 +125,28 @@ package flox.editor.ui.components
 		
 		private function openPanel():void
 		{
-			var assetsURI:URI = new URI(FloxEditor.getProjectDirectoryURI().path+FloxApp.externalResourceFolderName);
+			var assetsURI:URI = new URI(FileSystemProviderUtil.getProjectDirectoryURI(FloxEditor.currentEditorContextURI).path+FloxApp.externalResourceFolderName);
+			
+			//TODO: recentURI may be "cadet..." rather than "flox...", causing a "Cannot map uri to provider" error.
+			var recentURL:String = FloxEditor.settingsManager.getString("flox.app.core.managers.fileSystemProviders.MultiFileSystemProvider.recentAssetsFolder");
+			var recentURI:URI;
+			if ( recentURL != null ) {
+				recentURI = new URI(recentURL);
+				
+				var related:uint = FileSystemProviderUtil.getRelation(assetsURI, recentURI);
+				trace("related "+related+" assetsURI "+assetsURI.path+" recentURI "+recentURI.path);
+				// If the stored recentURI is not related to the given assetsURI for this file
+				// (e.g. this is a new file which automatically reads from the default assets folder and the
+				// stored recentURI points somewhere else) ditch the recentURI.
+				if ( related == URI.NOT_RELATED ) {
+					recentURI = null;
+				}
+			}
 			
 //			var allowedType:Class = IntrospectionUtil.getPropertyType( itemsBeingEdited[0], propertyOnItemsBeingEdited );
 //			var dataProvider:ArrayCollection = new ArrayCollection( SelectResourceOperation.getFilteredResources( FloxApp.resourceManager.getResourcesByURI(assetsURI), [allowedType] ) );
 			
-			panel = new FileSystemListBrowserPanel(assetsURI, true, validExtensions);
+			panel = new FileSystemListBrowserPanel(recentURI, assetsURI, validExtensions);
 			panel.label = "Select Resource";
 			panel.validSelectionIsFolder = false;
 			panel.validSelectionIsFile = true;
@@ -251,14 +268,17 @@ package flox.editor.ui.components
 		private function selectFile():void
 		{		
 			//closeList();
-			
+		
 			//var assetsURI:URI = FloxEditor.getAssetsDirectoryURI();
-			var assetsURI:URI = new URI(FloxEditor.getProjectDirectoryURI().path+FloxApp.externalResourceFolderName);
+			var assetsURI:URI = new URI(FileSystemProviderUtil.getProjectDirectoryURI(FloxEditor.currentEditorContextURI).path+FloxApp.externalResourceFolderName);
 			
 			var resourceID:String = panel.list.selectedFile.path;
 			if ( resourceID.indexOf(assetsURI.path) != -1 ) {
 				resourceID = resourceID.replace(assetsURI.path, "");
 			}
+			
+			trace("RECENT ASSETS FOLDER: OPEN "+panel.list.rootNode.uri.toString());
+			FloxEditor.settingsManager.setString("flox.app.core.managers.fileSystemProviders.MultiFileSystemProvider.recentAssetsFolder", panel.list.rootNode.uri.toString());
 			
 			//var factoryResource:IFactoryResource = event.item as IFactoryResource;
 			var factoryResource:IFactoryResource = IFactoryResource(FloxApp.resourceManager.getResourceByID(resourceID));

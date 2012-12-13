@@ -41,15 +41,18 @@ package flox.editor.ui.panels
 		private var dontAdToHistory:Boolean;
 		private var validExtensions:Array;
 		
-		public function FileSystemListBrowserPanel( uri:URI = null, uriIsRoot:Boolean = false, validExtensions:Array = null )
+		public function FileSystemListBrowserPanel( uri:URI = null, rootURI:URI = null, validExtensions:Array = null )
 		{
 			if (!validExtensions) validExtensions = [];
 			this.validExtensions = validExtensions;
 			
 			var node:FileSystemNode = FloxApp.fileSystemProvider.fileSystem;//.children[0];
-			rootURI = node.uri;
-			if (!uri) 	uri = new URI( rootURI.path );
-			else if (uriIsRoot)		rootURI = uri;
+			
+			if (rootURI)	this.rootURI = rootURI;
+			else			this.rootURI = node.uri;
+			
+			if (!uri) 		uri = new URI( rootURI.path );
+			
 			
 			initURI = uri;
 			

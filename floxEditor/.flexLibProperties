@@ -68,6 +68,7 @@
     <classEntry path="flox.editor.operations.InitializeFloxOperationAIR"/>
     <classEntry path="flox.editor.operations.SaveSettingsOperationAIR"/>
     <classEntry path="flox.editor.operations.LoadSettingsOperationAIR"/>
+    <classEntry path="flox.editor.utils.FileSystemProviderUtil"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>
