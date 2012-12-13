@@ -305,6 +305,9 @@ package flox.editor.ui.components
 			dispatchEvent( new ItemEditorEvent( ItemEditorEvent.COMMIT_VALUE, null, null ) );
 			
 			//valueInvalid = true;
+			
+			_value = factoryResource.getInstance();
+			
 			invalidate();
 		}
 		
