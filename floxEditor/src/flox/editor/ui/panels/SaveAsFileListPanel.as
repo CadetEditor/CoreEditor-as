@@ -4,25 +4,13 @@
 package flox.editor.ui.panels
 {
 	import flash.events.Event;
-	import flash.events.MouseEvent;
 	
-	import flox.app.FloxApp;
-	import flox.app.entities.FileSystemNode;
 	import flox.app.entities.URI;
 	import flox.app.util.StringUtil;
 	import flox.app.util.Validation;
-	import flox.editor.FloxEditor;
-	import flox.editor.icons.FloxEditorIcons;
-	import flox.editor.ui.components.FileSystemList;
-	import flox.editor.ui.components.FileSystemTree;
-	import flox.ui.components.Button;
 	import flox.ui.components.HBox;
 	import flox.ui.components.Label;
-	import flox.ui.components.TextArea;
 	import flox.ui.components.TextInput;
-	import flox.ui.util.FloxDeserializer;
-	
-	//import flux.skins.ToolbarButtonSkin;
 	
 	public class SaveAsFileListPanel extends FileSystemListBrowserPanel
 	{

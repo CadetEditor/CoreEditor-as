@@ -7,18 +7,14 @@ package flox.editor.ui.panels
 	import flox.app.core.managers.fileSystemProviders.operations.ITraverseToDirectoryOperation;
 	import flox.app.entities.FileSystemNode;
 	import flox.app.entities.URI;
-	import flox.editor.FloxEditor;
 	import flox.editor.icons.FloxEditorIcons;
 	import flox.editor.ui.components.FileSystemList;
 	import flox.ui.components.Button;
 	import flox.ui.components.HBox;
-	import flox.ui.components.List;
 	import flox.ui.components.Panel;
 	import flox.ui.components.TextArea;
 	import flox.ui.components.VBox;
 	import flox.ui.util.FloxDeserializer;
-	
-	//import flux.skins.ToolbarButtonSkin;
 	
 	public class FileSystemListBrowserPanel extends Panel
 	{

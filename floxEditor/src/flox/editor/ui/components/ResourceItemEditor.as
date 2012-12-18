@@ -4,42 +4,30 @@
 package flox.editor.ui.components
 {
 	import flash.display.Sprite;
-	import flash.events.Event;
 	import flash.events.MouseEvent;
-	import flash.geom.Point;
 	import flash.text.TextField;
 	import flash.utils.getDefinitionByName;
 	
 	import flox.app.FloxApp;
 	import flox.app.core.contexts.IInspectableContext;
 	import flox.app.core.contexts.IOperationManagerContext;
-	import flox.app.core.managers.fileSystemProviders.IFileSystemProvider;
 	import flox.app.entities.URI;
-	import flox.app.managers.fileSystemProviders.memory.MemoryFileSystemProvider;
 	import flox.app.operations.BindResourceOperation;
 	import flox.app.operations.UndoableCompoundOperation;
-	import flox.app.resources.IExternalResource;
 	import flox.app.resources.IFactoryResource;
 	import flox.app.resources.IResource;
-	import flox.app.util.IntrospectionUtil;
-	import flox.core.data.ArrayCollection;
 	import flox.editor.FloxEditor;
-	import flox.editor.contexts.IEditorContext;
-	import flox.editor.core.FloxEditorEnvironment;
 	import flox.editor.icons.FloxEditorIcons;
-	import flox.editor.operations.SelectResourceOperation;
-	import flox.editor.ui.data.ResourceDataDescriptor;
 	import flox.editor.ui.panels.FileSystemListBrowserPanel;
 	import flox.editor.utils.FileSystemProviderUtil;
+	import flox.ui.FloxUI;
 	import flox.ui.components.Button;
 	import flox.ui.components.Image;
-	import flox.ui.components.List;
 	import flox.ui.components.TextStyles;
 	import flox.ui.components.UIComponent;
 	import flox.ui.events.ComponentFocusEvent;
 	import flox.ui.events.ItemEditorEvent;
-	import flox.ui.events.ListEvent;
-	import flox.ui.managers.PopUpManager;
+	import flox.ui.util.Scale9GridUtil;
 	
 	import flux.skins.TextAreaSkin;
 
@@ -72,6 +60,11 @@ package flox.editor.ui.components
 			height = 22;
 			
 			background = new TextAreaSkin();
+			
+			if (!background.scale9Grid) {
+				Scale9GridUtil.setScale9Grid(background, FloxUI.defaultTextAreaSkinScale9Grid);
+			}
+			
 			addChild(background);
 			
 			iconImage = new Image();
