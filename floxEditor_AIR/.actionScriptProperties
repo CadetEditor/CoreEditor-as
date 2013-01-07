@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<actionScriptProperties analytics="false" mainApplicationPath="FloxEditor_AIR.as" projectUUID="b86dbe11-96e9-41bd-beb0-ec70b720def2" version="11">
+<actionScriptProperties analytics="false" mainApplicationPath="FloxEditor_AIR.as" projectUUID="a3e57799-ab45-4403-8c11-a3f6ef145e1d" version="11">
   <compiler additionalCompilerArguments="-swf-version=13 -define=ENV::air,true -keep-as3-metadata += Serializable,Inspectable" advancedTelemetry="false" autoRSLOrdering="true" copyDependentFiles="false" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderLocation="DOCUMENTS/Flox/floxEditor/deploy" outputFolderPath="bin-debug" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="true" useDebugRSLSwfs="true" useFlashSDK="true" verifyDigests="true" warn="true">
     <compilerSourcePath/>
     <libraryPath defaultLinkType="0">
@@ -30,11 +30,10 @@
           <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/automation_agent.swc" useDefaultLinkType="false"/>
         </excludedEntries>
       </libraryPathEntry>
-      <libraryPathEntry kind="3" linkType="1" path="/FloxUI/bin/FloxUI.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="/FloxEditor/bin/FloxEditor.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="/FloxAppEx/bin/FloxAppEx.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="3" linkType="1" path="/FloxApp/bin/FloxApp.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="C:/Program Files/Adobe/Adobe Flash Builder 4.7 (64 Bit)/sdks/4.6.0/frameworks/libs/core.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="1" path="/FloxAppEx/bin/FloxAppEx.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="1" path="/FloxEditor/bin/FloxEditor.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="1" path="/FloxUI/bin/FloxUI.swc" useDefaultLinkType="false"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
@@ -49,13 +48,9 @@
   <flashCatalyst validateFlashCatalystCompatibility="false"/>
   <buildTargets>
     <buildTarget buildTargetName="default" platformId="default">
-      <airSettings airCertificatePath="C:/Users/Rob/Documents/GitHub/Flox/FloxEditor/floxEditor_AIR/deployment/Certificate.pfx" airTimestamp="true" anePathSet="true" version="1">
+      <airSettings airCertificatePath="" airTimestamp="true" anePathSet="false" version="1">
         <airExcludes/>
         <anePaths/>
-        <newLaunchParams/>
-        <modifiedLaunchParams/>
-        <newPackagingParams/>
-        <modifiedPackagingParams/>
       </airSettings>
       <actionScriptSettings version="1"/>
     </buildTarget>

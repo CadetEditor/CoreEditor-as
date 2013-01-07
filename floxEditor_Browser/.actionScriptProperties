@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<actionScriptProperties analytics="false" mainApplicationPath="FloxEditor_Browser.as" projectUUID="51934738-8dc4-4916-932f-2ad6872531e7" version="11">
-  <compiler additionalCompilerArguments="-swf-version=13 -define=ENV::browser,true -keep-as3-metadata += Serializable,Inspectable" advancedTelemetry="false" autoRSLOrdering="true" copyDependentFiles="false" fteInMXComponents="false" generateAccessible="true" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="true" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderLocation="DOCUMENTS/Flox/floxEditor/deploy" outputFolderPath="bin-debug" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="false" useDebugRSLSwfs="true" useFlashSDK="true" verifyDigests="true" warn="true">
+<actionScriptProperties analytics="false" mainApplicationPath="FloxEditor_Browser.as" projectUUID="605b7804-23fe-4773-902d-151bf04d97fe" version="11">
+  <compiler additionalCompilerArguments="-swf-version=13 -define=ENV::browser,true -keep-as3-metadata += &#13;&#13;&#10;Serializable,Inspectable" advancedTelemetry="false" autoRSLOrdering="true" copyDependentFiles="false" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="true" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderLocation="DOCUMENTS/Flox/floxEditor/deploy" outputFolderPath="bin-debug" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="false" useDebugRSLSwfs="true" useFlashSDK="true" verifyDigests="true" warn="true">
     <compilerSourcePath/>
     <libraryPath defaultLinkType="0">
       <libraryPathEntry kind="4" path="">
@@ -28,10 +28,9 @@
           <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/automation_agent.swc" useDefaultLinkType="false"/>
         </excludedEntries>
       </libraryPathEntry>
+      <libraryPathEntry kind="3" linkType="1" path="/FloxAppEx/bin/FloxAppEx.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="3" linkType="1" path="/FloxUI/bin/FloxUI.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="3" linkType="1" path="/FloxEditor/bin/FloxEditor.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="/FloxAppEx/bin/FloxAppEx.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="C:/Program Files/Adobe/Adobe Flash Builder 4.7 (64 Bit)/sdks/4.6.0/frameworks/libs/core.swc" useDefaultLinkType="false"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
