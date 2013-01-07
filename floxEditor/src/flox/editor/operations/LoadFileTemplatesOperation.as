@@ -3,25 +3,11 @@
 
 package flox.editor.operations
 {
-	import flash.errors.IllegalOperationError;
-	import flash.events.ErrorEvent;
-	import flash.events.Event;
-	import flash.events.EventDispatcher;
-	import flash.events.IOErrorEvent;
-	import flash.events.SecurityErrorEvent;
 	import flash.net.URLLoader;
-	import flash.net.URLLoaderDataFormat;
-	import flash.net.URLRequest;
-	import flash.system.Capabilities;
 	
-	import flox.editor.FloxEditor;
 	import flox.editor.resources.FileTemplate;
-	import flox.editor.utils.FloxEditorUtil;
 	import flox.app.core.operations.IOperation;
 	import flox.app.managers.ResourceManager;
-	import flox.app.util.ArrayUtil;
-	import flox.app.util.VectorUtil;
-	import org.osmf.utils.URL;
 	
 	public class LoadFileTemplatesOperation implements IOperation
 	{

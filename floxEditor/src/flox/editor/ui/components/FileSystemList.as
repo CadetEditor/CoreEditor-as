@@ -9,15 +9,10 @@ package flox.editor.ui.components
 	import flox.app.entities.FileSystemNode;
 	import flox.app.entities.URI;
 	import flox.app.managers.ResourceManager;
-	import flox.app.resources.FileType;
-	import flox.app.resources.IResource;
 	import flox.core.data.ArrayCollection;
 	import flox.editor.ui.data.FileSystemTreeDataDescriptor;
 	import flox.ui.components.List;
 	import flox.ui.components.ListItemRenderer;
-	import flox.ui.events.ListEvent;
-	
-	import mx.controls.listClasses.IListItemRenderer;
 	
 	public class FileSystemList extends List
 	{

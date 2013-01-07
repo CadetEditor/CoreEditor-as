@@ -3,13 +3,9 @@
 
 package flox.app.managers
 {
-	import flash.display.DisplayObject;
-	import flash.events.Event;
 	import flash.events.EventDispatcher;
-	import flash.events.FocusEvent;
 		
 	import flox.app.core.contexts.IContext;
-	import flox.app.core.contexts.IVisualContext;
 	import flox.app.events.ContextManagerEvent;
 	import flox.app.util.IntrospectionUtil;
 	

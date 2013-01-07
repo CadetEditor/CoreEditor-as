@@ -12,7 +12,6 @@ package
 	import flox.app.resources.FactoryResource;
 	import flox.app.resources.KeyBinding;
 	import flox.app.resources.PropertyInspectorItemEditorFactory;
-	import flox.editor.FloxEditor;
 	import flox.editor.commandHandlers.*;
 	import flox.editor.contexts.*;
 	import flox.editor.core.IGlobalViewContainer;

@@ -3,8 +3,6 @@
 
 package flox.editor.ui.components
 {
-	import flash.display.Sprite;
-	
 	import flox.ui.util.FloxDeserializer;
 	
 	import flox.app.core.operations.IAsynchronousOperation;

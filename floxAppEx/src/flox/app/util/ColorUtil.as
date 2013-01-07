@@ -102,9 +102,9 @@ package flox.app.util
  		      
         public static function rgb2hex(r:Number, g:Number, b:Number):String
        	{
-       		var uint:uint = rgb2uint( r, g, b );
+       		var num:uint = rgb2uint( r, g, b );
        		
-       		var str:String = uint.toString( 16 );
+       		var str:String = num.toString( 16 );
        		while ( str.length < 6 )
        		{
        			str = "0" + str;

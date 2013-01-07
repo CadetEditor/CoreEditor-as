@@ -3,12 +3,10 @@
 
 package flox.editor.operations
 {
-	import flash.display.DisplayObject;
 	import flash.display.Stage;
 	import flash.events.ErrorEvent;
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
-	import flash.events.ProgressEvent;
 	import flash.net.URLLoader;
 	import flash.net.URLRequest;
 	import flash.system.ApplicationDomain;
@@ -23,7 +21,6 @@ package flox.editor.operations
 	import flox.app.managers.fileSystemProviders.url.URLFileSystemProvider;
 	import flox.app.operations.CompoundOperation;
 	import flox.app.operations.LoadSWFOperation;
-	import flox.app.util.StringUtil;
 	import flox.editor.FloxEditor;
 	import flox.editor.controllers.CurrentVisualContextController;
 	import flox.editor.controllers.OperationFeedbackController;
@@ -31,11 +28,9 @@ package flox.editor.operations
 	import flox.editor.controllers.WelcomeScreenController;
 	import flox.editor.core.floxEditor_internal;
 	import flox.editor.events.FloxEditorEvent;
-	import flox.editor.resources.EditorFactory;
 	import flox.editor.ui.components.DefaultEditorViewContainer;
 	import flox.editor.ui.components.DefaultGlobalViewContainer;
 	import flox.editor.ui.components.DefaultViewContainer;
-	import flox.editor.utils.FloxEditorUtil;
 	import flox.app.operations.LoadManifestsOperation;
 	
 

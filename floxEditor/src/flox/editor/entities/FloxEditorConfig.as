@@ -3,8 +3,6 @@
 
 package flox.editor.entities
 {
-	import flashx.textLayout.factory.StringTextLineFactory;
-
 	public class FloxEditorConfig
 	{
 		private var _applicationID		:String;
