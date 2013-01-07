@@ -2,12 +2,9 @@
 // All rights reserved. 
 
 package flox.editor.ui.panels
-{
-	import flash.events.Event;
-	
+{	
 	import flox.ui.util.FloxDeserializer;
 	
-	import flox.editor.FloxEditor;
 	import flox.ui.components.Button;
 	import flox.ui.components.List;
 	import flox.ui.components.Panel;

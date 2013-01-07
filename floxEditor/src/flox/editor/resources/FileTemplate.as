@@ -5,7 +5,6 @@ package flox.editor.resources
 {
 	import flash.utils.getDefinitionByName;
 	
-	import flox.app.entities.URI;
 	import flox.app.resources.IResource;
 
 	public class FileTemplate implements IResource
@@ -13,7 +12,9 @@ package flox.editor.resources
 		public var _label			:String;
 		public var description		:String;
 		public var url				:String;
-		public var iconClassPath	:String;
+		private var _iconClassPath	:String;
+		
+		private var _icon			:Class;
 		
 		public function FileTemplate()
 		{
@@ -33,14 +34,32 @@ package flox.editor.resources
 			iconClassPath = String(xml.icon[0].text());
 		}
 		
+		public function get iconClassPath():String
+		{
+			return _iconClassPath;
+		}
+		public function set iconClassPath( value:String ):void
+		{
+			_iconClassPath = value;
+			
+			if ( iconClassPath.indexOf("::") ) {
+				var arr:Array = iconClassPath.split("::");
+				var icons:Class = getDefinitionByName(arr[0]) as Class;
+				_icon = icons[arr[1]];
+			} else {
+				_icon = getDefinitionByName(iconClassPath) as Class;
+			}
+		}
+		
 		public function get icon():Class
 		{
-			try
+			return _icon;
+/*			try
 			{
 				return getDefinitionByName(iconClassPath) as Class;
 			}
 			catch( e:Error ) {}
-			return null;
+			return null;*/
 		}
 		
 		/////////////////////////////////////////////////

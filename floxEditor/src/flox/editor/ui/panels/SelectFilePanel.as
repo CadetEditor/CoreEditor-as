@@ -6,7 +6,6 @@ package flox.editor.ui.panels
 	import flash.events.Event;
 	
 	import flox.app.FloxApp;
-	import flox.editor.FloxEditor;
 	import flox.editor.ui.components.FileSystemTree;
 	import flox.ui.components.Button;
 	import flox.ui.components.Panel;

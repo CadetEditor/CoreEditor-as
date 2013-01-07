@@ -3,20 +3,16 @@
 
 package flox.editor.ui.panels
 {
-	import flash.events.Event;
-	
-	import flox.ui.util.FloxDeserializer;
-	
-	import flox.editor.FloxEditor;
-	import flox.ui.components.Canvas;
-	import flox.ui.components.List;
 	import flox.editor.ui.components.FileTemplateItemRenderer;
 	import flox.editor.ui.components.RecentFileItemRenderer;
+	import flox.ui.components.Canvas;
+	import flox.ui.components.List;
+	import flox.ui.util.FloxDeserializer;
 
 	public class WelcomePanel extends Canvas
 	{
 		[Embed( source='../assets/welcomeHeader.png' )]
-		public var WelcomeHeaderBitmap	:Class;
+		public static var WelcomeHeaderBitmap	:Class;
 		
 		public var recentFileList	:List;
 		public var fileTemplateList	:List;
@@ -32,7 +28,7 @@ package flox.editor.ui.panels
 			
 			var xml:XML = 
 			<Canvas width="650" height="460" >
-				<Image source="flox.editor.ui.panels.WelcomePanel_WelcomeHeaderBitmap" width="100%" height="104"/>
+				<Image width="100%" height="104" source="flox.editor.ui.panels.WelcomePanel::WelcomeHeaderBitmap"/>
 				<HBox width="100%" height="100%" paddingLeft="12" paddingRight="12" paddingTop="12" paddingBottom="24" spacing="20">
 					<VBox width="100%" height="100%" spacing="12">
 						<Label text="Open a Recent Item"/>
@@ -55,6 +51,7 @@ package flox.editor.ui.panels
 			</Canvas>
 			
 			FloxDeserializer.deserialize( xml, this );
+			
 			recentFileList.itemRendererClass = RecentFileItemRenderer;
 			fileTemplateList.itemRendererClass = FileTemplateItemRenderer;
 		}

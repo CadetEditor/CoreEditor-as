@@ -39,21 +39,21 @@
 		<label><![CDATA[Barebones 2D with Physics]]></label>
 		<description><![CDATA[Creates a Cadet Editor scene with a Physics Process.]]></description>
 		<url><![CDATA[extensions/fileTemplates/barebones2DSPhysics.cdt2d]]></url>
-		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
+		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
 	</template>
 	
 	<template>
 		<label><![CDATA[Motorbike Template]]></label>
 		<description><![CDATA[A simple motorbike physics example with editable terrain.]]></description>
 		<url><![CDATA[extensions/fileTemplates/motorbike_bridge_s.cdt2d]]></url>
-		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
+		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
 	</template>
 	
 	<template>
 		<label><![CDATA[Marble Run Template]]></label>
 		<description><![CDATA[A simple marble run template.]]></description>
 		<url><![CDATA[extensions/fileTemplates/marble_run.cdt2d]]></url>
-		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
+		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
 	</template>
 
 </xml>

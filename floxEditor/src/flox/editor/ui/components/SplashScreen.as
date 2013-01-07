@@ -15,7 +15,7 @@ package flox.editor.ui.components
 	public class SplashScreen extends UIComponent
 	{
 		[Embed( source='../assets/splash_cadet.png' )]
-		private var SplashScreenBitmap	:Class;
+		public static var SplashScreenBitmap	:Class;
 		
 		// Child elements
 		public var image		:Image;
@@ -34,13 +34,12 @@ package flox.editor.ui.components
 		{
 			var xml:XML =
 			<UIComponent width="640" height="360">
-				<Image id="image" />
+				<Image source="flox.editor.ui.components.SplashScreen::SplashScreenBitmap" />
 				<ProgressBar id="progressBar" x="10" y="300" width="200" height="10"/>
 				<Label id="loadingLabel" x="10" y="280" width="570" height="60" text="Loading..." fontColor="0xFFFFFF" />
 			</UIComponent>
 			
 			FloxDeserializer.deserialize(xml, this);
-			image.source = SplashScreenBitmap;
 			//loadingLabel.width = 570;
 			loadingLabel.height = 40;
 			loadingLabel.resizeToContentWidth = false;
