@@ -39,28 +39,28 @@
 		<label><![CDATA[Barebones 2D with Physics]]></label>
 		<description><![CDATA[Creates a Cadet Editor scene with a Renderer2D and a Physics process.]]></description>
 		<url><![CDATA[extensions/fileTemplates/barebones2DPhysics.cdt2d]]></url>
-		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
+		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
 	</template>
 
 	<template>
 		<label><![CDATA[Motorbike Template]]></label>
 		<description><![CDATA[A simple motorbike physics example with editable terrain.]]></description>
 		<url><![CDATA[extensions/fileTemplates/motorbike_bridge.cdt2d]]></url>
-		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
+		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
 	</template>
 	
 	<template>
 		<label><![CDATA[Marble Run Template]]></label>
 		<description><![CDATA[A simple marble run example.]]></description>
 		<url><![CDATA[extensions/fileTemplates/marble_run.cdt2d]]></url>
-		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
+		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
 	</template>
 	
 	<template>
 		<label><![CDATA[Race Track Template]]></label>
 		<description><![CDATA[A plan view marble run example.]]></description>
 		<url><![CDATA[extensions/fileTemplates/racer.cdt2d]]></url>
-		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
+		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
 	</template>		
 
 </xml>
