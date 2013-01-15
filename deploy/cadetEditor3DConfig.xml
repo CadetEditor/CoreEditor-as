@@ -44,7 +44,7 @@
 		<label><![CDATA[Planets]]></label>
 		<description><![CDATA[A simple scene with imported textures.]]></description>
 		<url><![CDATA[extensions/fileTemplates/planets.cdt3d]]></url>
-		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
+		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
 	</template>	
 	
 	<template>

@@ -16,6 +16,7 @@ package flox.editor.ui.components
 	import flox.app.operations.UndoableCompoundOperation;
 	import flox.app.resources.IFactoryResource;
 	import flox.app.resources.IResource;
+	import flox.core.data.ArrayCollection;
 	import flox.editor.FloxEditor;
 	import flox.editor.icons.FloxEditorIcons;
 	import flox.editor.ui.panels.FileSystemListBrowserPanel;
@@ -47,11 +48,11 @@ package flox.editor.ui.components
 		
 		private var panel	:FileSystemListBrowserPanel;
 		
-		private var validExtensions				:Array;
+		public var extensions			:ArrayCollection;
 		
 		public function ResourceItemEditor()
 		{
-			validExtensions = ["jpg", "png", "3DS"];
+			extensions = new ArrayCollection(["jpg", "png", "3DS"]);
 		}
 		
 		override protected function init():void
@@ -139,7 +140,7 @@ package flox.editor.ui.components
 //			var allowedType:Class = IntrospectionUtil.getPropertyType( itemsBeingEdited[0], propertyOnItemsBeingEdited );
 //			var dataProvider:ArrayCollection = new ArrayCollection( SelectResourceOperation.getFilteredResources( FloxApp.resourceManager.getResourcesByURI(assetsURI), [allowedType] ) );
 			
-			panel = new FileSystemListBrowserPanel(recentURI, assetsURI, validExtensions);
+			panel = new FileSystemListBrowserPanel(recentURI, assetsURI, extensions.source);
 			panel.label = "Select Resource";
 			panel.validSelectionIsFolder = false;
 			panel.validSelectionIsFile = true;
@@ -367,6 +368,14 @@ package flox.editor.ui.components
 			return _value;
 		}
 
+/*		public function get validExtensions():ArrayCollection
+		{
+			return _validExtensions;
+		}
+		public function set validExtensions( value:ArrayCollection ):void
+		{
+			_validExtensions = value;
+		}*/
 
 	}
 }
