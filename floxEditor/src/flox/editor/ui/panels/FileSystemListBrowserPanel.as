@@ -42,12 +42,12 @@ package flox.editor.ui.panels
 			if (!validExtensions) validExtensions = [];
 			this.validExtensions = validExtensions;
 			
-			var node:FileSystemNode = FloxApp.fileSystemProvider.fileSystem;//.children[0];
+			var node:FileSystemNode = FloxApp.fileSystemProvider.fileSystem.children[0];
 			
 			if (rootURI)	this.rootURI = rootURI;
 			else			this.rootURI = node.uri;
 			
-			if (!uri) 		uri = new URI( rootURI.path );
+			if (!uri) 		uri = new URI( this.rootURI.path );
 			
 			
 			initURI = uri;
