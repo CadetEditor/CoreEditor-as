@@ -1267,14 +1267,14 @@
     </flox:ArrayCollection>
   </flox:DependencyManager>
   <flox:ArrayCollection x:name="children" x:id="588">
-    <cadet:InputProcess x:name="0" x:id="589" name="Input Manager">
+    <cadet:KeyboardInputProcess x:name="0" x:id="589" name="Input Manager">
       <flox:ArrayCollection x:name="children" x:id="590">
-        <cadet:InputMapping x:name="0" x:id="591" input="UP" name="ACCELERATE"/>
-        <cadet:InputMapping x:name="1" x:id="592" input="DOWN" name="BRAKE"/>
-        <cadet:InputMapping x:name="2" x:id="593" input="LEFT" name="STEER LEFT"/>
-        <cadet:InputMapping x:name="3" x:id="594" input="RIGHT" name="STEER RIGHT"/>
+        <cadet:KeyboardInputMapping x:name="0" x:id="591" input="UP" name="ACCELERATE"/>
+        <cadet:KeyboardInputMapping x:name="1" x:id="592" input="DOWN" name="BRAKE"/>
+        <cadet:KeyboardInputMapping x:name="2" x:id="593" input="LEFT" name="STEER LEFT"/>
+        <cadet:KeyboardInputMapping x:name="3" x:id="594" input="RIGHT" name="STEER RIGHT"/>
       </flox:ArrayCollection>
-    </cadet:InputProcess>
+    </cadet:KeyboardInputProcess>
     <cadet2D:TrackCamera2DProcess x:name="1" x:id="595" maxZoom="1" ease="0.2" minZoom="0.25" maxSpeed="100" minSpeed="0" name="Track Camera">
       <cadet2D:Entity x:name="target" x:id="596" name="Chasis">
         <flox:ArrayCollection x:name="children" x:id="597">
