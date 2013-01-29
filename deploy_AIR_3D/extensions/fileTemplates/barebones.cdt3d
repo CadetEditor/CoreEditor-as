@@ -1,0 +1,20 @@
+<cadet:CadetScene x:id="0" framerate="30" timeScale="1" name="Component" xmlns:cadet="www.unwrong.com/cadet/1.0.0" xmlns:x="flox.app.core.serialization.Serializer" xmlns:flox="www.unwrong.com/flox/1.0.0" xmlns:cadet3D="www.unwrong.com/cadet3D/1.0.0">
+  <flox:DependencyManager x:name="dependencyManager" x:id="1">
+    <flox:ArrayCollection x:name="dependencyNodes" x:id="2"/>
+  </flox:DependencyManager>
+  <Object x:name="userData" x:id="3"/>
+  <flox:ArrayCollection x:name="children" x:id="4">
+    <cadet3D:Renderer3D x:name="0" x:id="5" name="Away3D Renderer">
+      <cadet3D:CameraComponent x:name="cameraComponent" x:id="6" name="Camera" transform="-0.7071067690849304,-6.181723932741079e-8,0.7071067690849304,0,-0.4055798649787903,0.8191519975662231,-0.4055798053741455,0,-0.5792279243469238,-0.5735765099525452,-0.5792279839515686,0,240,240,240,1">
+        <flox:ArrayCollection x:name="children" x:id="7"/>
+      </cadet3D:CameraComponent>
+    </cadet3D:Renderer3D>
+    <cadet3D:DirectionalLightComponent x:name="1" x:id="8" diffuse="1" ambient="0.3" ambientColor="16777215" specular="0.25" name="Directional Light" transform="1.1924880638503055e-8,0,1,0,-0.9063078165054321,0.42261824011802673,1.0807612582652837e-8,0,-0.42261824011802673,-0.9063078165054321,5.039672235085391e-9,0,0,0,0,1" color="16777215">
+      <flox:ArrayCollection x:name="children" x:id="9"/>
+    </cadet3D:DirectionalLightComponent>
+    <x:Ref x:name="2" x:id="6"/>
+    <cadet3D:TridentComponent x:name="3" x:id="10" length="100" name="Trident" showLetters="1" transform="1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1">
+      <flox:ArrayCollection x:name="children" x:id="11"/>
+    </cadet3D:TridentComponent>
+  </flox:ArrayCollection>
+</cadet:CadetScene>

@@ -20,9 +20,9 @@ package
 	import flox.editor.resources.ActionFactory;
 	import flox.editor.ui.components.ResourceItemEditor;
 	
-	public class DefaultExtension extends Sprite
+	public class Default_Ext extends Sprite
 	{
-		public function DefaultExtension()
+		public function Default_Ext()
 		{
 			var rm:ResourceManager = FloxApp.resourceManager;
 			

@@ -1,0 +1,19 @@
+<manifest prefix="cadet2DFlash" url="www.unwrong.com/cadet2DFlash/1.0.0">
+
+  <classMap name="Renderer2D" class="cadet2DFlash.components.renderers.Renderer2D" />
+	<!-- Processes -->
+	<classMap name="TrackCamera2DProcess" class="cadet2DFlash.components.processes.TrackCamera2DProcess" />
+	<!-- Skins -->
+	<classMap name="AssetSkin" class="cadet2DFlash.components.skins.AssetSkin"/>
+	<classMap name="ConnectionSkin" class="cadet2DFlash.components.skins.ConnectionSkin"/>
+	<classMap name="FootprintManagerDebugSkin" class="cadet2DFlash.components.skins.FootprintManagerDebugSkin"/>
+	<classMap name="FractalPolygonSkin" class="cadet2DFlash.components.skins.FractalPolygonSkin"/>
+	<classMap name="GeometryDebugSkin" class="cadet2DFlash.components.skins.GeometryDebugSkin"/>
+	<classMap name="GeometrySkin" class="cadet2DFlash.components.skins.GeometrySkin"/>
+	<classMap name="PinSkin" class="cadet2DFlash.components.skins.PinSkin"/>
+	<classMap name="ScrollingBackgroundSkin" class="cadet2DFlash.components.skins.ScrollingBackgroundSkin"/>
+	<classMap name="SpringSkin" class="cadet2DFlash.components.skins.SpringSkin"/>
+	<classMap name="TerrainSkin" class="cadet2DFlash.components.skins.TerrainSkin"/>
+	<classMap name="WorldBoundsDebugSkin" class="cadet2DFlash.components.skins.WorldBoundsDebugSkin"/>
+  
+</manifest>

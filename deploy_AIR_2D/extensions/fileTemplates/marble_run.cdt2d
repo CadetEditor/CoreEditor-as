@@ -1,0 +1,1364 @@
+<cadet:CadetScene x:id="0" timeScale="1" name="Component" framerate="60" xmlns:cadet="www.unwrong.com/cadet/1.0.0" xmlns:x="org.bonesframework.core.serialization.Serializer" xmlns:bones="www.bonesframwork.org/bones/1.0.0" xmlns:cadet2D="www.unwrong.com/cadet2D/1.0.0" xmlns:cadet2DBox2D="www.unwrong.com/cadet2DBox2D/1.0.0">
+  <bones:DependencyManager x:name="dependencyManager" x:id="1">
+    <bones:ArrayCollection x:name="dependencyNodes" x:id="2"/>
+  </bones:DependencyManager>
+  <bones:ArrayCollection x:name="children" x:id="3">
+    <cadet2D:Renderer2D x:name="0" x:id="4" viewportWidth="970" viewportHeight="571" name="2D Renderer"/>
+    <cadet2D:Entity x:name="1" x:id="5" name="Marble 1">
+      <bones:ArrayCollection x:name="children" x:id="6">
+        <cadet2D:Transform2D x:name="0" x:id="7" name="Transform" matrix="1,0,0,1,60,40"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="8" x="0" y="0" name="Circle" radius="20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="9" mouseChildren="1" fillColor="16777215" fillXOffset="-20" fillYOffset="-20" fillBitmap="marble8_40x40" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="7"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="10" fixed="0" maskBits="4294967295" restitution="0.5" name="Rigid Body" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="100" friction="0.8"/>
+        <cadet2DBox2D:RigidBodyMouseDragBehaviour x:name="4" x:id="11" name="Mouse Drag"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2DBox2D:PhysicsProcess x:name="2" x:id="12" numIterations="2" numVelocityIterations="2" numPositionIterations="2" name="Physics" scaleFactor="0.01" gravity="10"/>
+    <cadet2D:Entity x:name="3" x:id="13" name="Triangle_0">
+      <bones:ArrayCollection x:name="children" x:id="14">
+        <cadet2D:Transform2D x:name="0" x:id="15" name="Transform" matrix="1,0,0,1,20,120"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="16" tipRatio="0" height="60" name="TriangleGeometry" width="200" vertices="0,0:200,60:0,60" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="17" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="15"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="18" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="4" x:id="19" name="Triangle_1">
+      <bones:ArrayCollection x:name="children" x:id="20">
+        <cadet2D:Transform2D x:name="0" x:id="21" name="Transform" matrix="1,0,0,1,220,180"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="22" tipRatio="0" height="160" name="TriangleGeometry" width="190" vertices="0,0:190,160:0,160" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="23" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="21"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="24" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="5" x:id="25" name="Rectangle_0">
+      <bones:ArrayCollection x:name="children" x:id="26">
+        <cadet2D:Transform2D x:name="0" x:id="27" name="Transform" matrix="1,0,0,1,20,340"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="28" width="710" height="100" name="RectangleGeometry" vertices="0,0:710,0:710,100:0,100"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="29" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="27"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="30" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="6" x:id="31" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="32">
+        <cadet2D:Transform2D x:name="0" x:id="33" name="Transform" matrix="1,0,0,1,520,180"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="34" width="20" height="160" name="RectangleGeometry" vertices="0,0:20,0:20,160:0,160"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="35" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="33"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="36" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="7" x:id="37" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="38">
+        <cadet2D:Transform2D x:name="0" x:id="39" name="Transform" matrix="0,-1,1,0,520,180"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="40" width="20" height="160" name="RectangleGeometry" vertices="0,0:20,0:20,160:0,160"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="41" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="39"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="42" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="8" x:id="43" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="44">
+        <cadet2D:Transform2D x:name="0" x:id="45" name="Transform" matrix="1,0,0,1,660,180"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="46" width="20" height="160" name="RectangleGeometry" vertices="0,0:20,0:20,160:0,160"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="47" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="45"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="48" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="9" x:id="49" name="Triangle_2">
+      <bones:ArrayCollection x:name="children" x:id="50">
+        <cadet2D:Transform2D x:name="0" x:id="51" name="Transform" matrix="0,-1,1,0,1340,480"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="52" tipRatio="0" height="250" name="TriangleGeometry" width="160" vertices="0,0:160,250:0,250" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="53" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="51"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="54" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:TrackCamera2DProcess x:name="10" x:id="55" maxSpeed="100" ease="0.2" maxZoom="1" minZoom="0.25" minSpeed="0" name="Track Camera">
+      <x:Ref x:name="target" x:id="5"/>
+    </cadet2D:TrackCamera2DProcess>
+    <cadet2D:Entity x:name="11" x:id="56" name="Triangle_3">
+      <bones:ArrayCollection x:name="children" x:id="57">
+        <cadet2D:Transform2D x:name="0" x:id="58" name="Transform" matrix="1,0,0,1,730,340"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="59" tipRatio="0" height="100" name="TriangleGeometry" width="150" vertices="0,0:150,100:0,100" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="60" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="58"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="61" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="12" x:id="62" name="Rectangle_4">
+      <bones:ArrayCollection x:name="children" x:id="63">
+        <cadet2D:Transform2D x:name="0" x:id="64" name="Transform" matrix="1,0,0,1,940,480"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="65" width="650" height="20" name="RectangleGeometry" vertices="0,0:650,0:650,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="66" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="64"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="67" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="13" x:id="68" name="Rectangle_5">
+      <bones:ArrayCollection x:name="children" x:id="69">
+        <cadet2D:Transform2D x:name="0" x:id="70" name="Transform" matrix="1,0,0,1,740,620"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="71" width="220" height="20" name="RectangleGeometry" vertices="0,0:220,0:220,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="72" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="70"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="73" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="14" x:id="74" name="Circle_1">
+      <bones:ArrayCollection x:name="children" x:id="75">
+        <cadet2D:Transform2D x:name="0" x:id="76" name="Transform" matrix="0.667999267578125,0,0,0.6814117431640625,880,583.95"/>
+        <cadet2D:GeometrySkin x:name="1" x:id="77" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="1" layerIndex="0" lineAlpha="0.7" fillAlpha="0.04">
+          <x:Ref x:name="transform2D" x:id="76"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="2" x:id="78" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="15" x:id="79" name="Marble 2">
+      <bones:ArrayCollection x:name="children" x:id="80">
+        <cadet2D:Transform2D x:name="0" x:id="81" name="Transform" matrix="1,0,0,1,880,600"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="82" x="0" y="0" name="Circle" radius="20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="83" mouseChildren="1" fillColor="16777215" fillXOffset="-20" fillYOffset="-20" fillBitmap="marble1_40x40" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="81"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="84" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="100" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="16" x:id="85" name="Triangle_4">
+      <bones:ArrayCollection x:name="children" x:id="86">
+        <cadet2D:Transform2D x:name="0" x:id="87" name="Transform" matrix="1,0,0,1,840,740"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="88" tipRatio="0" height="40" name="TriangleGeometry" width="30" vertices="0,0:30,40:0,40" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="89" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="87"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="90" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="17" x:id="91" name="Triangle_2">
+      <bones:ArrayCollection x:name="children" x:id="92">
+        <cadet2D:Transform2D x:name="0" x:id="93" name="Transform" matrix="0,-1,1,0,930,320"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="94" tipRatio="0" height="240" name="TriangleGeometry" width="160" vertices="0,0:160,240:0,240" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="95" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="93"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="96" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="18" x:id="97" name="Rectangle_6">
+      <bones:ArrayCollection x:name="children" x:id="98">
+        <cadet2D:Transform2D x:name="0" x:id="99" name="Transform" matrix="1,0,0,1,420,740"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="100" width="420" height="40" name="RectangleGeometry" vertices="0,0:420,0:420,40:0,40"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="101" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="99"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="102" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="19" x:id="103" name="Rectangle_7">
+      <bones:ArrayCollection x:name="children" x:id="104">
+        <cadet2D:Transform2D x:name="0" x:id="105" name="Transform" matrix="1,0,0,1,910,780"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="106" width="30" height="320" name="RectangleGeometry" vertices="0,0:30,0:30,320:0,320"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="107" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="105"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="108" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="20" x:id="109" name="Rectangle_8">
+      <bones:ArrayCollection x:name="children" x:id="110">
+        <cadet2D:Transform2D x:name="0" x:id="111" name="Transform" matrix="1,0,0,1,620,1000"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="112" width="20" height="320" name="RectangleGeometry" vertices="0,0:20,0:20,320:0,320"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="113" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="111"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="114" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="21" x:id="115" name="Rectangle_9">
+      <bones:ArrayCollection x:name="children" x:id="116">
+        <cadet2D:Transform2D x:name="0" x:id="117" name="Transform" matrix="1,0,0,1,620,1320"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="118" width="200" height="20" name="RectangleGeometry" vertices="0,0:200,0:200,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="119" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="117"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="120" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="22" x:id="121" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="122">
+        <cadet2D:Transform2D x:name="0" x:id="123" name="Transform" matrix="0,-1,1,0,800,1140"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="124" width="20" height="180" name="RectangleGeometry" vertices="0,0:20,0:20,180:0,180"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="125" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="123"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="126" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="23" x:id="127" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="128">
+        <cadet2D:Transform2D x:name="0" x:id="129" name="Transform" matrix="1,0,0,1,800,1140"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="130" width="20" height="180" name="RectangleGeometry" vertices="0,0:20,0:20,180:0,180"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="131" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="129"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="132" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="24" x:id="133" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="134">
+        <cadet2D:Transform2D x:name="0" x:id="135" name="Transform" matrix="1,0,0,1,960,1140"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="136" width="20" height="180" name="RectangleGeometry" vertices="0,0:20,0:20,180:0,180"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="137" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="135"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="138" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="25" x:id="139" name="Rectangle_19">
+      <bones:ArrayCollection x:name="children" x:id="140">
+        <cadet2D:Transform2D x:name="0" x:id="141" name="Transform" matrix="1,0,0,1,540,1580"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="142" width="200" height="140" name="RectangleGeometry" vertices="0,0:200,0:200,140:0,140"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="143" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="141"/>
+        </cadet2D:GeometrySkin>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="26" x:id="144" name="Rectangle_20">
+      <bones:ArrayCollection x:name="children" x:id="145">
+        <cadet2D:Transform2D x:name="0" x:id="146" name="Transform" matrix="1,0,0,1,960,1320"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="147" width="200" height="20" name="RectangleGeometry" vertices="0,0:200,0:200,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="148" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="146"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="149" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="27" x:id="150" name="Triangle_2">
+      <bones:ArrayCollection x:name="children" x:id="151">
+        <cadet2D:Transform2D x:name="0" x:id="152" name="Transform" matrix="0,-1,1,0,910,780"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="153" tipRatio="0" height="30" name="TriangleGeometry" width="40" vertices="0,0:40,30:0,30" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="154" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="152"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="155" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="28" x:id="156" name="Triangle_5">
+      <bones:ArrayCollection x:name="children" x:id="157">
+        <cadet2D:Transform2D x:name="0" x:id="158" name="Transform" matrix="1,0,0,1,540,1360"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="159" tipRatio="0" height="220" name="TriangleGeometry" width="200" vertices="0,0:200,220:0,220" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="160" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="158"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="161" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="29" x:id="162" name="Triangle_6">
+      <bones:ArrayCollection x:name="children" x:id="163">
+        <cadet2D:Transform2D x:name="0" x:id="164" name="Transform" matrix="1,0,0,1,200,2570"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="165" tipRatio="0" height="140" name="TriangleGeometry" width="660" vertices="0,0:660,140:0,140" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="166" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="164"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="167" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="30" x:id="168" name="Rectangle_13">
+      <bones:ArrayCollection x:name="children" x:id="169">
+        <cadet2D:Transform2D x:name="0" x:id="170" name="Transform" matrix="1,0,0,1,540,2530"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="171" width="510" height="20" name="RectangleGeometry" vertices="0,0:510,0:510,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="172" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="170"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="173" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="31" x:id="174" name="Rectangle_26">
+      <bones:ArrayCollection x:name="children" x:id="175">
+        <cadet2D:Transform2D x:name="0" x:id="176" name="Transform" matrix="1,0,0,1,1100,2790"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="177" width="530" height="20" name="RectangleGeometry" vertices="0,0:530,0:530,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="178" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="176"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="179" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="32" x:id="180" name="Crate_60x60">
+      <bones:ArrayCollection x:name="children" x:id="181">
+        <cadet2D:Transform2D x:name="0" x:id="182" name="Transform" matrix="1,0,0,1,740,2350"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="183" width="60" height="60" name="RectangleGeometry" vertices="0,0:60,0:60,60:0,60"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="184" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="crate1_60x60" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="182"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="185" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="33" x:id="186" name="Rectangle_26">
+      <bones:ArrayCollection x:name="children" x:id="187">
+        <cadet2D:Transform2D x:name="0" x:id="188" name="Transform" matrix="1,0,0,1,0,2710"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="189" width="1060" height="20" name="RectangleGeometry" vertices="0,0:1060,0:1060,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="190" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="188"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="191" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="34" x:id="192" name="Rectangle_28">
+      <bones:ArrayCollection x:name="children" x:id="193">
+        <cadet2D:Transform2D x:name="0" x:id="194" name="Transform" matrix="1,0,0,1,1100,2810"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="195" width="20" height="200" name="RectangleGeometry" vertices="0,0:20,0:20,200:0,200"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="196" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="194"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="197" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="35" x:id="198" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="199">
+        <cadet2D:Transform2D x:name="0" x:id="200" name="Transform" matrix="1,0,0,1,980,3310"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="201" width="20" height="180" name="RectangleGeometry" vertices="0,0:20,0:20,180:0,180"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="202" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="200"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="203" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="36" x:id="204" name="Rectangle_30">
+      <bones:ArrayCollection x:name="children" x:id="205">
+        <cadet2D:Transform2D x:name="0" x:id="206" name="Transform" matrix="1,0,0,1,1310,3490"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="207" width="60" height="20" name="RectangleGeometry" vertices="0,0:60,0:60,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="208" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="206"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="209" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="37" x:id="210" name="Rectangle_38">
+      <bones:ArrayCollection x:name="children" x:id="211">
+        <cadet2D:Transform2D x:name="0" x:id="212" name="Transform" matrix="1,0,0,1,1090,4060"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="213" width="1200" height="60" name="RectangleGeometry" vertices="0,0:1200,0:1200,60:0,60"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="214" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="212"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="215" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="38" x:id="216" name="Triangle_8">
+      <bones:ArrayCollection x:name="children" x:id="217">
+        <cadet2D:Transform2D x:name="0" x:id="218" name="Transform" matrix="0,-1,1,0,400,4790"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="219" tipRatio="0" height="800" name="TriangleGeometry" width="200" vertices="0,0:200,800:0,800" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="220" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="218"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="221" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="39" x:id="222" name="Rectangle_39">
+      <bones:ArrayCollection x:name="children" x:id="223">
+        <cadet2D:Transform2D x:name="0" x:id="224" name="Transform" matrix="1,0,0,1,990,5760"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="225" width="40" height="20" name="RectangleGeometry" vertices="0,0:40,0:40,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="226" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="224"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="227" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="40" x:id="228" name="Marble_20x20">
+      <bones:ArrayCollection x:name="children" x:id="229">
+        <cadet2D:Transform2D x:name="0" x:id="230" name="Transform" matrix="1,0,0,1,970,4090"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="231" x="0" y="0" name="Circle" radius="10"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="232" mouseChildren="1" fillColor="16777215" fillXOffset="-10" fillYOffset="-10" fillBitmap="marble2_20x20" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="230"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="233" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="10" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="41" x:id="234" name="Triangle_8">
+      <bones:ArrayCollection x:name="children" x:id="235">
+        <cadet2D:Transform2D x:name="0" x:id="236" name="Transform" matrix="0,-1,1,-0.0000152587890625,170,4220"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="237" tipRatio="0" height="600" name="TriangleGeometry" width="120" vertices="0,0:120,600:0,600" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="238" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="236"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="239" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="42" x:id="240" name="Triangle_9">
+      <bones:ArrayCollection x:name="children" x:id="241">
+        <cadet2D:Transform2D x:name="0" x:id="242" name="Transform" matrix="0,-1,1,0,260,5150"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="243" tipRatio="0" height="200" name="TriangleGeometry" width="80" vertices="0,0:80,200:0,200" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="244" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="242"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="245" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="43" x:id="246" name="Triangle_9">
+      <bones:ArrayCollection x:name="children" x:id="247">
+        <cadet2D:Transform2D x:name="0" x:id="248" name="Transform" matrix="-1,0,0,-1,1990,6240"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="249" tipRatio="0" height="20" name="TriangleGeometry" width="20" vertices="0,0:20,20:0,20" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="250" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="248"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="251" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="44" x:id="252" name="Rectangle_47">
+      <bones:ArrayCollection x:name="children" x:id="253">
+        <cadet2D:Transform2D x:name="0" x:id="254" name="Transform" matrix="1,0,0,1,20,180"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="255" width="200" height="160" name="RectangleGeometry" vertices="0,0:200,0:200,160:0,160"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="256" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="254"/>
+        </cadet2D:GeometrySkin>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="45" x:id="257" name="Rectangle_48">
+      <bones:ArrayCollection x:name="children" x:id="258">
+        <cadet2D:Transform2D x:name="0" x:id="259" name="Transform" matrix="1,0,0,1,420,560"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="260" width="160" height="180" name="RectangleGeometry" vertices="0,0:160,0:160,180:0,180"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="261" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="259"/>
+        </cadet2D:GeometrySkin>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="46" x:id="262" name="Rectangle_8">
+      <bones:ArrayCollection x:name="children" x:id="263">
+        <cadet2D:Transform2D x:name="0" x:id="264" name="Transform" matrix="1,0,0,1,1140,1000"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="265" width="20" height="320" name="RectangleGeometry" vertices="0,0:20,0:20,320:0,320"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="266" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="264"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="267" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="47" x:id="268" name="Rectangle_8">
+      <bones:ArrayCollection x:name="children" x:id="269">
+        <cadet2D:Transform2D x:name="0" x:id="270" name="Transform" matrix="1,0,0,1,840,780"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="271" width="30" height="320" name="RectangleGeometry" vertices="0,0:30,0:30,320:0,320"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="272" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="270"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="273" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="48" x:id="274" name="Triangle_4">
+      <bones:ArrayCollection x:name="children" x:id="275">
+        <cadet2D:Transform2D x:name="0" x:id="276" name="Transform" matrix="1,0,0,1,580,560"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="277" tipRatio="0" height="180" name="TriangleGeometry" width="130" vertices="0,0:130,180:0,180" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="278" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="276"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="279" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="49" x:id="280" name="Triangle_2">
+      <bones:ArrayCollection x:name="children" x:id="281">
+        <cadet2D:Transform2D x:name="0" x:id="282" name="Transform" matrix="0,-1,1,0,940,740"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="283" tipRatio="0" height="240" name="TriangleGeometry" width="160" vertices="0,0:160,240:0,240" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="284" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="282"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="285" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="50" x:id="286" name="Triangle_4">
+      <bones:ArrayCollection x:name="children" x:id="287">
+        <cadet2D:Transform2D x:name="0" x:id="288" name="Transform" matrix="1,0,0,1,640,1280"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="289" tipRatio="0" height="40" name="TriangleGeometry" width="80" vertices="0,0:80,40:0,40" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="290" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="288"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="291" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="51" x:id="292" name="Triangle_2">
+      <bones:ArrayCollection x:name="children" x:id="293">
+        <cadet2D:Transform2D x:name="0" x:id="294" name="Transform" matrix="0,-1,1,0,720,1420"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="295" tipRatio="0" height="320" name="TriangleGeometry" width="40" vertices="0,0:40,320:0,320" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="296" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="294"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="297" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="52" x:id="298" name="Rectangle_49">
+      <bones:ArrayCollection x:name="children" x:id="299">
+        <cadet2D:Transform2D x:name="0" x:id="300" name="Transform" matrix="1,0,0,1,940,740"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="301" width="240" height="40" name="RectangleGeometry" vertices="0,0:240,0:240,40:0,40"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="302" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="300"/>
+        </cadet2D:GeometrySkin>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="53" x:id="303" name="Triangle_2">
+      <bones:ArrayCollection x:name="children" x:id="304">
+        <cadet2D:Transform2D x:name="0" x:id="305" name="Transform" matrix="0,-1,1,0,1060,1320"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="306" tipRatio="0" height="80" name="TriangleGeometry" width="40" vertices="0,0:40,80:0,80" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="307" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="305"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="308" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="54" x:id="309" name="Rectangle_19">
+      <bones:ArrayCollection x:name="children" x:id="310">
+        <cadet2D:Transform2D x:name="0" x:id="311" name="Transform" matrix="1,0,0,1,720,1420"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="312" width="320" height="20" name="RectangleGeometry" vertices="0,0:320,0:320,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="313" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="311"/>
+        </cadet2D:GeometrySkin>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="55" x:id="314" name="Crate_60x60">
+      <bones:ArrayCollection x:name="children" x:id="315">
+        <cadet2D:Transform2D x:name="0" x:id="316" name="Transform" matrix="1,0,0,1,800,2350"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="317" width="60" height="60" name="RectangleGeometry" vertices="0,0:60,0:60,60:0,60"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="318" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="crate1_60x60" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="316"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="319" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="56" x:id="320" name="Crate_60x60">
+      <bones:ArrayCollection x:name="children" x:id="321">
+        <cadet2D:Transform2D x:name="0" x:id="322" name="Transform" matrix="1,0,0,1,680,2470"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="323" width="60" height="60" name="RectangleGeometry" vertices="0,0:60,0:60,60:0,60"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="324" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="crate1_60x60" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="322"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="325" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="57" x:id="326" name="Crate_60x60">
+      <bones:ArrayCollection x:name="children" x:id="327">
+        <cadet2D:Transform2D x:name="0" x:id="328" name="Transform" matrix="1,0,0,1,740,2470"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="329" width="60" height="60" name="RectangleGeometry" vertices="0,0:60,0:60,60:0,60"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="330" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="crate1_60x60" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="328"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="331" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="58" x:id="332" name="Crate_60x60">
+      <bones:ArrayCollection x:name="children" x:id="333">
+        <cadet2D:Transform2D x:name="0" x:id="334" name="Transform" matrix="1,0,0,1,800,2470"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="335" width="60" height="60" name="RectangleGeometry" vertices="0,0:60,0:60,60:0,60"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="336" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="crate1_60x60" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="334"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="337" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="59" x:id="338" name="Crate_60x60">
+      <bones:ArrayCollection x:name="children" x:id="339">
+        <cadet2D:Transform2D x:name="0" x:id="340" name="Transform" matrix="1,0,0,1,770,2290"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="341" width="60" height="60" name="RectangleGeometry" vertices="0,0:60,0:60,60:0,60"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="342" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="crate1_60x60" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="340"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="343" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="60" x:id="344" name="Crate_60x60">
+      <bones:ArrayCollection x:name="children" x:id="345">
+        <cadet2D:Transform2D x:name="0" x:id="346" name="Transform" matrix="1,0,0,1,710,2410"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="347" width="60" height="60" name="RectangleGeometry" vertices="0,0:60,0:60,60:0,60"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="348" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="crate1_60x60" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="346"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="349" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="61" x:id="350" name="Crate_60x60">
+      <bones:ArrayCollection x:name="children" x:id="351">
+        <cadet2D:Transform2D x:name="0" x:id="352" name="Transform" matrix="1,0,0,1,770,2410"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="353" width="60" height="60" name="RectangleGeometry" vertices="0,0:60,0:60,60:0,60"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="354" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="crate1_60x60" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="352"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="355" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="62" x:id="356" name="Crate_60x60">
+      <bones:ArrayCollection x:name="children" x:id="357">
+        <cadet2D:Transform2D x:name="0" x:id="358" name="Transform" matrix="1,0,0,1,830,2410"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="359" width="60" height="60" name="RectangleGeometry" vertices="0,0:60,0:60,60:0,60"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="360" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="crate1_60x60" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="358"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="361" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="63" x:id="362" name="Crate_60x60">
+      <bones:ArrayCollection x:name="children" x:id="363">
+        <cadet2D:Transform2D x:name="0" x:id="364" name="Transform" matrix="1,0,0,1,860,2470"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="365" width="60" height="60" name="RectangleGeometry" vertices="0,0:60,0:60,60:0,60"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="366" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="crate1_60x60" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="364"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="367" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="64" x:id="368" name="Rectangle_21">
+      <bones:ArrayCollection x:name="children" x:id="369">
+        <cadet2D:Transform2D x:name="0" x:id="370" name="Transform" matrix="1,0,0,1,1160,1760"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="371" width="680" height="20" name="RectangleGeometry" vertices="0,0:680,0:680,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="372" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="370"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="373" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="65" x:id="374" name="Triangle_7">
+      <bones:ArrayCollection x:name="children" x:id="375">
+        <cadet2D:Transform2D x:name="0" x:id="376" name="Transform" matrix="1,0,0,1,20,4290"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="377" tipRatio="0" height="240" name="TriangleGeometry" width="600" vertices="0,0:600,240:0,240" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="378" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="376"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="379" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="66" x:id="380" name="Rectangle_21">
+      <bones:ArrayCollection x:name="children" x:id="381">
+        <cadet2D:Transform2D x:name="0" x:id="382" name="Transform" matrix="1,0,0,1,1840,1580"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="383" width="20" height="200" name="RectangleGeometry" vertices="0,0:20,0:20,200:0,200"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="384" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="382"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="385" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="67" x:id="386" name="Triangle_2">
+      <bones:ArrayCollection x:name="children" x:id="387">
+        <cadet2D:Transform2D x:name="0" x:id="388" name="Transform" matrix="0,-1,1,0,1380,1760"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="389" tipRatio="0" height="460" name="TriangleGeometry" width="100" vertices="0,0:100,460:0,460" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="390" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="388"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="391" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="68" x:id="392" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="393">
+        <cadet2D:Transform2D x:name="0" x:id="394" name="Transform" matrix="0,-1,1,0,810,3310"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="395" width="20" height="180" name="RectangleGeometry" vertices="0,0:20,0:20,180:0,180"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="396" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="394"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="397" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="69" x:id="398" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="399">
+        <cadet2D:Transform2D x:name="0" x:id="400" name="Transform" matrix="1,0,0,1,810,3310"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="401" width="20" height="180" name="RectangleGeometry" vertices="0,0:20,0:20,180:0,180"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="402" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="400"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="403" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="70" x:id="404" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="405">
+        <cadet2D:Transform2D x:name="0" x:id="406" name="Transform" matrix="1,0,0,1,1330,3310"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="407" width="20" height="180" name="RectangleGeometry" vertices="0,0:20,0:20,180:0,180"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="408" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="406"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="409" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="71" x:id="410" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="411">
+        <cadet2D:Transform2D x:name="0" x:id="412" name="Transform" matrix="0,-1,1,0,1170,3310"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="413" width="20" height="180" name="RectangleGeometry" vertices="0,0:20,0:20,180:0,180"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="414" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="412"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="415" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="72" x:id="416" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="417">
+        <cadet2D:Transform2D x:name="0" x:id="418" name="Transform" matrix="1,0,0,1,1160,3310"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="419" width="20" height="180" name="RectangleGeometry" vertices="0,0:20,0:20,180:0,180"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="420" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="418"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="421" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="73" x:id="422" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="423">
+        <cadet2D:Transform2D x:name="0" x:id="424" name="Transform" matrix="1,0,0,1,1160,3110"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="425" width="20" height="180" name="RectangleGeometry" vertices="0,0:20,0:20,180:0,180"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="426" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="424"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="427" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="74" x:id="428" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="429">
+        <cadet2D:Transform2D x:name="0" x:id="430" name="Transform" matrix="0,-1,1,0,990,3110"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="431" width="20" height="180" name="RectangleGeometry" vertices="0,0:20,0:20,180:0,180"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="432" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="430"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="433" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="75" x:id="434" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="435">
+        <cadet2D:Transform2D x:name="0" x:id="436" name="Transform" matrix="1,0,0,1,980,3110"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="437" width="20" height="180" name="RectangleGeometry" vertices="0,0:20,0:20,180:0,180"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="438" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="436"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="439" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="76" x:id="440" name="Plank_20x180">
+      <bones:ArrayCollection x:name="children" x:id="441">
+        <cadet2D:Transform2D x:name="0" x:id="442" name="Transform" matrix="0,-1,1,0,990,3310"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="443" width="20" height="180" name="RectangleGeometry" vertices="0,0:20,0:20,180:0,180"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="444" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="plank1_20x180" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="442"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="445" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="77" x:id="446" name="Triangle_2">
+      <bones:ArrayCollection x:name="children" x:id="447">
+        <cadet2D:Transform2D x:name="0" x:id="448" name="Transform" matrix="0,-1,1,0,1100,2790"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="449" tipRatio="0" height="510" name="TriangleGeometry" width="80" vertices="0,0:80,510:0,510" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="450" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="448"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="451" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="78" x:id="452" name="Rectangle_30">
+      <bones:ArrayCollection x:name="children" x:id="453">
+        <cadet2D:Transform2D x:name="0" x:id="454" name="Transform" matrix="1,0,0,1,470,3680"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="455" width="1260" height="20" name="RectangleGeometry" vertices="0,0:1260,0:1260,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="456" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="454"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="457" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="79" x:id="458" name="Rectangle_30">
+      <bones:ArrayCollection x:name="children" x:id="459">
+        <cadet2D:Transform2D x:name="0" x:id="460" name="Transform" matrix="1,0,0,1,0,3490"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="461" width="860" height="20" name="RectangleGeometry" vertices="0,0:860,0:860,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="462" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="460"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="463" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="80" x:id="464" name="Rectangle_21">
+      <bones:ArrayCollection x:name="children" x:id="465">
+        <cadet2D:Transform2D x:name="0" x:id="466" name="Transform" matrix="1,0,0,1,1610,2590"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="467" width="20" height="200" name="RectangleGeometry" vertices="0,0:20,0:20,200:0,200"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="468" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="466"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="469" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="81" x:id="470" name="Triangle_7">
+      <bones:ArrayCollection x:name="children" x:id="471">
+        <cadet2D:Transform2D x:name="0" x:id="472" name="Transform" matrix="1,0,0,1,0,2390"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="473" tipRatio="0" height="180" name="TriangleGeometry" width="200" vertices="0,0:200,180:0,180" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="474" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="472"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="475" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="82" x:id="476" name="Triangle_6">
+      <bones:ArrayCollection x:name="children" x:id="477">
+        <cadet2D:Transform2D x:name="0" x:id="478" name="Transform" matrix="1,0,0,1,740,1580"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="479" tipRatio="0" height="140" name="TriangleGeometry" width="360.0000000000001" vertices="0,0:360.0000000000001,140:0,140" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="480" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="478"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="481" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="83" x:id="482" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="483">
+        <cadet2D:Transform2D x:name="0" x:id="484" name="Transform" matrix="1,0,0,1,800,5860"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="485" width="400" height="340" name="RectangleGeometry" vertices="0,0:400,0:400,340:0,340"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="486" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="484"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="487" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="84" x:id="488" name="Marble_20x20">
+      <bones:ArrayCollection x:name="children" x:id="489">
+        <cadet2D:Transform2D x:name="0" x:id="490" name="Transform" matrix="1,0,0,1,950,4090"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="491" x="0" y="0" name="Circle" radius="10"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="492" mouseChildren="1" fillColor="16777215" fillXOffset="-10" fillYOffset="-10" fillBitmap="marble2_20x20" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="490"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="493" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="10" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="85" x:id="494" name="Marble_20x20">
+      <bones:ArrayCollection x:name="children" x:id="495">
+        <cadet2D:Transform2D x:name="0" x:id="496" name="Transform" matrix="1,0,0,1,930,4090"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="497" x="0" y="0" name="Circle" radius="10"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="498" mouseChildren="1" fillColor="16777215" fillXOffset="-10" fillYOffset="-10" fillBitmap="marble2_20x20" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="496"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="499" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="10" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="86" x:id="500" name="Marble_20x20">
+      <bones:ArrayCollection x:name="children" x:id="501">
+        <cadet2D:Transform2D x:name="0" x:id="502" name="Transform" matrix="1,0,0,1,800,4520"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="503" x="0" y="0" name="Circle" radius="10"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="504" mouseChildren="1" fillColor="16777215" fillXOffset="-10" fillYOffset="-10" fillBitmap="marble2_20x20" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="502"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="505" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="10" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="87" x:id="506" name="Marble_20x20">
+      <bones:ArrayCollection x:name="children" x:id="507">
+        <cadet2D:Transform2D x:name="0" x:id="508" name="Transform" matrix="1,0,0,1,780,4520"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="509" x="0" y="0" name="Circle" radius="10"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="510" mouseChildren="1" fillColor="16777215" fillXOffset="-10" fillYOffset="-10" fillBitmap="marble2_20x20" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="508"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="511" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="10" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="88" x:id="512" name="Marble_20x20">
+      <bones:ArrayCollection x:name="children" x:id="513">
+        <cadet2D:Transform2D x:name="0" x:id="514" name="Transform" matrix="1,0,0,1,760,4520"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="515" x="0" y="0" name="Circle" radius="10"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="516" mouseChildren="1" fillColor="16777215" fillXOffset="-10" fillYOffset="-10" fillBitmap="marble2_20x20" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="514"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="517" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="10" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="89" x:id="518" name="Marble_20x20">
+      <bones:ArrayCollection x:name="children" x:id="519">
+        <cadet2D:Transform2D x:name="0" x:id="520" name="Transform" matrix="1,0,0,1,740,4520"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="521" x="0" y="0" name="Circle" radius="10"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="522" mouseChildren="1" fillColor="16777215" fillXOffset="-10" fillYOffset="-10" fillBitmap="marble2_20x20" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="520"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="523" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="10" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="90" x:id="524" name="Marble_20x20">
+      <bones:ArrayCollection x:name="children" x:id="525">
+        <cadet2D:Transform2D x:name="0" x:id="526" name="Transform" matrix="1,0,0,1,270,4780"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="527" x="0" y="0" name="Circle" radius="10"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="528" mouseChildren="1" fillColor="16777215" fillXOffset="-10" fillYOffset="-10" fillBitmap="marble2_20x20" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="526"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="529" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="10" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="91" x:id="530" name="Marble_20x20">
+      <bones:ArrayCollection x:name="children" x:id="531">
+        <cadet2D:Transform2D x:name="0" x:id="532" name="Transform" matrix="1,0,0,1,250,4780"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="533" x="0" y="0" name="Circle" radius="10"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="534" mouseChildren="1" fillColor="16777215" fillXOffset="-10" fillYOffset="-10" fillBitmap="marble2_20x20" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="532"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="535" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="10" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="92" x:id="536" name="Marble_20x20">
+      <bones:ArrayCollection x:name="children" x:id="537">
+        <cadet2D:Transform2D x:name="0" x:id="538" name="Transform" matrix="1,0,0,1,230,4780"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="539" x="0" y="0" name="Circle" radius="10"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="540" mouseChildren="1" fillColor="16777215" fillXOffset="-10" fillYOffset="-10" fillBitmap="marble2_20x20" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="538"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="541" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="10" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="93" x:id="542" name="Marble_20x20">
+      <bones:ArrayCollection x:name="children" x:id="543">
+        <cadet2D:Transform2D x:name="0" x:id="544" name="Transform" matrix="1,0,0,1,210,4780"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="545" x="0" y="0" name="Circle" radius="10"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="546" mouseChildren="1" fillColor="16777215" fillXOffset="-10" fillYOffset="-10" fillBitmap="marble2_20x20" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="544"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="547" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="10" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="94" x:id="548" name="Marble_20x20">
+      <bones:ArrayCollection x:name="children" x:id="549">
+        <cadet2D:Transform2D x:name="0" x:id="550" name="Transform" matrix="1,0,0,1,990,4090"/>
+        <cadet2D:CircleGeometry x:name="1" x:id="551" x="0" y="0" name="Circle" radius="10"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="552" mouseChildren="1" fillColor="16777215" fillXOffset="-10" fillYOffset="-10" fillBitmap="marble2_20x20" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="550"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="553" fixed="0" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="10" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="95" x:id="554" name="Rectangle_1">
+      <bones:ArrayCollection x:name="children" x:id="555">
+        <cadet2D:Transform2D x:name="0" x:id="556" name="Transform" matrix="1,0,0,1,0,2570"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="557" width="200" height="140" name="RectangleGeometry" vertices="0,0:200,0:200,140:0,140"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="558" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="556"/>
+        </cadet2D:GeometrySkin>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="96" x:id="559" name="Triangle_8">
+      <bones:ArrayCollection x:name="children" x:id="560">
+        <cadet2D:Transform2D x:name="0" x:id="561" name="Transform" matrix="0,-1,1,-0.0000152587890625,1090,4060"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="562" tipRatio="0" height="1200" name="TriangleGeometry" width="360" vertices="0,0:360,1200:0,1200" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="563" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="561"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="564" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="97" x:id="565" name="Triangle_7">
+      <bones:ArrayCollection x:name="children" x:id="566">
+        <cadet2D:Transform2D x:name="0" x:id="567" name="Transform" matrix="1,0,0,1,470,3620"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="568" tipRatio="0" height="60" name="TriangleGeometry" width="1200" vertices="0,0:1200,60:0,60" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="569" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="567"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="570" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="98" x:id="571" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="572">
+        <cadet2D:Transform2D x:name="0" x:id="573" name="Transform" matrix="1,0,0,1,1040,2730"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="574" width="20" height="200" name="RectangleGeometry" vertices="0,0:20,0:20,200:0,200"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="575" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="573"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="576" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="99" x:id="577" name="Rectangle_39">
+      <bones:ArrayCollection x:name="children" x:id="578">
+        <cadet2D:Transform2D x:name="0" x:id="579" name="Transform" matrix="1,0,0,1,770,4100"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="580" width="320" height="20" name="RectangleGeometry" vertices="0,0:320,0:320,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="581" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="579"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="582" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="100" x:id="583" name="Rectangle_39">
+      <bones:ArrayCollection x:name="children" x:id="584">
+        <cadet2D:Transform2D x:name="0" x:id="585" name="Transform" matrix="1,0,0,1,20,4530"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="586" width="790" height="20" name="RectangleGeometry" vertices="0,0:790,0:790,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="587" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="585"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="588" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="101" x:id="589" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="590">
+        <cadet2D:Transform2D x:name="0" x:id="591" name="Transform" matrix="1,0,0,1,1200,4410"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="592" width="20" height="400" name="RectangleGeometry" vertices="0,0:20,0:20,400:0,400"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="593" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="591"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="594" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="102" x:id="595" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="596">
+        <cadet2D:Transform2D x:name="0" x:id="597" name="Transform" matrix="1,0,0,1,260,5150"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="598" width="20" height="400" name="RectangleGeometry" vertices="0,0:20,0:20,400:0,400"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="599" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="597"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="600" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="103" x:id="601" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="602">
+        <cadet2D:Transform2D x:name="0" x:id="603" name="Transform" matrix="1,0,0,1,460,4950"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="604" width="20" height="200" name="RectangleGeometry" vertices="0,0:20,0:20,200:0,200"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="605" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="603"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="606" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="104" x:id="607" name="Triangle_10">
+      <bones:ArrayCollection x:name="children" x:id="608">
+        <cadet2D:Transform2D x:name="0" x:id="609" name="Transform" matrix="-1,0,0,-1,200,5230"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="610" tipRatio="0" height="80" name="TriangleGeometry" width="200" vertices="0,0:200,80:0,80" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="611" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="609"/>
+        </cadet2D:GeometrySkin>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="105" x:id="612" name="Triangle_11">
+      <bones:ArrayCollection x:name="children" x:id="613">
+        <cadet2D:Transform2D x:name="0" x:id="614" name="Transform" matrix="1,0,0,1,770,4120"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="615" tipRatio="0" height="100" name="TriangleGeometry" width="140" vertices="0,100:140,0:0,0" flipVertical="1"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="616" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="614"/>
+        </cadet2D:GeometrySkin>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="106" x:id="617" name="Triangle_11">
+      <bones:ArrayCollection x:name="children" x:id="618">
+        <cadet2D:Transform2D x:name="0" x:id="619" name="Transform" matrix="1,0,0,1,280,5150"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="620" tipRatio="0" height="80" name="TriangleGeometry" width="200" vertices="0,80:200,0:0,0" flipVertical="1"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="621" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="619"/>
+        </cadet2D:GeometrySkin>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="107" x:id="622" name="Rectangle_39">
+      <bones:ArrayCollection x:name="children" x:id="623">
+        <cadet2D:Transform2D x:name="0" x:id="624" name="Transform" matrix="1,0,0,1,200,4790"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="625" width="1000" height="20" name="RectangleGeometry" vertices="0,0:1000,0:1000,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="626" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="624"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="627" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="108" x:id="628" name="Rectangle_30">
+      <bones:ArrayCollection x:name="children" x:id="629">
+        <cadet2D:Transform2D x:name="0" x:id="630" name="Transform" matrix="1,0,0,1,960,3490"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="631" width="60" height="20" name="RectangleGeometry" vertices="0,0:60,0:60,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="632" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="630"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="633" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="109" x:id="634" name="Rectangle_30">
+      <bones:ArrayCollection x:name="children" x:id="635">
+        <cadet2D:Transform2D x:name="0" x:id="636" name="Transform" matrix="1,0,0,1,1140,3490"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="637" width="60" height="20" name="RectangleGeometry" vertices="0,0:60,0:60,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="638" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="636"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="639" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="110" x:id="640" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="641">
+        <cadet2D:Transform2D x:name="0" x:id="642" name="Transform" matrix="1,0,0,1,0,4150"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="643" width="20" height="1000" name="RectangleGeometry" vertices="0,0:20,0:20,1000:0,1000"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="644" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="642"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="645" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="111" x:id="646" name="Triangle_9">
+      <bones:ArrayCollection x:name="children" x:id="647">
+        <cadet2D:Transform2D x:name="0" x:id="648" name="Transform" matrix="1,0,0,1,20,5070"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="649" tipRatio="0" height="80" name="TriangleGeometry" width="200" vertices="0,0:200,80:0,80" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="650" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="648"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="651" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="112" x:id="652" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="653">
+        <cadet2D:Transform2D x:name="0" x:id="654" name="Transform" matrix="1,0,0,1,200,5150"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="655" width="20" height="560" name="RectangleGeometry" vertices="0,0:20,0:20,560:0,560"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="656" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="654"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="657" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="113" x:id="658" name="Rectangle_39">
+      <bones:ArrayCollection x:name="children" x:id="659">
+        <cadet2D:Transform2D x:name="0" x:id="660" name="Transform" matrix="1,0,0,1,200,5710"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="661" width="600" height="20" name="RectangleGeometry" vertices="0,0:600,0:600,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="662" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="660"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="663" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="114" x:id="664" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="665">
+        <cadet2D:Transform2D x:name="0" x:id="666" name="Transform" matrix="1,0,0,1,2030,5920"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="667" width="20" height="540" name="RectangleGeometry" vertices="0,0:20,0:20,540:0,540"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="668" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="666"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="669" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="115" x:id="670" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="671">
+        <cadet2D:Transform2D x:name="0" x:id="672" name="Transform" matrix="1,0,0,1,780,5730"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="673" width="20" height="470" name="RectangleGeometry" vertices="0,0:20,0:20,470:0,470"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="674" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="672"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="675" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="116" x:id="676" name="Rectangle_39">
+      <bones:ArrayCollection x:name="children" x:id="677">
+        <cadet2D:Transform2D x:name="0" x:id="678" name="Transform" matrix="1,0,0,1,1510,6030"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="679" width="400" height="40" name="RectangleGeometry" vertices="0,0:400,0:400,40:0,40"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="680" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="678"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="681" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="117" x:id="682" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="683">
+        <cadet2D:Transform2D x:name="0" x:id="684" name="Transform" matrix="1,0,0,1,1070,5780"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="685" width="40" height="20" name="RectangleGeometry" vertices="0,0:40,0:40,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="686" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="684"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="687" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="118" x:id="688" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="689">
+        <cadet2D:Transform2D x:name="0" x:id="690" name="Transform" matrix="1,0,0,1,1990,6220"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="691" width="20" height="240" name="RectangleGeometry" vertices="0,0:20,0:20,240:0,240"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="692" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="690"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="693" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="119" x:id="694" name="Rectangle_39">
+      <bones:ArrayCollection x:name="children" x:id="695">
+        <cadet2D:Transform2D x:name="0" x:id="696" name="Transform" matrix="1,0,0,1,910,5740"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="697" width="40" height="20" name="RectangleGeometry" vertices="0,0:40,0:40,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="698" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="696"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="699" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="120" x:id="700" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="701">
+        <cadet2D:Transform2D x:name="0" x:id="702" name="Transform" matrix="1,0,0,1,1900,5980"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="703" width="40" height="20" name="RectangleGeometry" vertices="0,0:40,0:40,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="704" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="702"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="705" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="121" x:id="706" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="707">
+        <cadet2D:Transform2D x:name="0" x:id="708" name="Transform" matrix="1,0,0,1,830,5720"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="709" width="40" height="20" name="RectangleGeometry" vertices="0,0:40,0:40,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="710" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="708"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="711" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="122" x:id="712" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="713">
+        <cadet2D:Transform2D x:name="0" x:id="714" name="Transform" matrix="1,0,0,1,1550,5880"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="715" width="40" height="20" name="RectangleGeometry" vertices="0,0:40,0:40,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="716" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="714"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="717" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="123" x:id="718" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="719">
+        <cadet2D:Transform2D x:name="0" x:id="720" name="Transform" matrix="1,0,0,1,1620,5900"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="721" width="40" height="20" name="RectangleGeometry" vertices="0,0:40,0:40,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="722" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="720"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="723" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="124" x:id="724" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="725">
+        <cadet2D:Transform2D x:name="0" x:id="726" name="Transform" matrix="1,0,0,1,1690,5920"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="727" width="40" height="20" name="RectangleGeometry" vertices="0,0:40,0:40,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="728" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="726"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="729" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="125" x:id="730" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="731">
+        <cadet2D:Transform2D x:name="0" x:id="732" name="Transform" matrix="1,0,0,1,1760,5940"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="733" width="40" height="20" name="RectangleGeometry" vertices="0,0:40,0:40,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="734" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="732"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="735" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="126" x:id="736" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="737">
+        <cadet2D:Transform2D x:name="0" x:id="738" name="Transform" matrix="1,0,0,1,1990,6460"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="739" width="60" height="20" name="RectangleGeometry" vertices="0,0:60,0:60,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="740" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="738"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="741" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="127" x:id="742" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="743">
+        <cadet2D:Transform2D x:name="0" x:id="744" name="Transform" matrix="1,0,0,1,1150,5800"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="745" width="40" height="20" name="RectangleGeometry" vertices="0,0:40,0:40,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="746" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="744"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="747" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="128" x:id="748" name="Triangle_9">
+      <bones:ArrayCollection x:name="children" x:id="749">
+        <cadet2D:Transform2D x:name="0" x:id="750" name="Transform" matrix="1,0,0,1,220,5630"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="751" tipRatio="0" height="80" name="TriangleGeometry" width="200" vertices="0,0:200,80:0,80" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="752" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="750"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="753" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="129" x:id="754" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="755">
+        <cadet2D:Transform2D x:name="0" x:id="756" name="Transform" matrix="1,0,0,1,1830,5960"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="757" width="40" height="20" name="RectangleGeometry" vertices="0,0:40,0:40,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="758" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="756"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="759" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="130" x:id="760" name="Triangle_9">
+      <bones:ArrayCollection x:name="children" x:id="761">
+        <cadet2D:Transform2D x:name="0" x:id="762" name="Transform" matrix="1,0,0,1,1990,6200"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="763" tipRatio="0" height="20" name="TriangleGeometry" width="20" vertices="0,0:20,20:0,20" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="764" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="762"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="765" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="131" x:id="766" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="767">
+        <cadet2D:Transform2D x:name="0" x:id="768" name="Transform" matrix="1,0,0,1,1220,5870"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="769" width="300" height="200" name="RectangleGeometry" vertices="0,0:300,0:300,200:0,200"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="770" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="768"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="771" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="132" x:id="772" name="Triangle_9">
+      <bones:ArrayCollection x:name="children" x:id="773">
+        <cadet2D:Transform2D x:name="0" x:id="774" name="Transform" matrix="1,0,0,1,1220,5830"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="775" tipRatio="0" height="40" name="TriangleGeometry" width="300" vertices="0,0:300,40:0,40" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="776" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="774"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="777" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="133" x:id="778" name="Triangle_9">
+      <bones:ArrayCollection x:name="children" x:id="779">
+        <cadet2D:Transform2D x:name="0" x:id="780" name="Transform" matrix="1,0,0,1,800,5760"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="781" tipRatio="0" height="100" name="TriangleGeometry" width="400" vertices="0,0:400,100:0,100" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="782" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="780"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="783" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="134" x:id="784" name="Triangle_9">
+      <bones:ArrayCollection x:name="children" x:id="785">
+        <cadet2D:Transform2D x:name="0" x:id="786" name="Transform" matrix="1,0,0,1,1520,5920"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="787" tipRatio="0" height="110" name="TriangleGeometry" width="380" vertices="0,0:380,110:0,110" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="788" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="786"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="789" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="135" x:id="790" name="Rectangle_39">
+      <bones:ArrayCollection x:name="children" x:id="791">
+        <cadet2D:Transform2D x:name="0" x:id="792" name="Transform" matrix="1,0,0,1,780,6200"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="793" width="1210" height="20" name="RectangleGeometry" vertices="0,0:1210,0:1210,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="794" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="792"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="795" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="136" x:id="796" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="797">
+        <cadet2D:Transform2D x:name="0" x:id="798" name="Transform" matrix="1,0,0,1,1970,5990"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="799" width="20" height="110" name="RectangleGeometry" vertices="0,0:20,0:20,110:0,110"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="800" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="798"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="801" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="137" x:id="802" name="Rectangle_27">
+      <bones:ArrayCollection x:name="children" x:id="803">
+        <cadet2D:Transform2D x:name="0" x:id="804" name="Transform" matrix="1,0,0,1,1990,6080"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="805" width="20" height="20" name="RectangleGeometry" vertices="0,0:20,0:20,20:0,20"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="806" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="804"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="807" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+    <cadet2D:Entity x:name="138" x:id="808" name="Triangle_9">
+      <bones:ArrayCollection x:name="children" x:id="809">
+        <cadet2D:Transform2D x:name="0" x:id="810" name="Transform" matrix="1,0,0,1,1200,6100"/>
+        <cadet2D:TriangleGeometry x:name="1" x:id="811" tipRatio="0" height="100" name="TriangleGeometry" width="780" vertices="0,0:780,100:0,100" flipVertical="0"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="812" mouseChildren="1" fillColor="16777215" fillXOffset="0" fillYOffset="0" fillBitmap="concrete1" drawVertices="0" lineColor="16777215" name="GeometrySkin" mouseEnabled="1" containerID="worldContainer" lineThickness="0.1" layerIndex="0" lineAlpha="1" fillAlpha="0.1">
+          <x:Ref x:name="transform2D" x:id="810"/>
+        </cadet2D:GeometrySkin>
+        <cadet2DBox2D:RigidBodyBehaviour x:name="3" x:id="813" fixed="1" maskBits="4294967295" restitution="0.5" name="RigidBodyBehaviour" categoryBits="1" angularDamping="0.1" linearDamping="0.1" density="1" friction="0.8"/>
+      </bones:ArrayCollection>
+    </cadet2D:Entity>
+  </bones:ArrayCollection>
+  <Object x:name="userData" x:id="814" zoom="0.5" gridSize="10" panY="553.7066666666648" panX="959.3199999999983" showGrid="1" snapEnabled="1"/>
+</cadet:CadetScene>

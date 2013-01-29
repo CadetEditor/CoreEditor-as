@@ -1,0 +1,57 @@
+<xml>
+	<applicationID><![CDATA[cadet3D]]></applicationID>
+	
+	<fileSystemProvider environment="air" 		  type="local"    		id="cadet.local" 	    		label="Cadet3D.local"     folderName="Cadet3D" />
+	<fileSystemProvider environment="browser" 	type="sharedObject" id="cadet.sharedObject" 	label="Cadet3D.so" />
+	<fileSystemProvider environment="browser" 	type="url" 			    id="cadet.url" 		      	label="Cadet3D.url" baseURL="files" /><!-- visible="false" />-->
+	
+	<extension url="extensions/DefaultExtension.swf" />
+	<extension url="extensions/CadetEditorExtension.swf" />
+	<extension url="extensions/CadetEditorExtension3D.swf" />
+	
+	<manifest>
+		<url><![CDATA[extensions/manifests/Flox.xml]]></url>
+	</manifest>
+
+	<manifest>
+		<url><![CDATA[extensions/manifests/Cadet.xml]]></url>
+	</manifest>
+
+	<manifest>
+		<url><![CDATA[extensions/manifests/CadetEditor.xml]]></url>
+	</manifest>
+	
+	<manifest>
+		<url><![CDATA[extensions/manifests/Cadet3D.xml]]></url>
+	</manifest>
+	
+	<!--  File templates -->
+	<template>
+		<label><![CDATA[Barebones]]></label>
+		<description><![CDATA[A simple 3D scene with lights, a mesh and a material.]]></description>
+		<url><![CDATA[extensions/fileTemplates/barebones.cdt3d]]></url>
+		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
+	</template>
+	
+	<template>
+		<label><![CDATA[Robot]]></label>
+		<description><![CDATA[A scene with an imported mesh and textures.]]></description>
+		<url><![CDATA[extensions/fileTemplates/robot.cdt3d]]></url>
+		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
+	</template>
+	
+	<template>
+		<label><![CDATA[Planets]]></label>
+		<description><![CDATA[A simple scene with imported textures.]]></description>
+		<url><![CDATA[extensions/fileTemplates/planets.cdt3d]]></url>
+		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
+	</template>	
+	
+	<template>
+		<label><![CDATA[Earth]]></label>
+		<description><![CDATA[A space scene with a SkyBox and Earth.]]></description>
+		<url><![CDATA[extensions/fileTemplates/earth.cdt3d]]></url>
+		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
+	</template>
+
+</xml>

@@ -9,11 +9,11 @@
         <flox:ArrayCollection x:name="children" x:id="7"/>
       </cadet3D:CameraComponent>
     </cadet3D:Renderer3D>
-    <cadet:InputProcess x:name="1" x:id="8" name="Input Process">
+    <cadet:KeyboardInputProcess x:name="1" x:id="8" name="Input Process">
       <flox:ArrayCollection x:name="children" x:id="9">
-        <cadet:InputMapping x:name="0" x:id="10" symbol="LMB" name="LMB"/>
+        <cadet:KeyboardInputMapping x:name="0" x:id="10" symbol="LMB" name="LMB"/>
       </flox:ArrayCollection>
-    </cadet:InputProcess>
+    </cadet:KeyboardInputProcess>
     <ns0:HoverCamProcess x:name="2" x:id="11" mouseMapping="LMB" name="HoverCamProcess" currentPanAngle="0" currentTiltAngle="0" distance="500">
       <ns1:ObjectContainer3DComponent x:name="lookAtComponent" x:id="12" name="TiltContainer" transform="1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1">
         <flox:ArrayCollection x:name="children" x:id="13">

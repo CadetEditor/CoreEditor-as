@@ -1,11 +1,11 @@
 <cadet:CadetScene x:id="0" timeScale="1" framerate="30" name="Component" xmlns:cadet="www.unwrong.com/cadet/1.0.0" xmlns:x="flox.app.core.serialization.Serializer" xmlns:flox="www.unwrong.com/flox/1.0.0" xmlns:ns0="cadet3D.components.processes" xmlns:cadet3D="www.unwrong.com/cadet3D/1.0.0">
   <Object x:name="userData" x:id="1"/>
   <flox:ArrayCollection x:name="children" x:id="2">
-    <cadet:InputProcess x:name="0" x:id="3" name="Input Process">
+    <cadet:KeyboardInputProcess x:name="0" x:id="3" name="Input Process">
       <flox:ArrayCollection x:name="children" x:id="4">
-        <cadet:InputMapping x:name="0" x:id="5" name="LMB" symbol="LMB"/>
+        <cadet:KeyboardInputMapping x:name="0" x:id="5" name="LMB" symbol="LMB"/>
       </flox:ArrayCollection>
-    </cadet:InputProcess>
+    </cadet:KeyboardInputProcess>
     <ns0:HoverCamProcess x:name="1" x:id="6" mouseMapping="LMB" currentTiltAngle="10" currentPanAngle="180" name="HoverCamProcess" distance="200">
       <cadet3D:MeshComponent x:name="lookAtComponent" x:id="7" transform="1,0,0,0,0,1,0,0,0,0,1,0,0,100,0,1" name="CameraTarget">
         <cadet3D:ColorMaterialComponent x:name="materialComponent" x:id="8" name="Default Primitive Material" specular="1" gloss="50" depthCompareMode="less" color="13421772"/>

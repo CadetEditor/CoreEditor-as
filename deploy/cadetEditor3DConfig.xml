@@ -5,9 +5,9 @@
 	<fileSystemProvider environment="browser" 	type="sharedObject" id="cadet.sharedObject" 	label="Cadet3D.so" />
 	<fileSystemProvider environment="browser" 	type="url" 			    id="cadet.url" 		      	label="Cadet3D.url" baseURL="files" /><!-- visible="false" />-->
 	
-	<extension url="extensions/DefaultExtension.swf" />
-	<extension url="extensions/CadetEditorExtension.swf" />
-	<extension url="extensions/CadetEditorExtension3D.swf" />
+	<extension url="extensions/Default_Ext.swf" />
+	<extension url="extensions/CadetEditor_Ext.swf" />
+	<extension url="extensions/CadetEditor_Ext_3D.swf" />
 	
 	<manifest>
 		<url><![CDATA[extensions/manifests/Flox.xml]]></url>

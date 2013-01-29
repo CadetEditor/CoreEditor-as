@@ -6,10 +6,10 @@
 :: http://livedocs.adobe.com/flex/3/html/distributing_apps_4.html#1037515
 
 :: Path to Flex SDK binaries
-set PATH=%PATH%;C:\Program Files (x86)\Adobe\Flex SDK\4.1\bin
+set PATH=%PATH%;C:\Program Files\Adobe\Adobe Flash Builder 4.7 (64 Bit)\eclipse\plugins\com.adobe.flash.compiler_4.7.0.349722\AIRSDK\bin
 
 :: Certificate information
-set NAME="BonesEditor"
+set NAME="CadetEditor"
 set PASSWORD=fd
 set CERTIFICATE="Certificate.pfx"
 

@@ -1,13 +1,16 @@
 <xml>
-	<applicationID><![CDATA[cadetEditor2D]]></applicationID>
+	<applicationID><![CDATA[cadet2D]]></applicationID>
 	
 	<fileSystemProvider environment="air"		    type="local" 		    id="cadet.local" 		    	label="Cadet2D.local"     folderName="Cadet2D" />
 	<fileSystemProvider environment="browser" 	type="sharedObject" id="cadet.sharedObject" 	label="Cadet2D.so" />
 	<fileSystemProvider environment="browser" 	type="url" 			    id="cadet.url" 			      label="Cadet2D.url" baseURL="files" /><!--visible="false" />-->
 	
-	<extension url="extensions/DefaultExtension.swf" />
-	<extension url="extensions/CadetEditorExtension.swf" />
-	<extension url="extensions/CadetEditorExtension2DS.swf" />
+	<extension url="extensions/Default_Ext.swf" />
+	<extension url="extensions/CadetEditor_Ext.swf" />
+	<extension url="extensions/CadetEditor_Ext_2DS.swf" />
+	<extension url="extensions/CadetEditor_Ext_2DS_Tools.swf" />
+	<extension url="extensions/CadetEditor_Ext_2DSBox2D.swf" />
+	<extension url="extensions/CadetEditor_Ext_2DSBox2D_Tools.swf" />
 	
 	<manifest>
 		<url><![CDATA[extensions/manifests/Flox.xml]]></url>

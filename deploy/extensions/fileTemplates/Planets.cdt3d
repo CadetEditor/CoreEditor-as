@@ -4,11 +4,11 @@
     <flox:ArrayCollection x:name="dependencyNodes" x:id="3"/>
   </flox:DependencyManager>
   <flox:ArrayCollection x:name="children" x:id="4">
-    <cadet:InputProcess x:name="0" x:id="5" name="Input Process">
+    <cadet:KeyboardInputProcess x:name="0" x:id="5" name="Input Process">
       <flox:ArrayCollection x:name="children" x:id="6">
-        <cadet:InputMapping x:name="0" x:id="7" symbol="LMB" name="LMB"/>
+        <cadet:KeyboardInputMapping x:name="0" x:id="7" symbol="LMB" name="LMB"/>
       </flox:ArrayCollection>
-    </cadet:InputProcess>
+    </cadet:KeyboardInputProcess>
     <ns0:HoverCamProcess x:name="1" x:id="8" mouseMapping="LMB" currentPanAngle="55" name="HoverCamProcess" currentTiltAngle="10" distance="1500">
       <cadet3D:MeshComponent x:name="lookAtComponent" x:id="9" transform="0.45963090658187866,0,-0.8881100416183472,0,0,1,0,0,0.8881100416183472,0,0.45963090658187866,0,-26.824195861816406,0,1.106109619140625,1" name="Teapot">
         <cadet3D:ColorMaterialComponent x:name="materialComponent" x:id="10" specularStrength="1" name="Teapot Material" gloss="50" depthCompareMode="less" color="16777215"/>
