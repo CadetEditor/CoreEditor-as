@@ -87,9 +87,9 @@ package
 			
 			// Visual Contexts
 			rm.addResource( new FactoryResource( PropertiesPanelContext, "Properties", FloxEditorIcons.PropertyInspector ) );
-			//rm.addResource( new FactoryResource( HistoryInspectorContext, "History", BonesEditorIcons.History ) );
+			//rm.addResource( new FactoryResource( HistoryInspectorContext, "History", FloxEditorIcons.History ) );
 			rm.addResource( new FactoryResource( FileExplorerContext, "File Explorer", FloxEditorIcons.FileExplorer ) );
-			//rm.addResource( new FactoryResource( ResourcesContext, "Resources", BonesEditorIcons.Resource ) );
+			//rm.addResource( new FactoryResource( ResourcesContext, "Resources", FloxEditorIcons.Resource ) );
 			
 			rm.addResource( new ActionFactory( FileExplorerContext, Commands.NEW_FILE, "New File", "file", "", FloxEditorIcons.NewFile ) );
 			rm.addResource( new ActionFactory( FileExplorerContext, Commands.NEW_FOLDER, "New Folder", "file", "", FloxEditorIcons.NewFolder ) );

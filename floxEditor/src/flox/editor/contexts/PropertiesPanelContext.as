@@ -4,7 +4,6 @@
 package flox.editor.contexts
 {
 	import flash.display.DisplayObject;
-	import flash.display.Sprite;
 	
 	import flox.app.FloxApp;
 	import flox.app.core.contexts.IContext;
