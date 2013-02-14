@@ -7,6 +7,7 @@
 	
 	<extension url="extensions/Default_Ext.swf" />
 	<extension url="extensions/CadetEditor_Ext.swf" />
+	<extension url="extensions/CadetEditor_Ext_Tools.swf" />
 	<extension url="extensions/CadetEditor_Ext_3D.swf" />
 	<extension url="extensions/CadetEditor_Ext_3D_APhysics.swf" />
 	<extension url="extensions/CadetEditor_Ext_3D_Tools.swf" />

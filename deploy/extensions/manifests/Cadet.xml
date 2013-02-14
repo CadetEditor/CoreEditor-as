@@ -10,6 +10,7 @@
 	
 	<!-- Processes -->
 	<classMap name="KeyboardInputMapping" class="cadet.components.processes.KeyboardInputMapping" />
-	<classMap name="KeyboardInputProcess" class="cadet.components.processes.KeyboardInputProcess" />
+	<classMap name="TouchInputMapping" class="cadet.components.processes.TouchInputMapping" />
+	<!--<classMap name="KeyboardInputProcess" class="cadet.components.processes.KeyboardInputProcess" />-->
 	
 </manifest>

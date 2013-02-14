@@ -9,12 +9,12 @@
         <flox:ArrayCollection x:name="children" x:id="7"/>
       </cadet3D:CameraComponent>
     </cadet3D:Renderer3D>
-    <cadet:KeyboardInputProcess x:name="1" x:id="8" name="Input Process">
+    <cadet3D:InputProcess3D x:name="1" x:id="8" name="Input Process">
       <flox:ArrayCollection x:name="children" x:id="9">
-        <cadet:KeyboardInputMapping x:name="0" x:id="10" symbol="LMB" name="LMB"/>
+        <cadet:TouchInputMapping x:name="0" x:id="10" input="MOVED" name="MOVED"/>
       </flox:ArrayCollection>
-    </cadet:KeyboardInputProcess>
-    <ns0:HoverCamProcess x:name="2" x:id="11" mouseMapping="LMB" name="HoverCamProcess" currentPanAngle="0" currentTiltAngle="0" distance="500">
+    </cadet3D:InputProcess3D>
+    <ns0:HoverCamProcess x:name="2" x:id="11" inputMapping="MOVED" name="HoverCamProcess" currentPanAngle="0" currentTiltAngle="0" distance="500">
       <ns1:ObjectContainer3DComponent x:name="lookAtComponent" x:id="12" name="TiltContainer" transform="1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1">
         <flox:ArrayCollection x:name="children" x:id="13">
           <cadet3D:MeshComponent x:name="0" x:id="14" name="Atmosphere" transform="-1,-1.5099580252808664e-7,0,0,1.3899237671921583e-7,-0.9205048680305481,-0.3907311260700226,0,-5.899876143189431e-8,0.3907311260700226,-0.9205048680305481,0,0,0,0,1">

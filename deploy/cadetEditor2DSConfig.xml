@@ -7,6 +7,7 @@
 	
 	<extension url="extensions/Default_Ext.swf" />
 	<extension url="extensions/CadetEditor_Ext.swf" />
+	<extension url="extensions/CadetEditor_Ext_Tools.swf" />
 	<extension url="extensions/CadetEditor_Ext_2DS.swf" />
 	<extension url="extensions/CadetEditor_Ext_2DS_Tools.swf" />
 	<extension url="extensions/CadetEditor_Ext_2DSBox2D.swf" />
