@@ -3,13 +3,11 @@
 
 package flox.editor.contexts
 {
-	import flash.display.DisplayObject;
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	
 	import flox.ui.components.IUIComponent;
 	
-	import flox.app.core.contexts.IVisualContext;
 	import flox.app.entities.URI;
 
 	[Event( type="flash.events.Event", name="change" )]
