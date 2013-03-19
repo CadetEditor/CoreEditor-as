@@ -21,6 +21,7 @@ package flox.editor.ui.panels
 		public var vBox				:VBox;
 		public var actionBar		:HBox;
 		public var backBtn			:Button;
+		public var deselectBtn		:Button;
 		public var upBtn			:Button;
 		public var folderPath		:TextArea;
 		public var list				:FileSystemList;
@@ -29,6 +30,7 @@ package flox.editor.ui.panels
 		
 		private var _validSelectionIsFolder	:Boolean = true;
 		private var _validSelectionIsFile	:Boolean = false;
+		private var _validSelectionIsNull	:Boolean = false;
 	
 		private var initURI:URI;
 		private var rootURI:URI;
@@ -72,6 +74,7 @@ package flox.editor.ui.panels
 						<FileSystemList id="list" width="100%" height="100%"/>
 					</VBox>
 					<controlBar>
+						<Button label="Deselect" id="deselectBtn"/>
 						<Button label="OK" id="okBtn"/>
 						<Button label="Cancel" id="cancelBtn"/>
 					</controlBar>				
@@ -81,8 +84,11 @@ package flox.editor.ui.panels
 			
 			list.validExtensions = validExtensions;
 			
+			deselectBtn.visible = false;
+			deselectBtn.addEventListener(MouseEvent.CLICK, deselectBtnClickHandler);
+			
 			upBtn.icon = FloxEditorIcons.OpenFile;
-			upBtn.addEventListener(MouseEvent.CLICK, clickUpBtnHandler);
+			upBtn.addEventListener(MouseEvent.CLICK, upBtnClickHandler);
 			
 			backBtn.icon = FloxEditorIcons.Undo;
 			backBtn.addEventListener(MouseEvent.CLICK, backBtnClickHandler);
@@ -118,7 +124,13 @@ package flox.editor.ui.panels
 			initialiseList( node );
 		}
 		
-		private function clickUpBtnHandler( event:MouseEvent ):void
+		private function deselectBtnClickHandler( event:MouseEvent ):void
+		{
+			list.selectedItem = null;
+			validateInput();
+		}
+		
+		private function upBtnClickHandler( event:MouseEvent ):void
 		{
 			var rootNode:FileSystemNode = list.rootNode;
 			if (rootNode.parent) {
@@ -165,6 +177,9 @@ package flox.editor.ui.panels
 			if ( valid && validSelectionIsFolder )
 			{
 				valid = list.selectedFolderURI != null;
+			}
+			if ( validSelectionIsNull && list.selectedItem == null ) {
+				valid = true;
 			}
 			
 			okBtn.enabled = valid;
@@ -221,6 +236,22 @@ package flox.editor.ui.panels
 		public function set validSelectionIsFile(value:Boolean):void
 		{
 			_validSelectionIsFile = value;
+			validateInput();
+		}
+		
+		public function get validSelectionIsNull():Boolean
+		{
+			return _validSelectionIsNull;
+		}
+		
+		public function set validSelectionIsNull(value:Boolean):void
+		{
+			_validSelectionIsNull = value;
+			if ( _validSelectionIsNull ) {
+				deselectBtn.visible = true;
+			} else {
+				deselectBtn.visible = false;
+			}
 			validateInput();
 		}
 	}

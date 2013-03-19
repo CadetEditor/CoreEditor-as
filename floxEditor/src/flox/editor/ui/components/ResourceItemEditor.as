@@ -144,6 +144,7 @@ package flox.editor.ui.components
 			panel.label = "Select Resource";
 			panel.validSelectionIsFolder = false;
 			panel.validSelectionIsFile = true;
+			panel.validSelectionIsNull = true; // To enable deselection of assets
 			
 			FloxEditor.viewManager.addPopUp(panel);
 			panel.list.addEventListener(MouseEvent.DOUBLE_CLICK, doubleClickHandler);
@@ -266,7 +267,7 @@ package flox.editor.ui.components
 			//var assetsURI:URI = FloxEditor.getAssetsDirectoryURI();
 			var assetsURI:URI = new URI(FileSystemProviderUtil.getProjectDirectoryURI(FloxEditor.currentEditorContextURI).path+FloxApp.externalResourceFolderName);
 			
-			var resourceID:String = panel.list.selectedFile.path;
+			var resourceID:String = panel.list.selectedFile ? panel.list.selectedFile.path : "";
 			if ( resourceID.indexOf(assetsURI.path) != -1 ) {
 				resourceID = resourceID.replace(assetsURI.path, "");
 			}
@@ -300,7 +301,7 @@ package flox.editor.ui.components
 			
 			//valueInvalid = true;
 			
-			_value = factoryResource.getInstance();
+			_value = factoryResource ? factoryResource.getInstance() : null;
 			
 			invalidate();
 		}

@@ -7,7 +7,6 @@ package flox.editor.operations
 	import flash.filesystem.File;
 	
 	import flox.app.FloxApp;
-	import flox.editor.FloxEditor;
 	import flox.editor.controllers.SettingsControllerAIR;
 	import flox.editor.controllers.SystemWindowControllerAIR;
 	import flox.editor.core.FloxEditorEnvironment;
