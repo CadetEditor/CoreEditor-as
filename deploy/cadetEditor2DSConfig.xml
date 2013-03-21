@@ -10,8 +10,10 @@
 	<extension url="extensions/CadetEditor_Ext_Main.swf" />
 	<extension url="extensions/CadetEditor_Ext_2DS.swf" />
 	<extension url="extensions/CadetEditor_Ext_2DS_Main.swf" />
-	<extension url="extensions/CadetEditor_Ext_2DSBox2D.swf" />
-	<extension url="extensions/CadetEditor_Ext_2DSBox2D_Main.swf" />
+	<extension url="extensions/CadetEditor_Ext_2DS_Geom.swf" />
+	<extension url="extensions/CadetEditor_Ext_2DS_Geom_Main.swf" />
+	<extension url="extensions/CadetEditor_Ext_2DS_Box2D.swf" />
+	<extension url="extensions/CadetEditor_Ext_2DS_Box2D_Main.swf" />
 	
 	<manifest>
 		<url><![CDATA[extensions/manifests/Core.xml]]></url>
