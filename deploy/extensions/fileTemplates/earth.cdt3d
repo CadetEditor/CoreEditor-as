@@ -1,40 +1,40 @@
-<cadet:CadetScene x:id="0" timeScale="1" name="Component" framerate="30" xmlns:cadet="www.unwrong.com/cadet/1.0.0" xmlns:x="flox.app.core.serialization.Serializer" xmlns:flox="www.unwrong.com/flox/1.0.0" xmlns:cadet3D="www.unwrong.com/cadet3D/1.0.0" xmlns:ns0="cadet3D.components.processes" xmlns:ns1="cadet3D.components.core" xmlns:ns2="cadet3D.components.lights" xmlns:ns3="cadet3D.components.primitives" xmlns:ns4="cadet3D.components.materials" xmlns:ns5="cadet3D.components.textures">
+<cadet:CadetScene x:id="0" timeScale="1" name="Component" framerate="30" xmlns:cadet="www.unwrong.com/cadet/1.0.0" xmlns:x="core.app.core.serialization.Serializer" xmlns:core="www.unwrong.com/core/1.0.0" xmlns:cadet3D="www.unwrong.com/cadet3D/1.0.0" xmlns:ns0="cadet3D.components.processes" xmlns:ns1="cadet3D.components.core" xmlns:ns2="cadet3D.components.lights" xmlns:ns3="cadet3D.components.primitives" xmlns:ns4="cadet3D.components.materials" xmlns:ns5="cadet3D.components.textures">
   <Object x:name="userData" x:id="1"/>
-  <flox:DependencyManager x:name="dependencyManager" x:id="2">
-    <flox:ArrayCollection x:name="dependencyNodes" x:id="3"/>
-  </flox:DependencyManager>
-  <flox:ArrayCollection x:name="children" x:id="4">
+  <core:DependencyManager x:name="dependencyManager" x:id="2">
+    <core:ArrayCollection x:name="dependencyNodes" x:id="3"/>
+  </core:DependencyManager>
+  <core:ArrayCollection x:name="children" x:id="4">
     <cadet3D:Renderer3D x:name="0" x:id="5" name="Away3D Renderer">
       <cadet3D:CameraComponent x:name="cameraComponent" x:id="6" lensFar="100000" name="Camera" transform="-0.4426014721393585,-1.7235537086435215e-7,-0.896718442440033,0,0.31358426809310913,0.9368609189987183,-0.15477882325649261,0,0.8401004672050476,-0.3497021198272705,-0.41465598344802856,0,-665.3697509765625,280.88885498046875,328.4134216308594,1">
-        <flox:ArrayCollection x:name="children" x:id="7"/>
+        <core:ArrayCollection x:name="children" x:id="7"/>
       </cadet3D:CameraComponent>
     </cadet3D:Renderer3D>
     <cadet3D:InputProcess3D x:name="1" x:id="8" name="Input Process">
-      <flox:ArrayCollection x:name="children" x:id="9">
+      <core:ArrayCollection x:name="children" x:id="9">
         <cadet:TouchInputMapping x:name="0" x:id="10" input="MOVED" name="MOVED"/>
-      </flox:ArrayCollection>
+      </core:ArrayCollection>
     </cadet3D:InputProcess3D>
     <ns0:HoverCamProcess x:name="2" x:id="11" inputMapping="MOVED" name="HoverCamProcess" currentPanAngle="0" currentTiltAngle="0" distance="500">
       <ns1:ObjectContainer3DComponent x:name="lookAtComponent" x:id="12" name="TiltContainer" transform="1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1">
-        <flox:ArrayCollection x:name="children" x:id="13">
+        <core:ArrayCollection x:name="children" x:id="13">
           <cadet3D:MeshComponent x:name="0" x:id="14" name="Atmosphere" transform="-1,-1.5099580252808664e-7,0,0,1.3899237671921583e-7,-0.9205048680305481,-0.3907311260700226,0,-5.899876143189431e-8,0.3907311260700226,-0.9205048680305481,0,0,0,0,1">
             <cadet3D:ColorMaterialComponent x:name="materialComponent" x:id="15" gloss="5" specular="0.5" ambientColor="0" color="1470924" ambient="1" specularColor="16777215" name="Atmosphere Material" alphaBlending="0" blendMode="add" depthCompareMode="less"/>
             <cadet3D:SphereGeometryComponent x:name="geometryComponent" x:id="16" segmentsH="128" segmentsW="100" name="Sphere Geometry" radius="210"/>
-            <flox:ArrayCollection x:name="children" x:id="17">
+            <core:ArrayCollection x:name="children" x:id="17">
               <x:Ref x:name="0" x:id="16"/>
               <x:Ref x:name="1" x:id="15"/>
-            </flox:ArrayCollection>
+            </core:ArrayCollection>
           </cadet3D:MeshComponent>
           <cadet3D:MeshComponent x:name="1" x:id="18" name="Clouds" transform="1,0,0,0,0,0.9205048680305481,-0.3907311260700226,0,0,0.3907311260700226,0.9205048680305481,0,0,0,0,1">
             <cadet3D:TextureMaterialComponent x:name="materialComponent" x:id="19" gloss="50" specular="0" ambientColor="1777736" envMapAlpha="1" specularColor="16777215" alphaThreshold="0" name="Cloud Material" alphaBlending="1" blendMode="normal" depthCompareMode="less" ambient="1">
               <cadet3D:BitmapTextureComponent x:name="diffuseTexture" x:id="20" bitmapData="globe/cloud_combined_2048.jpg" name="Cloud Texture" alphaChannel="RED"/>
             </cadet3D:TextureMaterialComponent>
             <cadet3D:SphereGeometryComponent x:name="geometryComponent" x:id="21" segmentsH="100" segmentsW="128" name="Sphere Geometry" radius="202"/>
-            <flox:ArrayCollection x:name="children" x:id="22">
+            <core:ArrayCollection x:name="children" x:id="22">
               <x:Ref x:name="0" x:id="20"/>
               <x:Ref x:name="1" x:id="19"/>
               <x:Ref x:name="2" x:id="21"/>
-            </flox:ArrayCollection>
+            </core:ArrayCollection>
           </cadet3D:MeshComponent>
           <cadet3D:MeshComponent x:name="2" x:id="23" name="Earth" transform="1,0,0,0,0,0.9205048680305481,-0.3907311260700226,0,0,0.3907311260700226,0.9205048680305481,0,0,0,0,1">
             <cadet3D:TextureMaterialComponent x:name="materialComponent" x:id="24" gloss="5" specular="1" ambientColor="16777215" envMapAlpha="1" specularColor="16777215" alphaThreshold="0" name="Earth Texture Material" alphaBlending="0" blendMode="normal" depthCompareMode="less" ambient="1">
@@ -44,45 +44,45 @@
               <cadet3D:BitmapTextureComponent x:name="ambientTexture" x:id="28" bitmapData="globe/land_lights_16384.jpg" name="Earth Ambient Texture" alphaChannel="alpha"/>
             </cadet3D:TextureMaterialComponent>
             <cadet3D:SphereGeometryComponent x:name="geometryComponent" x:id="29" segmentsH="128" segmentsW="100" name="Sphere Geometry" radius="200"/>
-            <flox:ArrayCollection x:name="children" x:id="30">
+            <core:ArrayCollection x:name="children" x:id="30">
               <x:Ref x:name="0" x:id="29"/>
               <x:Ref x:name="1" x:id="24"/>
               <x:Ref x:name="2" x:id="27"/>
               <x:Ref x:name="3" x:id="28"/>
               <x:Ref x:name="4" x:id="25"/>
               <x:Ref x:name="5" x:id="26"/>
-            </flox:ArrayCollection>
+            </core:ArrayCollection>
           </cadet3D:MeshComponent>
-        </flox:ArrayCollection>
+        </core:ArrayCollection>
       </ns1:ObjectContainer3DComponent>
       <x:Ref x:name="targetComponent" x:id="6"/>
     </ns0:HoverCamProcess>
     <x:Ref x:name="3" x:id="6"/>
     <ns1:ObjectContainer3DComponent x:name="4" x:id="31" name="OrbitContainer" transform="1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1">
-      <flox:ArrayCollection x:name="children" x:id="32">
+      <core:ArrayCollection x:name="children" x:id="32">
         <ns2:PointLightComponent x:name="0" x:id="33" specular="1" ambientColor="16777215" color="16777215" castsShadows="0" name="Point Light" diffuse="2" transform="1,0,0,0,0,1,0,0,0,0,1,0,10000,0,0,1" ambient="1">
-          <flox:ArrayCollection x:name="children" x:id="34"/>
+          <core:ArrayCollection x:name="children" x:id="34"/>
         </ns2:PointLightComponent>
         <ns1:Sprite3DComponent x:name="1" x:id="35" name="Sun" width="3000" height="3000" transform="3000,0,0,0,0,3000,0,0,0,0,1,0,10000,0,0,1">
           <cadet3D:TextureMaterialComponent x:name="materialComponent" x:id="36" gloss="50" specular="1" ambientColor="16777215" envMapAlpha="1" specularColor="16777215" alphaThreshold="0" name="Sun Material" alphaBlending="0" blendMode="add" depthCompareMode="less" ambient="1">
             <cadet3D:BitmapTextureComponent x:name="diffuseTexture" x:id="37" bitmapData="lensflare/flare10.jpg" name="Sun Texture" alphaChannel="alpha"/>
           </cadet3D:TextureMaterialComponent>
-          <flox:ArrayCollection x:name="children" x:id="38">
+          <core:ArrayCollection x:name="children" x:id="38">
             <x:Ref x:name="0" x:id="36"/>
             <x:Ref x:name="1" x:id="37"/>
-          </flox:ArrayCollection>
+          </core:ArrayCollection>
         </ns1:Sprite3DComponent>
-      </flox:ArrayCollection>
+      </core:ArrayCollection>
     </ns1:ObjectContainer3DComponent>
     <ns3:SkyBoxComponent x:name="5" x:id="39" name="SkyBox" transform="1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1">
       <ns4:SkyBoxMaterialComponent x:name="materialComponent" x:id="40" name="SkyBox Material">
         <ns5:BitmapCubeTextureComponent x:name="cubeTexture" x:id="41" positiveZ="skybox/space_posZ.jpg" negativeX="skybox/space_negX.jpg" negativeY="skybox/space_negY.jpg" positiveY="skybox/space_posY.jpg" positiveX="skybox/space_posX.jpg" name="SkyBox Texture" negativeZ="skybox/space_negZ.jpg"/>
       </ns4:SkyBoxMaterialComponent>
-      <flox:ArrayCollection x:name="children" x:id="42">
+      <core:ArrayCollection x:name="children" x:id="42">
         <x:Ref x:name="0" x:id="40"/>
         <x:Ref x:name="1" x:id="41"/>
-      </flox:ArrayCollection>
+      </core:ArrayCollection>
     </ns3:SkyBoxComponent>
     <x:Ref x:name="6" x:id="12"/>
-  </flox:ArrayCollection>
+  </core:ArrayCollection>
 </cadet:CadetScene>

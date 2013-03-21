@@ -7,13 +7,13 @@
 	
 	<extension url="extensions/Default_Ext.swf" />
 	<extension url="extensions/CadetEditor_Ext.swf" />
-	<extension url="extensions/CadetEditor_Ext_Core.swf" />
+	<extension url="extensions/CadetEditor_Ext_Main.swf" />
 	<extension url="extensions/CadetEditor_Ext_3D.swf" />
 	<extension url="extensions/CadetEditor_Ext_3D_APhysics.swf" />
-	<extension url="extensions/CadetEditor_Ext_3D_Core.swf" />
+	<extension url="extensions/CadetEditor_Ext_3D_Main.swf" />
 	
 	<manifest>
-		<url><![CDATA[extensions/manifests/Flox.xml]]></url>
+		<url><![CDATA[extensions/manifests/Core.xml]]></url>
 	</manifest>
 
 	<manifest>
