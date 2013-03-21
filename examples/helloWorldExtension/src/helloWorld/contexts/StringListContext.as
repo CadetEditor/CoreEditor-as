@@ -4,16 +4,16 @@ package helloWorld.contexts
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	
-	import flox.app.FloxApp;
-	import flox.app.core.contexts.IOperationManagerContext;
-	import flox.app.entities.URI;
-	import flox.app.events.OperationManagerEvent;
-	import flox.app.managers.OperationManager;
-	import flox.app.operations.ReadFileAndDeserializeOperation;
-	import flox.app.operations.SerializeAndWriteFileOperation;
-	import flox.core.data.ArrayCollection;
-	import flox.editor.FloxEditor;
-	import flox.editor.contexts.IEditorContext;
+	import core.app.CoreApp;
+	import core.app.core.contexts.IOperationManagerContext;
+	import core.app.entities.URI;
+	import core.app.events.OperationManagerEvent;
+	import core.app.managers.OperationManager;
+	import core.app.operations.ReadFileAndDeserializeOperation;
+	import core.app.operations.SerializeAndWriteFileOperation;
+	import core.data.ArrayCollection;
+	import core.editor.CoreEditor;
+	import core.editor.contexts.IEditorContext;
 	
 	import helloWorld.ui.views.StringListView;
 	
@@ -65,16 +65,16 @@ package helloWorld.contexts
 		
 		public function save():void
 		{
-			var serializeOperation:SerializeAndWriteFileOperation = new SerializeAndWriteFileOperation( _dataProvider, _uri, FloxApp.fileSystemProvider );
-			FloxEditor.operationManager.addOperation(serializeOperation);
+			var serializeOperation:SerializeAndWriteFileOperation = new SerializeAndWriteFileOperation( _dataProvider, _uri, CoreApp.fileSystemProvider );
+			CoreEditor.operationManager.addOperation(serializeOperation);
 			changed = false;
 		}
 		
 		public function load():void
 		{
-			var deserializeOperation:ReadFileAndDeserializeOperation = new ReadFileAndDeserializeOperation( _uri, FloxApp.fileSystemProvider );
+			var deserializeOperation:ReadFileAndDeserializeOperation = new ReadFileAndDeserializeOperation( _uri, CoreApp.fileSystemProvider );
 			deserializeOperation.addEventListener(Event.COMPLETE, deserializeCompleteHandler);
-			FloxEditor.operationManager.addOperation(deserializeOperation); 
+			CoreEditor.operationManager.addOperation(deserializeOperation); 
 		}
 		
 		private function deserializeCompleteHandler( event:Event ):void

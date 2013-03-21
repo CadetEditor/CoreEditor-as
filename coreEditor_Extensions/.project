@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>CoreEditor_AIR</name>
+	<name>CoreEditor_Extensions</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -10,21 +10,15 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
-		<buildCommand>
-			<name>com.adobe.flexbuilder.project.apollobuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
 	</buildSpec>
 	<natures>
-		<nature>com.adobe.flexbuilder.project.apollonature</nature>
 		<nature>com.adobe.flexbuilder.project.actionscriptnature</nature>
 	</natures>
 	<linkedResources>
 		<link>
 			<name>bin-debug</name>
 			<type>2</type>
-			<locationURI>DOCUMENTS/Flox/FloxEditor/deploy</locationURI>
+			<locationURI>DOCUMENTS/CoreEditor/deploy/extensions</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

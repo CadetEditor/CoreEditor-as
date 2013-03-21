@@ -1,7 +1,7 @@
 package helloWorld.commandHandlers
 {
-	import flox.app.core.commandHandlers.ICommandHandler;
-	import flox.editor.FloxEditor;
+	import core.app.core.commandHandlers.ICommandHandler;
+	import core.editor.CoreEditor;
 	
 	import helloWorld.contexts.StringListContext;
 	
@@ -13,7 +13,7 @@ package helloWorld.commandHandlers
 		
 		public function execute(parameters:Object):void
 		{
-			var context:StringListContext = FloxEditor.contextManager.getLatestContextOfType(StringListContext);
+			var context:StringListContext = CoreEditor.contextManager.getLatestContextOfType(StringListContext);
 			
 			var length:int = context.dataProvider.length;
 			context.dataProvider.addItem("Item " + (length+1));

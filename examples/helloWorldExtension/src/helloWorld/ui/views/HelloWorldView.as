@@ -1,6 +1,6 @@
 package helloWorld.ui.views
 {
-	import flox.ui.components.TextArea;
+	import core.ui.components.TextArea;
 	
 	public class HelloWorldView extends TextArea
 	{

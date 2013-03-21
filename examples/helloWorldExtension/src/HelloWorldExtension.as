@@ -2,16 +2,16 @@ package
 {
 	import flash.display.Sprite;
 	
-	import flox.app.FloxApp;
-	import flox.app.entities.KeyModifier;
-	import flox.app.resources.CommandHandlerFactory;
-	import flox.app.resources.FactoryResource;
-	import flox.app.resources.FileType;
-	import flox.app.resources.KeyBinding;
-	import flox.app.validators.ContextValidator;
-	import flox.editor.FloxEditor;
-	import flox.editor.resources.ActionFactory;
-	import flox.editor.resources.EditorFactory;
+	import core.app.CoreApp;
+	import core.app.entities.KeyModifier;
+	import core.app.resources.CommandHandlerFactory;
+	import core.app.resources.FactoryResource;
+	import core.app.resources.FileType;
+	import core.app.resources.KeyBinding;
+	import core.app.validators.ContextValidator;
+	import core.editor.CoreEditor;
+	import core.editor.resources.ActionFactory;
+	import core.editor.resources.EditorFactory;
 	
 	import helloWorld.commandHandlers.AddStringCommandHandler;
 	import helloWorld.commandHandlers.MyCommandHandler;
@@ -23,39 +23,39 @@ package
 	//TODO: App doesn't close when close (top right) is clicked.
 	public class HelloWorldExtension extends Sprite
 	{
-		[Embed( source="../../../floxEditor/src/flox/editor/icons/Resource.png" )]
+		[Embed( source="../../../coreEditor/src/core/editor/icons/Resource.png" )]
 		public static const ResourceIcon:Class;
 		
-		[Embed(source='../../../floxEditor/src/flox/editor/icons/Text.png')]				
+		[Embed(source='../../../coreEditor/src/core/editor/icons/Text.png')]				
 		private var TextIcon:Class;
 		
 		public function HelloWorldExtension()
 		{
 			// HelloWorldContext Example
-			FloxApp.resourceManager.addResource( new FactoryResource( HelloWorldContext, "Hello World" ) );
+			CoreApp.resourceManager.addResource( new FactoryResource( HelloWorldContext, "Hello World" ) );
 			
 			// Didn't appear in menu bar at top of view...
-			//FloxApp.resourceManager.addResource( new ActionFactory( HelloWorldContext, Commands.MY_COMMAND, "My Action", "myActions", "Actions/MyActions" ) );
-			FloxApp.resourceManager.addResource( new ActionFactory( HelloWorldContext, Commands.MY_COMMAND, "My Action", "myActions", "Actions/MyActions", ResourceIcon ) );
+			//CoreApp.resourceManager.addResource( new ActionFactory( HelloWorldContext, Commands.MY_COMMAND, "My Action", "myActions", "Actions/MyActions" ) );
+			CoreApp.resourceManager.addResource( new ActionFactory( HelloWorldContext, Commands.MY_COMMAND, "My Action", "myActions", "Actions/MyActions", ResourceIcon ) );
 			
-			FloxApp.resourceManager.addResource( new CommandHandlerFactory( Commands.MY_COMMAND, MyCommandHandler ) );
+			CoreApp.resourceManager.addResource( new CommandHandlerFactory( Commands.MY_COMMAND, MyCommandHandler ) );
 			
-			FloxApp.resourceManager.addResource( new KeyBinding( Commands.MY_COMMAND, 77, KeyModifier.CTRL ) );
+			CoreApp.resourceManager.addResource( new KeyBinding( Commands.MY_COMMAND, 77, KeyModifier.CTRL ) );
 			
-			//FloxEditor.commandManager.executeCommand(Commands.MY_COMMAND);
+			//CoreEditor.commandManager.executeCommand(Commands.MY_COMMAND);
 			
 			
 			// StringListContext Example
-			FloxApp.resourceManager.addResource( new FileType( "String List File", "strlist", TextIcon ) );
+			CoreApp.resourceManager.addResource( new FileType( "String List File", "strlist", TextIcon ) );
 			
-			//FloxApp.resourceManager.addResource( new FactoryResource( StringListContext, "String List" ) );
-			FloxApp.resourceManager.addResource( new EditorFactory( StringListContext, "String List", "strlist", TextIcon ) );
+			//CoreApp.resourceManager.addResource( new FactoryResource( StringListContext, "String List" ) );
+			CoreApp.resourceManager.addResource( new EditorFactory( StringListContext, "String List", "strlist", TextIcon ) );
 			
 			var commandHandlerFactory:CommandHandlerFactory = new CommandHandlerFactory( Commands.ADD_STRING, AddStringCommandHandler );
-			commandHandlerFactory.validators.push( new ContextValidator( FloxEditor.contextManager, StringListContext ) );
-			FloxApp.resourceManager.addResource( commandHandlerFactory );
+			commandHandlerFactory.validators.push( new ContextValidator( CoreEditor.contextManager, StringListContext ) );
+			CoreApp.resourceManager.addResource( commandHandlerFactory );
 			
-			FloxApp.resourceManager.addResource( new ActionFactory( StringListContext, Commands.ADD_STRING, "Add String", "myActions" ) );
+			CoreApp.resourceManager.addResource( new ActionFactory( StringListContext, Commands.ADD_STRING, "Add String", "myActions" ) );
 			
 			
 		}

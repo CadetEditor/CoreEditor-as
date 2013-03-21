@@ -1,7 +1,7 @@
 package helloWorld.commandHandlers
 {
-	import flox.app.core.commandHandlers.ICommandHandler;
-	import flox.ui.components.Alert;
+	import core.app.core.commandHandlers.ICommandHandler;
+	import core.ui.components.Alert;
 
 	public class MyCommandHandler implements ICommandHandler
 	{

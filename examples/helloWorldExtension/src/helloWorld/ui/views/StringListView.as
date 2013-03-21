@@ -1,6 +1,6 @@
 package helloWorld.ui.views
 {
-	import flox.ui.components.List;
+	import core.ui.components.List;
 	
 	public class StringListView extends List
 	{

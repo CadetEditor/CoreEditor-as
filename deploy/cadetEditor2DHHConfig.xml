@@ -7,13 +7,13 @@
 	
 	<extension url="extensions/Default_Ext.swf" />
 	<extension url="extensions/CadetEditor_Ext.swf" />
-	<extension url="extensions/CadetEditor_Ext_Core.swf" />
+	<extension url="extensions/CadetEditor_Ext_Main.swf" />
 	<extension url="extensions/CadetEditor_Ext_2DS.swf" />
-	<extension url="extensions/CadetEditor_Ext_2DS_Core.swf" />
+	<extension url="extensions/CadetEditor_Ext_2DS_Main.swf" />
 	<extension url="extensions/CadetEditor_Ext_HungryHero.swf" />
 	
 	<manifest>
-		<url><![CDATA[extensions/manifests/Flox.xml]]></url>
+		<url><![CDATA[extensions/manifests/Core.xml]]></url>
 	</manifest>
 
 	<manifest>
