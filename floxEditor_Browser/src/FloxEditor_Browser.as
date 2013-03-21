@@ -8,16 +8,16 @@ package
 	import flash.display.StageScaleMode;
 	import flash.events.Event;
 	
-	import flox.app.FloxApp;
-	import flox.editor.operations.InitializeFloxOperationBrowser;
-	import flox.editor.ui.components.SplashScreen;
+	import core.app.CoreApp;
+	import core.editor.operations.InitializeFloxOperationBrowser;
+	import core.editor.ui.components.SplashScreen;
 	
 	[SWF(backgroundColor="#15181A", frameRate="120")]
-	public class FloxEditor_Browser extends Sprite
+	public class CoreEditor_Browser extends Sprite
 	{
 		private var splashScreen		:SplashScreen;
 		
-		public function FloxEditor_Browser()
+		public function CoreEditor_Browser()
 		{
 			stage.scaleMode = StageScaleMode.NO_SCALE;
 			stage.align = StageAlign.TOP_LEFT;
@@ -33,7 +33,7 @@ package
 				configURL = loaderInfo.parameters.configURL;
 			}
 			
-			FloxApp.init();
+			CoreApp.init();
 			
 			var initOperation:InitializeFloxOperationBrowser = new InitializeFloxOperationBrowser( stage, configURL );
 			initOperation.addEventListener(Event.COMPLETE, initCompleteHandler);

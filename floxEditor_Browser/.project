@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>FloxEditor_Browser</name>
+	<name>CoreEditor_Browser</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -18,7 +18,7 @@
 		<link>
 			<name>bin-debug</name>
 			<type>2</type>
-			<locationURI>DOCUMENTS/Flox/floxEditor/deploy</locationURI>
+			<locationURI>DOCUMENTS/Flox/FloxEditor/deploy</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

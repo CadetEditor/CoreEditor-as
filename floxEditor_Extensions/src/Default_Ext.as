@@ -6,25 +6,25 @@ package
 	import flash.display.Sprite;
 	import flash.ui.Keyboard;
 	
-	import flox.app.FloxApp;
-	import flox.app.entities.KeyModifier;
-	import flox.app.managers.ResourceManager;
-	import flox.app.resources.FactoryResource;
-	import flox.app.resources.KeyBinding;
-	import flox.app.resources.PropertyInspectorItemEditorFactory;
-	import flox.editor.commandHandlers.*;
-	import flox.editor.contexts.*;
-	import flox.editor.core.IGlobalViewContainer;
-	import flox.editor.entities.*;
-	import flox.editor.icons.FloxEditorIcons;
-	import flox.editor.resources.ActionFactory;
-	import flox.editor.ui.components.ResourceItemEditor;
+	import core.app.CoreApp;
+	import core.app.entities.KeyModifier;
+	import core.app.managers.ResourceManager;
+	import core.app.resources.FactoryResource;
+	import core.app.resources.KeyBinding;
+	import core.app.resources.PropertyInspectorItemEditorFactory;
+	import core.editor.commandHandlers.*;
+	import core.editor.contexts.*;
+	import core.editor.core.IGlobalViewContainer;
+	import core.editor.entities.*;
+	import core.editor.icons.CoreEditorIcons;
+	import core.editor.resources.ActionFactory;
+	import core.editor.ui.components.ResourceItemEditor;
 	
 	public class Default_Ext extends Sprite
 	{
 		public function Default_Ext()
 		{
-			var rm:ResourceManager = FloxApp.resourceManager;
+			var rm:ResourceManager = CoreApp.resourceManager;
 			
 			// Common
 			rm.addResource( new KeyBinding( Commands.REFRESH, 		Keyboard.F5 ) );
@@ -45,20 +45,20 @@ package
 			rm.addResource( new ActionFactory( IGlobalViewContainer, null, "", "", "Window/_" ) );
 			
 			// File Actions
-			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.NEW_FILE, "New...", "file", "File/file", FloxEditorIcons.NewFile ) );
-			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.OPEN_FILE, "Open...", "file", "File/file", FloxEditorIcons.OpenFile ) );
-			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.SAVE_FILE, "Save", "file", "File/file", FloxEditorIcons.Save ) );
-			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.SAVE_FILE_AS, "Save As...", "", "File/file", FloxEditorIcons.Save ) );
+			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.NEW_FILE, "New...", "file", "File/file", CoreEditorIcons.NewFile ) );
+			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.OPEN_FILE, "Open...", "file", "File/file", CoreEditorIcons.OpenFile ) );
+			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.SAVE_FILE, "Save", "file", "File/file", CoreEditorIcons.Save ) );
+			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.SAVE_FILE_AS, "Save As...", "", "File/file", CoreEditorIcons.Save ) );
 			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.CLOSE_FILE, "Close", "", "File/file") );
 			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.REVERT, "Revert", "", "File/file") );
 			
 			// Edit Actions
-			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.UNDO, "Undo", "history", "Edit/history", FloxEditorIcons.Undo ) );
-			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.REDO, "Redo", "history", "Edit/history", FloxEditorIcons.Redo ) );
-			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.CUT, "Cut", "", "Edit/edit", FloxEditorIcons.Cut ) );
-			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.COPY, "Copy", "", "Edit/edit", FloxEditorIcons.Copy ) );
-			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.PASTE, "Paste", "", "Edit/edit", FloxEditorIcons.Paste ) );
-			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.DELETE, "Delete", "", "Edit/edit", FloxEditorIcons.Bin ) );
+			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.UNDO, "Undo", "history", "Edit/history", CoreEditorIcons.Undo ) );
+			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.REDO, "Redo", "history", "Edit/history", CoreEditorIcons.Redo ) );
+			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.CUT, "Cut", "", "Edit/edit", CoreEditorIcons.Cut ) );
+			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.COPY, "Copy", "", "Edit/edit", CoreEditorIcons.Copy ) );
+			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.PASTE, "Paste", "", "Edit/edit", CoreEditorIcons.Paste ) );
+			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.DELETE, "Delete", "", "Edit/edit", CoreEditorIcons.Bin ) );
 			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.SELECT_ALL, "Select All", "", "Edit/edit" ) );
 			
 			rm.addResource( CloseApplicationCommandHandler.getFactory() );
@@ -86,15 +86,15 @@ package
 			rm.addResource( new KeyBinding( Commands.REVERT, 82, KeyModifier.CTRL ) );
 			
 			// Visual Contexts
-			rm.addResource( new FactoryResource( PropertiesPanelContext, "Properties", FloxEditorIcons.PropertyInspector ) );
-			//rm.addResource( new FactoryResource( HistoryInspectorContext, "History", FloxEditorIcons.History ) );
-			rm.addResource( new FactoryResource( FileExplorerContext, "File Explorer", FloxEditorIcons.FileExplorer ) );
-			//rm.addResource( new FactoryResource( ResourcesContext, "Resources", FloxEditorIcons.Resource ) );
+			rm.addResource( new FactoryResource( PropertiesPanelContext, "Properties", CoreEditorIcons.PropertyInspector ) );
+			//rm.addResource( new FactoryResource( HistoryInspectorContext, "History", CoreEditorIcons.History ) );
+			rm.addResource( new FactoryResource( FileExplorerContext, "File Explorer", CoreEditorIcons.FileExplorer ) );
+			//rm.addResource( new FactoryResource( ResourcesContext, "Resources", CoreEditorIcons.Resource ) );
 			
-			rm.addResource( new ActionFactory( FileExplorerContext, Commands.NEW_FILE, "New File", "file", "", FloxEditorIcons.NewFile ) );
-			rm.addResource( new ActionFactory( FileExplorerContext, Commands.NEW_FOLDER, "New Folder", "file", "", FloxEditorIcons.NewFolder ) );
-			rm.addResource( new ActionFactory( FileExplorerContext, Commands.DELETE, "Delete selected file/folder", "file", "", FloxEditorIcons.Bin ) );
-			rm.addResource( new ActionFactory( FileExplorerContext, Commands.REFRESH, "Refresh", "view", "", FloxEditorIcons.Refresh ) );
+			rm.addResource( new ActionFactory( FileExplorerContext, Commands.NEW_FILE, "New File", "file", "", CoreEditorIcons.NewFile ) );
+			rm.addResource( new ActionFactory( FileExplorerContext, Commands.NEW_FOLDER, "New Folder", "file", "", CoreEditorIcons.NewFolder ) );
+			rm.addResource( new ActionFactory( FileExplorerContext, Commands.DELETE, "Delete selected file/folder", "file", "", CoreEditorIcons.Bin ) );
+			rm.addResource( new ActionFactory( FileExplorerContext, Commands.REFRESH, "Refresh", "view", "", CoreEditorIcons.Refresh ) );
 		
 			rm.addResource( new PropertyInspectorItemEditorFactory( "ResourceItemEditor", ResourceItemEditor, "value", "itemsBeingEdited", "propertyOnItemsBeingEdited", false ) );
 		}
