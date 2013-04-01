@@ -4,7 +4,7 @@
 package core.app.resources
 {
 	import core.app.core.commandHandlers.ICommandHandler;
-	import core.app.icons.FloxIcons;
+	import core.app.icons.CoreIcons;
 	import core.app.util.IntrospectionUtil;
 	
 	public class CommandHandlerFactory implements IFactoryResource
@@ -26,7 +26,7 @@ package core.app.resources
 			return "Command Handler Factory";
 		}
 		
-		public function get icon():Class { return FloxIcons.CommandHandler; }
+		public function get icon():Class { return CoreIcons.CommandHandler; }
 		public function get command():String { return _command; }
 		public function get validators():Array { return _validators; }
 		

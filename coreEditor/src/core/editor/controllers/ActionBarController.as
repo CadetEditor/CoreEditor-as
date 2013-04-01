@@ -15,7 +15,7 @@ package core.editor.controllers
 	
 	import core.editor.entities.Action;
 	import core.editor.entities.ActionBarGroup;
-	import core.app.icons.FloxIcons;
+	import core.app.icons.CoreIcons;
 	
 	/**
 	 * This controller provides the functionality of creating a button for each Action, and adding it to the supplied container (the 'actionbar')
@@ -57,7 +57,7 @@ package core.editor.controllers
 			if ( actions.indexOf(action) != -1 ) return;
 			
 			var button:Button = new Button(flux.skins.ToolbarButtonSkin);
-			button.icon = action.icon == null ? FloxIcons.NoIcon : action.icon;
+			button.icon = action.icon == null ? CoreIcons.NoIcon : action.icon;
 			button.width = 28
 			button.height = 28
 			button.toolTip = action.label

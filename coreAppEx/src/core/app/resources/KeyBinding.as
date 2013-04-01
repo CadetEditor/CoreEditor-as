@@ -3,7 +3,7 @@
 
 package core.app.resources
 {
-	import core.app.icons.FloxIcons;
+	import core.app.icons.CoreIcons;
 	
 	public class KeyBinding implements IResource
 	{
@@ -25,7 +25,7 @@ package core.app.resources
 			return "Key binding";
 		}
 		
-		public function get icon():Class { return FloxIcons.Keyboard; }
+		public function get icon():Class { return CoreIcons.Keyboard; }
 		
 		// Implement IResouce
 		public function getID():String { return "KeyBinding : " + commandID; }

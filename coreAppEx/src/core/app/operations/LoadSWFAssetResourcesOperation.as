@@ -14,7 +14,7 @@ package core.app.operations
 	import flash.utils.ByteArray;
 	
 	import core.app.core.operations.IAsynchronousOperation;
-	import core.app.icons.FloxIcons;
+	import core.app.icons.CoreIcons;
 	import core.app.managers.ResourceManager;
 	import core.app.resources.FactoryResource;
 	import core.app.util.IntrospectionUtil;
@@ -67,16 +67,16 @@ package core.app.operations
 				var constructorParams:Array = null;
 				if ( IntrospectionUtil.doesTypeExtend(type, BitmapData) )
 				{
-					icon = FloxIcons.Bitmap;
+					icon = CoreIcons.Bitmap;
 					constructorParams = [0,0];
 				}
 				else if ( IntrospectionUtil.doesTypeExtend(type, DisplayObject) )
 				{
-					icon = FloxIcons.MovieClip;
+					icon = CoreIcons.MovieClip;
 				}
 				else if ( IntrospectionUtil.doesTypeExtend(type, Sound) )
 				{
-					icon = FloxIcons.Sound;
+					icon = CoreIcons.Sound;
 				}
 				
 				var factory:FactoryResource = new FactoryResource( type, IntrospectionUtil.getClassName(type), icon, constructorParams );

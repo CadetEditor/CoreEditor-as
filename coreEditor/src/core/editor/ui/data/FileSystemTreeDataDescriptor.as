@@ -6,7 +6,7 @@ package core.editor.ui.data
 	import core.app.CoreApp;
 	import core.app.entities.FileSystemNode;
 	import core.app.entities.URI;
-	import core.app.icons.FloxIcons;
+	import core.app.icons.CoreIcons;
 	import core.app.managers.ResourceManager;
 	import core.app.resources.ExternalBitmapDataResource;
 	import core.app.resources.FileType;
@@ -67,14 +67,14 @@ package core.editor.ui.data
 				var parentURI:URI = item.uri.getParentURI();
 				if ( parentURI.path == "" )
 				{
-					return FloxIcons.Drive;
+					return CoreIcons.Drive;
 				}
 				
-				return FloxIcons.Folder;
+				return CoreIcons.Folder;
 				//var open:Boolean = isItemOpen( item );
 				//return open ? FolderOpenIcon : FolderIcon;;
 			}
-			return FloxIcons.File;
+			return CoreIcons.File;
 		}
 		
 		public function getLabel( item:Object ):String

@@ -3,7 +3,7 @@
 
 package core.app.icons
 {
-	public class FloxIcons
+	public class CoreIcons
 	{
 		[Embed( source = 'Bitmap.png' )] 			static public var Bitmap:Class;
 		[Embed( source = 'CommandHandler.png' )] 	static public var CommandHandler:Class;

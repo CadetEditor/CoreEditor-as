@@ -9,7 +9,7 @@ package core.editor.controllers
 	import core.app.CoreApp;
 	import core.app.entities.URI;
 	import core.app.events.ContextManagerEvent;
-	import core.app.icons.FloxIcons;
+	import core.app.icons.CoreIcons;
 	import core.app.resources.FileType;
 	import core.app.resources.IResource;
 	import core.app.util.AsynchronousUtil;

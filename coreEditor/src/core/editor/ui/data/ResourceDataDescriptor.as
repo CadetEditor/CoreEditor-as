@@ -4,7 +4,7 @@
 package core.editor.ui.data
 {
 	import core.app.resources.IResource;
-	import core.app.icons.FloxIcons;
+	import core.app.icons.CoreIcons;
 	import core.app.util.IntrospectionUtil;
 	import core.data.ArrayCollection;
 	import core.ui.data.IDataDescriptor;
