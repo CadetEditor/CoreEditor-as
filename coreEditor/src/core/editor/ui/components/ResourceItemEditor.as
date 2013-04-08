@@ -21,7 +21,7 @@ package core.editor.ui.components
 	import core.editor.icons.CoreEditorIcons;
 	import core.editor.ui.panels.FileSystemListBrowserPanel;
 	import core.editor.utils.FileSystemProviderUtil;
-	import core.ui.FloxUI;
+	import core.ui.CoreUI;
 	import core.ui.components.Button;
 	import core.ui.components.Image;
 	import core.ui.components.TextStyles;
@@ -63,7 +63,7 @@ package core.editor.ui.components
 			background = new TextAreaSkin();
 			
 			if (!background.scale9Grid) {
-				Scale9GridUtil.setScale9Grid(background, FloxUI.defaultTextAreaSkinScale9Grid);
+				Scale9GridUtil.setScale9Grid(background, CoreUI.defaultTextAreaSkinScale9Grid);
 			}
 			
 			addChild(background);

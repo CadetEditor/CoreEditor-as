@@ -5,7 +5,7 @@ package core.editor.ui.panels
 {
 	import flash.events.Event;
 	
-	import core.ui.util.FloxDeserializer;
+	import core.ui.util.CoreDeserializer;
 	
 	import core.editor.CoreEditor;
 	import core.app.util.StringUtil;
@@ -51,7 +51,7 @@ package core.editor.ui.panels
 				
 			</Panel>
 				
-			FloxDeserializer.deserialize( xml, this, ["core.editor.ui.components"] );
+			CoreDeserializer.deserialize( xml, this, ["core.editor.ui.components"] );
 			defaultButton = okBtn;
 			nameInput.addEventListener( Event.CHANGE, nameInputChangeHandler );
 				

@@ -3,7 +3,7 @@
 
 package core.editor.ui.components
 {
-	import core.ui.util.FloxDeserializer;
+	import core.ui.util.CoreDeserializer;
 	
 	import core.app.core.operations.IAsynchronousOperation;
 	import core.app.events.OperationProgressEvent;
@@ -39,7 +39,7 @@ package core.editor.ui.components
 				<Label id="loadingLabel" x="10" y="280" width="570" height="60" text="Loading..." fontColor="0xFFFFFF" />
 			</UIComponent>
 			
-			FloxDeserializer.deserialize(xml, this);
+			CoreDeserializer.deserialize(xml, this);
 			//loadingLabel.width = 570;
 			loadingLabel.height = 40;
 			loadingLabel.resizeToContentWidth = false;

@@ -7,7 +7,7 @@ package core.editor.ui.panels
 	import core.editor.ui.components.RecentFileItemRenderer;
 	import core.ui.components.Canvas;
 	import core.ui.components.List;
-	import core.ui.util.FloxDeserializer;
+	import core.ui.util.CoreDeserializer;
 
 	public class WelcomePanel extends Canvas
 	{
@@ -50,7 +50,7 @@ package core.editor.ui.panels
 				</layout>
 			</Canvas>
 			
-			FloxDeserializer.deserialize( xml, this );
+			CoreDeserializer.deserialize( xml, this );
 			
 			recentFileList.itemRendererClass = RecentFileItemRenderer;
 			fileTemplateList.itemRendererClass = FileTemplateItemRenderer;

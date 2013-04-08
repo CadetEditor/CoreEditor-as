@@ -13,7 +13,7 @@ package core.editor.ui.components
 	import core.ui.events.TabNavigatorEvent;
 	import core.ui.layouts.VerticalLayout;
 	import core.ui.util.BindingUtil;
-	import core.ui.util.FloxDeserializer;
+	import core.ui.util.CoreDeserializer;
 	
 	import core.editor.core.IEditorViewContainer;
 	import core.editor.core.IGlobalViewContainer;

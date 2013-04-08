@@ -19,6 +19,7 @@ package core.editor.icons
 		[Embed( source = 'OpenFile.png' )] 			static public const OpenFile:Class;
 		[Embed( source = 'Paste.png' )] 			static public const Paste:Class;
 		[Embed( source = 'PropertyInspector.png' )] static public const PropertyInspector:Class;
+		[Embed( source = 'Publish.png' )]			static public const Publish:Class;
 		[Embed( source = 'Question.png' )] 			static public const Question:Class;
 		[Embed( source = 'Redo.png' )] 				static public const Redo:Class;
 		[Embed( source = 'Refresh.png' )] 			static public const Refresh:Class;

@@ -9,9 +9,9 @@ package core.editor.operations
 	import core.editor.core.CoreEditorEnvironment;
 	import core.editor.utils.CoreEditorUtil;
 
-	public class InitializeFloxOperationBrowser extends InitializeFloxOperation
+	public class InitializeCoreOperationBrowser extends InitializeCoreOperation
 	{
-		public function InitializeFloxOperationBrowser(stage:Stage, configURL:String)
+		public function InitializeCoreOperationBrowser(stage:Stage, configURL:String)
 		{
 			super(stage, configURL, CoreEditorEnvironment.BROWSER);
 		}

@@ -12,10 +12,26 @@ package
 	import core.app.resources.FactoryResource;
 	import core.app.resources.KeyBinding;
 	import core.app.resources.PropertyInspectorItemEditorFactory;
-	import core.editor.commandHandlers.*;
-	import core.editor.contexts.*;
+	import core.editor.commandHandlers.CloseApplicationCommandHandler;
+	import core.editor.commandHandlers.CloseFileCommandHandler;
+	import core.editor.commandHandlers.CopyFileCommandHandler;
+	import core.editor.commandHandlers.CutFileCommandHandler;
+	import core.editor.commandHandlers.DeleteFileCommandHandler;
+	import core.editor.commandHandlers.NewFileCommandHandler;
+	import core.editor.commandHandlers.NewFolderCommandHandler;
+	import core.editor.commandHandlers.OpenFileCommandHandler;
+	import core.editor.commandHandlers.PasteFileCommandHandler;
+	import core.editor.commandHandlers.PublishCommandHandler;
+	import core.editor.commandHandlers.RedoCommandHandler;
+	import core.editor.commandHandlers.RefreshCommandHandler;
+	import core.editor.commandHandlers.RevertFileCommandHandler;
+	import core.editor.commandHandlers.SaveFileAsCommandHandler;
+	import core.editor.commandHandlers.SaveFileCommandHandler;
+	import core.editor.commandHandlers.UndoCommandHandler;
+	import core.editor.contexts.FileExplorerContext;
+	import core.editor.contexts.PropertiesPanelContext;
 	import core.editor.core.IGlobalViewContainer;
-	import core.editor.entities.*;
+	import core.editor.entities.Commands;
 	import core.editor.icons.CoreEditorIcons;
 	import core.editor.resources.ActionFactory;
 	import core.editor.ui.components.ResourceItemEditor;
@@ -49,6 +65,7 @@ package
 			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.OPEN_FILE, "Open...", "file", "File/file", CoreEditorIcons.OpenFile ) );
 			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.SAVE_FILE, "Save", "file", "File/file", CoreEditorIcons.Save ) );
 			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.SAVE_FILE_AS, "Save As...", "", "File/file", CoreEditorIcons.Save ) );
+			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.PUBLISH_FILE, "Publish", "file", "File/file", CoreEditorIcons.Publish ) );
 			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.CLOSE_FILE, "Close", "", "File/file") );
 			rm.addResource( new ActionFactory( IGlobalViewContainer, Commands.REVERT, "Revert", "", "File/file") );
 			
@@ -69,6 +86,7 @@ package
 			rm.addResource( NewFileCommandHandler.getFactory() );
 			rm.addResource( NewFolderCommandHandler.getFactory() );
 			rm.addResource( OpenFileCommandHandler.getFactory() );
+			rm.addResource( PublishCommandHandler.getFactory() );
 			rm.addResource( SaveFileCommandHandler.getFactory() );
 			rm.addResource( SaveFileAsCommandHandler.getFactory() );
 			rm.addResource( CloseFileCommandHandler.getFactory() );

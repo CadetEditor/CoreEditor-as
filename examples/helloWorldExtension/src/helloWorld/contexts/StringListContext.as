@@ -70,6 +70,11 @@ package helloWorld.contexts
 			changed = false;
 		}
 		
+		public function publish():void
+		{
+			// Do nothing
+		}
+		
 		public function load():void
 		{
 			var deserializeOperation:ReadFileAndDeserializeOperation = new ReadFileAndDeserializeOperation( _uri, CoreApp.fileSystemProvider );

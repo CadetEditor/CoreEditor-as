@@ -9,7 +9,7 @@ package
 	import flash.events.Event;
 	
 	import core.app.CoreApp;
-	import core.editor.operations.InitializeFloxOperationBrowser;
+	import core.editor.operations.InitializeCoreOperationBrowser;
 	import core.editor.ui.components.SplashScreen;
 	
 	[SWF(backgroundColor="#15181A", frameRate="120")]
@@ -35,7 +35,7 @@ package
 			
 			CoreApp.init();
 			
-			var initOperation:InitializeFloxOperationBrowser = new InitializeFloxOperationBrowser( stage, configURL );
+			var initOperation:InitializeCoreOperationBrowser = new InitializeCoreOperationBrowser( stage, configURL );
 			initOperation.addEventListener(Event.COMPLETE, initCompleteHandler);
 			initOperation.execute();
 			

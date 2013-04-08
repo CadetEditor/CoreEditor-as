@@ -5,7 +5,7 @@ package core.editor.ui.panels
 {
 	import flash.events.Event;
 	
-	import core.ui.util.FloxDeserializer;
+	import core.ui.util.CoreDeserializer;
 	
 	import core.editor.CoreEditor;
 	import core.ui.components.Button;
@@ -40,7 +40,7 @@ package core.editor.ui.panels
 				
 			</Panel>
 				
-			FloxDeserializer.deserialize( xml, this );
+			CoreDeserializer.deserialize( xml, this );
 			defaultButton = okBtn;
 			list.addEventListener( Event.CHANGE, listChangeHandler );
 			list.itemRendererClass = FileTemplateItemRenderer;

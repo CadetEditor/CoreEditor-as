@@ -38,7 +38,7 @@ package core.editor.operations
 	[Event(type="flash.events.Event", name="complete")]
 	[Event(type="flash.events.ErrorEvent", name="error")]
 	
-	public class InitializeFloxOperation extends EventDispatcher implements IAsynchronousOperation
+	public class InitializeCoreOperation extends EventDispatcher implements IAsynchronousOperation
 	{
 		private var stage			:Stage;
 		private var configURL		:String;
@@ -46,7 +46,7 @@ package core.editor.operations
 		private var _label			:String = "";
 		private var environment		:String;
 		
-		public function InitializeFloxOperation( stage:Stage, configURL:String, environment:String )
+		public function InitializeCoreOperation( stage:Stage, configURL:String, environment:String )
 		{
 			this.stage = stage;
 			this.configURL = configURL;

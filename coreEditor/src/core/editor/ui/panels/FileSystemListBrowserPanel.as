@@ -14,7 +14,7 @@ package core.editor.ui.panels
 	import core.ui.components.Panel;
 	import core.ui.components.TextArea;
 	import core.ui.components.VBox;
-	import core.ui.util.FloxDeserializer;
+	import core.ui.util.CoreDeserializer;
 	
 	public class FileSystemListBrowserPanel extends Panel
 	{
@@ -80,7 +80,7 @@ package core.editor.ui.panels
 					</controlBar>				
 				</Panel>
 			
-			FloxDeserializer.deserialize( xml, this, ["core.editor.ui.components"] );
+			CoreDeserializer.deserialize( xml, this, ["core.editor.ui.components"] );
 			
 			list.validExtensions = validExtensions;
 			

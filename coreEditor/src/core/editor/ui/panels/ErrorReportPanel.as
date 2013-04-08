@@ -3,7 +3,7 @@
 
 package core.editor.ui.panels
 {
-	import core.ui.util.FloxDeserializer;
+	import core.ui.util.CoreDeserializer;
 	import core.ui.components.Panel;
 	import core.ui.components.TextInput;
 	
@@ -25,7 +25,7 @@ package core.editor.ui.panels
 					<InputField id="textArea" multiline="true" width="100%" height="100%"/>
 			</Panel>
 				
-			FloxDeserializer.deserialize( xml, this );
+			CoreDeserializer.deserialize( xml, this );
 		}
 	}
 }

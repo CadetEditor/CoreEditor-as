@@ -3,7 +3,7 @@
 
 package core.editor.ui.panels
 {
-	import core.ui.util.FloxDeserializer;
+	import core.ui.util.CoreDeserializer;
 	import core.ui.components.Button;
 	import core.ui.components.Panel;
 	import core.ui.components.TextInput;
@@ -51,7 +51,7 @@ package core.editor.ui.panels
 				
 			</Panel>
 				
-			FloxDeserializer.deserialize( xml, this );
+			CoreDeserializer.deserialize( xml, this );
 			defaultButton = sendBtn;
 		}
 	}

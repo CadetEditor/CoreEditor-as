@@ -13,9 +13,9 @@ package core.editor.operations
 	import core.app.managers.fileSystemProviders.azureAIR.AzureFileSystemProviderAIR;
 	import core.app.managers.fileSystemProviders.local.LocalFileSystemProvider;
 	
-	public class InitializeFloxOperationAIR extends InitializeFloxOperation
+	public class InitializeCoreOperationAIR extends InitializeCoreOperation
 	{
-		public function InitializeFloxOperationAIR( stage:Stage, configURL:String)
+		public function InitializeCoreOperationAIR( stage:Stage, configURL:String)
 		{
 			super(stage, configURL, CoreEditorEnvironment.AIR);
 		}

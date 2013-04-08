@@ -9,7 +9,7 @@ package core.editor.ui.panels
 	import core.editor.ui.components.FileSystemTree;
 	import core.ui.components.Button;
 	import core.ui.components.Panel;
-	import core.ui.util.FloxDeserializer;
+	import core.ui.util.CoreDeserializer;
 
 	public class SelectFilePanel extends Panel
 	{
@@ -41,7 +41,7 @@ package core.editor.ui.panels
 				
 			</Panel>
 				
-			FloxDeserializer.deserialize( xml, this, ["core.editor.ui.components"] );
+			CoreDeserializer.deserialize( xml, this, ["core.editor.ui.components"] );
 				
 			tree.resourceManager = CoreApp.resourceManager;
 			tree.fileSystemProvider = CoreApp.fileSystemProvider;

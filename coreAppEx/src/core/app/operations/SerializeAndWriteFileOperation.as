@@ -49,8 +49,8 @@ package core.app.operations
 			
 			writeFileOperation = fileSystemProvider.writeFile(_uri, bytes);
 			writeFileOperation.addEventListener(Event.COMPLETE, writeFileCompleteHandler);
-			serializeOperation.addEventListener(OperationProgressEvent.PROGRESS, progressHandler);
-			serializeOperation.addEventListener(ErrorEvent.ERROR, errorHandler);
+			writeFileOperation.addEventListener(OperationProgressEvent.PROGRESS, progressHandler);
+			writeFileOperation.addEventListener(ErrorEvent.ERROR, errorHandler);
 			writeFileOperation.execute();
 		}
 		

@@ -5,7 +5,7 @@ package core.editor.ui.panels
 {
 	import flash.events.Event;
 	
-	import core.ui.util.FloxDeserializer;
+	import core.ui.util.CoreDeserializer;
 	
 	import core.editor.CoreEditor;
 	import core.app.util.StringUtil;
@@ -50,7 +50,7 @@ package core.editor.ui.panels
 					</controlBar>
 				</Panel>
 			
-			FloxDeserializer.deserialize( xml, this, ["core.editor.ui.components"] );
+			CoreDeserializer.deserialize( xml, this, ["core.editor.ui.components"] );
 			
 			nameInput.addEventListener( Event.CHANGE, changeTextHandler );
 			tree.addEventListener( Event.CHANGE, changeTreeHandler );
