@@ -120,7 +120,12 @@ package core.editor.ui.panels
 		
 		private function traverseCompleteHandler( event:Event ):void
 		{
-			var node:FileSystemNode = CoreApp.fileSystemProvider.fileSystem.getChildWithPath( initURI.path, true );
+			var traverseOperation:ITraverseToDirectoryOperation = ITraverseToDirectoryOperation(event.target);
+			var targetURI:URI = initURI;
+			if ( targetURI.path != traverseOperation.finalURI.path ) {
+				targetURI = rootURI;
+			}
+			var node:FileSystemNode = CoreApp.fileSystemProvider.fileSystem.getChildWithPath( targetURI.path, true );
 			initialiseList( node );
 		}
 		

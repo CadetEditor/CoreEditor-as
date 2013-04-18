@@ -29,7 +29,7 @@ goto end
 echo.
 echo Certificate creation FAILED.
 echo.
-echo Troubleshotting: did you configure the Flex SDK path in this Batch file?
+echo Troubleshooting: did you configure the Flex SDK path in this Batch file?
 echo.
 
 :end

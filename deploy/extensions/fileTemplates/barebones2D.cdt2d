@@ -1,8 +1,0 @@
-<cadet:CadetScene x:id="0" framerate="60" timeScale="1" name="Component" xmlns:cadet="www.unwrong.com/cadet/1.0.0" xmlns:x="core.app.core.serialization.Serializer" xmlns:core="www.unwrong.com/core/1.0.0" xmlns:cadet2DFlash="www.unwrong.com/cadet2DFlash/1.0.0">
-  <core:DependencyManager x:name="dependencyManager" x:id="1">
-    <core:ArrayCollection x:name="dependencyNodes" x:id="2"/>
-  </core:DependencyManager>
-  <core:ArrayCollection x:name="children" x:id="4">
-    <cadet2DFlash:Renderer2D x:name="0" x:id="5" name="2D Renderer" viewportHeight="571" viewportWidth="970"/>
-  </core:ArrayCollection>
-</cadet:CadetScene>

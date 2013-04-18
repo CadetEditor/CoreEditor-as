@@ -1,0 +1,20 @@
+<cadet:CadetScene x:id="0" timeScale="1" framerate="60" name="Component" xmlns:cadet="www.unwrong.com/cadet/1.0.0" xmlns:x="core.app.core.serialization.Serializer" xmlns:core="www.unwrong.com/core/1.0.0" xmlns:cadet2D="www.unwrong.com/cadet2D/1.0.0" xmlns:ns0="cadet2D.components.textures">
+  <core:DependencyManager x:name="dependencyManager" x:id="1">
+    <core:ArrayCollection x:name="dependencyNodes" x:id="2"/>
+  </core:DependencyManager>
+  <core:ArrayCollection x:name="children" x:id="3">
+    <cadet2D:Renderer2D x:name="0" x:id="4" depthSort="0" name="2D Renderer"/>
+    <cadet2D:Entity x:name="1" x:id="5" name="Rectangle_0">
+      <core:ArrayCollection x:name="children" x:id="6">
+        <cadet2D:Transform2D x:name="0" x:id="7" matrix="1,0,0,1,250,130" name="Transform2D"/>
+        <cadet2D:RectangleGeometry x:name="1" x:id="8" vertices="0,0:200,0:200,160:0,160" width="200" height="160" name="RectangleGeometry"/>
+        <cadet2D:GeometrySkin x:name="2" x:id="9" lineThickness="20" lineColor="16777215" drawVertices="0" lineAlpha="0.7" fillColor="16777215" fillBitmap="graphicsDemo/Rock.png" width="0" height="0" visible="1" touchable="1" fillAlpha="0.04" name="GeometrySkin">
+          <ns0:TextureComponent x:name="lineTexture" x:id="10" bitmapData="graphicsDemo/Grass.png" name="Texture"/>
+          <x:Ref x:name="transform2D" x:id="7"/>
+        </cadet2D:GeometrySkin>
+        <x:Ref x:name="3" x:id="10"/>
+      </core:ArrayCollection>
+    </cadet2D:Entity>
+  </core:ArrayCollection>
+  <Object x:name="userData" x:id="11" gridSize="10" showGrid="1" snapEnabled="1" panX="485" zoom="1" panY="285.5"/>
+</cadet:CadetScene>

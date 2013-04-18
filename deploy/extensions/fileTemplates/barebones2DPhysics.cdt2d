@@ -1,9 +1,0 @@
-  <cadet:CadetScene x:name="scene" x:id="2" name="Component" xmlns:cadet="www.unwrong.com/cadet/1.0.0" xmlns:x="flox.app.core.serialization.Serializer" xmlns:cadet2D="www.unwrong.com/cadet2D/1.0.0" xmlns:flox="www.unwrong.com/flox/1.0.0" xmlns:cadet2DBox2D="www.unwrong.com/cadet2DBox2D/1.0.0" xmlns:cadet2DFlash="www.unwrong.com/cadet2DFlash/1.0.0">
-    <flox:ArrayCollection x:name="children" x:id="3">
-      <cadet2DFlash:Renderer2D x:name="0" x:id="5" viewportWidth="1212" name="2D Renderer" viewportHeight="898"/>
-      <cadet2DBox2D:PhysicsProcess x:name="1" x:id="6" numVelocityIterations="2" numPositionIterations="2" numIterations="2" scaleFactor="0.02" name="Physics" gravity="6"/>
-    </flox:ArrayCollection>
-    <flox:DependencyManager x:name="dependencyManager" x:id="7">
-      <flox:ArrayCollection x:name="dependencyNodes" x:id="8"/>
-    </flox:DependencyManager>
-  </cadet:CadetScene>
