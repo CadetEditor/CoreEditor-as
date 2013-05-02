@@ -6,7 +6,6 @@ package core.app.managers.fileSystemProviders.memory
 	import flash.events.ErrorEvent;
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
-	import flash.net.SharedObject;
 	import flash.utils.ByteArray;
 	
 	import core.app.core.managers.fileSystemProviders.IFileSystemProvider;

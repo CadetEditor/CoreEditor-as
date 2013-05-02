@@ -30,10 +30,6 @@
 	<manifest>
 		<url><![CDATA[extensions/manifests/Cadet2DBox2D.xml]]></url>
 	</manifest>
-
-	<manifest>
-		<url><![CDATA[extensions/manifests/CadetEditor.xml]]></url>
-	</manifest>
 	
 	<!--  File templates  -->
 
@@ -50,14 +46,7 @@
 		<url><![CDATA[extensions/fileTemplates/barebones2DSPhysics.cdt2d]]></url>
 		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
 	</template>
-	
-  <template>
-		<label><![CDATA[Lava Demo]]></label>
-		<description><![CDATA[Creates a lava scene using BezierCurves, Shaders and GeometrySkins.]]></description>
-		<url><![CDATA[extensions/fileTemplates/lava.cdt2d]]></url>
-		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
-	</template>
-	
+
   <template>
 		<label><![CDATA[Particles Demo]]></label>
 		<description><![CDATA[A few examples of particle systems.]]></description>
@@ -71,20 +60,5 @@
 		<url><![CDATA[extensions/fileTemplates/simple_physics_demo.cdt2d]]></url>
 		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
 	</template>
-		
-<!--	
-	<template>
-		<label><![CDATA[Motorbike Template]]></label>
-		<description><![CDATA[A simple motorbike physics example with editable terrain.]]></description>
-		<url><![CDATA[extensions/fileTemplates/motorbike_bridge_s.cdt2d]]></url>
-		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
-	</template>
-	
-	<template>
-		<label><![CDATA[Marble Run Template]]></label>
-		<description><![CDATA[A simple marble run template.]]></description>
-		<url><![CDATA[extensions/fileTemplates/marble_run.cdt2d]]></url>
-		<icon>cadetEditor.assets.CadetEditorIcons::BlankTemplateIcon</icon>
-	</template>
--->
+
 </xml>
