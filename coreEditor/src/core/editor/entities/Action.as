@@ -7,8 +7,8 @@ package core.editor.entities
 	import flash.events.EventDispatcher;
 	
 	import core.app.events.ValidatorEvent;
-	import core.app.managers.CommandManager;
-	import core.app.validators.CommandAvailableValidator;
+	import core.appEx.managers.CommandManager;
+	import core.appEx.validators.CommandAvailableValidator;
 	
 	[Event(type="events.Event", name="change")]
 	

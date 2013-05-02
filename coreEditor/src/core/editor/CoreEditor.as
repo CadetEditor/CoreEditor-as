@@ -9,12 +9,12 @@ package core.editor
 	
 	import core.app.CoreApp;
 	import core.app.entities.URI;
-	import core.app.events.ContextManagerEvent;
-	import core.app.managers.CommandManager;
-	import core.app.managers.ContextManager;
-	import core.app.managers.KeyBindingManager;
-	import core.app.managers.OperationManager;
-	import core.app.managers.SettingsManager;
+	import core.appEx.events.ContextManagerEvent;
+	import core.appEx.managers.CommandManager;
+	import core.appEx.managers.ContextManager;
+	import core.appEx.managers.KeyBindingManager;
+	import core.appEx.managers.OperationManager;
+	import core.appEx.managers.SettingsManager;
 	import core.app.util.AsynchronousUtil;
 	import core.data.ArrayCollection;
 	import core.editor.contexts.IEditorContext;

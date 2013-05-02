@@ -17,7 +17,7 @@ package core.editor.operations
 	import core.app.resources.IFactoryResource;
 	import core.app.resources.IResource;
 	import core.app.util.IntrospectionUtil;
-	import core.app.util.VectorUtil;
+	import core.appEx.util.VectorUtil;
 	
 	[Event(type="core.app.events.OperationProgressEvent", name="progress")]
 	[Event(type="flash.events.Event", name="complete")]

@@ -4,13 +4,11 @@
 package core.editor.commandHandlers
 {
 	import core.app.CoreApp;
-	import core.app.core.commandHandlers.ICommandHandler;
-	import core.app.core.contexts.IVisualContext;
-	import core.app.resources.CommandHandlerFactory;
-	import core.app.validators.ContextValidator;
+	import core.appEx.core.commandHandlers.ICommandHandler;
+	import core.appEx.resources.CommandHandlerFactory;
+	import core.appEx.validators.ContextValidator;
 	import core.editor.CoreEditor;
 	import core.editor.contexts.IEditorContext;
-	import core.editor.core.IViewContainer;
 	import core.editor.entities.Commands;
 	import core.editor.operations.CloseEditorOperation;
 	

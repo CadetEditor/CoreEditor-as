@@ -15,13 +15,13 @@ package core.editor.operations
 	import core.app.core.operations.IAsynchronousOperation;
 	import core.app.core.operations.IOperation;
 	import core.app.events.OperationProgressEvent;
-	import core.app.managers.fileSystemProviders.azureBrowser.AzureFileSystemProviderBrowser;
-	import core.app.managers.fileSystemProviders.memory.MemoryFileSystemProvider;
-	import core.app.managers.fileSystemProviders.sharedObject.SharedObjectFileSystemProvider;
+	import core.appEx.managers.fileSystemProviders.azureBrowser.AzureFileSystemProviderBrowser;
+	import core.appEx.managers.fileSystemProviders.memory.MemoryFileSystemProvider;
+	import core.appEx.managers.fileSystemProviders.sharedObject.SharedObjectFileSystemProvider;
 	import core.app.managers.fileSystemProviders.url.URLFileSystemProvider;
 	import core.app.operations.CompoundOperation;
 	import core.app.operations.LoadManifestsOperation;
-	import core.app.operations.LoadSWFOperation;
+	import core.appEx.operations.LoadSWFOperation;
 	import core.editor.CoreEditor;
 	import core.editor.controllers.CurrentVisualContextController;
 	import core.editor.controllers.OperationFeedbackController;

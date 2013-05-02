@@ -7,8 +7,8 @@ package core.editor.controllers
 	import core.editor.events.CoreEditorEvent;
 	import core.editor.operations.LoadSettingsOperationBrowser;
 	import core.editor.operations.SaveSettingsOperationBrowser;
-	import core.app.events.SettingsManagerEvent;
-	import core.app.events.SettingsManagerEventKind;
+	import core.appEx.events.SettingsManagerEvent;
+	import core.appEx.events.SettingsManagerEventKind;
 	
 	/**
 	 * This controller is created during initialisation of the browser deployment of BonesEditor. It determines when the settings file is saved/loaded.

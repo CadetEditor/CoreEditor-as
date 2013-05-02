@@ -5,10 +5,10 @@ package core.editor.commandHandlers
 {
 	import core.editor.CoreEditor;
 	import core.editor.entities.Commands;
-	import core.app.core.commandHandlers.ICommandHandler;
-	import core.app.core.contexts.IRefreshableContext;
-	import core.app.resources.CommandHandlerFactory;
-	import core.app.validators.ContextValidator;
+	import core.appEx.core.commandHandlers.ICommandHandler;
+	import core.appEx.core.contexts.IRefreshableContext;
+	import core.appEx.resources.CommandHandlerFactory;
+	import core.appEx.validators.ContextValidator;
 	
 	public class RefreshCommandHandler implements ICommandHandler
 	{

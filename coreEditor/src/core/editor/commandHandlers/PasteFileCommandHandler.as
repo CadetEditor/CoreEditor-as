@@ -6,16 +6,16 @@ package core.editor.commandHandlers
 	import flash.events.Event;
 	
 	import core.app.CoreApp;
-	import core.app.core.commandHandlers.ICommandHandler;
+	import core.appEx.core.commandHandlers.ICommandHandler;
 	import core.app.core.managers.fileSystemProviders.operations.IDoesFileExistOperation;
 	import core.app.core.operations.IAsynchronousOperation;
 	import core.app.entities.URI;
-	import core.app.operations.CopyFileOperation;
-	import core.app.operations.MoveFileOperation;
-	import core.app.resources.CommandHandlerFactory;
+	import core.appEx.operations.CopyFileOperation;
+	import core.appEx.operations.MoveFileOperation;
+	import core.appEx.resources.CommandHandlerFactory;
 	import core.app.validators.CollectionValidator;
-	import core.app.validators.CompoundValidator;
-	import core.app.validators.ContextSelectionValidator;
+	import core.appEx.validators.CompoundValidator;
+	import core.appEx.validators.ContextSelectionValidator;
 	import core.editor.CoreEditor;
 	import core.editor.entities.Commands;
 	import core.editor.utils.CoreEditorUtil;

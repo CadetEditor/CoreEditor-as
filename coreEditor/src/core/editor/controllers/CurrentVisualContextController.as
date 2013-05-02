@@ -4,16 +4,14 @@
 package core.editor.controllers
 {
 	import flash.display.DisplayObject;
-	import flash.events.FocusEvent;
 	
-	import core.ui.components.UIComponent;
 	import core.ui.events.ComponentFocusEvent;
 	import core.ui.managers.FocusManager;
 	
 	import core.editor.CoreEditor;
 	import core.editor.core.IViewContainer;
-	import core.app.core.contexts.IContext;
-	import core.app.core.contexts.IVisualContext;
+	import core.appEx.core.contexts.IContext;
+	import core.appEx.core.contexts.IVisualContext;
 	
 	/**
 	 * This controller implements behaviour that determines which VisualContext is regarded as the 'current' context.

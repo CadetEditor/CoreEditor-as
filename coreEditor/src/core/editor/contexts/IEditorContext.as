@@ -5,7 +5,7 @@ package core.editor.contexts
 {
 	import flash.events.IEventDispatcher;
 	
-	import core.app.core.contexts.IVisualContext;
+	import core.appEx.core.contexts.IVisualContext;
 	import core.app.entities.URI;
 	
 	[Event( type="flash.events.Event", name="change" )]

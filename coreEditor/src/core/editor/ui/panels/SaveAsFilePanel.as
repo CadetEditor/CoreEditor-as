@@ -9,7 +9,7 @@ package core.editor.ui.panels
 	
 	import core.editor.CoreEditor;
 	import core.app.util.StringUtil;
-	import core.app.util.Validation;
+	import core.appEx.util.Validation;
 	import core.ui.components.Button;
 	import core.ui.components.Panel;
 	import core.ui.components.TextInput;

@@ -6,18 +6,18 @@ package core.editor.contexts
 	import flash.display.DisplayObject;
 	
 	import core.app.CoreApp;
-	import core.app.core.contexts.IContext;
-	import core.app.core.contexts.IInspectableContext;
-	import core.app.core.contexts.IOperationManagerContext;
-	import core.app.core.contexts.IVisualContext;
-	import core.app.events.ContextSelectionValidatorEvent;
+	import core.appEx.core.contexts.IContext;
+	import core.appEx.core.contexts.IInspectableContext;
+	import core.appEx.core.contexts.IOperationManagerContext;
+	import core.appEx.core.contexts.IVisualContext;
+	import core.appEx.events.ContextSelectionValidatorEvent;
 	import core.app.events.ResourceManagerEvent;
-	import core.app.managers.OperationManager;
+	import core.appEx.managers.OperationManager;
 	import core.app.operations.ChangePropertyOperation;
 	import core.app.operations.UndoableCompoundOperation;
 	import core.app.resources.IResource;
-	import core.app.resources.PropertyInspectorItemEditorFactory;
-	import core.app.validators.ContextSelectionValidator;
+	import core.appEx.resources.PropertyInspectorItemEditorFactory;
+	import core.appEx.validators.ContextSelectionValidator;
 	import core.data.ArrayCollection;
 	import core.editor.CoreEditor;
 	import core.ui.components.PropertyInspector;

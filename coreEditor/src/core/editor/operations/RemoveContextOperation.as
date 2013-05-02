@@ -4,9 +4,8 @@
 package core.editor.operations
 {
 	import core.editor.CoreEditor;
-	import core.editor.contexts.IEditorContext;
-	import core.app.core.contexts.IContext;
-	import core.app.core.contexts.IVisualContext;
+	import core.appEx.core.contexts.IContext;
+	import core.appEx.core.contexts.IVisualContext;
 	import core.app.core.operations.IOperation;
 
 	public class RemoveContextOperation implements IOperation

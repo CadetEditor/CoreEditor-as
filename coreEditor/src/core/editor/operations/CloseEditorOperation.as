@@ -6,12 +6,11 @@ package core.editor.operations
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	
-	import core.app.core.contexts.IVisualContext;
+	import core.appEx.core.contexts.IVisualContext;
 	import core.app.core.managers.fileSystemProviders.IFileSystemProvider;
 	import core.app.core.operations.IAsynchronousOperation;
 	import core.editor.CoreEditor;
 	import core.editor.contexts.IEditorContext;
-	import core.editor.entities.Commands;
 	import core.ui.components.Alert;
 	import core.ui.events.AlertEvent;
 

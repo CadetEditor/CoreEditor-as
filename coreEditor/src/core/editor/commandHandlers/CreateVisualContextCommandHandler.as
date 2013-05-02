@@ -5,7 +5,7 @@ package core.editor.commandHandlers
 {
 	import core.editor.CoreEditor;
 	import core.editor.operations.AddContextOperation;
-	import core.app.core.commandHandlers.ICommandHandler;
+	import core.appEx.core.commandHandlers.ICommandHandler;
 	import core.app.resources.IFactoryResource;
 	import core.app.resources.IResource;
 	

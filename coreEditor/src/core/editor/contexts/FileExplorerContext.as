@@ -4,14 +4,13 @@
 package core.editor.contexts
 {
 	import flash.display.DisplayObject;
-	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	
 	import core.app.CoreApp;
-	import core.app.core.contexts.IRefreshableContext;
-	import core.app.core.contexts.ISelectionContext;
-	import core.app.core.contexts.IVisualContext;
+	import core.appEx.core.contexts.IRefreshableContext;
+	import core.appEx.core.contexts.ISelectionContext;
+	import core.appEx.core.contexts.IVisualContext;
 	import core.app.entities.URI;
 	import core.data.ArrayCollection;
 	import core.editor.CoreEditor;

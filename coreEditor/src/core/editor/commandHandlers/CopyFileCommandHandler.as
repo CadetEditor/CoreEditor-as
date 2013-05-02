@@ -8,10 +8,10 @@ package core.editor.commandHandlers
 	import core.editor.CoreEditor;
 	import core.editor.entities.Commands;
 	import core.editor.utils.CoreEditorUtil;
-	import core.app.core.commandHandlers.ICommandHandler;
-	import core.app.resources.CommandHandlerFactory;
+	import core.appEx.core.commandHandlers.ICommandHandler;
+	import core.appEx.resources.CommandHandlerFactory;
 	import core.app.entities.URI;
-	import core.app.validators.ContextSelectionValidator;
+	import core.appEx.validators.ContextSelectionValidator;
 
 	public class CopyFileCommandHandler implements ICommandHandler
 	{

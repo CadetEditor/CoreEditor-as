@@ -9,13 +9,12 @@ package core.editor.managers
 	import flash.utils.Dictionary;
 	
 	import core.app.CoreApp;
-	import core.app.core.contexts.IContext;
-	import core.app.core.contexts.IVisualContext;
+	import core.appEx.core.contexts.IContext;
+	import core.appEx.core.contexts.IVisualContext;
 	import core.app.events.ResourceManagerEvent;
 	import core.app.util.IntrospectionUtil;
 	import core.editor.CoreEditor;
 	import core.editor.contexts.IEditorContext;
-	import core.editor.contexts.ResourcesContext;
 	import core.editor.controllers.ViewContainerController;
 	import core.editor.core.IGlobalViewContainer;
 	import core.editor.core.IViewContainer;
@@ -26,7 +25,6 @@ package core.editor.managers
 	import core.editor.resources.ActionFactory;
 	import core.editor.utils.CoreEditorUtil;
 	import core.ui.components.Application;
-	import core.ui.components.TextStyles;
 	import core.ui.managers.FocusManager;
 	import core.ui.managers.PopUpManager;
 	

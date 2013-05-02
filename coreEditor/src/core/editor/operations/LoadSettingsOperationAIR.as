@@ -15,7 +15,7 @@ package core.editor.operations
 	
 	import core.app.core.operations.IAsynchronousOperation;
 	import core.app.events.OperationProgressEvent;
-	import core.app.managers.SettingsManager;
+	import core.appEx.managers.SettingsManager;
 	import core.app.util.AsynchronousUtil;
 
 	[Event(type="core.app.events.OperationProgressEvent", name="progress")]

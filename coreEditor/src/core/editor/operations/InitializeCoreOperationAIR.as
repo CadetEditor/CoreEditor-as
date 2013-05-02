@@ -10,7 +10,7 @@ package core.editor.operations
 	import core.editor.controllers.SettingsControllerAIR;
 	import core.editor.controllers.SystemWindowControllerAIR;
 	import core.editor.core.CoreEditorEnvironment;
-	import core.app.managers.fileSystemProviders.azureAIR.AzureFileSystemProviderAIR;
+	import core.appEx.managers.fileSystemProviders.azureAIR.AzureFileSystemProviderAIR;
 	import core.app.managers.fileSystemProviders.local.LocalFileSystemProvider;
 	
 	public class InitializeCoreOperationAIR extends InitializeCoreOperation

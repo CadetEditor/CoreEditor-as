@@ -7,11 +7,11 @@ package
 	import flash.ui.Keyboard;
 	
 	import core.app.CoreApp;
-	import core.app.entities.KeyModifier;
+	import core.appEx.entities.KeyModifier;
 	import core.app.managers.ResourceManager;
 	import core.app.resources.FactoryResource;
-	import core.app.resources.KeyBinding;
-	import core.app.resources.PropertyInspectorItemEditorFactory;
+	import core.appEx.resources.KeyBinding;
+	import core.appEx.resources.PropertyInspectorItemEditorFactory;
 	import core.editor.commandHandlers.CloseApplicationCommandHandler;
 	import core.editor.commandHandlers.CloseFileCommandHandler;
 	import core.editor.commandHandlers.CopyFileCommandHandler;

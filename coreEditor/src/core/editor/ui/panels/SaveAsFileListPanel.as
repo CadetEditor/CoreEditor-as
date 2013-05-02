@@ -7,7 +7,7 @@ package core.editor.ui.panels
 	
 	import core.app.entities.URI;
 	import core.app.util.StringUtil;
-	import core.app.util.Validation;
+	import core.appEx.util.Validation;
 	import core.ui.components.HBox;
 	import core.ui.components.Label;
 	import core.ui.components.TextInput;

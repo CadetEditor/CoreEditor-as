@@ -6,7 +6,7 @@ package core.editor.operations
 	import flash.net.SharedObject;
 	
 	import core.app.core.operations.IOperation;
-	import core.app.managers.SettingsManager;
+	import core.appEx.managers.SettingsManager;
 
 	public class SaveSettingsOperationBrowser implements IOperation
 	{

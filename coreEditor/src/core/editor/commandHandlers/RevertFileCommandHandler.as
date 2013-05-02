@@ -4,10 +4,10 @@
 package core.editor.commandHandlers
 {
 	import core.app.CoreApp;
-	import core.app.core.commandHandlers.ICommandHandler;
+	import core.appEx.core.commandHandlers.ICommandHandler;
 	import core.app.entities.URI;
 	import core.app.operations.CompoundOperation;
-	import core.app.resources.CommandHandlerFactory;
+	import core.appEx.resources.CommandHandlerFactory;
 	import core.editor.CoreEditor;
 	import core.editor.contexts.IEditorContext;
 	import core.editor.entities.Commands;

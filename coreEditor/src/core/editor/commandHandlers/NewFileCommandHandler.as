@@ -9,12 +9,12 @@ package core.editor.commandHandlers
 	import flash.utils.ByteArray;
 	
 	import core.app.CoreApp;
-	import core.app.core.commandHandlers.ICommandHandler;
+	import core.appEx.core.commandHandlers.ICommandHandler;
 	import core.app.entities.FileSystemNode;
 	import core.app.entities.URI;
-	import core.app.operations.LoadURLOperation;
-	import core.app.resources.CommandHandlerFactory;
-	import core.app.resources.FileType;
+	import core.appEx.operations.LoadURLOperation;
+	import core.appEx.resources.CommandHandlerFactory;
+	import core.appEx.resources.FileType;
 	import core.data.ArrayCollection;
 	import core.editor.CoreEditor;
 	import core.editor.contexts.FileExplorerContext;

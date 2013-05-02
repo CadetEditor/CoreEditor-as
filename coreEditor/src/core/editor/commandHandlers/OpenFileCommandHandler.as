@@ -6,10 +6,10 @@ package core.editor.commandHandlers
 	import flash.events.MouseEvent;
 	
 	import core.app.CoreApp;
-	import core.app.core.commandHandlers.ICommandHandler;
+	import core.appEx.core.commandHandlers.ICommandHandler;
 	import core.app.entities.URI;
-	import core.app.resources.CommandHandlerFactory;
-	import core.app.resources.FileType;
+	import core.appEx.resources.CommandHandlerFactory;
+	import core.appEx.resources.FileType;
 	import core.app.resources.IResource;
 	import core.editor.CoreEditor;
 	import core.editor.entities.Commands;

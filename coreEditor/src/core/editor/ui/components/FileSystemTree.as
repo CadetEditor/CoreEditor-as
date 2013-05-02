@@ -9,7 +9,7 @@ package core.editor.ui.components
 	import core.app.entities.FileSystemNode;
 	import core.app.entities.URI;
 	import core.app.managers.ResourceManager;
-	import core.app.resources.FileType;
+	import core.appEx.resources.FileType;
 	import core.app.resources.IResource;
 	import core.data.ArrayCollection;
 	import core.editor.ui.data.FileSystemTreeDataDescriptor;

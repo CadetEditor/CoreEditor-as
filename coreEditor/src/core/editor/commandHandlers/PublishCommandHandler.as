@@ -2,9 +2,9 @@ package core.editor.commandHandlers
 {
 	import flash.events.Event;
 	
-	import core.app.core.commandHandlers.ICommandHandler;
-	import core.app.resources.CommandHandlerFactory;
-	import core.app.validators.ContextValidator;
+	import core.appEx.core.commandHandlers.ICommandHandler;
+	import core.appEx.resources.CommandHandlerFactory;
+	import core.appEx.validators.ContextValidator;
 	import core.editor.CoreEditor;
 	import core.editor.contexts.IEditorContext;
 	import core.editor.entities.Commands;

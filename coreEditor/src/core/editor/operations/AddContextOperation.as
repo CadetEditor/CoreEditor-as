@@ -3,16 +3,12 @@
 
 package core.editor.operations
 {
-	import core.ui.util.BindingUtil;
-	
 	import core.editor.CoreEditor;
 	import core.editor.contexts.IEditorContext;
-	import core.editor.core.IViewContainer;
-	import core.app.core.contexts.IContext;
-	import core.app.core.contexts.IVisualContext;
+	import core.appEx.core.contexts.IContext;
+	import core.appEx.core.contexts.IVisualContext;
 	import core.app.core.operations.IOperation;
 	import core.app.resources.IFactoryResource;
-	import core.app.resources.IResource;
 	import core.app.util.IntrospectionUtil;
 	
 	public class AddContextOperation implements IOperation

@@ -9,10 +9,10 @@ package core.editor.ui.components
 	import flash.utils.getDefinitionByName;
 	
 	import core.app.CoreApp;
-	import core.app.core.contexts.IInspectableContext;
-	import core.app.core.contexts.IOperationManagerContext;
+	import core.appEx.core.contexts.IInspectableContext;
+	import core.appEx.core.contexts.IOperationManagerContext;
 	import core.app.entities.URI;
-	import core.app.operations.BindResourceOperation;
+	import core.appEx.operations.BindResourceOperation;
 	import core.app.operations.UndoableCompoundOperation;
 	import core.app.resources.IFactoryResource;
 	import core.app.resources.IResource;

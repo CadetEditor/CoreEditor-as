@@ -5,20 +5,18 @@ package core.editor.operations
 {
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
-	import flash.events.IEventDispatcher;
 	import flash.events.MouseEvent;
 	
 	import core.app.CoreApp;
 	import core.app.core.managers.fileSystemProviders.operations.IDoesFileExistOperation;
 	import core.app.core.operations.IAsynchronousOperation;
 	import core.app.entities.URI;
-	import core.app.resources.FileType;
+	import core.appEx.resources.FileType;
 	import core.app.resources.IResource;
 	import core.editor.CoreEditor;
 	import core.editor.contexts.IEditorContext;
 	import core.editor.core.CoreEditorEnvironment;
 	import core.editor.ui.panels.SaveAsFileListPanel;
-	import core.editor.ui.panels.SaveAsFilePanel;
 	import core.ui.components.Alert;
 	import core.ui.events.AlertEvent;
 	

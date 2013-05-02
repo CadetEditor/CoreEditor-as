@@ -4,14 +4,12 @@
 package core.editor.contexts
 {
 	import flash.display.DisplayObject;
-	import flash.display.Sprite;
 	
 	import core.app.CoreApp;
-	import core.app.core.contexts.IVisualContext;
-	import core.app.util.VectorUtil;
+	import core.appEx.core.contexts.IVisualContext;
+	import core.appEx.util.VectorUtil;
 	import core.data.ArrayCollection;
 	import core.ui.components.List;
-	import core.ui.components.Tree;
 	
 	public class ResourcesContext implements IVisualContext
 	{

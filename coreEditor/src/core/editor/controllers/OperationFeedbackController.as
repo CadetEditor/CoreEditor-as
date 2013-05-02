@@ -6,19 +6,17 @@ package core.editor.controllers
 	import flash.display.Stage;
 	import flash.events.ErrorEvent;
 	import flash.events.KeyboardEvent;
-	import flash.utils.Dictionary;
-	import flash.utils.getTimer;
 	
 	import core.data.ArrayCollection;
 	import core.ui.managers.CursorManager;
 	import flux.cursors.BusyCursor;
 	
 	import core.editor.CoreEditor;
-	import core.app.core.contexts.IOperationManagerContext;
+	import core.appEx.core.contexts.IOperationManagerContext;
 	import core.app.core.operations.IAsynchronousOperation;
-	import core.app.events.ContextManagerEvent;
-	import core.app.events.OperationManagerEvent;
-	import core.app.managers.OperationManager;
+	import core.appEx.events.ContextManagerEvent;
+	import core.appEx.events.OperationManagerEvent;
+	import core.appEx.managers.OperationManager;
 	
 	/**
 	 * This controller is responsible for monitoring the BonesEditor.operationManager for operations being added, completed and removed.

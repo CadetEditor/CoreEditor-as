@@ -15,7 +15,7 @@ package core.editor.controllers
 	
 	import core.editor.entities.Action;
 	import core.editor.entities.ActionBarGroup;
-	import core.app.icons.CoreIcons;
+	import core.appEx.icons.CoreIcons;
 	
 	/**
 	 * This controller provides the functionality of creating a button for each Action, and adding it to the supplied container (the 'actionbar')

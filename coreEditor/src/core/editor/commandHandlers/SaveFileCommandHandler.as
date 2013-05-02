@@ -7,8 +7,8 @@ package core.editor.commandHandlers
 	import core.editor.contexts.IEditorContext;
 	import core.editor.entities.Commands;
 	import core.editor.validators.SaveAvailableValidator;
-	import core.app.core.commandHandlers.ICommandHandler;
-	import core.app.resources.CommandHandlerFactory;
+	import core.appEx.core.commandHandlers.ICommandHandler;
+	import core.appEx.resources.CommandHandlerFactory;
 	
 	
 	public class SaveFileCommandHandler implements ICommandHandler

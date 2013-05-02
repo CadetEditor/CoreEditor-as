@@ -4,7 +4,7 @@ package core.editor.utils
 	import core.app.core.managers.fileSystemProviders.IFileSystemProvider;
 	import core.app.core.managers.fileSystemProviders.ILocalFileSystemProvider;
 	import core.app.entities.URI;
-	import core.app.managers.fileSystemProviders.memory.MemoryFileSystemProvider;
+	import core.appEx.managers.fileSystemProviders.memory.MemoryFileSystemProvider;
 	import core.editor.CoreEditor;
 	import core.editor.core.CoreEditorEnvironment;
 

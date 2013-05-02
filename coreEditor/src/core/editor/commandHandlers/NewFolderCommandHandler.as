@@ -9,11 +9,11 @@ package core.editor.commandHandlers
 	import flash.events.TextEvent;
 	
 	import core.app.CoreApp;
-	import core.app.core.commandHandlers.ICommandHandler;
+	import core.appEx.core.commandHandlers.ICommandHandler;
 	import core.app.core.managers.fileSystemProviders.operations.ICreateDirectoryOperation;
 	import core.app.entities.FileSystemNode;
 	import core.app.entities.URI;
-	import core.app.resources.CommandHandlerFactory;
+	import core.appEx.resources.CommandHandlerFactory;
 	import core.app.util.StringUtil;
 	import core.editor.CoreEditor;
 	import core.editor.contexts.FileExplorerContext;

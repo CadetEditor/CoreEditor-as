@@ -8,11 +8,11 @@ package core.editor.operations
 	
 	import core.editor.resources.FileTemplate;
 	import core.app.core.operations.IOperation;
-	import core.app.resources.FileType;
+	import core.appEx.resources.FileType;
 	import core.app.resources.IResource;
 	import core.app.entities.URI;
 	import core.app.managers.ResourceManager;
-	import core.app.util.VectorUtil;
+	import core.appEx.util.VectorUtil;
 	
 	public class GetCompatibleFileTemplatesOperation extends EventDispatcher implements IOperation
 	{

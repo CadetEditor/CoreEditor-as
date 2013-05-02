@@ -4,10 +4,10 @@
 package core.editor.utils
 {
 	import core.app.CoreApp;
-	import core.app.core.contexts.IContext;
-	import core.app.core.contexts.ISelectionContext;
+	import core.appEx.core.contexts.IContext;
+	import core.appEx.core.contexts.ISelectionContext;
 	import core.app.resources.IResource;
-	import core.app.resources.ITargetedResource;
+	import core.appEx.resources.ITargetedResource;
 	import core.app.util.ArrayUtil;
 	import core.app.util.IntrospectionUtil;
 	import core.editor.CoreEditor;

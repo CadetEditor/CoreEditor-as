@@ -4,9 +4,9 @@
 package core.editor.resources
 {
 	import core.editor.entities.Action;
-	import core.app.entities.Parameter;
+	import core.appEx.entities.Parameter;
 	import core.app.resources.IFactoryResource;
-	import core.app.resources.ITargetedResource;
+	import core.appEx.resources.ITargetedResource;
 
 	public class ActionFactory implements ITargetedResource, IFactoryResource
 	{

@@ -15,10 +15,10 @@ package core.editor.operations
 	import core.app.core.operations.IAsynchronousOperation;
 	import core.app.entities.URI;
 	import core.app.events.OperationProgressEvent;
-	import core.app.managers.ContextManager;
+	import core.appEx.managers.ContextManager;
 	import core.app.managers.ResourceManager;
-	import core.app.operations.LoadURLOperation;
-	import core.app.resources.FileType;
+	import core.appEx.operations.LoadURLOperation;
+	import core.appEx.resources.FileType;
 	import core.app.resources.IResource;
 	import core.editor.CoreEditor;
 	import core.editor.contexts.IEditorContext;

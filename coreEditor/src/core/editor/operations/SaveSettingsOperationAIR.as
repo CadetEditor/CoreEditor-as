@@ -14,7 +14,7 @@ package core.editor.operations
 	
 	import core.app.core.operations.IAsynchronousOperation;
 	import core.app.events.OperationProgressEvent;
-	import core.app.managers.SettingsManager;
+	import core.appEx.managers.SettingsManager;
 
 	public class SaveSettingsOperationAIR extends EventDispatcher implements IAsynchronousOperation
 	{

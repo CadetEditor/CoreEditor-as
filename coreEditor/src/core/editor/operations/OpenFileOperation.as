@@ -9,12 +9,12 @@ package core.editor.operations
 	import flash.events.MouseEvent;
 	
 	import core.app.CoreApp;
-	import core.app.core.contexts.IContext;
+	import core.appEx.core.contexts.IContext;
 	import core.app.core.managers.fileSystemProviders.IFileSystemProvider;
 	import core.app.core.managers.fileSystemProviders.operations.IDoesFileExistOperation;
 	import core.app.core.operations.IAsynchronousOperation;
 	import core.app.entities.URI;
-	import core.app.managers.SettingsManager;
+	import core.appEx.managers.SettingsManager;
 	import core.app.resources.IResource;
 	import core.data.ArrayCollection;
 	import core.editor.CoreEditor;

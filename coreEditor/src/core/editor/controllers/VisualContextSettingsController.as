@@ -4,14 +4,13 @@
 package core.editor.controllers
 {
 	import core.app.CoreApp;
-	import core.app.core.contexts.IVisualContext;
-	import core.app.entities.Parameter;
-	import core.app.events.ContextManagerEvent;
+	import core.appEx.core.contexts.IVisualContext;
+	import core.appEx.entities.Parameter;
+	import core.appEx.events.ContextManagerEvent;
 	import core.app.events.ResourceManagerEvent;
-	import core.app.events.SettingsManagerEvent;
-	import core.app.resources.CommandHandlerFactory;
+	import core.appEx.events.SettingsManagerEvent;
+	import core.appEx.resources.CommandHandlerFactory;
 	import core.app.resources.IFactoryResource;
-	import core.app.resources.IResource;
 	import core.app.util.IntrospectionUtil;
 	import core.editor.CoreEditor;
 	import core.editor.commandHandlers.CreateVisualContextCommandHandler;

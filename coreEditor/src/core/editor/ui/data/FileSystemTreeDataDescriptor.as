@@ -6,10 +6,10 @@ package core.editor.ui.data
 	import core.app.CoreApp;
 	import core.app.entities.FileSystemNode;
 	import core.app.entities.URI;
-	import core.app.icons.CoreIcons;
+	import core.appEx.icons.CoreIcons;
 	import core.app.managers.ResourceManager;
 	import core.app.resources.ExternalBitmapDataResource;
-	import core.app.resources.FileType;
+	import core.appEx.resources.FileType;
 	import core.app.resources.IResource;
 	import core.data.ArrayCollection;
 	import core.ui.data.IDataDescriptor;

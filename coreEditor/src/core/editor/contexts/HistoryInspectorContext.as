@@ -4,7 +4,6 @@
 package core.editor.contexts
 {
 	import flash.display.DisplayObject;
-	import flash.display.Sprite;
 	import flash.events.Event;
 	
 	import core.ui.components.List;
@@ -12,13 +11,13 @@ package core.editor.contexts
 	import core.ui.events.ListEvent;
 	
 	import core.editor.CoreEditor;
-	import core.app.core.contexts.IOperationManagerContext;
-	import core.app.core.contexts.IVisualContext;
+	import core.appEx.core.contexts.IOperationManagerContext;
+	import core.appEx.core.contexts.IVisualContext;
 	import core.app.core.operations.IOperation;
-	import core.app.events.OperationManagerEvent;
+	import core.appEx.events.OperationManagerEvent;
 	import core.app.events.ValidatorEvent;
-	import core.app.managers.OperationManager;
-	import core.app.validators.ContextValidator;
+	import core.appEx.managers.OperationManager;
+	import core.appEx.validators.ContextValidator;
 
 	public class HistoryInspectorContext implements IVisualContext
 	{

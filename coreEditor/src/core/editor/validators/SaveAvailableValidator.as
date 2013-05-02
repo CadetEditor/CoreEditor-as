@@ -7,8 +7,8 @@ package core.editor.validators
 	
 	import core.editor.CoreEditor;
 	import core.editor.contexts.IEditorContext;
-	import core.app.events.ContextManagerEvent;
-	import core.app.managers.ContextManager;
+	import core.appEx.events.ContextManagerEvent;
+	import core.appEx.managers.ContextManager;
 	import core.app.validators.AbstractValidator;
 	
 	public class SaveAvailableValidator extends AbstractValidator
