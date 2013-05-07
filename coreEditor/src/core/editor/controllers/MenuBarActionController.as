@@ -44,7 +44,7 @@ package core.editor.controllers
 		{
 			menuBar.removeEventListener(SelectEvent.SELECT, selectItemHandler);
 			actionDictionary = null;
-			menuItemDictionary = null
+			menuItemDictionary = null;
 			dataProvider = null;
 		}
 		
@@ -59,8 +59,8 @@ package core.editor.controllers
 			var menuGroup:String = pathSplit.splice(pathSplit.length-1,1)[0];
 			menuItem.label = action.label;
 			pathSplit.push(action.label);
-			menuItem.enabled = action.enabled
-			menuItem.groupName = menuGroup
+			menuItem.enabled = action.enabled;
+			menuItem.groupName = menuGroup;
 			menuItem.icon = action.icon || CoreEditorIcons.Blank;
 			
 			// Associate this menuItem with the action via a dictionary

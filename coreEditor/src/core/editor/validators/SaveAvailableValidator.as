@@ -45,7 +45,7 @@ package core.editor.validators
 			
 			if ( editorContext )
 			{
-				editorContext.addEventListener( Event.CHANGE, changeHandler )
+				editorContext.addEventListener( Event.CHANGE, changeHandler );
 				setState(editorContext.changed || editorContext.isNewFile);
 			}
 			else

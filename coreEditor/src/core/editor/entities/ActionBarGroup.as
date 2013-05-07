@@ -7,46 +7,46 @@ package core.editor.entities
 	
 	public class ActionBarGroup
 	{
-		protected var _id		:String
-		protected var items		:Array
+		protected var _id		:String;
+		protected var items		:Array;
 		
 		public function ActionBarGroup(id:String)
 		{
-			_id = id
-			items = []
+			_id = id;
+			items = [];
 		}
 		
 		public function destroy():void
 		{
-			items = null
+			items = null;
 		}
 		
 		public function hasItem(item:DisplayObject):Boolean
 		{
-			return items.indexOf(item) != -1
+			return items.indexOf(item) != -1;
 		}
 		
 		public function getItem(index:int):DisplayObject
 		{
-			return items[index]
+			return items[index];
 		}
 		
 		
 		public function removeItem(item:DisplayObject):void
 		{
-			items.splice(items.indexOf(item), 1)
+			items.splice(items.indexOf(item), 1);
 		}
 		
 		public function addItem(item:DisplayObject, index:int):void
 		{
 			if (index == -1) {
-				index = items.length
+				index = items.length;
 			}
-			items.splice(index, 0, item)
+			items.splice(index, 0, item);
 		}
 		
-		public function get numItems():int { return items.length }
+		public function get numItems():int { return items.length; }
 		
-		public function get id():String { return _id }
+		public function get id():String { return _id; }
 	}
 }

@@ -23,7 +23,7 @@ package core.editor.ui.panels
 			var xml:XML =
 			<Panel width="500" height="600" label="Error Report" showCloseButton="true">
 					<InputField id="textArea" multiline="true" width="100%" height="100%"/>
-			</Panel>
+			</Panel>;
 				
 			CoreDeserializer.deserialize( xml, this );
 		}

@@ -23,7 +23,7 @@ package core.editor.ui.components
 		public var loadingLabel	:Label;
 		
 		// Properties
-		private var operation:IAsynchronousOperation
+		private var operation:IAsynchronousOperation;
 		
 		public function SplashScreen()
 		{
@@ -37,7 +37,7 @@ package core.editor.ui.components
 				<Image source="core.editor.ui.components.SplashScreen::SplashScreenBitmap" />
 				<ProgressBar id="progressBar" x="10" y="300" width="200" height="10"/>
 				<Label id="loadingLabel" x="10" y="280" width="570" height="60" text="Loading..." fontColor="0xFFFFFF" />
-			</UIComponent>
+			</UIComponent>;
 			
 			CoreDeserializer.deserialize(xml, this);
 			//loadingLabel.width = 570;

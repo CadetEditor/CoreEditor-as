@@ -11,7 +11,7 @@ package core.appEx.validators
 	import core.app.util.IntrospectionUtil;
 	import core.app.validators.AbstractValidator;
 	
-	[Event(name="contextChanged", type="core.appEx.events.ContextValidatorEvent")]
+	[Event(name="contextChanged", type="core.appEx.events.ContextValidatorEvent")];
 	
 	public class ContextValidator extends AbstractValidator implements IMetricValidator
 	{

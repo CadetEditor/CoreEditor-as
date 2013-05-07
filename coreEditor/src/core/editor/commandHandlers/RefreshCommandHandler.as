@@ -14,7 +14,7 @@ package core.editor.commandHandlers
 	{
 		static public function getFactory():CommandHandlerFactory
 		{
-			var descriptor:CommandHandlerFactory = new CommandHandlerFactory( Commands.REFRESH, RefreshCommandHandler )
+			var descriptor:CommandHandlerFactory = new CommandHandlerFactory( Commands.REFRESH, RefreshCommandHandler );
 			descriptor.validators.push( new ContextValidator( CoreEditor.contextManager, IRefreshableContext ) );
 			return descriptor;
 		}

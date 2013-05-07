@@ -19,7 +19,7 @@ package core.editor.managers
 		
 		private function uncaughtErrorHandler( event:UncaughtErrorEvent ):void
 		{
-			var text:String
+			var text:String;
 			if ( event.error is ErrorEvent )
 			{
 				text = ErrorEvent(event.error).text;

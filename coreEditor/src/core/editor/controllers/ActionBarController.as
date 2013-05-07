@@ -58,9 +58,9 @@ package core.editor.controllers
 			
 			var button:Button = new Button(flux.skins.ToolbarButtonSkin);
 			button.icon = action.icon == null ? CoreIcons.NoIcon : action.icon;
-			button.width = 28
-			button.height = 28
-			button.toolTip = action.label
+			button.width = 28;
+			button.height = 28;
+			button.toolTip = action.label;
 			
 			button.addEventListener(MouseEvent.CLICK, clickButtonHandler);
 			action.addEventListener(Event.CHANGE, changeActionHandler);
@@ -157,7 +157,7 @@ package core.editor.controllers
 			
 			for ( var i:int = 0; i < groups.length; i++ )
 			{
-				var group:ActionBarGroup = groups[i]
+				var group:ActionBarGroup = groups[i];
 				
 				for ( var j:int = 0; j < group.numItems; j++ )
 				{

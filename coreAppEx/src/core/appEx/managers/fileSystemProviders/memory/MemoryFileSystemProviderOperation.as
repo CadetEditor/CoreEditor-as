@@ -12,7 +12,7 @@ package core.appEx.managers.fileSystemProviders.memory
 	internal class MemoryFileSystemProviderOperation extends EventDispatcher implements IFileSystemProviderOperation
 	{
 		protected var table					:Object;
-		protected var _fileSystemProvider	:IFileSystemProvider
+		protected var _fileSystemProvider	:IFileSystemProvider;
 		protected var _uri					:URI;
 		
 		public function MemoryFileSystemProviderOperation( uri:URI, table:Object, fileSystemProvider:IFileSystemProvider )

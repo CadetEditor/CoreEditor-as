@@ -9,7 +9,7 @@ package core.appEx.events
 
 	public class ContextValidatorEvent extends Event
 	{
-		public static const CONTEXT_CHANGED	:String = "contextChanged"
+		public static const CONTEXT_CHANGED	:String = "contextChanged";
 		
 		protected var _oldContext			:IContext;
 		protected var _newContext			:IContext;

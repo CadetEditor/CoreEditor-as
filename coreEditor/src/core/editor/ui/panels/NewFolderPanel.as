@@ -7,7 +7,6 @@ package core.editor.ui.panels
 	
 	import core.ui.util.CoreDeserializer;
 	
-	import core.editor.CoreEditor;
 	import core.app.util.StringUtil;
 	import core.appEx.util.Validation;
 	import core.ui.components.Button;
@@ -49,7 +48,7 @@ package core.editor.ui.panels
 					<Button label="OK" id="okBtn"/>
 				</controlBar>
 				
-			</Panel>
+			</Panel>;
 				
 			CoreDeserializer.deserialize( xml, this, ["core.editor.ui.components"] );
 			defaultButton = okBtn;

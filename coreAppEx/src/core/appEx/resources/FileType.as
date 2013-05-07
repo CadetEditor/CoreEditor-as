@@ -7,7 +7,7 @@ package core.appEx.resources
 
 	public class FileType implements IResource
 	{
-		protected var _label				:String
+		protected var _label				:String;
 		protected var _icon					:Class;
 		protected var _extension			:String;
 		protected var _command				:String;			// Optionally, you can provide a command that will be called when the user chooses to create a new file of this type.

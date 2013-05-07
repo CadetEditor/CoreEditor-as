@@ -10,7 +10,7 @@ package core.appEx.events
 	public class FileSystemEvent extends Event
 	{
 		public static const DELETE_COMPLETE					:String = "deleteComplete";
-		public static const CREATE_DIRECTORY_COMPLETE		:String = "createDirectoryComplete"
+		public static const CREATE_DIRECTORY_COMPLETE		:String = "createDirectoryComplete";
 		
 		private var _uri		:URI;
 		

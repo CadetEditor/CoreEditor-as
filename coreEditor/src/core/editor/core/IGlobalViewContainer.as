@@ -3,12 +3,12 @@
 
 package core.editor.core
 {
-	[Event( type="core.editor.events.GlobalViewContainerEvent", name="viewAdded" )]
-	[Event( type="core.editor.events.GlobalViewContainerEvent", name="viewRemoved" )]
-	[Event( type="core.editor.events.GlobalViewContainerEvent", name="editorAdded" )]
-	[Event( type="core.editor.events.GlobalViewContainerEvent", name="editorRemoved" )]
-	[Event( type="core.editor.events.GlobalViewContainerEvent", name="editorShown" )]
-	[Event( type="core.editor.events.GlobalViewContainerEvent", name="editorHidden" )]
+	[Event( type="core.editor.events.GlobalViewContainerEvent", name="viewAdded" )];
+	[Event( type="core.editor.events.GlobalViewContainerEvent", name="viewRemoved" )];
+	[Event( type="core.editor.events.GlobalViewContainerEvent", name="editorAdded" )];
+	[Event( type="core.editor.events.GlobalViewContainerEvent", name="editorRemoved" )];
+	[Event( type="core.editor.events.GlobalViewContainerEvent", name="editorShown" )];
+	[Event( type="core.editor.events.GlobalViewContainerEvent", name="editorHidden" )];
 		
 	public interface IGlobalViewContainer extends IViewContainer
 	{

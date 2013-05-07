@@ -14,7 +14,7 @@ package core.appEx.validators
 	// OR - any child state validator's state can be true for the state of this to be true
 	// XOR - any child state validator's state can be true, but not all, for the state of this to be true
 	
-	[Event(type="core.app.events.ValidatorEvent", name="stateChanged")]
+	[Event(type="core.app.events.ValidatorEvent", name="stateChanged")];
 	
 	public class CompoundValidator extends EventDispatcher implements IValidator
 	{

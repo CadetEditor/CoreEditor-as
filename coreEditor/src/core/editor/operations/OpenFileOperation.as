@@ -24,8 +24,8 @@ package core.editor.operations
 	import core.editor.ui.panels.OpenWithPanel;
 	import core.ui.components.Alert;
 
-	[Event(type="core.app.events.OperationProgressEvent", name="progress")]
-	[Event(type="flash.events.Event", name="complete")]
+	[Event(type="core.app.events.OperationProgressEvent", name="progress")];
+	[Event(type="flash.events.Event", name="complete")];
 
 	/**
 	 * Given a uri, this Operation will attempt to find an existing editor has the same uri. If found

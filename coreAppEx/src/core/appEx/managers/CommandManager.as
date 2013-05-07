@@ -50,10 +50,10 @@ package core.appEx.managers
 		{
 			commandHandlerFactories.push(commandHandlerFactory);
 			
-			var validator:IValidator
+			var validator:IValidator;
 			if ( commandHandlerFactory.validators.length == 1 )
 			{
-				validator = commandHandlerFactory.validators[0]
+				validator = commandHandlerFactory.validators[0];
 			}
 			else if ( commandHandlerFactory.validators.length > 1 )
 			{
@@ -80,8 +80,8 @@ package core.appEx.managers
 			for each ( var commandHandlerFactory:CommandHandlerFactory in commandHandlerFactories )
 			{
 				var validator:IValidator = commandHandlerValidatorDictionary[commandHandlerFactory];
-				if (!validator) return true
-				if (validator.state) return true
+				if (!validator) return true;
+				if (validator.state) return true;
 			}
 			return false;
 		}
@@ -102,14 +102,14 @@ package core.appEx.managers
 			{
 				commandHandlerFactory = commandHandlerFactories[0];
 				commandHandler = ICommandHandler( commandHandlerFactory.getInstance() );
-				commandHandler.execute( parameters  )
+				commandHandler.execute( parameters  );
 				return;
 			}
 			// More than one available. Loop through the factory's validators and calculate a metric
 			// to determine the 'best fit' factory.
 			else
 			{
-				var bestCommandHandlerFactory:CommandHandlerFactory
+				var bestCommandHandlerFactory:CommandHandlerFactory;
 				var bestMetric:Number = Number.NEGATIVE_INFINITY;
 				for each ( commandHandlerFactory in commandHandlerFactories )
 				{

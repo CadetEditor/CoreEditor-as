@@ -13,7 +13,7 @@ package core.appEx.managers.fileSystemProviders.sharedObject
 	internal class SharedObjectFileSystemProviderOperation extends EventDispatcher implements IFileSystemProviderOperation
 	{
 		protected var sharedObject			:SharedObject;
-		protected var _fileSystemProvider	:IFileSystemProvider
+		protected var _fileSystemProvider	:IFileSystemProvider;
 		protected var _uri					:URI;
 		
 		public function SharedObjectFileSystemProviderOperation( uri:URI, sharedObject:SharedObject, fileSystemProvider:IFileSystemProvider )

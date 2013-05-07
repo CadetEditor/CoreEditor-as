@@ -10,11 +10,11 @@ package core.appEx.events
 
 	public class FileSystemDataEvent extends Event
 	{
-		public static const READ_COMPLETE				:String = "readComplete"
-		public static const WRITE_COMPLETE				:String = "writeComplete"
+		public static const READ_COMPLETE				:String = "readComplete";
+		public static const WRITE_COMPLETE				:String = "writeComplete";
 		
-		protected var _bytes			:ByteArray
-		protected var _uri				:URI
+		protected var _bytes			:ByteArray;
+		protected var _uri				:URI;
 		
 		public function FileSystemDataEvent(type:String, uri:URI = null, bytes:ByteArray = null)
 		{
@@ -29,7 +29,7 @@ package core.appEx.events
 			return new FileSystemDataEvent( type, uri, bytes );
 		}
 		
-		public function get bytes():ByteArray { return _bytes }
-		public function get uri():URI { return _uri }
+		public function get bytes():ByteArray { return _bytes; }
+		public function get uri():URI { return _uri; }
 	}
 }

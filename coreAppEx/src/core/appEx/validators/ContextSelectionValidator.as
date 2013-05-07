@@ -12,8 +12,8 @@ package core.appEx.validators
 	import core.appEx.managers.ContextManager;
 	import core.app.validators.CollectionValidator;
 	
-	[Event(type="core.appEx.events.ContextSelectionValidatorEvent", name="validSelectionChanged")]
-	[Event(type="core.appEx.events.ContextValidatorEvent", name="contextChanged" )]
+	[Event(type="core.appEx.events.ContextSelectionValidatorEvent", name="validSelectionChanged")];
+	[Event(type="core.appEx.events.ContextValidatorEvent", name="contextChanged" )];
 	
 	public class ContextSelectionValidator extends ContextValidator
 	{

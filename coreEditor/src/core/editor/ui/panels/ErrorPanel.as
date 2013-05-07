@@ -49,7 +49,7 @@ package core.editor.ui.panels
 					<Button label="Send" id="dontSendBtn"/>
 				</controlBar>
 				
-			</Panel>
+			</Panel>;
 				
 			CoreDeserializer.deserialize( xml, this );
 			defaultButton = sendBtn;

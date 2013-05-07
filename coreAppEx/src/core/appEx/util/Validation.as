@@ -22,8 +22,8 @@ package core.appEx.util
 		
 		static public function isEmail(value:String):Boolean
 		{
-			var regEx:RegExp = new RegExp("^([0-9a-zA-Z]+[-._+&])*[0-9a-zA-Z_]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6}$")
-			return regEx.test(value)
+			var regEx:RegExp = new RegExp("^([0-9a-zA-Z]+[-._+&])*[0-9a-zA-Z_]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6}$");
+			return regEx.test(value);
 		}
 	}
 }

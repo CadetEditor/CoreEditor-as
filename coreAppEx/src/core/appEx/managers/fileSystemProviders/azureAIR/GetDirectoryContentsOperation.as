@@ -70,7 +70,7 @@ package core.appEx.managers.fileSystemProviders.azureAIR
 				blobName = blobName.replace(_uri.path, "");
 				if ( blobName == "" ) continue;
 				
-				var newURI:URI = new URI( _uri.path + blobName )
+				var newURI:URI = new URI( _uri.path + blobName );
 				contents.push( newURI );
 			}
 			

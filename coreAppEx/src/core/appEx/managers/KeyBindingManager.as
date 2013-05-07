@@ -9,11 +9,8 @@ package core.appEx.managers
 	import flash.text.TextField;
 	import flash.ui.Keyboard;
 	
-	import core.appEx.core.contexts.IContext;
-	import core.appEx.core.contexts.IVisualContext;
 	import core.appEx.resources.KeyBinding;
 	import core.appEx.entities.KeyModifier;
-	import core.appEx.events.ContextManagerEvent;
 	import core.appEx.events.KeyBindingManagerEvent;
 	import core.app.events.ResourceManagerEvent;
 	import core.app.managers.ResourceManager;
@@ -27,7 +24,7 @@ package core.appEx.managers
 		protected var keyBindings		:Array;
 		protected var modifiersDown	:int;
 		
-		protected var keysDown			:Object = {}
+		protected var keysDown			:Object = {};
 		protected var lastKeyPress		:uint;
 		
 		public function KeyBindingManager(stage:Stage, resourceManager:ResourceManager, commandManager:CommandManager)

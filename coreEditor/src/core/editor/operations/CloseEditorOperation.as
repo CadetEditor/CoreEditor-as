@@ -14,9 +14,9 @@ package core.editor.operations
 	import core.ui.components.Alert;
 	import core.ui.events.AlertEvent;
 
-	[Event(type="core.app.events.OperationProgressEvent", name="progress")]
-	[Event(type="flash.events.Event", name="complete")]
-	[Event( type="flash.events.Event", name="cancel" )]
+	[Event(type="core.app.events.OperationProgressEvent", name="progress")];
+	[Event(type="flash.events.Event", name="complete")];
+	[Event( type="flash.events.Event", name="cancel" )];
 	
 	public class CloseEditorOperation extends EventDispatcher implements IAsynchronousOperation
 	{

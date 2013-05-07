@@ -42,7 +42,7 @@ package core.editor.controllers
 		
 		public function addAction(action:Action):void
 		{
-			if (actions.indexOf(action) != -1) return
+			if (actions.indexOf(action) != -1) return;
 			actions.push(action);
 			
 			menuBarController.addAction(action);

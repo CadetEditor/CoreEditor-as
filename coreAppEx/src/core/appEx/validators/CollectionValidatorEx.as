@@ -9,7 +9,7 @@ package core.appEx.validators
 	import core.app.util.ArrayUtil;
 	import core.app.validators.AbstractValidator;
 	
-	[Event( type="core.app.events.CollectionValidatorEvent", name="validItemsChanged" )]
+	[Event( type="core.app.events.CollectionValidatorEvent", name="validItemsChanged" )];
 	
 	public class CollectionValidatorEx extends AbstractValidator
 	{
@@ -21,7 +21,7 @@ package core.appEx.validators
 		protected var _min			:uint;
 		protected var _max			:uint;
 		protected var _compareMode	:String;
-		protected var oldCollection	:Array
+		protected var oldCollection	:Array;
 		
 		public function CollectionValidatorEx( collection:ArrayCollection = null, validTypes:Array = null, min:uint = 1, max:uint = uint.MAX_VALUE, compareMode:String = AND )
 		{

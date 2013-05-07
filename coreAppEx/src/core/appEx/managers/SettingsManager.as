@@ -17,8 +17,8 @@ package core.appEx.managers
 		
 		public function SettingsManager()
 		{
-			defaultPreferencesTable = {}
-			preferenceTable = {}
+			defaultPreferencesTable = {};
+			preferenceTable = {};
 		}
 		
 		public function load( xml:XML ):void
@@ -45,55 +45,55 @@ package core.appEx.managers
 		
 		public function setBoolean(id:String, value:Boolean, isDefault:Boolean = false):void
 		{
-			setValue(id, value ? "1" : "0", isDefault)
+			setValue(id, value ? "1" : "0", isDefault);
 		}
 		public function getBoolean(id:String):Boolean
 		{
-			return getValue(id) == "1"
+			return getValue(id) == "1";
 		}
 		
 		public function setString(id:String, value:String, isDefault:Boolean = false):void
 		{
-			setValue(id, value, isDefault)
+			setValue(id, value, isDefault);
 		}
 		public function getString(id:String):String
 		{
-			var value:Object = getValue(id)
-			if (value == null) return null
-			return String(value)
+			var value:Object = getValue(id);
+			if (value == null) return null;
+			return String(value);
 		}
 		
 		public function setNumber(id:String, value:Number, isDefault:Boolean = false):void
 		{
-			setValue(id, String(value), isDefault)
+			setValue(id, String(value), isDefault);
 		}
 		public function getNumber(id:String):Number
 		{
-			var number:Number = Number(getValue(id))
-			return number
+			var number:Number = Number(getValue(id));
+			return number;
 		}
 		
 		private function setValue(id:String, value:Object, isDefault:Boolean = false):void
 		{
 			if (value == null)
 			{
-				preferenceTable[id] = null
-				delete preferenceTable[id]
-				return
+				preferenceTable[id] = null;
+				delete preferenceTable[id];
+				return;
 			}
-			var table:Object = isDefault ? defaultPreferencesTable : preferenceTable
+			var table:Object = isDefault ? defaultPreferencesTable : preferenceTable;
 			table[id] = value;
 			
 			dispatchEvent( new SettingsManagerEvent( SettingsManagerEvent.CHANGE, SettingsManagerEventKind.UPDATE, id, value ) );
 		}
 		private function getValue(id:String):Object
 		{
-			var value:Object = preferenceTable[id]
+			var value:Object = preferenceTable[id];
 			if (value == null)
 			{
-				value = defaultPreferencesTable[id]
+				value = defaultPreferencesTable[id];
 			}
-			return value
+			return value;
 		}
 				
 		private function serialize():XML

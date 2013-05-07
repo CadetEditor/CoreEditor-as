@@ -14,12 +14,12 @@ package core.appEx.resources
 		 * [Inspectable(editor="ComboBox")]
 		 * Will cause the PropertyInspector to look for a PropertyInspectorItemEditorFactory with an id =="ComboBox"
 		 */		
-		private var _id					:String
+		private var _id					:String;
 		
 		/**
 		 * The type of the editor to be created by this factory's createInstance() method. 
 		 */		
-		private var _type				:Class
+		private var _type				:Class;
 		
 		/**
 		 * The name of the property on the editor that contains the value being edited (eg NumericStepper's is "value"))

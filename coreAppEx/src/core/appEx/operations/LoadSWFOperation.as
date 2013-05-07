@@ -37,7 +37,7 @@ package core.appEx.operations
 		
 		public function execute():void
 		{
-			var loader:Loader = new Loader()
+			var loader:Loader = new Loader();
 			loader.contentLoaderInfo.addEventListener(ProgressEvent.PROGRESS, progressHandler);
 			loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, errorHandler);
 			loader.contentLoaderInfo.addEventListener(Event.COMPLETE, loadCompleteHandler);

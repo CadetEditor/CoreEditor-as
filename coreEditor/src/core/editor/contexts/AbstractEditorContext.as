@@ -10,7 +10,7 @@ package core.editor.contexts
 	
 	import core.app.entities.URI;
 
-	[Event( type="flash.events.Event", name="change" )]
+	[Event( type="flash.events.Event", name="change" )];
 
 	public class AbstractEditorContext extends EventDispatcher
 	{

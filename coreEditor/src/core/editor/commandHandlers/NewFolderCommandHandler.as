@@ -31,7 +31,7 @@ package core.editor.commandHandlers
 		}
 		
 		
-		private var panel					:NewFolderPanel
+		private var panel					:NewFolderPanel;
 		private var initiallySelectedFolder	:URI;
 		
 		public function NewFolderCommandHandler()
@@ -41,8 +41,8 @@ package core.editor.commandHandlers
 		
 		public function execute( parameters:Object ):void
 		{
-			var parentFolder:URI = parameters.parentFolder
-			var folderName:String = parameters.folderName || "New Folder"
+			var parentFolder:URI = parameters.parentFolder;
+			var folderName:String = parameters.folderName || "New Folder";
 			
 			var selectedFiles:Array = CoreEditorUtil.getCurrentSelection( FileExplorerContext, URI );
 			if ( selectedFiles.length > 0 )
@@ -95,12 +95,12 @@ package core.editor.commandHandlers
 		
 		private function newFolderClickCancelHandler(event:Event):void
 		{
-			closePanel()
+			closePanel();
 		}
 		
 		private function openPanel():void
 		{
-			panel = new NewFolderPanel()
+			panel = new NewFolderPanel();
 			CoreEditor.viewManager.addPopUp(panel);
 			
 			panel.tree.dataProvider = CoreApp.fileSystemProvider.fileSystem;
@@ -130,7 +130,7 @@ package core.editor.commandHandlers
 		private function validateState():void
 		{
 			var folderIsSelected:Boolean = panel.tree.selectedFolder != null;
-			var filenameSupplied:Boolean = StringUtil.trim(panel.nameInput.text) != ""
+			var filenameSupplied:Boolean = StringUtil.trim(panel.nameInput.text) != "";
 			panel.okBtn.enabled = filenameSupplied && folderIsSelected;
 		}
 		

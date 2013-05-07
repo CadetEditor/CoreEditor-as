@@ -12,7 +12,7 @@ package core.appEx.managers.fileSystemProviders.memory
 
 	internal class GetDirectoryContentsOperation extends MemoryFileSystemProviderOperation implements IGetDirectoryContentsOperation
 	{
-		private var _contents	:Vector.<URI>
+		private var _contents	:Vector.<URI>;
 		
 		public function GetDirectoryContentsOperation(uri:URI, table:Object, fileSystemProvider:IFileSystemProvider)
 		{

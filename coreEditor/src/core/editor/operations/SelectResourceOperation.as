@@ -13,16 +13,15 @@ package core.editor.operations
 	
 	import core.editor.CoreEditor;
 	import core.app.core.operations.IAsynchronousOperation;
-	import core.app.resources.IExternalResource;
 	import core.app.resources.IFactoryResource;
 	import core.app.resources.IResource;
 	import core.app.util.IntrospectionUtil;
 	import core.appEx.util.VectorUtil;
 	
-	[Event(type="core.app.events.OperationProgressEvent", name="progress")]
-	[Event(type="flash.events.Event", name="complete")]
-	[Event(type="flash.events.Event", name="cancel")]
-	[Event(type="flash.events.ErrorEvent", name="error")]
+	[Event(type="core.app.events.OperationProgressEvent", name="progress")];
+	[Event(type="flash.events.Event", name="complete")];
+	[Event(type="flash.events.Event", name="cancel")];
+	[Event(type="flash.events.ErrorEvent", name="error")];
 	
 	public class SelectResourceOperation extends EventDispatcher implements IAsynchronousOperation
 	{

@@ -27,7 +27,7 @@ package core.editor.commandHandlers
 		public function DeleteFileCommandHandler() {}
 		
 		
-		protected var filesToDelete		:Array
+		protected var filesToDelete		:Array;
 		public function execute( parameters:Object ):void
 		{		
 			filesToDelete = CoreEditorUtil.getCurrentSelection( null, URI );

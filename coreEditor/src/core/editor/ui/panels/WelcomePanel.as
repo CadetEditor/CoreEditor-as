@@ -48,7 +48,7 @@ package core.editor.ui.panels
 				<layout>
 					<VerticalLayout spacing="16" />
 				</layout>
-			</Canvas>
+			</Canvas>;
 			
 			CoreDeserializer.deserialize( xml, this );
 			

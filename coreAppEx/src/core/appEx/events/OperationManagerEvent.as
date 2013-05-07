@@ -9,14 +9,14 @@ package core.appEx.events
 
 	public class OperationManagerEvent extends Event
 	{
-		static public const CHANGE					:String = "change"
-		static public const OPERATION_ADDED			:String = "operationAdded"
-		static public const ALL_OPERATIONS_COMPLETE	:String = "allOperationsComplete"
-		static public const OPERATION_BEGIN			:String = "operationBegin"
-		static public const OPERATION_COMPLETE		:String = "operationComplete"
-		static public const OPERATION_PROGRESS		:String = "operationProgress"
+		static public const CHANGE					:String = "change";
+		static public const OPERATION_ADDED			:String = "operationAdded";
+		static public const ALL_OPERATIONS_COMPLETE	:String = "allOperationsComplete";
+		static public const OPERATION_BEGIN			:String = "operationBegin";
+		static public const OPERATION_COMPLETE		:String = "operationComplete";
+		static public const OPERATION_PROGRESS		:String = "operationProgress";
 		
-		protected var _operation	:IOperation
+		protected var _operation	:IOperation;
 		protected var _progress		:Number;
 		
 		public function OperationManagerEvent( type:String, operation:IOperation = null, progress:Number = 0 )

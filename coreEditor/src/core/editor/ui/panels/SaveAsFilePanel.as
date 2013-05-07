@@ -48,7 +48,7 @@ package core.editor.ui.panels
 						<Button label="Save" id="okBtn"/>
 						<Button label="Cancel" id="cancelBtn"/>
 					</controlBar>
-				</Panel>
+				</Panel>;
 			
 			CoreDeserializer.deserialize( xml, this, ["core.editor.ui.components"] );
 			

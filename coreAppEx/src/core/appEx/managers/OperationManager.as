@@ -15,16 +15,16 @@ package core.appEx.managers
 	import core.appEx.events.OperationManagerEvent;
 	import core.app.events.OperationProgressEvent;
 	
-	[Event(name="change", 					type="core.appEx.events.OperationManagerEvent")]
-	[Event(name="operationAdded", 			type="core.appEx.events.OperationManagerEvent")]
-	[Event(name="operationComplete", 		type="core.appEx.events.OperationManagerEvent")]
-	[Event(name="operationBegin", 			type="core.appEx.events.OperationManagerEvent")]
-	[Event(name="allOperationsComplete", 	type="core.appEx.events.OperationManagerEvent")]
-	[Event(name="operationProgress", 		type="core.appEx.events.OperationManagerEvent")]
+	[Event(name="change", 					type="core.appEx.events.OperationManagerEvent")];
+	[Event(name="operationAdded", 			type="core.appEx.events.OperationManagerEvent")];
+	[Event(name="operationComplete", 		type="core.appEx.events.OperationManagerEvent")];
+	[Event(name="operationBegin", 			type="core.appEx.events.OperationManagerEvent")];
+	[Event(name="allOperationsComplete", 	type="core.appEx.events.OperationManagerEvent")];
+	[Event(name="operationProgress", 		type="core.appEx.events.OperationManagerEvent")];
 	
 	public class OperationManager extends EventDispatcher
 	{
-		protected var operations				:Vector.<IOperation>
+		protected var operations				:Vector.<IOperation>;
 		
 		// State
 		protected var _operationExecuting		:Boolean = false;
@@ -152,7 +152,7 @@ package core.appEx.managers
 			{
 				if ( currentIndex+1 < operations.length )
 				{
-					_currentOperation = operations[currentIndex+1]
+					_currentOperation = operations[currentIndex+1];
 					executeOperation( _currentOperation );
 				}
 			}

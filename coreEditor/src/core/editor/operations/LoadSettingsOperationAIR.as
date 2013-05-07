@@ -18,9 +18,9 @@ package core.editor.operations
 	import core.appEx.managers.SettingsManager;
 	import core.app.util.AsynchronousUtil;
 
-	[Event(type="core.app.events.OperationProgressEvent", name="progress")]
-	[Event(type="flash.events.Event", name="complete")]
-	[Event(type="flash.events.ErrorEvent", name="error")]
+	[Event(type="core.app.events.OperationProgressEvent", name="progress")];
+	[Event(type="flash.events.Event", name="complete")];
+	[Event(type="flash.events.ErrorEvent", name="error")];
 
 	public class LoadSettingsOperationAIR extends EventDispatcher implements IAsynchronousOperation
 	{

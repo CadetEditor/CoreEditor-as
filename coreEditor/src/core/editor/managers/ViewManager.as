@@ -31,7 +31,7 @@ package core.editor.managers
 	
 	public class ViewManager
 	{
-		private var _application				:Application;
+		private var _application			:Application;
 		private var stage					:Stage;
 		
 		private var globalViewContainer		:IGlobalViewContainer;
@@ -96,7 +96,7 @@ package core.editor.managers
 		{
 			contextDictionary[context.view] = context;
 			
-			var container:IViewContainer
+			var container:IViewContainer;
 			if ( context is IEditorContext )
 			{
 				container = new _editorContainerType();

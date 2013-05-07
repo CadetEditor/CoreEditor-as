@@ -24,9 +24,9 @@ package core.editor.operations
 	import core.editor.contexts.IEditorContext;
 	import core.editor.resources.FileTemplate;
 	
-	[Event(type="core.app.events.OperationProgressEvent", name="progress")]
-	[Event(type="flash.events.Event", name="complete")]
-	[Event(type="flash.events.ErrorEvent", name="error")]
+	[Event(type="core.app.events.OperationProgressEvent", name="progress")];
+	[Event(type="flash.events.Event", name="complete")];
+	[Event(type="flash.events.ErrorEvent", name="error")];
 	
 	public class NewFileFromFileTemplateOperation extends EventDispatcher implements IAsynchronousOperation
 	{

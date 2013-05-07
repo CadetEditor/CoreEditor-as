@@ -7,7 +7,7 @@ package core.appEx.events
 
 	public class ContextSelectionValidatorEvent extends Event
 	{
-		public static const VALID_SELECTION_CHANGED		:String = "validSelectionChanged"
+		public static const VALID_SELECTION_CHANGED		:String = "validSelectionChanged";
 		
 		protected var _validSelection		:Array;
 		

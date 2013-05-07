@@ -34,9 +34,9 @@ package core.editor.operations
 	import core.editor.ui.components.DefaultViewContainer;
 	
 
-	[Event(type="core.app.events.OperationProgressEvent", name="progress")]
-	[Event(type="flash.events.Event", name="complete")]
-	[Event(type="flash.events.ErrorEvent", name="error")]
+	[Event(type="core.app.events.OperationProgressEvent", name="progress")];
+	[Event(type="flash.events.Event", name="complete")];
+	[Event(type="flash.events.ErrorEvent", name="error")];
 	
 	public class InitializeCoreOperation extends EventDispatcher implements IAsynchronousOperation
 	{
