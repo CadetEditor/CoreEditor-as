@@ -3,30 +3,20 @@
 
 package core.editor.commandHandlers
 {
-	import flash.events.ErrorEvent;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
-	import flash.utils.ByteArray;
 	
 	import core.app.CoreApp;
 	import core.appEx.core.commandHandlers.ICommandHandler;
-	import core.app.entities.FileSystemNode;
-	import core.app.entities.URI;
-	import core.appEx.operations.LoadURLOperation;
 	import core.appEx.resources.CommandHandlerFactory;
 	import core.appEx.resources.FileType;
 	import core.data.ArrayCollection;
 	import core.editor.CoreEditor;
-	import core.editor.contexts.FileExplorerContext;
-	import core.editor.contexts.IEditorContext;
 	import core.editor.entities.Commands;
 	import core.editor.operations.GetCompatibleFileTemplatesOperation;
 	import core.editor.operations.NewFileFromFileTemplateOperation;
-	import core.editor.operations.OpenFileOperation;
 	import core.editor.resources.FileTemplate;
-	import core.editor.ui.data.FileSystemTreeDataDescriptor;
 	import core.editor.ui.panels.NewFilePanel;
-	import core.editor.utils.CoreEditorUtil;
 
 	public class NewFileCommandHandler implements ICommandHandler
 	{
@@ -69,7 +59,7 @@ package core.editor.commandHandlers
 		
 		private function openPanel():void
 		{
-			panel = new NewFilePanel()
+			panel = new NewFilePanel();
 			CoreEditor.viewManager.addPopUp(panel);
 			
 			panel.okBtn.addEventListener(MouseEvent.CLICK, clickOkHandler);
