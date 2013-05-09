@@ -4,11 +4,9 @@
 package core.editor.ui.components
 {
 	import flash.display.DisplayObject;
-	import flash.events.Event;
 	import flash.geom.Rectangle;
 	
 	import core.ui.events.ContainerEvent;
-	import core.ui.events.SelectEvent;
 	import core.ui.layouts.LayoutAlign;
 	import core.ui.util.BindingUtil;
 	
