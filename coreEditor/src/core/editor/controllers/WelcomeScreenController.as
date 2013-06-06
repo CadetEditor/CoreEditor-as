@@ -9,7 +9,6 @@ package core.editor.controllers
 	import core.app.CoreApp;
 	import core.app.entities.URI;
 	import core.appEx.events.ContextManagerEvent;
-	import core.appEx.icons.CoreIcons;
 	import core.appEx.resources.FileType;
 	import core.app.resources.IResource;
 	import core.app.util.AsynchronousUtil;
@@ -25,7 +24,6 @@ package core.editor.controllers
 	import core.editor.ui.panels.WelcomePanel;
 	import core.ui.components.Alert;
 	import core.ui.events.ListEvent;
-	import core.ui.events.SelectEvent;
 
 	public class WelcomeScreenController
 	{

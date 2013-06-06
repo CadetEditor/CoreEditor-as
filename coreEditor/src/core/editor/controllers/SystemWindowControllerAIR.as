@@ -4,7 +4,6 @@
 package core.editor.controllers
 {
 	import flash.display.NativeWindow;
-	import flash.display.NativeWindowDisplayState;
 	import flash.events.Event;
 	
 	import core.editor.CoreEditor;
