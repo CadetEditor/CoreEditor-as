@@ -10,6 +10,7 @@ CadetEditor_Ext_Main
 Default_Ext
 CadetHungryHero
 Cadet2D_AIR
+CoreEditor_Browser
 actionBar
 addBtn
 backBtn

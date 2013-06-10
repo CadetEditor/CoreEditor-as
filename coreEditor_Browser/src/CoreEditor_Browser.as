@@ -28,7 +28,7 @@ package
 			addChild( splashScreen );
 			
 			var configURL:String = "config.xml";
-			if ( stage.loaderInfo.parameters.configURL != null )
+			if ( loaderInfo.parameters.configURL != null )
 			{
 				configURL = loaderInfo.parameters.configURL;
 			}
