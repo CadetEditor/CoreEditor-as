@@ -5,7 +5,7 @@
 	<fileSystemProvider environment="browser" 	type="sharedObject" id="flox.sharedObject" 	  label="Flox" />
 	<fileSystemProvider environment="browser" 	type="url" 			    id="flox.url" 			      label="Flox_URL" baseURL="files" visible="false" />
 	
-	<extension url="extensions/DefaultExtension.swf" />
+	<extension url="extensions/Default_Ext.swf" />
 	<extension url="extensions/HelloWorldExtension.swf" />
 	
 	<!--  File templates  -->
