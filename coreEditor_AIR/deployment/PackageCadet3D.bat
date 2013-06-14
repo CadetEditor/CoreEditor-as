@@ -14,7 +14,7 @@ set FILE_OR_DIR=-C ..\..\deploy_AIR_3D .
 set SOURCE_CONFIG_PATH="..\..\deploy_AIR_3D\cadetEditor3DConfig.xml"
 set TARGET_CONFIG_PATH="..\..\deploy_AIR_3D\config.xml"
 
-set CERTIFICATE="Certificate.pfx"
+set CERTIFICATE="certificate.p12"
 set AIR_FILE=Cadet3D.air
 
 

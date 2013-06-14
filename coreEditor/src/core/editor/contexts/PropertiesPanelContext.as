@@ -77,10 +77,14 @@ package core.editor.contexts
 				operation.label = "Change property(s)";
 				for ( var i:int = 0; i < event.hosts.length; i++ )
 				{
-					var changePropertyOperation:ChangePropertyOperation = new ChangePropertyOperation( event.hosts[i], event.property, event.value, event.oldValues[i] );
-					operation.addOperation(changePropertyOperation);
+					if ( event.value != event.oldValues[i] ) {
+						var changePropertyOperation:ChangePropertyOperation = new ChangePropertyOperation( event.hosts[i], event.property, event.value, event.oldValues[i] );
+						operation.addOperation(changePropertyOperation);
+					}
 				}
-				operationManager.addOperation(operation);
+				if (operation.operations.length > 0) {
+					operationManager.addOperation(operation);
+				}
 			}
 		}
 				
