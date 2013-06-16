@@ -7,10 +7,10 @@ CadetEditor_Ext_2DS_Geom_Main
 CadetEditor_Ext_2DS_Main
 CadetEditor_Ext_HungryHero
 CadetEditor_Ext_Main
-Default_Ext
 CadetHungryHero
 Cadet2D_AIR
 CoreEditor_Browser
+Default_Ext
 actionBar
 addBtn
 backBtn
@@ -71,6 +71,7 @@ worldXLabel
 worldYLabel
 zoomAmountLabel
 zoomControl
+BlankTemplateIcon
 CadetEditorIcons
 FileTemplateItemRenderer
 OutlinePanelContext
