@@ -1,0 +1,12 @@
+package
+{
+	import flash.display.Sprite;
+	
+	public class CoreUI_Basics extends Sprite
+	{
+		public function CoreUI_Basics()
+		{
+			
+		}
+	}
+}

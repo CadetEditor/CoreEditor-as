@@ -1,0 +1,29 @@
+package
+{
+	import flash.display.Sprite;
+	
+	import core.ui.components.TextArea;
+	import core.ui.managers.FocusManager;
+	
+	[SWF( width="400", height="600", backgroundColor="0x101010", frameRate="60" )]
+	public class CoreUI_Basics extends Sprite
+	{
+		public function CoreUI_Basics()
+		{
+			new FocusManager();
+			
+			var textArea:TextArea = new TextArea();
+			textArea.text = "bums";
+			addChild(textArea);
+			
+			var textArea2:TextArea = new TextArea();
+			textArea2.text = "tits";
+			textArea2.y = 30;
+			textArea2.showBorder = false;
+			textArea2.bold = true;
+			textArea2.alpha = 1;
+			textArea2.editable = true;
+			addChild(textArea2);
+		}
+	}
+}

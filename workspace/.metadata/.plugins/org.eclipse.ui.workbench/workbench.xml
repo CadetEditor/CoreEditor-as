@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="39" version="2.0">
+<workbench progressCount="33" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="25" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
-<itemSize x="160"/>
+<itemSize x="326"/>
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
@@ -12,13 +12,13 @@
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="99" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="84" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -27,36 +27,68 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="6"/>
+<part id="5"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Main.as" partName="Main.as" path="C:/Users/Rob/Documents/GitHub/CoreUI/examples/propertyInspector/src/Main.as" title="Main.as" tooltip="CoreUI_PropertyInspector/src/Main.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoreUI_PropertyInspector/src/Main.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1989" selectionTopPixel="368"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="InspectableObject.as" partName="InspectableObject.as" path="C:/Users/Rob/Documents/GitHub/CoreUI/examples/propertyInspector/src/util/InspectableObject.as" title="InspectableObject.as" tooltip="CoreUI_PropertyInspector/src/util/InspectableObject.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoreUI_PropertyInspector/src/util/InspectableObject.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="435"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="CoreUI_Basics.as" partName="CoreUI_Basics.as" path="C:/Users/Rob/Documents/GitHub/CoreEditor/workspace/CoreUI_Basics/src/CoreUI_Basics.as" title="CoreUI_Basics.as" tooltip="CoreUI_Basics/src/CoreUI_Basics.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoreUI_Basics/src/CoreUI_Basics.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="394" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="PropertyInspectorItemRenderer.as" partName="PropertyInspectorItemRenderer.as" path="C:/Users/Rob/Documents/GitHub/CoreUI/coreUI/src/core/ui/components/PropertyInspectorItemRenderer.as" title="PropertyInspectorItemRenderer.as" tooltip="CoreUI/src/core/ui/components/PropertyInspectorItemRenderer.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoreUI/src/core/ui/components/PropertyInspectorItemRenderer.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="473" selectionTopPixel="23"/>
+</editor>
+<editor activePart="true" focus="true" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="TextArea.as" partName="TextArea.as" path="C:/Users/Rob/Documents/GitHub/CoreUI/coreUI/src/core/ui/components/TextArea.as" title="TextArea.as" tooltip="CoreUI/src/core/ui/components/TextArea.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoreUI/src/core/ui/components/TextArea.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2526" selectionTopPixel="975"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="TextStyles.as" partName="TextStyles.as" path="C:/Users/Rob/Documents/GitHub/CoreUI/coreUI/src/core/ui/components/TextStyles.as" title="TextStyles.as" tooltip="CoreUI/src/core/ui/components/TextStyles.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoreUI/src/core/ui/components/TextStyles.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="2355" selectionTopPixel="390"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Label.as" partName="Label.as" path="C:/Users/Rob/Documents/GitHub/CoreUI/coreUI/src/core/ui/components/Label.as" title="Label.as" tooltip="CoreUI/src/core/ui/components/Label.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoreUI/src/core/ui/components/Label.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="29" selectionOffset="1810" selectionTopPixel="638"/>
+</editor>
 </editors>
 <views>
-<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
-<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-</expanded>
-<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="241" org.eclipse.ui.ide.severityAndDescriptionField="541"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
 </viewState>
 </view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
 </view>
 <view id="com.adobe.flexbuilder.packageexplorer" partName="Package Explorer">
 <viewState LINK_NAVIGATOR_TO_EDITOR="0" fpeIsFlat="0" fpeSortBy="1" sorter="1">
 <fpeExpanded>
-<fpeElement fpePath="/Cadet2D_AIR"/>
-<fpeElement fpePath="/Cadet2D_AIR/bin-debug"/>
+<fpeElement fpePath="/CoreUI_Basics/src"/>
+<fpeElement fpePath="/CoreUI_Basics/src/%typeDefaultPackage"/>
+<fpeElement fpePath="/CoreUI_PropertyInspector/src"/>
+<fpeElement fpePath="/CoreUI_PropertyInspector/src/%typeDefaultPackage"/>
+<fpeElement fpePath="/CoreUI_PropertyInspector/src/util"/>
 </fpeExpanded>
 <fpeSelection>
-<fpeElement fpePath="/Cadet2D_AIR"/>
+<fpeElement fpePath="/CoreEditor_Browser"/>
 </fpeSelection>
 <filters>
 <filter element=".flexProperties" isEnabled="true"/>
@@ -78,29 +110,159 @@
 <filter element="*.class" isEnabled="false"/>
 <filter element=".*" isEnabled="false"/>
 </filters>
-<expanded>
-<element path="/Cadet2D_AIR"/>
-<element path="/Cadet2D_AIR/bin-debug"/>
-</expanded>
 <selection>
-<element path="/Cadet2D_AIR"/>
+<element path="/CoreEditor_Browser"/>
 </selection>
 </viewState>
 </view>
 <view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" partName="Network Monitor">
 <viewState/>
 </view>
-<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView" partName="Data/Services">
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (73 items)"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="241" org.eclipse.ui.ide.severityAndDescriptionField="541"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView" partName="Data/Services">
 <viewState/>
 </view>
 <view id="com.adobe.flexbuilder.as.editor.asdocviewer" partName="ASDoc">
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.adobe.flexbuilder.packageexplorer" activePerspective="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development">
+<perspectives activePart="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" activePerspective="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.adobe.flexbuilder.debug.ui.perspectives.FlexDebugPerspectiveFactory" id="com.adobe.flexbuilder.debug.ui.perspectives.debug" label="Flash Debug"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.flashbridge.flashproject.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.wb.core.ui.actionset"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.profileActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.debug.ui.flexDebuggingActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.dcrad.actionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.zzz.editors.common.ui.project.publish"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.exportimport.actionSet1"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="com.adobe.flexbuilder.packageexplorer"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<new_wizard_action id="com.adobe.flexbuilder.editorcore.ui.project.wizards.newproject"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.FlexLibraryProjectWizard"/>
+<new_wizard_action id="com.adobe.flashbuilder.project.multiplatform.ui.MultiPlatformProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.NewActionScriptProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.ActionScriptLibraryProjectWizard"/>
+<new_wizard_action id="com.adobe.flashbuilder.project.multiplatform.ui.MultiPlatformActionScriptProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.flashbridge.NewFlashProProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLApplication"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLComponent"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLItemRenderer"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLModule"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLSkin"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.wizards.NewActionScriptFile.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.classWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.interfaceWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.skinnableComponentWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.workerWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.css.editor.wizards.NewCSSFile"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.flexUnitClassWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.flexUnitTestSuiteClassWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.packageWizard.flex"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development"/>
+<perspective_action id="com.adobe.flexbuilder.debug.ui.perspectives.debug"/>
+<perspective_action id="com.adobe.flash.profiler.ui.ProfilingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.debug.ui.ExpressionView"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.debug.internal.ui.ConsoleFolderView" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29855537"/>
+<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView" ratio="0.3"/>
+<view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info part="org.eclipse.ui.editorss"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1212db1e" ratio="0.695941" ratioLeft="943" ratioRight="412" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7498122" ratioLeft="998" ratioRight="333" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74959874" ratioLeft="467" ratioRight="156" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<page content="com.adobe.flexbuilder.dcrad.views.DataServicesView" label="LabelNotFound"/>
+<page content="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.adobe.flexbuilder.mxml.editor.ui.perspectives.DevelopmentPerspectiveFactory" id="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development" label="Flash"/>
 <alwaysOnActionSet id="com.adobe.flexbuilder.flashbridge.flashproject.actionSet"/>
@@ -161,12 +323,22 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="com.adobe.flexbuilder.packageexplorer"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.ui.views.ProblemView"/>
-<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView"/>
-<view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView"/>
-<view id="com.adobe.flexbuilder.as.editor.asdocviewer"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
-<fastViewBars/>
+<fastViewBars>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@63ee589b" orientation="512" selectedTabId="org.eclipse.search.ui.views.SearchView" style="0">
+<fastViews>
+<view id="org.eclipse.search.ui.views.SearchView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="1024" id="bottomLayout" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
+<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView" ratio="0.3"/>
+<view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" ratio="0.3"/>
+<view id="com.adobe.flexbuilder.as.editor.asdocviewer" ratio="0.3"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29855537"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@4544b02">
@@ -186,19 +358,25 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.23911439" ratioLeft="324" ratioRight="1031" relationship="2" relative="org.eclipse.ui.internal.ViewStack@4544b02"/>
 <info folder="true" part="bottomLayout" ratio="0.4887097" ratioLeft="303" ratioRight="317" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<page content="com.adobe.flexbuilder.dcrad.views.DataServicesView" label="Data/Services"/>
-<page content="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" label="Network Monitor"/>
-<page content="com.adobe.flexbuilder.as.editor.asdocviewer" label="ASDoc"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-</presentation>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="com.adobe.flexbuilder.dcrad.views.DataServicesView" label="LabelNotFound"/>
+<page content="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" label="LabelNotFound"/>
+<page content="com.adobe.flexbuilder.as.editor.asdocviewer" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@63ee589b" ratio="0.5" ratioLeft="517" ratioRight="517" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2838fb83" ratio="0.49950346" ratioLeft="503" ratioRight="504" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="outlineHolder" ratio="0.93225807" ratioLeft="578" ratioRight="42" relationship="4" relative="org.eclipse.ui.internal.ViewStack@4544b02">
@@ -214,12 +392,181 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/CoreUI_PropertyInspector/src/Main.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/CoreUI_Basics/src/CoreUI_Basics.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/CoreUI/src/core/ui/components/PropertyInspector.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/CoreUI/src/core/ui/components/TextArea.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/CoreUI/src/core/ui/components/PropertyInspectorItemRenderer.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/CoreUI/src/core/ui/managers/FocusManager.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/CoreUI/src/core/ui/components/Application.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/CoreUI/src/core/ui/components/TextStyles.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/CoreUI/src/core/ui/components/Label.as"/>
+</editors>
+<item historyLabel="CoreUI_Basics.as" index="1">
+<position info="not_deleted" x="125" y="0"/>
+</item>
+<item historyLabel="Main.as" index="0">
+<position info="not_deleted" x="1989" y="0"/>
+</item>
+<item historyLabel="PropertyInspector.as" index="2">
+<position info="not_deleted" x="1231" y="17"/>
+</item>
+<item historyLabel="CoreUI_Basics.as" index="1">
+<position info="not_deleted" x="485" y="0"/>
+</item>
+<item historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="7455" y="0"/>
+</item>
+<item historyLabel="PropertyInspector.as" index="2">
+<position info="not_deleted" x="8387" y="0"/>
+</item>
+<item historyLabel="PropertyInspectorItemRenderer.as" index="4">
+<position info="not_deleted" x="704" y="29"/>
+</item>
+<item historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="7455" y="0"/>
+</item>
+<item historyLabel="CoreUI_Basics.as" index="1">
+<position info="not_deleted" x="485" y="0"/>
+</item>
+<item historyLabel="PropertyInspectorItemRenderer.as" index="4">
+<position info="not_deleted" x="3627" y="0"/>
+</item>
+<item historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="7455" y="0"/>
+</item>
+<item historyLabel="CoreUI_Basics.as" index="1">
+<position info="not_deleted" x="537" y="0"/>
+</item>
+<item historyLabel="FocusManager.as" index="5">
+<position/>
+</item>
+<item historyLabel="FocusManager.as" index="5">
+<position/>
+</item>
+<item historyLabel="FocusManager.as" index="5">
+<position/>
+</item>
+<item historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="4147" y="0"/>
+</item>
+<item historyLabel="FocusManager.as" index="5">
+<position info="not_deleted" x="1568" y="0"/>
+</item>
+<item historyLabel="CoreUI_Basics.as" index="1">
+<position info="not_deleted" x="568" y="0"/>
+</item>
+<item historyLabel="Application.as" index="6">
+<position info="not_deleted" x="2124" y="11"/>
+</item>
+<item historyLabel="CoreUI_Basics.as" index="1">
+<position info="not_deleted" x="295" y="0"/>
+</item>
+<item historyLabel="FocusManager.as" index="5">
+<position info="not_deleted" x="1800" y="0"/>
+</item>
+<item historyLabel="CoreUI_Basics.as" index="1">
+<position info="not_deleted" x="295" y="0"/>
+</item>
+<item historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="2438" y="0"/>
+</item>
+<item historyLabel="TextStyles.as" index="7">
+<position info="not_deleted" x="2450" y="15"/>
+</item>
+<item historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="2438" y="0"/>
+</item>
+<item historyLabel="CoreUI_Basics.as" index="1">
+<position/>
+</item>
+<item historyLabel="TextStyles.as" index="7">
+<position info="not_deleted" x="2450" y="15"/>
+</item>
+<item historyLabel="PropertyInspectorItemRenderer.as" index="4">
+<position info="not_deleted" x="473" y="0"/>
+</item>
+<item historyLabel="Label.as" index="8">
+<position info="not_deleted" x="1350" y="5"/>
+</item>
+<item historyLabel="CoreUI_Basics.as" index="1">
+<position/>
+</item>
+<item historyLabel="CoreUI_Basics.as" index="1">
+<position info="not_deleted" x="787" y="0"/>
+</item>
+<item historyLabel="Label.as" index="8">
+<position info="not_deleted" x="4023" y="0"/>
+</item>
+<item historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="2438" y="0"/>
+</item>
+<item historyLabel="Label.as" index="8">
+<position info="not_deleted" x="4023" y="0"/>
+</item>
+<item historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="2438" y="0"/>
+</item>
+<item historyLabel="Label.as" index="8">
+<position info="not_deleted" x="4023" y="0"/>
+</item>
+<item historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="2438" y="0"/>
+</item>
+<item historyLabel="Label.as" index="8">
+<position info="not_deleted" x="4023" y="0"/>
+</item>
+<item historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="2438" y="0"/>
+</item>
+<item historyLabel="Label.as" index="8">
+<position info="not_deleted" x="4023" y="0"/>
+</item>
+<item historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="2438" y="0"/>
+</item>
+<item historyLabel="Label.as" index="8">
+<position info="not_deleted" x="1810" y="29"/>
+</item>
+<item historyLabel="CoreUI_Basics.as" index="1">
+<position info="not_deleted" x="148" y="0"/>
+</item>
+<item historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="2753" y="58"/>
+</item>
+<item historyLabel="CoreUI_Basics.as" index="1">
+<position info="not_deleted" x="394" y="0"/>
+</item>
+<item historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="2753" y="0"/>
+</item>
+<item historyLabel="Label.as" index="8">
+<position info="not_deleted" x="1810" y="29"/>
+</item>
+<item historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="2743" y="0"/>
+</item>
+<item historyLabel="TextStyles.as" index="7">
+<position info="not_deleted" x="2355" y="8"/>
+</item>
+<item active="true" historyLabel="TextArea.as" index="3">
+<position info="not_deleted" x="2743" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@4544b02"/>
+<trimItem IMemento.internal.id="outlineHolder"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@63ee589b"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -228,15 +575,56 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottomLayout"/>
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ConsoleFolderView"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="CursorManager.as" tooltip="CoreUI/src/core/ui/managers/CursorManager.as">
-<persistable path="/CoreUI/src/core/ui/managers/CursorManager.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Label.as" tooltip="CoreUI/src/core/ui/components/Label.as">
+<persistable path="/CoreUI/src/core/ui/components/Label.as"/>
 </file>
-<file factoryID="com.adobe.flexbuilder.editors.derived.ui.startpage.StartPageEditorInput" id="com.adobe.flexbuilder.ui.StartPage" name="Web Browser" tooltip="Flash Builder Welcome Screen">
-<persistable iconpath="platform:/plugin/com.adobe.flexbuilder.ui/icons/fb_app_16.png" style="20" tooltip="Flash Builder Welcome Screen" url="file:/C:/Program Files/Adobe/Adobe Flash Builder 4.7 (64 Bit)/eclipse/plugins/com.adobe.flexbuilder.ui_4.7.0.349722/welcome/index.html?firstLaunch=false&amp;edition=prem&amp;version=470"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="TextStyles.as" tooltip="CoreUI/src/core/ui/components/TextStyles.as">
+<persistable path="/CoreUI/src/core/ui/components/TextStyles.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="TextArea.as" tooltip="CoreUI/src/core/ui/components/TextArea.as">
+<persistable path="/CoreUI/src/core/ui/components/TextArea.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Application.as" tooltip="CoreUI/src/core/ui/components/Application.as">
+<persistable path="/CoreUI/src/core/ui/components/Application.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="PropertyInspectorItemRenderer.as" tooltip="CoreUI/src/core/ui/components/PropertyInspectorItemRenderer.as">
+<persistable path="/CoreUI/src/core/ui/components/PropertyInspectorItemRenderer.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="PropertyInspector.as" tooltip="CoreUI/src/core/ui/components/PropertyInspector.as">
+<persistable path="/CoreUI/src/core/ui/components/PropertyInspector.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="CoreUI_Basics.as" tooltip="CoreUI_Basics/src/CoreUI_Basics.as">
+<persistable path="/CoreUI_Basics/src/CoreUI_Basics.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="InspectableObject.as" tooltip="CoreUI_PropertyInspector/src/util/InspectableObject.as">
+<persistable path="/CoreUI_PropertyInspector/src/util/InspectableObject.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Main.as" tooltip="CoreUI_PropertyInspector/src/Main.as">
+<persistable path="/CoreUI_PropertyInspector/src/Main.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Main.as" tooltip="CoreUI_Sandbox/src/Main.as">
+<persistable path="/CoreUI_Sandbox/src/Main.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="CoreUI.as" tooltip="CoreUI/src/core/ui/CoreUI.as">
+<persistable path="/CoreUI/src/core/ui/CoreUI.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="PropertiesPanelContext.as" tooltip="CoreEditor/src/core/editor/contexts/PropertiesPanelContext.as">
+<persistable path="/CoreEditor/src/core/editor/contexts/PropertiesPanelContext.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="SelectionColor.as" tooltip="CoreUI/src/core/ui/util/SelectionColor.as">
+<persistable path="/CoreUI/src/core/ui/util/SelectionColor.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="DropDownMenu.as" tooltip="CoreUI/src/core/ui/components/DropDownMenu.as">
+<persistable path="/CoreUI/src/core/ui/components/DropDownMenu.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="TextInput.as" tooltip="CoreUI/src/core/ui/components/TextInput.as">
+<persistable path="/CoreUI/src/core/ui/components/TextInput.as"/>
 </file>
 </mruList>
 </workbench>

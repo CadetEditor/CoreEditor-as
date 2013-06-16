@@ -1,0 +1,23 @@
+package
+{
+	import flash.display.Sprite;
+	
+	import core.ui.components.TextArea;
+	
+	[SWF( width="400", height="600", backgroundColor="0x101010", frameRate="60" )]
+	public class CoreUI_Basics extends Sprite
+	{
+		public function CoreUI_Basics()
+		{
+			var textArea:TextArea = new TextArea();
+			textArea.text = "bums";
+			addChild(textArea);
+			
+			var textArea2:TextArea = new TextArea();
+			textArea2.text = "tits";
+			textArea2.y = 30;
+			textArea2.showBorder = false;
+			addChild(textArea2);
+		}
+	}
+}
