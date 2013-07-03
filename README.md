@@ -1,4 +1,4 @@
-FloxEditor
+CoreEditor
 ==========
 
-An ActionScript3 editor framework, based on FloxApp and FloxUI
+An ActionScript3 editor framework, based on CoreApp and CoreUI

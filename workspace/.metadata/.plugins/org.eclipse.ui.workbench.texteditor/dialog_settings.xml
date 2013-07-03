@@ -13,14 +13,19 @@
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="textField" key="selection"/>
+		<item value="_worldContainer" key="selection"/>
 		<list key="findhistory">
-			<item value="textField"/>
-			<item value="TextField"/>
-			<item value="flox"/>
-			<item value="border"/>
+			<item value="_worldContainer"/>
+			<item value="skinA"/>
+			<item value="getSkinsUnderLoc"/>
+			<item value="_mouseX"/>
+			<item value="panel"/>
+			<item value="pickComponentOperation"/>
+			<item value="draggedVertex"/>
+			<item value="invalidateDisplayHandler"/>
 		</list>
 		<list key="replacehistory">
+			<item value="_dbgDraw"/>
 			<item value="core"/>
 		</list>
 	</section>
