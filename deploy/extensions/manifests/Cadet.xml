@@ -9,7 +9,4 @@
 	<classMap name="KeyboardInputMapping" class="cadet.components.processes.KeyboardInputMapping" />
 	<classMap name="TouchInputMapping" class="cadet.components.processes.TouchInputMapping" />
 	
-	<!--TEMPORARY HACK-->
-	<classMap name="VehicleUserControlBehaviour" class="cadet.components.behaviours.VehicleUserControlBehaviour"/>
-	
 </manifest>

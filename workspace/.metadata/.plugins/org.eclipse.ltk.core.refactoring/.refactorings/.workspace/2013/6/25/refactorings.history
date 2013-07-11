@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;FloxEg_Sandbox&apos; to &apos;CoreUI_Sandbox&apos;" description="Rename resource &apos;FloxEg_Sandbox&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/FloxEg_Sandbox" name="CoreUI_Sandbox" stamp="1371400144963" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;FloxEg_PropertyInspector&apos; to &apos;CoreUI_PropertyInspector&apos;" description="Rename resource &apos;FloxEg_PropertyInspector&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/FloxEg_PropertyInspector" name="CoreUI_PropertyInspector" stamp="1371400424266" updateReferences="true"/>
-</session>

@@ -8,12 +8,11 @@
 	<classMap name="InputProcess2D" class="cadet2D.components.processes.InputProcess2D" />
 	<classMap name="WorldBounds2D" class="cadet2D.components.processes.WorldBounds2D" />
 
-  <!-- Core Skins -->
-
+  	<!-- Core Skins -->
 	<classMap name="ImageSkin" class="cadet2D.components.skins.ImageSkin"/>
 	<classMap name="MovieClipSkin" class="cadet2D.components.skins.MovieClipSkin"/>
 
-  <!-- Processes -->
+  	<!-- Processes -->
 	<classMap name="CollisionDetectionProcess" class="cadet2D.components.processes.CollisionDetectionProcess" />
 	<classMap name="FootprintManagerProcess" class="cadet2D.components.processes.FootprintManagerProcess" />
 	<classMap name="TrackCamera2DProcess" class="cadet2D.components.processes.TrackCamera2DProcess" />
@@ -40,15 +39,10 @@
 	
 	<!-- Geom Skins -->
 	<classMap name="ConnectionSkin" class="cadet2D.components.skins.ConnectionSkin"/>
-	<!--<classMap name="FootprintManagerDebugSkin" class="cadet2D.components.skins.FootprintManagerDebugSkin"/>
-	<classMap name="FractalPolygonSkin" class="cadet2D.components.skins.FractalPolygonSkin"/>
-	<classMap name="GeometryDebugSkin" class="cadet2D.components.skins.GeometryDebugSkin"/>-->
 	<classMap name="GeometrySkin" class="cadet2D.components.skins.GeometrySkin"/>
 	<classMap name="PinSkin" class="cadet2D.components.skins.PinSkin"/>
-	<!--<classMap name="ScrollingBackgroundSkin" class="cadet2D.components.skins.ScrollingBackgroundSkin"/>-->
 	<classMap name="SpringSkin" class="cadet2D.components.skins.SpringSkin"/>
 	<classMap name="TerrainSkin" class="cadet2D.components.skins.TerrainSkin"/>
-	<!--<classMap name="WorldBoundsDebugSkin" class="cadet2D.components.skins.WorldBoundsDebugSkin"/>-->
 	
 	<!-- Transforms -->
 	<classMap name="Transform2D" class="cadet2D.components.transforms.Transform2D"/>
