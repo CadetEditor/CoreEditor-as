@@ -83,8 +83,10 @@ package core.editor.operations
 				}
 			}
 			
+			CoreEditor.environment = environment;
+			
 			use namespace coreEditor_internal;
-			CoreEditor.init(configXML, stage, environment);
+			CoreEditor.init(configXML, stage);
 			
 			CoreEditor.viewManager.init( DefaultGlobalViewContainer, DefaultViewContainer, DefaultEditorViewContainer );
 			CoreEditor.viewManager.application.visible = false;

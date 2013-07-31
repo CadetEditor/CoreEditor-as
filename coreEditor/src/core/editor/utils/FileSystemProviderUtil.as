@@ -3,8 +3,8 @@ package core.editor.utils
 	import core.app.CoreApp;
 	import core.app.core.managers.fileSystemProviders.IFileSystemProvider;
 	import core.app.core.managers.fileSystemProviders.ILocalFileSystemProvider;
+	import core.app.core.managers.fileSystemProviders.IMemoryFileSystemProvider;
 	import core.app.entities.URI;
-	import core.appEx.managers.fileSystemProviders.memory.MemoryFileSystemProvider;
 	import core.editor.CoreEditor;
 	import core.editor.core.CoreEditorEnvironment;
 
@@ -14,10 +14,11 @@ package core.editor.utils
 		{
 			var projectURI:URI = cadetFileURI.getParentURI();
 			var provider:IFileSystemProvider = CoreApp.fileSystemProvider.getFileSystemProviderForURI(cadetFileURI);
+			var environment:String = CoreEditor.environment;
 			
 			// If reading from memory (i.e. we're editing an unsaved template file) default to "Documents/Cadet2D"
-			if ( provider is MemoryFileSystemProvider ) {
-				if ( CoreEditor.environment == CoreEditorEnvironment.AIR ) {
+			if ( provider is IMemoryFileSystemProvider ) {
+				if ( environment == CoreEditorEnvironment.AIR ) {
 					provider = CoreApp.fileSystemProvider.getFileSystemProviderForURI(new URI("cadet.local/"));//+CoreApp.externalResourceFolderName));
 					var localFSP:ILocalFileSystemProvider = ILocalFileSystemProvider(provider); 
 					var defaultDirPath:String = localFSP.defaultDirectoryURI.path;
@@ -26,14 +27,14 @@ package core.editor.utils
 					}
 					projectURI = new URI("cadet.local"+defaultDirPath+"/");
 				}
-				else if ( CoreEditor.environment == CoreEditorEnvironment.BROWSER ) {
+				else if ( environment == CoreEditorEnvironment.BROWSER ) {
 					projectURI = new URI("cadet.url/");			
 				}
 			} else {
-				if ( CoreEditor.environment == CoreEditorEnvironment.AIR ) {
+				if ( environment == CoreEditorEnvironment.AIR ) {
 					projectURI = cadetFileURI.getParentURI();
 				}
-				else if ( CoreEditor.environment == CoreEditorEnvironment.BROWSER ) {
+				else if ( environment == CoreEditorEnvironment.BROWSER ) {
 					projectURI = new URI("cadet.url/");				
 				}				
 			}

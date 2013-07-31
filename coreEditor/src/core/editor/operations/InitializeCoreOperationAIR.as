@@ -7,11 +7,11 @@ package core.editor.operations
 	import flash.filesystem.File;
 	
 	import core.app.CoreApp;
+	import core.editor.core.CoreEditorEnvironment;
+	import core.app.managers.fileSystemProviders.local.LocalFileSystemProvider;
+	import core.appEx.managers.fileSystemProviders.azureAIR.AzureFileSystemProviderAIR;
 	import core.editor.controllers.SettingsControllerAIR;
 	import core.editor.controllers.SystemWindowControllerAIR;
-	import core.editor.core.CoreEditorEnvironment;
-	import core.appEx.managers.fileSystemProviders.azureAIR.AzureFileSystemProviderAIR;
-	import core.app.managers.fileSystemProviders.local.LocalFileSystemProvider;
 	
 	public class InitializeCoreOperationAIR extends InitializeCoreOperation
 	{

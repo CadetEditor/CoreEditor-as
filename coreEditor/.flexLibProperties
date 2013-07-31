@@ -2,6 +2,8 @@
 <flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
   <includeClasses>
     <classEntry path="core.editor.commandHandlers.PublishCommandHandler"/>
+    <classEntry path="core.editor.utils.FileSystemProviderUtil"/>
+    <classEntry path="core.editor.core.CoreEditorEnvironment"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

@@ -8,14 +8,15 @@ package core.editor
 	import flash.events.IEventDispatcher;
 	
 	import core.app.CoreApp;
+	import core.editor.core.CoreEditorEnvironment;
 	import core.app.entities.URI;
+	import core.app.util.AsynchronousUtil;
 	import core.appEx.events.ContextManagerEvent;
 	import core.appEx.managers.CommandManager;
 	import core.appEx.managers.ContextManager;
 	import core.appEx.managers.KeyBindingManager;
 	import core.appEx.managers.OperationManager;
 	import core.appEx.managers.SettingsManager;
-	import core.app.util.AsynchronousUtil;
 	import core.data.ArrayCollection;
 	import core.editor.contexts.IEditorContext;
 	import core.editor.core.coreEditor_internal;
@@ -40,7 +41,6 @@ package core.editor
 		static private var _eventDispatcher				:IEventDispatcher;
 		static private var _config						:CoreEditorConfig;
 		static private var _stage						:Stage;
-		static private var _environment					:String;
 		
 		static private var _currentEditorContextURI		:URI;
 		
@@ -57,14 +57,17 @@ package core.editor
 		static public function get eventDispatcher()	:IEventDispatcher			{ return _eventDispatcher;		}
 		static public function get config()				:CoreEditorConfig			{ return _config;				}
 		static public function get stage()				:Stage						{ return _stage;				}
-		static public function get environment()		:String						{ return _environment;			}
 		
 		static public function get currentEditorContextURI():URI { return _currentEditorContextURI; }
 		
-		coreEditor_internal static function init( configXML:XML, stage:Stage, environment:String ):void
+		static private var _environment					:String = CoreEditorEnvironment.BROWSER; // AIR or browser
+		
+		static public function get environment()		:String						{ return _environment;			}
+		static public function set environment( value:String ):void					{ _environment = value;			}
+		
+		coreEditor_internal static function init( configXML:XML, stage:Stage ):void
 		{
 			_stage = stage;
-			_environment = environment;
 			_config					= new CoreEditorConfig(configXML);
 			_viewManager 			= new ViewManager(stage);
 			_contextManager 		= new ContextManager();

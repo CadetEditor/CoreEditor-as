@@ -11,8 +11,8 @@ package core.editor.operations
 	import core.app.core.managers.fileSystemProviders.operations.IDoesFileExistOperation;
 	import core.app.core.operations.IAsynchronousOperation;
 	import core.app.entities.URI;
-	import core.appEx.resources.FileType;
 	import core.app.resources.IResource;
+	import core.appEx.resources.FileType;
 	import core.editor.CoreEditor;
 	import core.editor.contexts.IEditorContext;
 	import core.editor.core.CoreEditorEnvironment;

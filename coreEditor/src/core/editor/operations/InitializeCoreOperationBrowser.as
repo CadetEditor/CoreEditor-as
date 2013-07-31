@@ -5,9 +5,8 @@ package core.editor.operations
 {
 	import flash.display.Stage;
 	
-	import core.editor.controllers.SettingsControllerBrowser;
 	import core.editor.core.CoreEditorEnvironment;
-	import core.editor.utils.CoreEditorUtil;
+	import core.editor.controllers.SettingsControllerBrowser;
 
 	public class InitializeCoreOperationBrowser extends InitializeCoreOperation
 	{

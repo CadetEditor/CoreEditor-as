@@ -8,15 +8,23 @@ package core.appEx.managers.fileSystemProviders.memory
 	import flash.events.EventDispatcher;
 	import flash.utils.ByteArray;
 	
-	import core.app.core.managers.fileSystemProviders.IFileSystemProvider;
-	import core.app.core.managers.fileSystemProviders.operations.*;
+	import core.app.core.managers.fileSystemProviders.IMemoryFileSystemProvider;
+	import core.app.core.managers.fileSystemProviders.operations.ICreateDirectoryOperation;
+	import core.app.core.managers.fileSystemProviders.operations.IDeleteFileOperation;
+	import core.app.core.managers.fileSystemProviders.operations.IDoesFileExistOperation;
+	import core.app.core.managers.fileSystemProviders.operations.IFileSystemProviderOperation;
+	import core.app.core.managers.fileSystemProviders.operations.IGetDirectoryContentsOperation;
+	import core.app.core.managers.fileSystemProviders.operations.IReadFileOperation;
+	import core.app.core.managers.fileSystemProviders.operations.ITraverseAllDirectoriesOperation;
+	import core.app.core.managers.fileSystemProviders.operations.ITraverseToDirectoryOperation;
+	import core.app.core.managers.fileSystemProviders.operations.IWriteFileOperation;
 	import core.app.entities.URI;
 	import core.app.events.FileSystemProviderEvent;
 	import core.app.events.OperationProgressEvent;
 	
 	[Event( type="core.app.events.FileSystemProviderEvent", name="operationBegin" )]	
 	
-	public class MemoryFileSystemProvider extends EventDispatcher implements IFileSystemProvider
+	public class MemoryFileSystemProvider extends EventDispatcher implements IMemoryFileSystemProvider
 	{
 		private var _id		:String;
 		private var _label	:String;
