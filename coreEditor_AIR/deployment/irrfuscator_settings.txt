@@ -1,0 +1,34 @@
+Project Location:
+
+Source Dir = C:\Users\CadetEditor\Documents\GitHub
+Target Dir = C:\Users\CadetEditor\Documents\GitHub_Obfusticated
+
+Options
+
+Also copy non-source files
+Don't create backups when overwriting files
+Obfuscate constants
+Obfuscate all vars
+
+Ignore Symbols:
+
+C:\Users\CadetEditor\Documents\GitHub\CoreEditor\coreEditor_AIR\deployment\irrfuscator_ignore_list.txt
+
+Ignore Packages:
+
+cadet
+cadet2D
+cadet2DBox2D
+cadet2DBox2DVehicles
+core.app
+core.data
+core.events
+core.layout
+core.ui
+starling
+hungryHero
+
+
+SWC Files:
+
+C:\Users\CadetEditor\Documents\GitHub\CoreUI\coreSkins\CadetCoreSkins.swc
