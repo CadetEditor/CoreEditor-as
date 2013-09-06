@@ -11,7 +11,7 @@ set PATH=%PATH%;C:\Program Files\Adobe\Adobe Flash Builder 4.7 (64 Bit)\eclipse\
 set APP_XML=Cadet2D-app.xml 
 set FILE_OR_DIR=-C ..\..\deploy_AIR_2D .
 
-set SOURCE_CONFIG_PATH="..\..\deploy_AIR_2D\cadetEditor2DSVehiclesConfig.xml"
+set SOURCE_CONFIG_PATH="..\..\deploy_AIR_2D\cadetEditor2DSVehicleConfig.xml"
 set TARGET_CONFIG_PATH="..\..\deploy_AIR_2D\config.xml"
 
 set CERTIFICATE="certificate.p12"
