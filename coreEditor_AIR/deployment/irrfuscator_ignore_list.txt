@@ -76,6 +76,7 @@ BlankTemplateIcon
 CadetEditorIcons
 FileTemplateItemRenderer
 OutlinePanelContext
+OutlinePanelContext2D
 PropertiesPanelContext
 SplashScreen
 SplashScreenBitmap
