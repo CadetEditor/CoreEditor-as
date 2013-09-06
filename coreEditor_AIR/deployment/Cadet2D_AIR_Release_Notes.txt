@@ -1,0 +1,22 @@
+Cadet2D_AIR_Release lives here:
+
+C:\Users\CadetEditor\Documents\GitHub\CadetEditor-as
+
+But it's opened in this workspace:
+
+C:\Users\CadetEditor\CoreEditor_Obfuscated
+
+To update it with obfuscated swfs & swcs:
+
+> Open the following folders in separate windows:
+
+C:\Users\CadetEditor\Documents\GitHub2\CoreEditor\deploy\extensions
+C:\Users\CadetEditor\Documents\GitHub\CadetEditor-as\Cadet2D_AIR\bin-debug\extensions
+
+> Copy the extension swfs from the GitHub2 to the GitHub project
+
+> Copy & paste CoreEditor.swc from & to the following locations:
+
+C:\Users\CadetEditor\Documents\GitHub2\CoreEditor\coreEditor\bin
+C:\Users\CadetEditor\Documents\GitHub\CadetEditor-as\Cadet2D_AIR\lib
+
