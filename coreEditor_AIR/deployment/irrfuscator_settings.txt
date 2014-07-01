@@ -1,7 +1,7 @@
 Project Location:
 
 Source Dir = C:\Users\CadetEditor\Documents\GitHub
-Target Dir = C:\Users\CadetEditor\Documents\GitHub_Obfusticated
+Target Dir = C:\Users\CadetEditor\Documents\GitHub2 (obfuscated)
 
 Options
 

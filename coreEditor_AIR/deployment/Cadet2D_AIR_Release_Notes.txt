@@ -6,6 +6,8 @@ But it's opened in this workspace:
 
 C:\Users\CadetEditor\CoreEditor_Obfuscated
 
+(This workspace duplicates the main one, just using the obfuscated libs)
+
 To update it with obfuscated swfs & swcs:
 
 > Open the following folders in separate windows:
