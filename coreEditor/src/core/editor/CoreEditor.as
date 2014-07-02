@@ -96,7 +96,8 @@ package core.editor
 		private static function setCurrentURI(context:IEditorContext):void
 		{
 			var uri:URI = context.uri;
-			if ( context.uri.path.indexOf("/" ) == -1) {
+			
+			if ( context.uri != null && context.uri.path.indexOf("/" ) == -1) {
 				uri = new URI("memory/"+context.uri.path);
 			}
 			

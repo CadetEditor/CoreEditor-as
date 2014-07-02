@@ -1,7 +1,7 @@
 <xml>
 	<applicationID><![CDATA[CoreEditor]]></applicationID>
 	
-	<fileSystemProvider environment="air"		type="local" 		    id="core.local" 		label="Core"     folderName="Core" />
+	<fileSystemProvider environment="air"		type="local" 		    id="core.local" 		label="Core"     folderName="CoreEditor" />
 	<fileSystemProvider environment="browser" 	type="sharedObject" 	id="core.sharedObject" 	label="Core" />
 	<fileSystemProvider environment="browser" 	type="url" 			    id="core.url" 			label="Core_URL" baseURL="files" visible="false" />
 	
