@@ -34,7 +34,7 @@
         </excludedEntries>
       </libraryPathEntry>
       <libraryPathEntry kind="3" linkType="1" path="/CoreApp/bin/CoreApp.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="${DOCUMENTS}/CoreEditor/coreSkins/CadetCoreSkins.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="1" path="${DOCUMENTS}/CoreEditor-as/coreSkins/CadetCoreSkins.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="3" linkType="1" path="/CoreUI/bin/CoreUI.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="3" linkType="1" path="/CoreAppEx/bin/CoreAppEx.swc" useDefaultLinkType="false"/>
     </libraryPath>
@@ -48,5 +48,3 @@
   <buildCSSFiles/>
   <flashCatalyst validateFlashCatalystCompatibility="false"/>
 </actionScriptProperties>
-
-

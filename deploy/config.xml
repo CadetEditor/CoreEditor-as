@@ -9,12 +9,12 @@
 	<extension url="extensions/HelloWorldExtension.swf" />
 	
 	<!--  File templates  -->
-<!--
+
 	<template>
 		<label><![CDATA[String List]]></label>
 		<description><![CDATA[Creates a blank String list file.]]></description>
 		<url><![CDATA[extensions/fileTemplates/stringList.strlist]]></url>
-		<icon>cadetEditor.assets.CadetEditorIcons_BlankTemplateIcon</icon>
+		<icon>core.editor.icons.CoreEditorIcons::BlankTemplateIcon</icon>
 	</template>
-	-->
+
 </xml>

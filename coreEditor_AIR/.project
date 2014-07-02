@@ -24,7 +24,7 @@
 		<link>
 			<name>bin-debug</name>
 			<type>2</type>
-			<locationURI>DOCUMENTS/CoreEditor/deploy</locationURI>
+			<locationURI>DOCUMENTS/CoreEditor-as/deploy</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

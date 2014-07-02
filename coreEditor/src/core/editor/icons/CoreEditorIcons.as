@@ -6,6 +6,7 @@ package core.editor.icons
 	public class CoreEditorIcons
 	{	
 		[Embed( source = 'Blank.png' )] 			static public const Blank:Class;
+		[Embed( source = 'BlankTemplateIcon.png' )]	static public const BlankTemplateIcon:Class;
 		[Embed( source = 'Copy.png' )] 				static public const Copy:Class;
 		[Embed( source = 'Cut.png' )] 				static public const Cut:Class;
 		[Embed( source = 'Delete.png' )] 			static public const Bin:Class;
