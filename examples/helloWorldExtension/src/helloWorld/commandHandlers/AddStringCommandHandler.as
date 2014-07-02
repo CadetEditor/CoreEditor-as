@@ -1,6 +1,6 @@
 package helloWorld.commandHandlers
 {
-	import core.app.core.commandHandlers.ICommandHandler;
+	import core.appEx.core.commandHandlers.ICommandHandler;
 	import core.editor.CoreEditor;
 	
 	import helloWorld.contexts.StringListContext;

@@ -3,12 +3,12 @@ package
 	import flash.display.Sprite;
 	
 	import core.app.CoreApp;
-	import core.app.entities.KeyModifier;
-	import core.app.resources.CommandHandlerFactory;
 	import core.app.resources.FactoryResource;
-	import core.app.resources.FileType;
-	import core.app.resources.KeyBinding;
-	import core.app.validators.ContextValidator;
+	import core.appEx.entities.KeyModifier;
+	import core.appEx.resources.CommandHandlerFactory;
+	import core.appEx.resources.FileType;
+	import core.appEx.resources.KeyBinding;
+	import core.appEx.validators.ContextValidator;
 	import core.editor.CoreEditor;
 	import core.editor.resources.ActionFactory;
 	import core.editor.resources.EditorFactory;
@@ -18,7 +18,6 @@ package
 	import helloWorld.contexts.HelloWorldContext;
 	import helloWorld.contexts.StringListContext;
 	import helloWorld.entities.Commands;
-	import helloWorld.ui.views.HelloWorldView;
 	
 	//TODO: App doesn't close when close (top right) is clicked.
 	public class HelloWorldExtension extends Sprite
@@ -31,6 +30,7 @@ package
 		
 		public function HelloWorldExtension()
 		{
+			trace("HELLO WORLD");
 			// HelloWorldContext Example
 			CoreApp.resourceManager.addResource( new FactoryResource( HelloWorldContext, "Hello World" ) );
 			

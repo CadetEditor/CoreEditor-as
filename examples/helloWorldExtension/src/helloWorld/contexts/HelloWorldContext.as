@@ -2,7 +2,7 @@ package helloWorld.contexts
 {
 	import flash.display.DisplayObject;
 	
-	import core.app.core.contexts.IVisualContext;
+	import core.appEx.core.contexts.IVisualContext;
 	
 	import helloWorld.ui.views.HelloWorldView;
 	

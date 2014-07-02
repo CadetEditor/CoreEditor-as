@@ -5,12 +5,12 @@ package helloWorld.contexts
 	import flash.events.EventDispatcher;
 	
 	import core.app.CoreApp;
-	import core.app.core.contexts.IOperationManagerContext;
+	import core.appEx.core.contexts.IOperationManagerContext;
 	import core.app.entities.URI;
-	import core.app.events.OperationManagerEvent;
-	import core.app.managers.OperationManager;
+	import core.appEx.events.OperationManagerEvent;
+	import core.appEx.managers.OperationManager;
 	import core.app.operations.ReadFileAndDeserializeOperation;
-	import core.app.operations.SerializeAndWriteFileOperation;
+	import core.appEx.operations.SerializeAndWriteFileOperation;
 	import core.data.ArrayCollection;
 	import core.editor.CoreEditor;
 	import core.editor.contexts.IEditorContext;

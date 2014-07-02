@@ -1,9 +1,9 @@
 <xml>
-	<applicationID><![CDATA[FloxEditor]]></applicationID>
+	<applicationID><![CDATA[CoreEditor]]></applicationID>
 	
-	<fileSystemProvider environment="air"		    type="local" 		    id="flox.local" 		    	label="Flox"     folderName="Flox" />
-	<fileSystemProvider environment="browser" 	type="sharedObject" id="flox.sharedObject" 	  label="Flox" />
-	<fileSystemProvider environment="browser" 	type="url" 			    id="flox.url" 			      label="Flox_URL" baseURL="files" visible="false" />
+	<fileSystemProvider environment="air"		type="local" 		    id="core.local" 		label="Core"     folderName="Core" />
+	<fileSystemProvider environment="browser" 	type="sharedObject" 	id="core.sharedObject" 	label="Core" />
+	<fileSystemProvider environment="browser" 	type="url" 			    id="core.url" 			label="Core_URL" baseURL="files" visible="false" />
 	
 	<extension url="extensions/Default_Ext.swf" />
 	<extension url="extensions/HelloWorldExtension.swf" />
