@@ -6,16 +6,16 @@ package core.editor.commandHandlers
 	import flash.events.MouseEvent;
 	
 	import core.app.CoreApp;
-	import core.appEx.core.commandHandlers.ICommandHandler;
+	import core.app.core.managers.fileSystemProviders.IFileSystemProvider;
 	import core.app.entities.URI;
+	import core.app.resources.IResource;
+	import core.appEx.core.commandHandlers.ICommandHandler;
 	import core.appEx.resources.CommandHandlerFactory;
 	import core.appEx.resources.FileType;
-	import core.app.resources.IResource;
 	import core.editor.CoreEditor;
 	import core.editor.entities.Commands;
 	import core.editor.operations.OpenFileOperation;
 	import core.editor.ui.panels.FileSystemListBrowserPanel;
-	import core.editor.ui.panels.FileSystemTreeBrowserPanel;
 
 	public class OpenFileCommandHandler implements ICommandHandler
 	{
@@ -65,7 +65,10 @@ package core.editor.commandHandlers
 			//TODO: recentURI may be "cadet..." rather than "core...", causing a "Cannot map uri to provider" error.
 			var recentURL:String = CoreEditor.settingsManager.getString("core.app.core.managers.fileSystemProviders.MultiFileSystemProvider.recentFolder");
 			var recentURI:URI;
-			if ( recentURL != null ) {
+			
+			// If no fileSystemProvider exists for this URI, clear the recentURI to avoid problems.
+			var provider:IFileSystemProvider = CoreApp.fileSystemProvider.getFileSystemProviderForURI(new URI(recentURL));
+			if ( provider != null ) {
 				recentURI = new URI(recentURL);
 			}
 			

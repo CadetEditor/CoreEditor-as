@@ -8,6 +8,7 @@ package core.editor.operations
 	import flash.events.MouseEvent;
 	
 	import core.app.CoreApp;
+	import core.app.core.managers.fileSystemProviders.IFileSystemProvider;
 	import core.app.core.managers.fileSystemProviders.operations.IDoesFileExistOperation;
 	import core.app.core.operations.IAsynchronousOperation;
 	import core.app.entities.URI;
@@ -50,9 +51,12 @@ package core.editor.operations
 				recentURL = CoreEditor.settingsManager.getString("core.app.core.managers.fileSystemProviders.MultiFileSystemProvider.recentFolder");				
 			}
 		
-			if ( recentURL != null ) {
+			// If no fileSystemProvider exists for this URI, clear the recentURI to avoid problems.
+			var provider:IFileSystemProvider = CoreApp.fileSystemProvider.getFileSystemProviderForURI(new URI(recentURL));
+			if ( provider != null ) {
 				recentURI = new URI(recentURL);
 			}
+			
 			
 			var validExtensions:Array = [];
 			var fileTypes:Vector.<IResource> = CoreApp.resourceManager.getResourcesOfType(FileType);
